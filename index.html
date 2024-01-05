@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Dev8</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+    <style type="text/css">
+        html {
+            margin: 0;
+
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background-color: rgb(0, 0, 0);
+            background-image: linear-gradient(180deg, rgba(0, 134, 202, 0.23) 0%, rgba(131, 255, 166, 0.05) 100%);
+
+            color: rgb(255, 255, 255);
+
+            margin: 0;
+
+            min-height: 100%;
+            width: 100%;
+        }
+
+        div#cli {
+            padding: 1%;
+        }
+
+        p#command-start {
+            margin-top: 0;
+        }
+    </style>
+    <script type="text/javascript">
+        function spinSpinner() {
+            let chars = ['|', '/', '-', '\\'];
+            let spinner = document.getElementById('spinner');
+
+            let idx = 0;
+            setInterval(() => { spinner.textContent = chars[idx++ % chars.length]; }, 150);
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', spinSpinner);
+        } else {
+            spinSpinner();
+        }
+    </script>
+</head>
+<body>
+    <div id="cli">
+        <p id="command-start">
+            <samp>
+                $ ./dev8_website.sh
+            </samp>
+        </p>
+        <p>
+            <samp>
+                Planning a gathering in Baybay...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅<br/>
+                Readying for a big Tacloban event...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅<br/>
+                Forming website team...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅<br/>
+                Checking if it's Calbayog time...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅<br/>
+                Building website (might take a while!)... <span id="spinner"></span>
+            </samp>
+        </p>
+    </div>
+</body>
+</html>
