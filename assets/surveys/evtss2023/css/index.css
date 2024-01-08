@@ -1,0 +1,108 @@
+/* Screen size for mobile devices */
+h1 {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    font-size: 6rem;
+    
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1 small {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+p {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Screen size for tablets */
+@media screen and (min-width: 481px) {
+    
+}
+
+/* Screen size for small screens and laptops */
+@media screen and (min-width: 769) {
+    
+}
+
+/* Screen size for desktops and large screens */
+@media screen and (min-width: 1025px) {
+}
+
+/* Screen size for extra large screens and TVs */
+@media screen and (min-width: 1201px) {
+}
+
+.container {
+    max-width: 1440px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: rgb(13, 55, 65);
+    color: rgb(255, 255, 255);
+
+    height: 100vh;
+
+    display: flex;
+}
+
+header div.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+header div.container div#hero-logo {
+    margin-bottom: 5%;
+}
+
+header div.container div#hero-logo img {
+    width: 15%;
+    height: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: block;
+}
+
+header div.container div#hero-main-content {
+    display: grid;
+    grid-template: 1 / 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+header div.container div#hero-main-content div#hero-image {
+    grid-area: 1 / 1 / 1 / 1;
+    justify-self: end;
+}
+
+header div.container div#hero-main-content div#hero-image img {
+    width: 75%;
+    height: auto;
+}
+
+header div.container div#hero-main-content div#hero-text {
+    grid-area: 1 / 1 / 1 / 1;
+    align-self: end;
+}
+
+header div.container div#hero-main-content div#hero-text p {
+    max-width: 75%;
+}
