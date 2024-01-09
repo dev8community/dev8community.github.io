@@ -55,25 +55,52 @@ body {
 header {
     background-color: rgb(13, 55, 65);
     background-image:
-        linear-gradient(to right, rgba(255, 255, 255, 0.25) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 1px, transparent 1px);
+        linear-gradient(90deg, rgba(255, 255, 255, 0.25) 2px, transparent 1px),
+        linear-gradient(0deg, rgba(255, 255, 255, 0.25) 2px, transparent 1px);
+    background-size: 10rem 10rem;
+    background-position: center;
     color: rgb(255, 255, 255);
 
     height: 100vh;
 
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
 }
 
-header div.container {
+header div#header-bg-curves {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-area: 1 / 1 / 1 / 1;
+}
+
+header div#header-bg-curves img {
+    display: block;
+}
+
+header div#header-bg-curves img#header-bg-curve-top {
+    align-self: start;
+    justify-self: start;
+}
+
+header div#header-bg-curves img#header-bg-curve-bottom {
+    align-self: end;
+    justify-self: end;
+}
+
+header div#header-content {
+    grid-area: 1 / 1 / 1 / 1;
+
     display: flex;
     flex-direction: column;
 }
 
-header div.container div#hero-logo {
+header div#header-content div#hero-logo {
     margin-bottom: 5%;
 }
 
-header div.container div#hero-logo img {
+header div#header-content div#hero-logo img {
     width: 15%;
     height: auto;
 
@@ -83,23 +110,23 @@ header div.container div#hero-logo img {
     display: block;
 }
 
-header div.container div#hero-main-content {
+header div#header-content div#hero-main-content {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     flex-grow: 1;
 }
 
-header div.container div#hero-main-content div#hero-image {
+header div#header-content div#hero-main-content div#hero-image {
     grid-area: 1 / 1 / 1 / 1;
     justify-self: end;
 }
 
-header div.container div#hero-main-content div#hero-image img {
+header div#header-content div#hero-main-content div#hero-image img {
     width: 100%;
 }
 
-header div.container div#hero-main-content div#hero-text {
+header div#header-content div#hero-main-content div#hero-text {
     grid-area: 1 / 1 / 1 / 1;
     align-self: end;
 }
