@@ -54,6 +54,10 @@ body {
 
 header {
     background-color: rgb(13, 55, 65);
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.25) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 1px, transparent 1px);
+    --grid: 9;
     color: rgb(255, 255, 255);
 
     height: 100vh;
@@ -83,26 +87,22 @@ header div.container div#hero-logo img {
 
 header div.container div#hero-main-content {
     display: grid;
-    grid-template: 1 / 1fr;
-    justify-items: center;
-    align-items: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    height: 100%;
 }
 
 header div.container div#hero-main-content div#hero-image {
     grid-area: 1 / 1 / 1 / 1;
-    justify-self: end;
+    justify-self: end;    
 }
 
 header div.container div#hero-main-content div#hero-image img {
-    width: 75%;
-    height: auto;
+    width: 100%;
 }
 
 header div.container div#hero-main-content div#hero-text {
     grid-area: 1 / 1 / 1 / 1;
     align-self: end;
-}
-
-header div.container div#hero-main-content div#hero-text p {
-    max-width: 75%;
 }
