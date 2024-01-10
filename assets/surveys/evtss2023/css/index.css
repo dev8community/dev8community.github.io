@@ -2,7 +2,8 @@
 h1 {
     font-family: "Lato", Helvetica, Arial, sans-serif;
     font-weight: 900;
-    font-size: 6rem;
+    font-size: 2rem;
+    line-height: 1.95rem;
     
     margin-top: 0;
     margin-bottom: 0;
@@ -10,13 +11,13 @@ h1 {
 
 h1 small {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 1.25rem;
 }
 
 p {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 1rem;
 
     margin-top: 0;
     margin-bottom: 0;
@@ -55,9 +56,9 @@ body {
 header {
     background-color: rgb(13, 55, 65);
     background-image:
-        linear-gradient(90deg, rgba(255, 255, 255, 0.25) 2px, transparent 1px),
-        linear-gradient(0deg, rgba(255, 255, 255, 0.25) 2px, transparent 1px);
-    background-size: 10rem 10rem;
+        linear-gradient(90deg, rgba(255, 255, 255, 0.25) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(255, 255, 255, 0.25) 1px, transparent 1px);
+    background-size: 3rem 3rem;
     background-position: center;
     color: rgb(255, 255, 255);
 
@@ -77,6 +78,7 @@ header div#header-bg-curves {
 
 header div#header-bg-curves img {
     display: block;
+    width: 75%;
 }
 
 header div#header-bg-curves img#header-bg-curve-top {
@@ -112,42 +114,50 @@ header div#header-content div#hero-logo img {
 
 header div#header-content div#hero-main-content {
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
     flex-grow: 1;
 }
 
-header div#header-content div#hero-main-content div#hero-image {
+header div#header-content div#hero-main-content img#hero-image {
     grid-area: 1 / 1 / 1 / 1;
     justify-self: end;
+
+    width: 65%;
+    display: block;
 }
 
-header div#header-content div#hero-main-content div#hero-image img {
-    width: 100%;
-}
-
-header div#header-content div#hero-main-content div#hero-article {
+header div#header-content div#hero-main-content div#hero-content {
     grid-area: 1 / 1 / 1 / 1;
     align-self: end;
 }
 
-header div#header-content div#hero-main-content div#hero-article a button {
+header div#header-content div#hero-main-content div#hero-content h1 {
+    margin-bottom: 2%;
+}
+
+header div#header-content div#hero-main-content div#hero-content a button {
     background-color: rgb(8, 105, 114);
     color: rgb(255, 255, 255);
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
     box-shadow: 0px 7px 15px 5px rgba(44, 44, 44, 0.7);
 
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: 1rem;
 
     width: 100%;
 
-    margin-top: 4%;
+    margin-top: 3%;
     padding: 3%;
 }
 
-header div#header-content div#hero-main-content div#hero-article a button:active {
-    box-shadow: inset 0px 0px 12px 10px rgba(30, 30, 30, 0.75);
+header div#header-content div#hero-main-content div#hero-content a button:active {
+    box-shadow: inset 0px 0px 7px 5px rgb(44, 44, 44);
+}
+
+main section#highlights {
+    display: flex;
+    flex-direction: column;
 }
