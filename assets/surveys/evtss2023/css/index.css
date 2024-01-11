@@ -12,6 +12,7 @@ h1 {
 h1 small {
     font-weight: 700;
     font-size: 1.25rem;
+    line-height: 1rem;
 }
 
 p {
@@ -21,6 +22,10 @@ p {
 
     margin-top: 0;
     margin-bottom: 0;
+}
+
+strong.extra-emphasized-text {
+    font-size: 1.75rem;
 }
 
 /* Screen size for tablets */
@@ -133,6 +138,9 @@ header div#header-content div#hero-main-content div#hero-content {
 }
 
 header div#header-content div#hero-main-content div#hero-content h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+
     margin-bottom: 2%;
 }
 
@@ -157,7 +165,33 @@ header div#header-content div#hero-main-content div#hero-content a button:active
     box-shadow: inset 0px 0px 7px 5px rgb(44, 44, 44);
 }
 
+main section h1 {
+    margin-bottom: 1rem;
+}
+
 main section#highlights {
+    background-color: rgb(32, 32, 32);
+    color: rgb(255, 255, 255);
+}
+
+main section#highlights h1 {
+    background: linear-gradient(180deg, rgb(131, 255, 166), rgb(23, 185, 182));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    line-height: 2.05rem; /* We need to set this because a small portion of the text is clipped. */
+}
+
+main section#highlights div#highlight-cards {
     display: flex;
     flex-direction: column;
+    gap: 1.25rem;
+}
+
+main section#highlights div#highlight-cards div {
+    background-color: rgb(77, 77, 77);
+    border-radius: 5px;
+
+    padding: 5%;
 }
