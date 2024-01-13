@@ -1,6 +1,9 @@
 /* Screen size for mobile devices */
-h1 {
+h1, h2 {
     font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+h1 {
     font-weight: 900;
     font-size: 2rem;
     line-height: 1.95rem;
@@ -19,9 +22,6 @@ p {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 1rem;
-
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 strong.extra-emphasized-text {
@@ -144,6 +144,11 @@ header div#header-content div#hero-main-content div#hero-content h1 {
     margin-bottom: 2%;
 }
 
+header div#header-content div#hero-main-content div#hero-content p {
+    margin-top: 0;
+    margin-bottom: 3%;
+}
+
 header div#header-content div#hero-main-content div#hero-content a button {
     background-color: rgb(8, 105, 114);
     color: rgb(255, 255, 255);
@@ -157,7 +162,6 @@ header div#header-content div#hero-main-content div#hero-content a button {
 
     width: 100%;
 
-    margin-top: 3%;
     padding: 3%;
 }
 
@@ -190,8 +194,63 @@ main section#highlights div#highlight-cards {
 }
 
 main section#highlights div#highlight-cards div {
-    background-color: rgb(77, 77, 77);
+    background-color: rgb(41, 41, 41);
     border-radius: 5px;
 
     padding: 5%;
+}
+
+main section#highlights div#highlight-cards div#full-stack-dev-highlight {
+    background-image:
+        linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
+        url('/assets/surveys/evtss2023/img/code.webp');
+    background-size: cover;
+
+    min-height: 190px;
+
+    display: flex;
+}
+
+main section#highlights div#highlight-cards div#full-stack-dev-highlight p {
+    align-self: last baseline;
+}
+
+main section#highlights div#highlight-cards div#top-languages-want-highlight {
+    background-image: linear-gradient(270deg, rgba(131, 255, 166, 0.4), transparent);
+
+    text-align: center;
+}
+
+main section#highlights div#highlight-cards div#degree-highlight {
+    background-image:
+        linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
+        url('/assets/surveys/evtss2023/img/it-students.jpg');
+    background-size: cover;
+
+    min-height: 190px;
+
+    display: flex;
+}
+
+main section#highlights div#highlight-cards div#degree-highlight p {
+    align-self: last baseline;
+}
+
+main section#highlights div#highlight-cards div#location-highlight {
+    background-image:
+        linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
+        url('/assets/surveys/evtss2023/img/tacloban.webp');
+    background-size: cover;
+
+    min-height: 190px;
+
+    display: flex;
+}
+
+main section#highlights div#highlight-cards div#location-highlight p {
+    align-self: last baseline;
+}
+
+main section#highlights div#highlight-cards p {
+    margin: 0;
 }
