@@ -28,9 +28,19 @@ strong.extra-emphasized-text {
     font-size: 1.75rem;
 }
 
+.container {
+    max-width: 1440px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+}
+
 /* Screen size for tablets */
 @media screen and (min-width: 481px) {
-    
+    .container {
+        padding: 2%;
+    }
 }
 
 /* Screen size for small screens and laptops */
@@ -46,14 +56,6 @@ strong.extra-emphasized-text {
 @media screen and (min-width: 1201px) {
 }
 
-.container {
-    max-width: 1440px;
-
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5%;
-}
-
 body {
     margin: 0;
 }
@@ -67,7 +69,7 @@ header {
     background-position: center;
     color: rgb(255, 255, 255);
 
-    height: 100vh;
+    min-height: 100vh;
 
     display: grid;
     grid-template-rows: 1fr;
@@ -98,13 +100,13 @@ header div#header-bg-curves img#header-bg-curve-bottom {
 
 header div#header-content {
     grid-area: 1 / 1 / 1 / 1;
-
     display: flex;
     flex-direction: column;
 }
 
 header div#header-content div#hero-logo {
     margin-bottom: 5%;
+    box-sizing: border-box;
 }
 
 header div#header-content div#hero-logo img {
@@ -118,17 +120,19 @@ header div#header-content div#hero-logo img {
 }
 
 header div#header-content div#hero-main-content {
+    height: 100%;
+
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: auto;
-    flex-grow: 1;
 }
 
 header div#header-content div#hero-main-content img#hero-image {
+    width: 65%;
+
     grid-area: 1 / 1 / 1 / 1;
     justify-self: end;
 
-    width: 65%;
     display: block;
 }
 
@@ -167,6 +171,49 @@ header div#header-content div#hero-main-content div#hero-content a button {
 
 header div#header-content div#hero-main-content div#hero-content a button:active {
     box-shadow: inset 0px 0px 7px 5px rgb(44, 44, 44);
+}
+
+/* Screen size for tablets */
+@media screen and (min-width: 481px) {
+    header div#header-content div#hero-logo {
+        margin-bottom: 0;
+    }
+
+    header div#header-content div#hero-logo img {
+        width: 7%;
+        height: auto;
+    }
+
+    header div#header-content div#hero-main-content img#hero-image {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+    }
+
+    header div#header-content div#hero-main-content div#hero-content h1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    
+        margin-bottom: 0.5%;
+    }
+
+    header div#header-content div#hero-main-content div#hero-content p {
+        max-width: 50%;
+        margin-bottom: 1%;
+    }
+
+    header div#header-content div#hero-main-content div#hero-content a button {
+        padding: 1.5%;
+        max-width: 225px;
+    }
+}
+
+/* Screen size for small screens and laptops */
+@media screen and (min-width: 769) {
+    header div#header-content div#hero-main-content img#hero-image {
+        width: 350px;
+        display: block;
+    }
 }
 
 main section h1 {
