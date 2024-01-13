@@ -39,7 +39,7 @@ strong.extra-emphasized-text {
 /* Screen size for tablets */
 @media screen and (min-width: 481px) {
     .container {
-        padding: 2%;
+        padding: 3%;
     }
 }
 
@@ -185,9 +185,7 @@ header div#header-content div#hero-main-content div#hero-content a button:active
     }
 
     header div#header-content div#hero-main-content img#hero-image {
-        max-width: 100%;
-        max-height: 100%;
-        display: block;
+        width: 50%;
     }
 
     header div#header-content div#hero-main-content div#hero-content h1 {
@@ -210,9 +208,13 @@ header div#header-content div#hero-main-content div#hero-content a button:active
 
 /* Screen size for small screens and laptops */
 @media screen and (min-width: 769) {
+    header div#header-content div#hero-logo img {
+        width: 7%;
+        height: auto;
+    }
+
     header div#header-content div#hero-main-content img#hero-image {
-        width: 350px;
-        display: block;
+        width: 30%;
     }
 }
 
