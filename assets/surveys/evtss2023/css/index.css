@@ -251,6 +251,42 @@ main section#highlights div#highlight-cards div#location-highlight p {
     align-self: last baseline;
 }
 
+main section#highlights div#highlight-cards div#academic-satisfaction-highlight {
+    background-image:
+        linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
+        url('/assets/surveys/evtss2023/img/tacloban.webp');
+    background-size: cover;
+
+    min-height: 190px;
+
+    display: flex;
+}
+
+main section#highlights div#highlight-cards div#academic-satisfaction-highlight p {
+    align-self: last baseline;
+}
+
+main section#highlights div#highlight-cards div#annual-income-range-highlight {
+    background-image: linear-gradient(270deg, rgba(23, 185, 182, 0.4), transparent);
+
+    text-align: center;
+}
+
+main section#highlights div#highlight-cards div#ai-stance-highlight {
+    background-image:
+        linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
+        url('/assets/surveys/evtss2023/img/ai.webp');
+    background-size: cover;
+
+    min-height: 190px;
+
+    display: flex;
+}
+
+main section#highlights div#highlight-cards div#ai-stance-highlight p {
+    align-self: last baseline;
+}
+
 main section#highlights div#highlight-cards p {
     margin: 0;
 }

@@ -30,6 +30,10 @@ applies to:
   on Unsplash (resized and optimized for a smaller file size). Original work from
   https://unsplash.com/photos/person-using-laptop-vZJdYl5JVXY?utm_content=credit
   CopyText&utm_medium=referral&utm_source=unsplash.
+- ai.webp file, Photo by Mojahid Mottakin (https://unsplash.com/@iammottakin)
+  on Unsplash (resized and optimized for a smaller file size). Original work from
+  https://unsplash.com/photos/a-close-up-of-a-cell-phone-on-a-table-wL62EXeO0P8?
+  utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash.
 -------------------------------------------------------------------------------
 
 Unsplash grants you an irrevocable, nonexclusive, worldwide copyright license
