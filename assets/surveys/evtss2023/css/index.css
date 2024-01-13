@@ -128,7 +128,7 @@ header div#header-content div#hero-main-content {
 }
 
 header div#header-content div#hero-main-content img#hero-image {
-    width: 65%;
+    width: 85%;
 
     grid-area: 1 / 1 / 1 / 1;
     justify-self: end;
