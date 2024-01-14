@@ -13,6 +13,10 @@ from pathlib import Path
 import toolconfig
 
 
+class BuildException(Exception):
+    pass
+
+
 def _create_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog='tool.py',
@@ -22,8 +26,30 @@ def _create_parser() -> argparse.ArgumentParser:
     return parser
 
 
-def _setup_logger():
-    pass
+def _setup_logger(name: str):
+    logger: logging.Logger = logging.getLogger(name)
+    logger.setLevel(logging.DEBUG)
+    
+    # Create handler to log to console.
+    console_handler: logging.StreamHandler = logging.StreamHandler()
+    console_formatter: logging.Formatter = logging.Formatter('%(message)s')
+    console_handler.setFormatter(console_formatter)
+    console_handler.setLevel(logging.DEBUG)
+    
+    logger.addHandler(console_handler)
+
+    # Create handler to log to file.
+    file_handler: logging.FileHandler = logging.FileHandler('tool.py.log')
+
+    file_format: str = '%(asctime)s: %(name)-18s [%(levelname)-8s] %(message)s'
+    file_formatter: logging.Formatter = logging.Formatter(file_format)
+
+    file_handler.setFormatter(file_formatter)
+    file_handler.setLevel(logging.INFO)
+    
+    logger.addHandler(file_handler)
+
+    return logger
 
 
 def _build(base_dist_dir=Path('dist')):
@@ -49,33 +75,54 @@ def _build(base_dist_dir=Path('dist')):
 
         # Preprocess via SASS.
         try:
-            subprocess.run(['scss', src_file, target_path])
+            subprocess.run(['sass', src_file, target_path])
         except FileNotFoundError as e:
-            pass
+            err_msg: str = ('sass not found. Make sure Sass is '
+                            'installed and in your PATH. Build cancelled')
+            raise BuildException(err_msg)
 
         # Minify.
         # Save file.
 
 
 def _serve(base_dist_dir=Path('dist')):
-    _build(base_dist_dir)
+    logger: logging.Logger = logging.getLogger('tool.py')
+
+    try:
+        _build(base_dist_dir)
+    except BuildException as e:
+        logger.warning(f'{e}. Previously built files will be served.')
 
     # Set up basic server.
+    domain: str = 'localhost'
+    port: int = 2016
+
+    logger.info(f'Starting server at http://{domain}:{port}...')
     handler = functools.partial(http.server.SimpleHTTPRequestHandler,
                                 directory=base_dist_dir)
-    httpd: socketserver.TCPServer = socketserver.TCPServer(('localhost', 2016),
+    httpd: socketserver.TCPServer = socketserver.TCPServer((domain, port,),
                                                            handler)
     httpd.allow_reuse_address = True
     
-    httpd.serve_forever()
-    httpd.server_close()
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt:
+        logger.info('Closing down server...')
+    finally:
+        httpd.server_close()
 
 
 if __name__ == '__main__':
+    logger: logging.Logger = _setup_logger('tool.py')
+
     parser: argparse.ArgumentParser = _create_parser()
     args: argparse.Namespace = parser.parse_args()
     
     if args.task == 'build':
-        _build()
+        try:
+            _build()
+        except BuildException as e:
+            logger.error(f'{str(e)}.')
+            sys.exit(127)
     elif args.task == 'serve':
         _serve()

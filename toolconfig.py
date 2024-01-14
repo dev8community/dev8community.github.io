@@ -12,7 +12,7 @@ routes = {
 # be relative to tool.py. For now, we only support processing SCSS
 # files into CSS files.
 processed_files = {
-    'surveys/evtss2023/css/index.css': 'src/css/surveys/evtss2023/scss/index.scss'
+    'surveys/evtss2023/css/index.css': 'src/scss/surveys/evtss2023/index.scss'
 }
 
 # The folder where all static assets are stored that wlll
