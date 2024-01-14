@@ -1,15 +1,14 @@
 import argparse
 import functools
-import http.server
 import logging
 import os
-import socketserver
 import sys
 import shutil
 import subprocess
 
 from pathlib import Path
 
+import livereload
 import rcssmin
 
 import toolconfig
@@ -104,23 +103,58 @@ def _serve(base_dist_dir=Path('dist')):
     except BuildException as e:
         logger.warning(f'{e}. Previously built files will be served.')
 
-    # Set up basic server.
-    domain: str = 'localhost'
-    port: int = 2016
+    # Set up watch list.
+    watch_list: list[str] = []
+    for html_file in toolconfig.routes.values():
+        watch_list.append(html_file)
 
-    logger.info(f'Starting server at http://{domain}:{port}...')
-    handler = functools.partial(http.server.SimpleHTTPRequestHandler,
-                                directory=base_dist_dir)
-    httpd: socketserver.TCPServer = socketserver.TCPServer((domain, port,),
-                                                           handler)
-    httpd.allow_reuse_address = True
-    
-    try:
-        httpd.serve_forever()
-    except KeyboardInterrupt:
-        logger.info('Closing down server...')
-    finally:
-        httpd.server_close()
+    for processed_file in toolconfig.processed_files.values():
+        watch_list.append(processed_file)
+
+        nested_imports: set[Path] = _find_scss_imports(Path(processed_file))
+        for path in nested_imports:
+            watch_list.append(os.path.normpath(str(path)))
+
+    assets_folder_path: str = toolconfig.assets_folder['folder']
+    assets_folder_path = assets_folder_path.strip('/')
+    assets_folder_path += '/**/*.*'
+    watch_list.append(assets_folder_path)
+
+    # Set up basic server.
+    def build():
+        _build(base_dist_dir)
+
+    server: livereload.Server = livereload.Server()
+    for path in watch_list:
+        delay: int | None = None
+        if '.scss' in path:
+            delay = 5
+
+        server.watch(path, build, delay=delay)
+
+    host: str = 'localhost'
+    port: int = 2016
+    root: str = 'dist/'
+
+    logger.info(f'Starting server at http://{host}:{port}...')
+    server.serve(host=host, port=port, root=root)
+
+
+def _find_scss_imports(starting_file: Path) -> set[Path]:
+    imported_files: set[Path] = set()
+    with open(starting_file) as f:
+        for line in f.readlines():
+            if '@import' in line:
+                imported_file: str = line.replace('@import', '')
+                imported_file = imported_file.strip().strip(';')
+                imported_file = imported_file.strip('\'').strip('\"')
+                imported_file = starting_file.parent / imported_file
+                imported_files.add(imported_file)
+
+                # DIG DEEPERRR! RAAGHHH! RECURSION TIME!
+                imported_files.update(_find_scss_imports(Path(imported_file)))
+
+    return imported_files
 
 
 if __name__ == '__main__':
