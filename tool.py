@@ -10,6 +10,8 @@ import subprocess
 
 from pathlib import Path
 
+import rcssmin
+
 import toolconfig
 
 
@@ -82,7 +84,16 @@ def _build(base_dist_dir=Path('dist')):
             raise BuildException(err_msg)
 
         # Minify.
-        # Save file.
+        with open(target_path) as css_file:
+            css_src: str = css_file.read()
+
+        minified_css: str = rcssmin.cssmin(css_src)
+        with open(target_path, 'w') as css_file:
+            css_file.write(minified_css)
+
+    # Copy assets.
+    src_assets_dir: Path = Path(toolconfig.assets_folder['folder'])
+    shutil.copytree(src_assets_dir, assets_dir, dirs_exist_ok=True)
 
 
 def _serve(base_dist_dir=Path('dist')):
