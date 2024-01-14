@@ -4,7 +4,9 @@ import http.server
 import logging
 import os
 import socketserver
+import sys
 import shutil
+import subprocess
 
 from pathlib import Path
 
@@ -20,10 +22,15 @@ def _create_parser() -> argparse.ArgumentParser:
     return parser
 
 
+def _setup_logger():
+    pass
+
+
 def _build(base_dist_dir=Path('dist')):
     os.makedirs(base_dist_dir, exist_ok=True)
 
-    for route, html_file in toolconfig.page_routes.items():
+    # Set routes.
+    for route, html_file in toolconfig.routes.items():
         route: str = route.strip('/')  # Having '/' at the start messes up Path.
 
         src: Path = html_file
@@ -32,6 +39,22 @@ def _build(base_dist_dir=Path('dist')):
         dest.parent.mkdir(exist_ok=True, parents=True)
 
         shutil.copy(src, dest)
+
+    # Preprocess files.
+    assets_dir: Path = base_dist_dir / 'assets'
+    for processed_file, src_file in toolconfig.processed_files.items():
+        # Create the files first in the dist/ folder.
+        target_path: Path = assets_dir / processed_file
+        target_path.parent.mkdir(exist_ok=True, parents=True)
+
+        # Preprocess via SASS.
+        try:
+            subprocess.run(['scss', src_file, target_path])
+        except FileNotFoundError as e:
+            pass
+
+        # Minify.
+        # Save file.
 
 
 def _serve(base_dist_dir=Path('dist')):
