@@ -1,1 +1,2 @@
-deploy
+dist
+__pycache__
