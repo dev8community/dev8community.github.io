@@ -45,6 +45,10 @@ header {
     }
 
     div#header-content {
+        // Note: Having max-width without a width seems to force the browser
+        //       to set the width of this div to its default value (i.e. auto).
+        width: 100%;
+
         grid-area: 1 / 1 / 1 / 1;
         display: flex;
         flex-direction: column;
