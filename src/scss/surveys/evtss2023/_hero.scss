@@ -29,6 +29,14 @@ header {
         img {
             display: block;
             width: 75%;
+
+            @include tablets {
+                width: 65%;
+            }
+
+            @include small-screens {
+                width: 50%;
+            }
         }
 
         img#header-bg-curve-top {
