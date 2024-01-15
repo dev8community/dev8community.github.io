@@ -12,8 +12,6 @@ main section#highlights h1 {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    line-height: 2.05rem; /* We need to set this because a small portion of the text is clipped. */
 }
 
 main section#highlights div#highlight-cards {
