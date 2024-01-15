@@ -45,10 +45,6 @@ header {
     }
 
     div#header-content {
-        // Note: Having max-width without a width seems to force the browser
-        //       to set the width of this div to its default value (i.e. auto).
-        width: 100%;
-
         grid-area: 1 / 1 / 1 / 1;
         display: flex;
         flex-direction: column;
@@ -82,6 +78,7 @@ header {
             img#hero-image {
                 width: 85%;
                 max-width: 451px;
+                max-height: 100vh;
             
                 grid-area: 1 / 1 / 1 / 1;
                 justify-self: end;
@@ -121,7 +118,7 @@ header {
                     button {
                         @include tablets {
                             padding: 1.5%;
-                            max-width: 225px;
+                            max-width: 300px;
                         }
                     }
                 }
