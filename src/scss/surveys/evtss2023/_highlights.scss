@@ -1,119 +1,115 @@
-main section h1 {
-    margin-bottom: 1rem;
-}
-
 main section#highlights {
     background-color: rgb(32, 32, 32);
     color: rgb(255, 255, 255);
-}
 
-main section#highlights h1 {
-    background: linear-gradient(180deg, rgb(131, 255, 166), rgb(23, 185, 182));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+    h1 {
+        background: linear-gradient(180deg, rgb(131, 255, 166), rgb(23, 185, 182));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
-main section#highlights div#highlight-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-}
+    div#highlight-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
 
-main section#highlights div#highlight-cards div {
-    background-color: rgb(41, 41, 41);
-    border-radius: 5px;
+        p {
+            margin: 0;
+        }
 
-    padding: 5%;
-}
+        div {
+            background-color: rgb(41, 41, 41);
+            border-radius: 5px;
+        
+            padding: 5%;
+            
+            &#full-stack-dev-highlight {
+                background-image:
+                    linear-gradient(0deg, hsla(0, 0%, 16%, 0.75), transparent),
+                    url('/assets/surveys/evtss2023/img/code.webp');
+                background-size: cover;
+            
+                min-height: 190px;
+            
+                display: flex;
 
-main section#highlights div#highlight-cards div#full-stack-dev-highlight {
-    background-image:
-        linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
-        url('/assets/surveys/evtss2023/img/code.webp');
-    background-size: cover;
+                p {
+                    align-self: last baseline;
+                }
+            }
 
-    min-height: 190px;
+            &#top-languages-want-highlight {
+                background-image: linear-gradient(270deg, rgba(131, 255, 166, 0.4), transparent);
+            
+                text-align: center;
+            }
 
-    display: flex;
-}
+            &#degree-highlight {
+                background-image:
+                    linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
+                    url('/assets/surveys/evtss2023/img/it-students.jpg');
+                background-size: cover;
+            
+                min-height: 190px;
+            
+                display: flex;
 
-main section#highlights div#highlight-cards div#full-stack-dev-highlight p {
-    align-self: last baseline;
-}
+                p {
+                    align-self: last baseline;
+                }
+            }
 
-main section#highlights div#highlight-cards div#top-languages-want-highlight {
-    background-image: linear-gradient(270deg, rgba(131, 255, 166, 0.4), transparent);
+            &#location-highlight {
+                background-image:
+                    linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
+                    url('/assets/surveys/evtss2023/img/tacloban.webp');
+                background-size: cover;
+            
+                min-height: 190px;
+            
+                display: flex;
 
-    text-align: center;
-}
+                p {
+                    align-self: last baseline;
+                }
+            }
 
-main section#highlights div#highlight-cards div#degree-highlight {
-    background-image:
-        linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
-        url('/assets/surveys/evtss2023/img/it-students.jpg');
-    background-size: cover;
+            &#academic-satisfaction-highlight {
+                background-image:
+                    linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
+                    url('/assets/surveys/evtss2023/img/tacloban.webp');
+                background-size: cover;
+            
+                min-height: 190px;
+            
+                display: flex;
 
-    min-height: 190px;
+                p {
+                    align-self: last baseline;
+                }
+            }
 
-    display: flex;
-}
+            &#annual-income-range-highlight {
+                background-image: linear-gradient(270deg, rgba(23, 185, 182, 0.4), transparent);
+            
+                text-align: center;
+            }
 
-main section#highlights div#highlight-cards div#degree-highlight p {
-    align-self: last baseline;
-}
+            &#ai-stance-highlight {
+                background-image:
+                    linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
+                    url('/assets/surveys/evtss2023/img/ai.webp');
+                background-size: cover;
+            
+                min-height: 190px;
+            
+                display: flex;
 
-main section#highlights div#highlight-cards div#location-highlight {
-    background-image:
-        linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
-        url('/assets/surveys/evtss2023/img/tacloban.webp');
-    background-size: cover;
-
-    min-height: 190px;
-
-    display: flex;
-}
-
-main section#highlights div#highlight-cards div#location-highlight p {
-    align-self: last baseline;
-}
-
-main section#highlights div#highlight-cards div#academic-satisfaction-highlight {
-    background-image:
-        linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
-        url('/assets/surveys/evtss2023/img/tacloban.webp');
-    background-size: cover;
-
-    min-height: 190px;
-
-    display: flex;
-}
-
-main section#highlights div#highlight-cards div#academic-satisfaction-highlight p {
-    align-self: last baseline;
-}
-
-main section#highlights div#highlight-cards div#annual-income-range-highlight {
-    background-image: linear-gradient(270deg, rgba(23, 185, 182, 0.4), transparent);
-
-    text-align: center;
-}
-
-main section#highlights div#highlight-cards div#ai-stance-highlight {
-    background-image:
-        linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
-        url('/assets/surveys/evtss2023/img/ai.webp');
-    background-size: cover;
-
-    min-height: 190px;
-
-    display: flex;
-}
-
-main section#highlights div#highlight-cards div#ai-stance-highlight p {
-    align-self: last baseline;
-}
-
-main section#highlights div#highlight-cards p {
-    margin: 0;
+                p {
+                    align-self: last baseline;
+                }
+            }
+        }
+    }
 }
