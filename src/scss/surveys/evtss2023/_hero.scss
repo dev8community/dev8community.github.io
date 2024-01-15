@@ -27,16 +27,10 @@ header {
         grid-area: 1 / 1 / 1 / 1;
 
         img {
-            display: block;
             width: 75%;
+            max-width: 455px;
 
-            @include tablets {
-                width: 65%;
-            }
-
-            @include small-screens {
-                width: 50%;
-            }
+            display: block;
         }
 
         img#header-bg-curve-top {
@@ -60,23 +54,13 @@ header {
             box-sizing: border-box;
 
             img {
-                width: 15%;
+                max-width: 55px;
                 height: auto;
             
                 margin-left: auto;
                 margin-right: auto;
             
                 display: block;
-
-                @include tablets {
-                    width: 7%;
-                    height: auto;
-                }
-
-                @include small-screens {
-                    width: 5%;
-                    height: auto;
-                }
             }
 
             @include tablets {
@@ -93,19 +77,12 @@ header {
 
             img#hero-image {
                 width: 85%;
+                max-width: 451px;
             
                 grid-area: 1 / 1 / 1 / 1;
                 justify-self: end;
             
                 display: block;
-
-                @include tablets {
-                    width: 50%;
-                }
-
-                @include small-screens {
-                    width: 40%;
-                }
             }
 
             div#hero-content {
