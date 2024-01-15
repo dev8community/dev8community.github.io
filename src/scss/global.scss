@@ -40,7 +40,7 @@ strong.extra-emphasized-text {
         padding: 3%;
     }
 
-    @include xlarge-screens {
+    @include large-screens {
         padding: 2% 0 2% 0;
     }
 }
