@@ -34,3 +34,14 @@ strong.extra-emphasized-text {
     margin-right: auto;
     padding: 5%;
 }
+
+/* Screen size for tablets */
+@media screen and (min-width: 481px) {
+    .container {
+        padding: 3%;
+    }
+}
+
+body {
+    margin: 0;
+}

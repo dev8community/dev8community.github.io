@@ -53,7 +53,7 @@ def _setup_logger(name: str):
     return logger
 
 
-def _build(base_dist_dir=Path('dist')):
+def _build(base_dist_dir: Path=Path('dist'), mode: str='production'):
     os.makedirs(base_dist_dir, exist_ok=True)
 
     # Set routes.
@@ -82,20 +82,21 @@ def _build(base_dist_dir=Path('dist')):
                             'installed and in your PATH. Build cancelled')
             raise BuildException(err_msg)
 
-        # Minify.
-        with open(target_path) as css_file:
-            css_src: str = css_file.read()
+        if mode == 'production':
+            # Minify.
+            with open(target_path) as css_file:
+                css_src: str = css_file.read()
 
-        minified_css: str = rcssmin.cssmin(css_src)
-        with open(target_path, 'w') as css_file:
-            css_file.write(minified_css)
+            minified_css: str = rcssmin.cssmin(css_src)
+            with open(target_path, 'w') as css_file:
+                css_file.write(minified_css)
 
     # Copy assets.
     src_assets_dir: Path = Path(toolconfig.assets_folder['folder'])
     shutil.copytree(src_assets_dir, assets_dir, dirs_exist_ok=True)
 
 
-def _serve(base_dist_dir=Path('dist')):
+def _serve(base_dist_dir: Path=Path('dist')):
     logger: logging.Logger = logging.getLogger('tool.py')
 
     try:
@@ -122,7 +123,7 @@ def _serve(base_dist_dir=Path('dist')):
 
     # Set up basic server.
     def build():
-        _build(base_dist_dir)
+        _build(base_dist_dir, 'development')
 
     server: livereload.Server = livereload.Server()
     for path in watch_list:
