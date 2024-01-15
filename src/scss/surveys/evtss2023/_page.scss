@@ -1,0 +1,28 @@
+// Common CSS classes in the Eastern Visayas Tech Scene Survey 2023 page.
+@use 'sass:color';
+
+@import '_variables.scss';
+
+button {
+    border: none;
+    border-radius: 5px;
+
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+
+    width: 100%;
+
+    padding: 3%;
+
+    &.dark-btn {
+        $shadow-color: color.change($btn-dark-shadow-color, $alpha: 0.7);
+        background-color: $btn-dark-color;
+        color: $color-white;
+        box-shadow: 0px 7px 15px 5px $shadow-color;
+
+        &:active {
+            box-shadow: inset 0px 0px 5px 5px $btn-dark-inset-shadow-color;
+        }
+    }
+}

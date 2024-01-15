@@ -6,7 +6,7 @@
 header {
     $bg-grid-colour: color.change($color-white, $alpha: 0.25);
 
-    background-color: $evtss2023-dark-green;
+    background-color: $dark-green;
     background-image:
         linear-gradient(90deg, $bg-grid-colour 1px, transparent 1px),
         linear-gradient(0deg, $bg-grid-colour 1px, transparent 1px);
@@ -130,24 +130,6 @@ header {
 
                 a {
                     button {
-                        background-color: rgb(8, 105, 114);
-                        color: rgb(255, 255, 255);
-                        border: none;
-                        border-radius: 5px;
-                        box-shadow: 0px 7px 15px 5px rgba(44, 44, 44, 0.7);
-                    
-                        font-family: "Open Sans", Helvetica, Arial, sans-serif;
-                        font-weight: 900;
-                        font-size: 1rem;
-                    
-                        width: 100%;
-                    
-                        padding: 3%;
-
-                        &:active {
-                            box-shadow: inset 0px 0px 7px 5px rgb(44, 44, 44);
-                        }
-
                         @include tablets {
                             padding: 1.5%;
                             max-width: 225px;
