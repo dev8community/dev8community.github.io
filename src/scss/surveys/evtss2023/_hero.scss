@@ -14,7 +14,7 @@ header {
     background-position: center;
     color: $color-white;
 
-    min-height: 100vh;
+    height: 100vh;
 
     display: grid;
     grid-template-rows: 1fr;
@@ -46,6 +46,7 @@ header {
 
     div#header-content {
         grid-area: 1 / 1 / 1 / 1;
+        
         display: flex;
         flex-direction: column;
 
@@ -63,27 +64,28 @@ header {
                 display: block;
             }
 
-            @include tablets {
+            @include large-screens {
                 margin-bottom: 0;
             }
         }
 
         div#hero-main-content {
             height: 100%;
-        
-            display: grid;
-            grid-template-rows: auto;
-            grid-template-columns: auto;
 
-            img#hero-image {
-                width: 85%;
-                max-width: 451px;
-                max-height: 100vh;
-            
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
+
+            div#hero-image {
+                height: 0;
+                min-height: 100%;
+
                 grid-area: 1 / 1 / 1 / 1;
                 justify-self: end;
-            
-                display: block;
+
+                img {
+                    height: 100%;
+                }
             }
 
             div#hero-content {
