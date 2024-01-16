@@ -96,16 +96,28 @@ main section#highlights {
                 background-image:
                     linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
                     url('/assets/surveys/evtss2023/img/tacloban.webp');
+
+                @include small-screens {
+                    grid-area: f;
+                }
             }
 
             &#annual-income-range-highlight {
                 background-image: linear-gradient(270deg, rgba(23, 185, 182, 0.4), transparent);
+                
+                @include small-screens {
+                    grid-area: g;
+                }
             }
 
             &#ai-stance-highlight {
                 background-image:
                     linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
                     url('/assets/surveys/evtss2023/img/ai.webp');
+
+                @include small-screens {
+                    grid-area: g;
+                }
             }
 
             @include tablets {
@@ -122,6 +134,16 @@ main section#highlights {
                 'a c c'
                 'd d e'
                 'f f f';
+        }
+
+        @include small-screens {
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:
+                'a a a b b b'
+                'a a a c c c'
+                'd d e e f f'
+                'd d g g g g';
         }
     }
 }
