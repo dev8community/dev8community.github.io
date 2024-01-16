@@ -23,6 +23,25 @@ main section#highlights {
             border-radius: 5px;
         
             padding: 5%;
+
+            &#most-popular-primary-lang-highlight {
+                background-image:
+                    linear-gradient(0deg, hsla(0, 0%, 16%, 0.75), transparent),
+                    url('/assets/surveys/evtss2023/img/js.svg');
+                background-size: cover;
+            
+                min-height: 190px;
+            
+                display: flex;
+
+                p {
+                    align-self: last baseline;
+                }
+                
+                @include tablets {
+                    grid-area: a;
+                }
+            }
             
             &#full-stack-dev-highlight {
                 background-image:
@@ -37,6 +56,10 @@ main section#highlights {
                 p {
                     align-self: last baseline;
                 }
+
+                @include tablets {
+                    grid-area: b;
+                }
             }
 
             &#top-languages-want-highlight {
@@ -46,6 +69,10 @@ main section#highlights {
                 align-items: center;
                 justify-content: center;
                 text-align: center;
+
+                @include tablets {
+                    grid-area: c;
+                }
             }
 
             &#degree-highlight {
@@ -61,6 +88,10 @@ main section#highlights {
                 p {
                     align-self: last baseline;
                 }
+
+                @include tablets {
+                    grid-area: d;
+                }
             }
 
             &#location-highlight {
@@ -75,6 +106,10 @@ main section#highlights {
 
                 p {
                     align-self: last baseline;
+                }
+
+                @include tablets {
+                    grid-area: e;
                 }
             }
 
@@ -128,7 +163,13 @@ main section#highlights {
 
         @include tablets {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:
+                'a b b'
+                'a c c'
+                'd d e'
+                'f f f';
         }
     }
 }
