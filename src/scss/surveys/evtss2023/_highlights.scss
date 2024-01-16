@@ -12,7 +12,7 @@ main section#highlights {
     div#highlight-cards {
         display: flex;
         flex-direction: column;
-        gap: 1.25rem;
+        gap: 15px;
 
         p {
             margin: 0;
@@ -42,6 +42,9 @@ main section#highlights {
             &#top-languages-want-highlight {
                 background-image: linear-gradient(270deg, rgba(131, 255, 166, 0.4), transparent);
             
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 text-align: center;
             }
 
@@ -93,6 +96,9 @@ main section#highlights {
             &#annual-income-range-highlight {
                 background-image: linear-gradient(270deg, rgba(23, 185, 182, 0.4), transparent);
             
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 text-align: center;
             }
 
@@ -110,6 +116,19 @@ main section#highlights {
                     align-self: last baseline;
                 }
             }
+
+            @include tablets {
+                padding: 3%;
+            }
+        
+            @include xlarge-screens {
+                padding: 2%;
+            }
+        }
+
+        @include tablets {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
     }
 }
