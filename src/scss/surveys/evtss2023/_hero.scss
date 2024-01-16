@@ -119,8 +119,7 @@ header {
                 a {
                     button {
                         @include tablets {
-                            padding: 1.5%;
-                            max-width: 300px;
+                            max-width: 220px;
                         }
                     }
                 }
