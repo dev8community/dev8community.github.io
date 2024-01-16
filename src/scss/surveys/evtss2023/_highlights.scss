@@ -20,25 +20,40 @@ main section#highlights {
 
         div {
             background-color: rgb(41, 41, 41);
+            background-size: cover;
+
             border-radius: 5px;
-        
+            
+            min-height: 190px;
             padding: 5%;
+
+            display: flex;
+
+            p {
+                align-self: last baseline;
+            }
+
+            &.highlight-text-only {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                p {
+                    align-self: center;
+                }
+            }
 
             &#most-popular-primary-lang-highlight {
                 background-image:
                     linear-gradient(0deg, hsla(0, 0%, 16%, 0.75), transparent),
                     url('/assets/surveys/evtss2023/img/js.svg');
-                background-size: cover;
-            
-                min-height: 190px;
-            
-                display: flex;
-
-                p {
-                    align-self: last baseline;
-                }
                 
                 @include tablets {
+                    padding-left: 5%;
+                    padding-right: 5%;
+                    padding-bottom: 5%;
+
                     grid-area: a;
                 }
             }
@@ -47,15 +62,6 @@ main section#highlights {
                 background-image:
                     linear-gradient(0deg, hsla(0, 0%, 16%, 0.75), transparent),
                     url('/assets/surveys/evtss2023/img/code.webp');
-                background-size: cover;
-            
-                min-height: 190px;
-            
-                display: flex;
-
-                p {
-                    align-self: last baseline;
-                }
 
                 @include tablets {
                     grid-area: b;
@@ -64,11 +70,6 @@ main section#highlights {
 
             &#top-languages-want-highlight {
                 background-image: linear-gradient(270deg, rgba(131, 255, 166, 0.4), transparent);
-            
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
 
                 @include tablets {
                     grid-area: c;
@@ -79,15 +80,6 @@ main section#highlights {
                 background-image:
                     linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
                     url('/assets/surveys/evtss2023/img/it-students.jpg');
-                background-size: cover;
-            
-                min-height: 190px;
-            
-                display: flex;
-
-                p {
-                    align-self: last baseline;
-                }
 
                 @include tablets {
                     grid-area: d;
@@ -98,15 +90,6 @@ main section#highlights {
                 background-image:
                     linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
                     url('/assets/surveys/evtss2023/img/tacloban.webp');
-                background-size: cover;
-            
-                min-height: 190px;
-            
-                display: flex;
-
-                p {
-                    align-self: last baseline;
-                }
 
                 @include tablets {
                     grid-area: e;
@@ -117,39 +100,21 @@ main section#highlights {
                 background-image:
                     linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
                     url('/assets/surveys/evtss2023/img/tacloban.webp');
-                background-size: cover;
-            
-                min-height: 190px;
-            
-                display: flex;
-
-                p {
-                    align-self: last baseline;
-                }
             }
 
             &#annual-income-range-highlight {
                 background-image: linear-gradient(270deg, rgba(23, 185, 182, 0.4), transparent);
             
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
+                @include tablets {
+                    padding-left: 5%;
+                    padding-right: 5%;
+                }
             }
 
             &#ai-stance-highlight {
                 background-image:
                     linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
                     url('/assets/surveys/evtss2023/img/ai.webp');
-                background-size: cover;
-            
-                min-height: 190px;
-            
-                display: flex;
-
-                p {
-                    align-self: last baseline;
-                }
             }
 
             @include tablets {
