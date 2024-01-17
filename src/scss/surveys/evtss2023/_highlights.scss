@@ -146,5 +146,14 @@ main section#highlights {
                 'd d f f e e'
                 'd d g g h h';
         }
+
+        @include large-screens {
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+                'a a a b b c c c'
+                'a a a b b d d d'
+                'e e f f g g h h';
+        }
     }
 }
