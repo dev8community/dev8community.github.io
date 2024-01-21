@@ -18,7 +18,7 @@ button {
     &.dark-btn {
         $shadow-color: color.change($btn-dark-shadow-color, $alpha: 0.7);
         background-color: $btn-dark-color;
-        color: $color-white;
+        color: $white;
         box-shadow: 0px 7px 15px 5px $shadow-color;
 
         &:active {
@@ -31,13 +31,105 @@ button {
     }
 }
 
+ul.bar-graph {
+    list-style-type: none;
+
+    padding: 0;
+
+    li {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        gap: 5px;
+        
+        margin-bottom: 12px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        div {
+            &.label {
+                font-size: 0.81rem;
+                font-weight: 700;
+
+                text-align: end;
+                line-height: 24px;
+                text-overflow: ellipsis;
+
+                min-width: 85px;
+                height: 100%;
+
+                margin-right: 5px;
+
+                flex-grow: 0;
+                flex-basis: 20%;
+                align-self: stretch;
+            }
+
+            &.bar {
+                flex-grow: 1;
+
+                svg {
+                    display: block;
+
+                    rect {
+                        &.bar-rect {
+                            fill: url(#bar-gradient);
+                        }
+                    }
+
+                    text {
+                        font-size: 0.81rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
 main {
+    background-color: $dev8-black;
+
     section {
-        background-color: rgb(32, 32, 32);
-        color: rgb(255, 255, 255);
+        color: $white;
 
         h1 {
             margin-bottom: 1rem;
+        }
+
+        div.content {
+            div {
+                &.category-description {
+                    margin-bottom: 25px;
+
+                    p {
+                        &:first-child {
+                            margin-top: 0;
+                        }
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    @include small-screens {
+                        flex: 1;
+                    }
+                }
+
+                &.category-results {
+                    @include small-screens {
+                        flex: 2;
+                    }
+                }
+            }
+
+            @include small-screens {
+                display: flex;
+                flex-direction: row;
+                gap: 3%;
+            }
         }
     }
 }

@@ -1,5 +1,11 @@
 @import '_mixins.scss';
 
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
 h1, h2 {
     font-family: "Lato", Helvetica, Arial, sans-serif;
 }
@@ -17,12 +23,6 @@ h1 small {
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 1rem;
-}
-
-p {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
 }
 
 strong.extra-emphasized-text {
