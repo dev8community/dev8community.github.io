@@ -56,7 +56,7 @@ def _setup_logger(name: str):
 def _build(base_dist_dir: Path=Path('dist'), mode: str='production'):
     os.makedirs(base_dist_dir, exist_ok=True)
 
-    # Set routes.
+    # Set up routes.
     for route, html_file in toolconfig.routes.items():
         route: str = route.strip('/')  # Having '/' at the start messes up Path.
 

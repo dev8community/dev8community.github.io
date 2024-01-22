@@ -62,6 +62,7 @@ button {
 ul.bar-graph {
     list-style-type: none;
 
+    margin-top: 0;
     padding: 0;
 
     li {
@@ -72,6 +73,10 @@ ul.bar-graph {
         
         margin-bottom: 12px;
 
+        &:nth-child(n+11) {
+            display: none;
+        }
+        
         &:last-child {
             margin-bottom: 0;
         }

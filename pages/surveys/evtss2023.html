@@ -8,6 +8,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Open+Sans&display=swap" rel="stylesheet">
     <link href="/assets/img/logo.png" rel="icon" type="image/x-icon">
+    <script type="text/javascript">
+        function main() {
+            let dataToggleButtons = document.getElementsByClassName('toggle-data-btn');
+            Array.from(dataToggleButtons).forEach(function (btn) {
+                console.log(btn.previousElementSibling);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', main);
+    </script>
 </head>
 <body>
     <header>
@@ -581,7 +591,7 @@
                                         </div>
                                     </li>                                 
                                 </ul>
-                                <button type="button" class="outlined">Show More</button>
+                                <button type="button" class="outlined toggle-data-btn">Show More</button>
                             </div>
                         </div>
                     </div>
