@@ -1,3 +1,10 @@
+# JSON data that will be loaded into the template engine.
+# The key will be used as the name that is accessible from the templates,
+# and the value will be the source file.
+data = {
+    'primary_languages': 'data/surveys/evtss2023/primary-languages.json'
+}
+
 # Routes that we can access in the URL. Paths are
 # relative to tool.py.
 # TODO: Add support for routes leading to files.

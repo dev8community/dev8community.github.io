@@ -1,6 +1,6 @@
 import argparse
-import functools
 import logging
+import json
 import os
 import sys
 import shutil
@@ -8,10 +8,31 @@ import subprocess
 
 from pathlib import Path
 
+import jinja2
 import livereload
 import rcssmin
 
 import toolconfig
+
+
+# It's dirty, but I'm putting this here since we're moving the entire tool into
+# its own project anyway so this is fine. For now. I think. Maybe. Oh gosh
+# the overthinking is setting in!
+templates: dict[str, str] = {}
+for filename in toolconfig.routes.values():
+    with open(filename) as f:
+        contents: str = f'{f.read().strip()}\n'
+    templates[filename] = contents
+
+template_loader: jinja2.DictLoader = jinja2.DictLoader(templates)
+jinja_env: jinja2.Environment = jinja2.Environment(loader=template_loader,
+                                                   lstrip_blocks=True,
+                                                   trim_blocks=True)
+
+loaded_data: dict[str, any] = {}
+for name, data in toolconfig.data.items():
+    with open(data) as f:
+        loaded_data[name] = json.load(f)
 
 
 class BuildException(Exception):
@@ -58,14 +79,17 @@ def _build(base_dist_dir: Path=Path('dist'), mode: str='production'):
 
     # Set up routes.
     for route, html_file in toolconfig.routes.items():
+        template: jinja2.Template = jinja_env.get_template(html_file)
+        contents: str = f'{template.render(**loaded_data)}\n'
+
         route: str = route.strip('/')  # Having '/' at the start messes up Path.
 
-        src: Path = html_file
         dest: Path = base_dist_dir / route / 'index.html'
         
         dest.parent.mkdir(exist_ok=True, parents=True)
 
-        shutil.copy(src, dest)
+        with open(dest, 'w') as f:
+            f.write(contents)
 
     # Preprocess files.
     assets_dir: Path = base_dist_dir / 'assets'

@@ -73,9 +73,9 @@ ul.bar-graph {
         
         margin-bottom: 12px;
 
-        &:nth-child(n+11) {
-            display: none;
-        }
+        // &:nth-child(n+11) {
+        //     display: none;
+        // }
         
         &:last-child {
             margin-bottom: 0;
