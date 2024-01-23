@@ -15,16 +15,10 @@ import rcssmin
 import toolconfig
 
 
-# It's dirty, but I'm putting this here since we're moving the entire tool into
-# its own project anyway so this is fine. For now. I think. Maybe. Oh gosh
-# the overthinking is setting in!
-templates: dict[str, str] = {}
-for filename in toolconfig.routes.values():
-    with open(filename) as f:
-        contents: str = f'{f.read().strip()}\n'
-    templates[filename] = contents
-
-template_loader: jinja2.DictLoader = jinja2.DictLoader(templates)
+# It's dirty, but I'm putting this here since we're moving the entire tool
+# into its own project anyway so this is fine. For now. I think. Maybe. Oh
+# gosh, the overthinking is setting in!
+template_loader: jinja2.FileSystemLoader = jinja2.FileSystemLoader('.')
 jinja_env: jinja2.Environment = jinja2.Environment(loader=template_loader,
                                                    lstrip_blocks=True,
                                                    trim_blocks=True)

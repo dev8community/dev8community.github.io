@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev8</title>
+    <link href="/assets/surveys/evtss2023/css/index.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="/assets/img/logo.png" rel="icon" type="image/x-icon">
+    <script type="text/javascript">
+        function main() {
+            let dataToggleButtons = document.getElementsByClassName('toggle-data-btn');
+            Array.from(dataToggleButtons).forEach(function (btn) {
+                console.log(btn.previousElementSibling);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', main);
+    </script>
+</head>
+<body>
+    {% include 'pages/surveys/evtss2023/_hero-section.html' %}
+    <main>
+        {% include 'pages/surveys/evtss2023/_highlights-section.html' %}
+
+        {% include 'pages/surveys/evtss2023/_primary-languages-section.html' %}
+
+        {% include 'pages/surveys/evtss2023/_credits-licensing-section.html' %}
+
+    </main>
+</body>
+</html>

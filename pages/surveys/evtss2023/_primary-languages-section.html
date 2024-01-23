@@ -1,0 +1,48 @@
+<section id="technologies" class="container">
+    <h1>Technologies</h1>
+    <div>
+        <section>
+            <h2>Primary Languages</h2>
+            <div class="content">
+                <div class="category-description">
+                    <p>More than half of developers consider JavaScript as their primary language regardless of occupation. The next two top languages are Python and HTML/CSS. Among professionals and freelancers, however, both JavaScript and Python share the top spot.</p>
+                    <p>It comes to no surprise that the top five primary languages for professionals, JavaScript, Python, PHP, HTML/CSS, and TypeScript, are usually associated with the web. This is reflective of the fact that most of our developers develop websites.</p>
+                    <p>Students almost share the same top five languages, but with TypeScript being replaced with Java. We believe that this is most likely due to the current educational curriculum where Java is a part of, particularly for courses on the object-oriented paradigm.</p>
+                </div>
+                <div class="category-results">
+                    <div>
+                        <ul class="bar-graph">
+                            {% for language, count in primary_languages['data'] %}
+                            <li>
+                                <div class="label">{{ language }}</div>
+                                <div class="bar">
+                                    <svg width="100%" height="24">
+                                        <defs>
+                                            <linearGradient id="bar-gradient">
+                                                <stop offset="0%" stop-color="#17b9b6"/>
+                                                <stop offset="100%" stop-color="#83ffa6"/>
+                                            </linearGradient>
+                                        </defs>
+                                        {% if count > 0 %}
+                                        <rect class="bar-rect" y="0" width="{{ '{:.2f}'.format(count * 100) }}%" height="24" rx="3" ry="3"/>
+                                        {% if count > 0.2 %}
+                                        <text x="{{ '{:.2f}'.format((count - 0.01) * 100) }}%" y="12" fill="#212121" text-anchor="end" alignment-baseline="central">{{ '{:.2f}'.format(count * 100) }}%</text>
+                                        {% else %}
+                                        <text x="{{ '{:.2f}'.format((count + 0.01) * 100) }}%" y="12" fill="#ffffff" text-anchor="start" alignment-baseline="central">{{ '{:.2f}'.format(count * 100) }}%</text>
+                                        {% endif %}
+                                        {% else %}
+                                        <rect class="bar-rect" y="0" width="2px" height="24" rx="3" ry="3"/>
+                                        <text x="2.0%" y="12" fill="#ffffff" text-anchor="start" alignment-baseline="central">0.00%</text>
+                                        {% endif %}
+                                    </svg>
+                                </div>
+                            </li>
+                            {% endfor %}                                                     
+                        </ul>
+                        <button type="button" class="outlined toggle-data-btn">Show More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
