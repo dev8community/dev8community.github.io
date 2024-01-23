@@ -46,7 +46,7 @@ button {
 
             font-size: 75% !important;
 
-            box-shadow: inset 0px 0px 5px 5px hsl(0, 0%, 10%);
+            box-shadow: inset 0px 0px 4px 5px hsl(0, 0%, 10%);
         }
     }
 
@@ -73,9 +73,9 @@ ul.bar-graph {
         
         margin-bottom: 12px;
 
-        // &:nth-child(n+11) {
-        //     display: none;
-        // }
+        &:nth-child(n+11) {
+             display: none;
+        }
         
         &:last-child {
             margin-bottom: 0;
@@ -116,6 +116,14 @@ ul.bar-graph {
                         font-size: 0.81rem;
                     }
                 }
+            }
+        }
+    }
+
+    &.show-all {
+        li {
+            &:nth-child(n+11) {
+                display: flex;
             }
         }
     }

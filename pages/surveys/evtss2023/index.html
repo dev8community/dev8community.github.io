@@ -12,7 +12,22 @@
         function main() {
             let dataToggleButtons = document.getElementsByClassName('toggle-data-btn');
             Array.from(dataToggleButtons).forEach(function (btn) {
-                console.log(btn.previousElementSibling);
+                btn.addEventListener('click', function() {
+                    let graph = btn.previousElementSibling;
+                    if (graph.classList.contains('show-all')) {
+                        graph.classList.remove('show-all');
+                        const scrollY = graph.getBoundingClientRect().top + window.scrollY - 60;
+                        window.scroll({
+                            top: scrollY,
+                            behavior: 'smooth'
+                        });
+
+                        btn.innerHTML = 'Show More'
+                    } else {
+                        graph.classList.add('show-all');
+                        btn.innerHTML = 'Show Less'
+                    }
+                });
             });
         }
 

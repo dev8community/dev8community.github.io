@@ -9,6 +9,7 @@ import subprocess
 from pathlib import Path
 
 import jinja2
+from jinja2 import meta
 import livereload
 import rcssmin
 
@@ -126,6 +127,14 @@ def _serve(base_dist_dir: Path=Path('dist')):
     watch_list: list[str] = []
     for html_file in toolconfig.routes.values():
         watch_list.append(html_file)
+
+        with open(html_file) as f:
+            contents: str = f.read()
+        
+        ast: jinja2.Template = jinja_env.parse(contents)
+        referenced_templates: list = list(meta.find_referenced_templates(ast))
+        for template in referenced_templates:
+            watch_list.append(template)
 
     for processed_file in toolconfig.processed_files.values():
         watch_list.append(processed_file)
