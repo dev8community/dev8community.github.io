@@ -168,6 +168,11 @@ main {
                         border-width: 1px;
                         font-size: 0.81rem;
 
+                        margin-left: auto;
+                        margin-right: auto;
+
+                        display: block;
+
                         @include tablets {
                             min-width: 100px;
                             max-width: fit-content;

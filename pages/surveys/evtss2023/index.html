@@ -37,10 +37,7 @@
 
                 Array.from(buttons).forEach((button, index) => {
                     button.addEventListener('click', () => {
-                        if (button.classList.contains('selected')) {
-                            button.classList.remove('selected');
-                        } else {
-                            // Remove the class from other children first.
+                        if (!button.classList.contains('selected')) {
                             Array.from(buttons).forEach((button) => {
                                 button.classList.remove('selected');
                             });
