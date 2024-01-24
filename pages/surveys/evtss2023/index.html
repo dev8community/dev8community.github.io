@@ -33,7 +33,9 @@
             let tabButtons = document.getElementsByClassName('data-demographic-tabs');
             for (let tab of tabButtons) {
                 let buttons = tab.children;
-                for (let button of buttons) {
+                let dataGroups = tab.nextElementSibling.children;
+
+                Array.from(buttons).forEach((button, index) => {
                     button.addEventListener('click', () => {
                         if (button.classList.contains('selected')) {
                             button.classList.remove('selected');
@@ -43,10 +45,16 @@
                                 button.classList.remove('selected');
                             });
 
+                            // Hide all data groups first before.
+                            Array.from(dataGroups).forEach((group) => {
+                                group.classList.add('hide');
+                            });
+
                             button.classList.add('selected');
+                            dataGroups[index].classList.remove('hide');
                         }
                     });
-                }
+                });
             }
         }
 
