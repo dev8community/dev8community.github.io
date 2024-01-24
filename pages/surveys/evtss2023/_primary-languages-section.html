@@ -10,9 +10,13 @@
                     <p>Students almost share the same top five languages, but with TypeScript being replaced with Java. We believe that this is most likely due to the current educational curriculum where Java is a part of, particularly for courses on the object-oriented paradigm.</p>
                 </div>
                 <div class="category-results">
-                    <nav>
+                    <nav class="data-demographic-tabs">
                         {% for demographic in primary_languages['data'].keys() %}
+                        {% if loop.index == 1 %}
+                        <menu class="selected">{{ demographic }}</menu>
+                        {% else %}
                         <menu>{{ demographic }}</menu>
+                        {% endif %}
                         {% endfor %}
                     </nav>
                     <div>

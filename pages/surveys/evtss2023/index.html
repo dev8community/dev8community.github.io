@@ -29,6 +29,25 @@
                     }
                 });
             });
+
+            let tabButtons = document.getElementsByClassName('data-demographic-tabs');
+            for (let tab of tabButtons) {
+                let buttons = tab.children;
+                for (let button of buttons) {
+                    button.addEventListener('click', () => {
+                        if (button.classList.contains('selected')) {
+                            button.classList.remove('selected');
+                        } else {
+                            // Remove the class from other children first.
+                            Array.from(buttons).forEach((button) => {
+                                button.classList.remove('selected');
+                            });
+
+                            button.classList.add('selected');
+                        }
+                    });
+                }
+            }
         }
 
         document.addEventListener('DOMContentLoaded', main);
