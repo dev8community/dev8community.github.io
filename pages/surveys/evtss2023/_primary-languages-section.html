@@ -2,17 +2,23 @@
     <h1>Technologies</h1>
     <div>
         <section>
-            <h2>Primary Languages</h2>
             <div class="content">
                 <div class="category-description">
+                    <h2>Primary Languages</h2>
                     <p>More than half of developers consider JavaScript as their primary language regardless of occupation. The next two top languages are Python and HTML/CSS. Among professionals and freelancers, however, both JavaScript and Python share the top spot.</p>
                     <p>It comes to no surprise that the top five primary languages for professionals, JavaScript, Python, PHP, HTML/CSS, and TypeScript, are usually associated with the web. This is reflective of the fact that most of our developers develop websites.</p>
                     <p>Students almost share the same top five languages, but with TypeScript being replaced with Java. We believe that this is most likely due to the current educational curriculum where Java is a part of, particularly for courses on the object-oriented paradigm.</p>
                 </div>
                 <div class="category-results">
                     <div>
+                        {% for demographic in primary_languages['data'].keys() %}
+                        <button type="button" class="outlined toggle-data-btn">{{ demographic }}</button>
+                        {% endfor %}
+                    </div>
+                    <div>
+                        {% for data in primary_languages['data'].values() %}
                         <ul class="bar-graph">
-                            {% for language, count in primary_languages['data'] %}
+                            {% for language, count in data %}
                             <li>
                                 <div class="label">{{ language }}</div>
                                 <div class="bar">
@@ -40,6 +46,7 @@
                             {% endfor %}                                                     
                         </ul>
                         <button type="button" class="outlined toggle-data-btn">Show More</button>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
