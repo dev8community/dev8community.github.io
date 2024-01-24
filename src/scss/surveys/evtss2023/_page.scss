@@ -179,7 +179,8 @@ main {
 
                         display: flex;
                         flex-direction: column;
-                        gap: 15px;  
+                        justify-content: center;
+                        gap: 15px;
 
                         menu {
                             border: solid $white 1px;
