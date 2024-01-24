@@ -169,7 +169,56 @@ main {
                         font-size: 0.81rem;
 
                         @include tablets {
-                            max-width: 150px;
+                            min-width: 100px;
+                            max-width: fit-content;
+                        }
+                    }
+
+                    nav {
+                        margin-bottom: 20px;
+
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;  
+
+                        menu {
+                            border: solid $white 1px;
+                            border-radius: 1000px;
+
+                            font-size: 0.81rem;
+                            color: $white;
+
+                            cursor: pointer;
+                            user-select: none;
+
+                            margin: 0;
+                            padding: 10px;
+                            padding-left: 3%;
+                            padding-right: 3%;
+
+                            &:hover {
+                                background-color: $white;
+                                color: $dev8-black;
+                            }
+
+                            &:active,
+                            &.selected {
+                                background-color: $white;
+                                border-color: $dev8-black;
+                                color: $dev8-black;
+                            }
+
+                            &:active {
+                                box-shadow: inset 3px 3px 15px $dev8-black;
+                            }
+
+                            &.selected {
+                                box-shadow: inset 1px 1px 15px $dev8-black;
+                            }
+                        }
+
+                        @include tablets {
+                            flex-direction: row;
                         }
                     }
 
