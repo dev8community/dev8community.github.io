@@ -164,14 +164,30 @@ main {
                 }
 
                 &.category-results {
-                    button.outlined {
+                    button {
                         border-width: 1px;
                         font-size: 0.81rem;
+
+                        box-shadow: 3px 3px 5px hsl(0, 0%, 8%),
+                                    -1px -1px 3px hsl(0, 0%, 45%);
 
                         margin-left: auto;
                         margin-right: auto;
 
                         display: block;
+
+                        &:hover {
+                            background-color: hsl(0, 0%, 80%);
+                        }
+
+                        &:active {
+                            background-color: $white;
+                            border-color: $dev8-black;
+                            color: $dev8-black;
+                            
+                            box-shadow: inset 3px 3px 15px $dev8-black,
+                                        inset -3px -3px 15px $white;
+                        }
 
                         @include tablets {
                             min-width: 100px;
