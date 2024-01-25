@@ -50,7 +50,7 @@ ul.bar-graph {
         align-self: center;
         gap: 5px;
         
-        margin-bottom: 12px;
+        margin-bottom: 7px;
 
         &:nth-child(n+11) {
              display: none;
@@ -81,6 +81,20 @@ ul.bar-graph {
 
             &.bar {
                 flex-grow: 1;
+
+                div {
+                    margin-bottom: 5px;
+                }
+
+                label {
+                    color: hsl(0, 0%, 75%);
+
+                    font-size: 0.75rem;
+
+                    margin-bottom: 5px;
+
+                    display: block;
+                }
 
                 svg {
                     display: block;

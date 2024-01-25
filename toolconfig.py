@@ -2,7 +2,8 @@
 # The key will be used as the name that is accessible from the templates,
 # and the value will be the source file.
 data = {
-    'primary_languages': 'data/surveys/evtss2023/primary-languages.json'
+    'primary_languages': 'data/surveys/evtss2023/primary-languages.json',
+    'languages_used': 'data/surveys/evtss2023/languages-used.json'
 }
 
 # Routes that we can access in the URL. Paths are
