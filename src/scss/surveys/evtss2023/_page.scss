@@ -17,36 +17,15 @@ button {
     padding: 3%;
 
     &.dark-btn {
-        $shadow-color: color.change($btn-dark-shadow-color, $alpha: 0.7);
         background-color: $btn-dark-color;
         color: $white;
-        box-shadow: 0px 7px 15px 5px $shadow-color;
 
-        &:active {
-            box-shadow: inset 0px 0px 5px 5px $btn-dark-inset-shadow-color;
-        }
-    }
+        box-shadow: 3px 3px 5px hsl(185, 42%, 15%),
+                    -1px -1px 3px hsl(185, 89%, 37%);
 
-    &.outlined {
-        background-color: transparent;
-        border: 3px solid $white;
-        color: $white;
-
-        transition: all 100ms ease-in;
-
-        &:hover {
-            background-color: $white;
-            color: $dev8-black;
-        }
-
-        &:active {
-            background-color: $white;
-            border-color: $dev8-black;
-            color: $dev8-black;
-
-            font-size: 75% !important;
-
-            box-shadow: inset 0px 0px 4px 5px hsl(0, 0%, 10%);
+        &:active {            
+            box-shadow: inset 3px 3px 15px hsl(185, 42%, 15%),
+                        inset -3px -3px 15px hsl(185, 89%, 37%);
         }
     }
 
