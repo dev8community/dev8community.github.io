@@ -84,6 +84,14 @@ ul.bar-graph {
 
                 div {
                     margin-bottom: 5px;
+
+                    &:nth-child(n+2) {
+                        rect {
+                            &.bar-rect {
+                                fill: url(#subbar-gradient);
+                            }
+                        }
+                    }
                 }
 
                 label {
