@@ -3,7 +3,8 @@
 # and the value will be the source file.
 data = {
     'primary_languages': 'data/surveys/evtss2023/primary-languages.json',
-    'languages_used': 'data/surveys/evtss2023/languages-used.json'
+    'languages_used': 'data/surveys/evtss2023/languages-used.json',
+    'frameworks_used': 'data/surveys/evtss2023/frameworks-used.json'
 }
 
 # Routes that we can access in the URL. Paths are

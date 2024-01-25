@@ -3,13 +3,13 @@
         <section>
             <div class="content">
                 <div class="category-description">
-                    <h2>Languages Used, Loved, and Hated</h2>
-                    <p>Web development technologies have dominated the lives of most developers in Eastern Visayas. JavaScript enjoys the top spot as both the most used language and the most desired to be used again this 2024 by developers in the region across all demographics. HTML/CSS, Python, SQL, and PHP are generally the next four most used, but Java sees more than Python among students and the unemployed.</p>
-                    <p>On the other end of the spectrum, Assembly has been reported to be the least liked languages for Eastern Visayas. Visual Basic 6 (or earlier) comes in at second least liked. It is quite interesting to note that this language still sees use in the region, despite the <a href="https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-basic-6/visual-basic-6-support-policy">deprecation of its IDE since 2008</a> and the lack of updates for <a href="https://www.thurrott.com/dev/106091/20-years-visual-studio-visual-basic">nearly 30 years</a>.</p>
+                    <h2>Frameworks and Libraries Used, Loved, and Hated</h2>
+                    <p>Coinciding with the popularity of JavaScript and web development in the region, React has topped the list of frameworks and libraries being used by developers in Eastern Visayas, while also being among the top frameworks/libraries that developers would like to use this 2024. Along with React, the top most used framework/library is mostly held by JavaScript technologies, namely: Node.js, jQuery, and Vue.js. Curiously, the most disliked framework/library is also another JavaScript technology, AngularJS.</p>
+                    <p>Contrasting the professionals/freelancers, whom lean towards using web technologies, students and the unemployed, interestingly, report that .NET is among their top 10 most used frameworks/libraries. This suggests that the .NET framework is possibly taught in higher education.</p>
                 </div>
                 <div class="category-results">
                     <nav class="data-demographic-tabs">
-                        {% for demographic in languages_used['data'].keys() %}
+                        {% for demographic in frameworks_used['data'].keys() %}
                         {% if loop.index == 1 %}
                         <menu class="selected">{{ demographic }}</menu>
                         {% else %}
@@ -18,20 +18,20 @@
                         {% endfor %}
                     </nav>
                     <div>
-                        {% for data in languages_used['data'].values() %}
+                        {% for data in frameworks_used['data'].values() %}
                         {% if loop.index == 1 %}
                         <div>
                         {% else %}
                         <div class="hide">
                         {% endif %}
                             <ul class="bar-graph">
-                                {% for language, counts in data %}
+                                {% for framework, counts in data %}
                                 <li>
-                                    <div class="label">{{ language }}</div>
+                                    <div class="label">{{ framework }}</div>
                                     <div class="bar">
                                         {% for count in counts %}
                                         <div>
-                                            <label>{{ languages_used['headers'][loop.index] }}</label>
+                                            <label>{{ frameworks_used['headers'][loop.index] }}</label>
                                             <svg width="100%" height="24">
                                                 <defs>
                                                     <linearGradient id="bar-gradient">
