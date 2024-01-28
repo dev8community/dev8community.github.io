@@ -3,13 +3,13 @@
         <section>
             <div class="content">
                 <div class="category-description">
-                    <h2>Languages Used, Loved, and Hated</h2>
-                    <p>Web development technologies have dominated the lives of most developers in Eastern Visayas. JavaScript enjoys the top spot as both the most used language and the most desired to be used again this 2024 by developers in the region across all demographics. HTML/CSS, Python, SQL, and PHP are generally the next four most used, but Java sees more than Python among students and the unemployed.</p>
-                    <p>On the other end of the spectrum, Assembly has been reported to be the least liked languages for Eastern Visayas. Visual Basic 6 (or earlier) comes in at second least liked. It is quite interesting to note that this language still sees use in the region, despite the <a href="https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-basic-6/visual-basic-6-support-policy">deprecation of its IDE since 2008</a> and the lack of updates for <a href="https://www.thurrott.com/dev/106091/20-years-visual-studio-visual-basic">nearly 30 years</a>.</p>
+                    <h2>Tools Used, Loved, and Hated</h2>
+                    <p>Our developers in Eastern Visayas really do love their JavaScript tools. Less than half of respondents stated that they use npm with less than a quarter reporting they use Yarn. Despite the popularity of JavaScript, Docker and Pip has shown notable usage as well, but are not on par with the popularity of npm. Nevertheless, Docker has seen more desire to be used this year than npm itself.</p>
+                    <p>While generally, npm is the most used tool in the region, among students and the unemployed, Composer takes the lead in terms of usage. This suggests that a lot of students have been involved with development using PHP in 2023. However, npm still takes a notable second place and Pip still staying at the top five most used tools. Docker is not as commonly used among students and the unemployed compared to professionals.</p>
                 </div>
                 <div class="category-results">
                     <nav class="data-demographic-tabs">
-                        {% for demographic in languages_used['data'].keys() %}
+                        {% for demographic in tools_used['data'].keys() %}
                         {% if loop.index == 1 %}
                         <menu class="selected">{{ demographic }}</menu>
                         {% else %}
@@ -18,20 +18,20 @@
                         {% endfor %}
                     </nav>
                     <div>
-                        {% for data in languages_used['data'].values() %}
+                        {% for data in tools_used['data'].values() %}
                         {% if loop.index == 1 %}
                         <div>
                         {% else %}
                         <div class="hide">
                         {% endif %}
                             <ul class="bar-graph">
-                                {% for language, counts in data %}
+                                {% for tool, counts in data %}
                                 <li>
-                                    <div class="label">{{ language }}</div>
+                                    <div class="label">{{ tool }}</div>
                                     <div class="bar">
                                         {% for count in counts %}
                                         <div>
-                                            <label>{{ languages_used['headers'][loop.index] }}</label>
+                                            <label>{{ tools_used['headers'][loop.index] }}</label>
                                             <svg width="100%" height="24">
                                                 <defs>
                                                     <linearGradient id="bar-gradient">
