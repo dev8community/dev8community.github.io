@@ -1,0 +1,72 @@
+<section class="container">
+    <div>
+        <section>
+            <div class="content">
+                <div class="category-description">
+                    <h2>IDEs and Text Editors Used, Loved, and Hated</h2>
+                    <p>An overwhelming majority of developers in Eastern Visayas have been using Visual Studio Code last 2023, while also being the IDE/editor that most developers would like to use for this year. This case is true for professionals and students.</p>
+                    <p>Visual Studio, Sublime Text, and Android Studio enjoy the next three most used IDEs/editors by Eastern Visayas. The fifth most used IDE/editor, in general, is PyCharm. However, among professionals and freelancers, this place is taken by Jupyter Notebook/Jupyter. For students and the unemployed, it is taken by Notepad++. Notepad++ also happens to be one of the two most disliked editors, along with RStudio.</p>
+                </div>
+                <div class="category-results">
+                    <nav class="data-demographic-tabs">
+                        {% for demographic in ides_used['data'].keys() %}
+                        {% if loop.index == 1 %}
+                        <menu class="selected">{{ demographic }}</menu>
+                        {% else %}
+                        <menu>{{ demographic }}</menu>
+                        {% endif %}
+                        {% endfor %}
+                    </nav>
+                    <div>
+                        {% for data in ides_used['data'].values() %}
+                        {% if loop.index == 1 %}
+                        <div>
+                        {% else %}
+                        <div class="hide">
+                        {% endif %}
+                            <ul class="bar-graph">
+                                {% for ide, counts in data %}
+                                <li>
+                                    <div class="label">{{ ide }}</div>
+                                    <div class="bar">
+                                        {% for count in counts %}
+                                        <div>
+                                            <label>{{ ides_used['headers'][loop.index] }}</label>
+                                            <svg width="100%" height="24">
+                                                <defs>
+                                                    <linearGradient id="bar-gradient">
+                                                        <stop offset="0%" stop-color="#17b9b6"/>
+                                                        <stop offset="100%" stop-color="#83ffa6"/>
+                                                    </linearGradient>
+                                                    <linearGradient id="subbar-gradient">
+                                                        <stop offset="0%" stop-color="#808080"/>
+                                                        <stop offset="100%" stop-color="#cecece"/>
+                                                    </linearGradient>
+                                                </defs>
+                                                {% if count > 0 %}
+                                                <rect class="bar-rect" y="0" width="{{ '{:.2f}'.format(count * 100) }}%" height="24" rx="3" ry="3"/>
+                                                {% if count > 0.2 %}
+                                                <text x="{{ '{:.2f}'.format((count - 0.01) * 100) }}%" y="12" fill="#212121" text-anchor="end" alignment-baseline="central">{{ '{:.2f}'.format(count * 100) }}%</text>
+                                                {% else %}
+                                                <text x="{{ '{:.2f}'.format((count + 0.01) * 100) }}%" y="12" fill="#ffffff" text-anchor="start" alignment-baseline="central">{{ '{:.2f}'.format(count * 100) }}%</text>
+                                                {% endif %}
+                                                {% else %}
+                                                <rect class="bar-rect" y="0" width="2px" height="24" rx="3" ry="3"/>
+                                                <text x="2.0%" y="12" fill="#ffffff" text-anchor="start" alignment-baseline="central">0.00%</text>
+                                                {% endif %}
+                                            </svg>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </li>
+                                {% endfor %}                                                     
+                            </ul>
+                            <button type="button" class="toggle-data-btn">Show More</button>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>

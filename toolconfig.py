@@ -5,7 +5,8 @@ data = {
     'primary_languages': 'data/surveys/evtss2023/primary-languages.json',
     'languages_used': 'data/surveys/evtss2023/languages-used.json',
     'frameworks_used': 'data/surveys/evtss2023/frameworks-used.json',
-    'tools_used': 'data/surveys/evtss2023/tools-used.json'
+    'tools_used': 'data/surveys/evtss2023/tools-used.json',
+    'ides_used': 'data/surveys/evtss2023/ides-used.json'
 }
 
 # Routes that we can access in the URL. Paths are
