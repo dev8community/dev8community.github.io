@@ -1,0 +1,71 @@
+<section class="container">
+    <div>
+        <section>
+            <div class="content">
+                <div class="category-description">
+                    <h2>Cloud Platforms Used, Loved, and Hated</h2>
+                    <p>Amazon Web Services (AWS) is the most popular cloud platform in the region as well as being the platform most want to use this year across all demographics. However, Firebase, and Google Cloud Platform are far more popular than AWS among students. Nevertheless, these three are the most popular cloud platforms in Eastern Visayas in 2023.</p>
+                </div>
+                <div class="category-results">
+                    <nav class="data-demographic-tabs">
+                        {% for demographic in cloud_platforms_used['data'].keys() %}
+                        {% if loop.index == 1 %}
+                        <menu class="selected">{{ demographic }}</menu>
+                        {% else %}
+                        <menu>{{ demographic }}</menu>
+                        {% endif %}
+                        {% endfor %}
+                    </nav>
+                    <div>
+                        {% for data in cloud_platforms_used['data'].values() %}
+                        {% if loop.index == 1 %}
+                        <div>
+                        {% else %}
+                        <div class="hide">
+                        {% endif %}
+                            <ul class="bar-graph">
+                                {% for platform, counts in data %}
+                                <li>
+                                    <div class="label">{{ platform }}</div>
+                                    <div class="bar">
+                                        {% for count in counts %}
+                                        <div>
+                                            <label>{{ cloud_platforms_used['headers'][loop.index] }}</label>
+                                            <svg width="100%" height="24">
+                                                <defs>
+                                                    <linearGradient id="bar-gradient">
+                                                        <stop offset="0%" stop-color="#17b9b6"/>
+                                                        <stop offset="100%" stop-color="#83ffa6"/>
+                                                    </linearGradient>
+                                                    <linearGradient id="subbar-gradient">
+                                                        <stop offset="0%" stop-color="#808080"/>
+                                                        <stop offset="100%" stop-color="#cecece"/>
+                                                    </linearGradient>
+                                                </defs>
+                                                {% if count > 0 %}
+                                                <rect class="bar-rect" y="0" width="{{ '{:.2f}'.format(count * 100) }}%" height="24" rx="3" ry="3"/>
+                                                {% if count > 0.2 %}
+                                                <text x="{{ '{:.2f}'.format((count - 0.01) * 100) }}%" y="12" fill="#212121" text-anchor="end" alignment-baseline="central">{{ '{:.2f}'.format(count * 100) }}%</text>
+                                                {% else %}
+                                                <text x="{{ '{:.2f}'.format((count + 0.01) * 100) }}%" y="12" fill="#ffffff" text-anchor="start" alignment-baseline="central">{{ '{:.2f}'.format(count * 100) }}%</text>
+                                                {% endif %}
+                                                {% else %}
+                                                <rect class="bar-rect" y="0" width="2px" height="24" rx="3" ry="3"/>
+                                                <text x="2.0%" y="12" fill="#ffffff" text-anchor="start" alignment-baseline="central">0.00%</text>
+                                                {% endif %}
+                                            </svg>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </li>
+                                {% endfor %}                                                     
+                            </ul>
+                            <button type="button" class="toggle-data-btn">Show More</button>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
