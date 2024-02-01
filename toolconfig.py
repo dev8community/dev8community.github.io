@@ -8,7 +8,8 @@ data = {
     'tools_used': 'data/surveys/evtss2023/tools-used.json',
     'ides_used': 'data/surveys/evtss2023/ides-used.json',
     'databases_used': 'data/surveys/evtss2023/databases-used.json',
-    'cloud_platforms_used': 'data/surveys/evtss2023/cloud-platforms-used.json'
+    'cloud_platforms_used': 'data/surveys/evtss2023/cloud-platforms-used.json',
+    'work_management_used': 'data/surveys/evtss2023/work-management-used.json'
 }
 
 # Routes that we can access in the URL. Paths are
