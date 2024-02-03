@@ -13,7 +13,8 @@ data = {
     'communication_tools_used': 'data/surveys/evtss2023/communication-tools-used.json',
     'software_being_developed': 'data/surveys/evtss2023/software-being-developed.json',
     'target_platforms': 'data/surveys/evtss2023/target-platforms.json',
-    'personal_description': 'data/surveys/evtss2023/personal-description.json'
+    'personal_description': 'data/surveys/evtss2023/personal-description.json',
+    'developer_type': 'data/surveys/evtss2023/developer-type.json'
 }
 
 # Routes that we can access in the URL. Paths are
