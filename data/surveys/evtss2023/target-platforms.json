@@ -1,0 +1,57 @@
+{
+    "headers": ["Target Platforms", "count"],
+    "description": "The web, the Windows desktop, and Android are the top platforms that developers in Eastern Visayas target. This applies to all demographics. However, among students and the unemployed, the Windows desktop is targeted more than the web. This is likely due to the coursework they are working on as part of their education.",
+    "data": {
+        "All": [
+            ["Web (Frontend)", 0.633333333333333],
+            ["Desktop (Windows)", 0.533333333333333],
+            ["Web (Backend)", 0.533333333333333],
+            ["Mobile (Android)", 0.4],
+            ["Cloud", 0.188888888888889],
+            ["Mobile (iOS)", 0.166666666666667],
+            ["Desktop (Linux)", 0.122222222222222],
+            ["Consoles", 0.1],
+            ["I don't develop anything", 0.0888888888888889],
+            ["Server/Infrastructure", 0.0888888888888889],
+            ["Desktop (macOS)", 0.0666666666666667],
+            ["IoT/Embedded", 0.0666666666666667],
+            ["Desktop (others)", 0.0333333333333333],
+            ["Mobile (others)", 0.0333333333333333],
+            ["Other", 0.0333333333333333]
+        ],
+        "Professionals/Freelancers": [
+            ["Web (Frontend)", 0.682539682539683],
+            ["Web (Backend)", 0.571428571428571],
+            ["Desktop (Windows)", 0.507936507936508],
+            ["Mobile (Android)", 0.365079365079365],
+            ["Cloud", 0.238095238095238],
+            ["Mobile (iOS)", 0.206349206349206],
+            ["Desktop (Linux)", 0.174603174603175],
+            ["Consoles", 0.142857142857143],
+            ["Server/Infrastructure", 0.126984126984127],
+            ["Desktop (macOS)", 0.0793650793650794],
+            ["I don't develop anything", 0.0793650793650794],
+            ["IoT/Embedded", 0.0634920634920635],
+            ["Other", 0.0476190476190476],
+            ["Desktop (others)", 0.0317460317460317],
+            ["Mobile (others)", 0.0317460317460317]
+        ],
+        "Students and Unemployed": [
+            ["Desktop (Windows)", 0.592592592592593],
+            ["Web (Frontend)", 0.518518518518519],
+            ["Mobile (Android)", 0.481481481481481],
+            ["Web (Backend)", 0.444444444444444],
+            ["I don't develop anything", 0.111111111111111],
+            ["Cloud", 0.0740740740740741],
+            ["IoT/Embedded", 0.0740740740740741],
+            ["Mobile (iOS)", 0.0740740740740741],
+            ["Desktop (macOS)", 0.037037037037037],
+            ["Desktop (others)", 0.037037037037037],
+            ["Mobile (others)", 0.037037037037037],
+            ["Consoles", 0],
+            ["Desktop (Linux)", 0],
+            ["Other", 0],
+            ["Server/Infrastructure", 0]
+        ]
+    }
+}
