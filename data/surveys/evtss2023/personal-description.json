@@ -1,0 +1,11 @@
+{
+    "headers": ["Personal Description", "count"],
+    "description": "A majority of developers in Eastern Visayas work professionally, but almost a quarter are not professionals but would code sometimes. Only a few respondents reported they used to code before or they are only coding as a form of hobby.",
+    "data": [
+        ["I am a developer by profession", 0.566666666666667],
+        ["I am not a professional developer, but I code sometimes for work or studies", 0.244444444444444],
+        ["I am learning to code", 0.111111111111111],
+        ["I used to work professionally as a developer or wrote code as a student, but no longer do", 0.0444444444444444],
+        ["I code primarily as a hobby", 0.0333333333333333]
+    ]
+}

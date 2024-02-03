@@ -19,10 +19,16 @@ import toolconfig
 # It's dirty, but I'm putting this here since we're moving the entire tool
 # into its own project anyway so this is fine. For now. I think. Maybe. Oh
 # gosh, the overthinking is setting in!
+def is_dict(var):
+    # Based on: https://stackoverflow.com/a/11947595/1116098
+    return isinstance(var, dict)
+
 template_loader: jinja2.FileSystemLoader = jinja2.FileSystemLoader('.')
-jinja_env: jinja2.Environment = jinja2.Environment(loader=template_loader,
-                                                   lstrip_blocks=True,
-                                                   trim_blocks=True)
+jinja_env: jinja2.Environment = jinja2.Environment(
+    loader=template_loader,
+    lstrip_blocks=True,
+    trim_blocks=True)
+jinja_env.tests['dict'] = is_dict
 
 loaded_data: dict[str, any] = {}
 for name, data in toolconfig.data.items():

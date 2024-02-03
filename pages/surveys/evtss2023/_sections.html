@@ -11,6 +11,7 @@
                     {% endfor %}
                 </div>
                 <div class="category-results">
+                    {% if data_dict['data'] is dict %}
                     <nav class="data-demographic-tabs">
                         {% for demographic in data_dict['data'].keys() %}
                         {% if loop.index == 1 %}
@@ -20,8 +21,14 @@
                         {% endif %}
                         {% endfor %}
                     </nav>
+                    {% endif %}
                     <div>
-                        {% for data in data_dict['data'].values() %}
+                        {% if data_dict['data'] is dict %}
+                        {% set data_set = data_dict['data'].values() %}
+                        {% else %}
+                        {% set data_set = [data_dict['data']] %}
+                        {% endif %}
+                        {% for data in data_set %}
                         {% if loop.index == 1 %}
                         <div>
                         {% else %}
