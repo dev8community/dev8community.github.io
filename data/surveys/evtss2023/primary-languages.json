@@ -1,5 +1,6 @@
 {
-    "headers": ["language", "count"],
+    "headers": ["Primary Languages", "count"],
+    "description": "More than half of developers consider JavaScript as their primary language regardless of occupation. The next two top languages are Python and HTML/CSS. Among professionals and freelancers, however, both JavaScript and Python share the top spot.\nIt comes to no surprise that the top five primary languages for professionals, JavaScript, Python, PHP, HTML/CSS, and TypeScript, are usually associated with the web. This is reflective of the fact that most of our developers develop websites.\nStudents almost share the same top five languages, but with TypeScript being replaced with Java. We believe that this is most likely due to the current educational curriculum where Java is a part of, particularly for courses on the object-oriented paradigm.",
     "data": {
         "All": [
             ["JavaScript", 0.544444444],

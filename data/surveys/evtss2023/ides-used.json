@@ -1,5 +1,6 @@
 {
     "headers": ["IDE/Editor", "Used", "Want to Use Next Year", "Did Not Like Using"],
+    "description": "An overwhelming majority of developers in Eastern Visayas have been using Visual Studio Code last 2023, while also being the IDE/editor that most developers would like to use for this year. This case is true for professionals and students.\nVisual Studio, Sublime Text, and Android Studio enjoy the next three most used IDEs/editors by Eastern Visayas. The fifth most used IDE/editor, in general, is PyCharm. However, among professionals and freelancers, this place is taken by Jupyter Notebook/Jupyter. For students and the unemployed, it is taken by Notepad++. Notepad++ also happens to be one of the two most disliked editors, along with RStudio.",
     "data": {
         "All": [
             ["Visual Studio Code", [0.722222222222222, 0.266666666666667, 0.0111111111111111]],

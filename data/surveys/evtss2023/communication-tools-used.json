@@ -1,5 +1,6 @@
 {
     "headers": ["Communication Tools Used, Loved, and Hated", "Used", "Want to Use Next Year", "Did Not Like Using"],
+    "description": "In Eastern Visayas, Jira has seen the most use among developers, especially among professionals and freelancers, as well as the tool most developers would want to use this 2024. Notion, GitHub Discussions, Trello, and Confluence are also among the top used tools for work management and code documentation.\nAmong students and the unemployed, a somewhat similar usage is observed. While Jira is still among the top used tool, GitHub Discussions and Notion saw more use than Jira.",
     "data": {
         "All": [
             ["Google Meet", [0.622222222222222, 0.188888888888889, 0.0111111111111111]],

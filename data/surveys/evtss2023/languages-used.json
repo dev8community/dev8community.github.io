@@ -1,5 +1,6 @@
 {
     "headers": ["Language", "Used", "Want to Use Next Year", "Did Not Like Using"],
+    "description": "Web development technologies have dominated the lives of most developers in Eastern Visayas. JavaScript enjoys the top spot as both the most used language and the most desired to be used again this 2024 by developers in the region across all demographics. HTML/CSS, Python, SQL, and PHP are generally the next four most used, but Java sees more than Python among students and the unemployed.\nOn the other end of the spectrum, Assembly has been reported to be the least liked languages for Eastern Visayas. Visual Basic 6 (or earlier) comes in at second least liked. It is quite interesting to note that this language still sees use in the region, despite the <a href=\"https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-basic-6/visual-basic-6-support-policy\">deprecation of its IDE since 2008</a> and the lack of updates for <a href=\"https://www.thurrott.com/dev/106091/20-years-visual-studio-visual-basic\">nearly 30 years</a>.",
     "data": {
         "All": [
             ["JavaScript", [0.744444444444445, 0.277777777777778, 0.0111111111111111]],

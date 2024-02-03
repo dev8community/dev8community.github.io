@@ -1,5 +1,6 @@
 {
     "headers": ["Framework/Library", "Used", "Want to Use Next Year", "Did Not Like Using"],
+    "description": "Coinciding with the popularity of JavaScript and web development in the region, React has topped the list of frameworks and libraries being used by developers in Eastern Visayas, while also being among the top frameworks/libraries that developers would like to use this 2024. Along with React, the top most used framework/library is mostly held by JavaScript technologies, namely: Node.js, jQuery, and Vue.js. Curiously, the most disliked framework/library is also another JavaScript technology, AngularJS.\nContrasting the professionals/freelancers, whom lean towards using web technologies, students and the unemployed, interestingly, report that .NET is among their top 10 most used frameworks/libraries. This suggests that the .NET framework is possibly taught in higher education.",
     "data": {
         "All": [
             ["React", [0.411111111111111, 0.2, 0.0222222222222222]],

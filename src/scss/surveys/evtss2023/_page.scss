@@ -144,117 +144,121 @@ main {
             margin-top: 0;
         }
 
-        div.content {
-            div {
-                &.category-description {
-                    margin-bottom: 25px;
+        section.survey-item-section {
+            margin-bottom: 5%;
 
-                    p {
-                        &:first-child {
-                            margin-top: 0;
-                        }
-
-                        &:last-child {
-                            margin-bottom: 0;
-                        }
-                    }
-
-                    @include small-screens {
-                        flex: 1;
-                    }
-                }
-
-                &.category-results {
-                    button {
-                        border-width: 1px;
-                        font-size: 0.81rem;
-
-                        box-shadow: 3px 3px 5px hsl(0, 0%, 8%),
-                                    -1px -1px 3px hsl(0, 0%, 45%);
-
-                        margin-left: auto;
-                        margin-right: auto;
-
-                        display: block;
-
-                        &:hover {
-                            background-color: hsl(0, 0%, 80%);
-                        }
-
-                        &:active {
-                            background-color: $white;
-                            border-color: $dev8-black;
-                            color: $dev8-black;
-                            
-                            box-shadow: inset 3px 3px 15px $dev8-black,
-                                        inset -3px -3px 15px $white;
-                        }
-
-                        @include tablets {
-                            min-width: 100px;
-                            max-width: fit-content;
-                        }
-                    }
-
-                    nav {
-                        margin-bottom: 20px;
-
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        gap: 15px;
-
-                        menu {
-                            border: solid $white 1px;
-                            border-radius: 1000px;
-
-                            font-size: 0.81rem;
-                            color: $white;
-
-                            cursor: pointer;
-                            user-select: none;
-
-                            margin: 0;
-                            padding: 10px;
-                            padding-left: 3%;
-                            padding-right: 3%;
-
-                            &:hover {
-                                background-color: $white;
-                                color: $dev8-black;
+            div.content {
+                div {
+                    &.category-description {
+                        margin-bottom: 25px;
+    
+                        p {
+                            &:first-child {
+                                margin-top: 0;
                             }
-
-                            &:active,
-                            &.selected {
+    
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+    
+                        @include small-screens {
+                            flex: 1;
+                        }
+                    }
+    
+                    &.category-results {
+                        button {
+                            border-width: 1px;
+                            font-size: 0.81rem;
+    
+                            box-shadow: 3px 3px 5px hsl(0, 0%, 8%),
+                                        -1px -1px 3px hsl(0, 0%, 45%);
+    
+                            margin-left: auto;
+                            margin-right: auto;
+    
+                            display: block;
+    
+                            &:hover {
+                                background-color: hsl(0, 0%, 80%);
+                            }
+    
+                            &:active {
                                 background-color: $white;
                                 border-color: $dev8-black;
                                 color: $dev8-black;
+                                
+                                box-shadow: inset 3px 3px 15px $dev8-black,
+                                            inset -3px -3px 15px $white;
                             }
-
-                            &:active {
-                                box-shadow: inset 3px 3px 15px $dev8-black;
-                            }
-
-                            &.selected {
-                                box-shadow: inset 1px 1px 15px $dev8-black;
+    
+                            @include tablets {
+                                min-width: 100px;
+                                max-width: fit-content;
                             }
                         }
-
-                        @include tablets {
-                            flex-direction: row;
+    
+                        nav {
+                            margin-bottom: 20px;
+    
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            gap: 15px;
+    
+                            menu {
+                                border: solid $white 1px;
+                                border-radius: 1000px;
+    
+                                font-size: 0.81rem;
+                                color: $white;
+    
+                                cursor: pointer;
+                                user-select: none;
+    
+                                margin: 0;
+                                padding: 10px;
+                                padding-left: 3%;
+                                padding-right: 3%;
+    
+                                &:hover {
+                                    background-color: $white;
+                                    color: $dev8-black;
+                                }
+    
+                                &:active,
+                                &.selected {
+                                    background-color: $white;
+                                    border-color: $dev8-black;
+                                    color: $dev8-black;
+                                }
+    
+                                &:active {
+                                    box-shadow: inset 3px 3px 15px $dev8-black;
+                                }
+    
+                                &.selected {
+                                    box-shadow: inset 1px 1px 15px $dev8-black;
+                                }
+                            }
+    
+                            @include tablets {
+                                flex-direction: row;
+                            }
                         }
-                    }
-
-                    @include small-screens {
-                        flex: 2;
+    
+                        @include small-screens {
+                            flex: 2;
+                        }
                     }
                 }
-            }
-
-            @include small-screens {
-                display: flex;
-                flex-direction: row;
-                gap: 3%;
+    
+                @include small-screens {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 3%;
+                }
             }
         }
     }

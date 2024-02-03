@@ -1,5 +1,6 @@
 {
     "headers": ["Tool", "Used", "Want to Use Next Year", "Did Not Like Using"],
+    "description": "Our developers in Eastern Visayas really do love their JavaScript tools. Less than half of respondents stated that they use npm with less than a quarter reporting they use Yarn. Despite the popularity of JavaScript, Docker and Pip have shown notable usage as well, but are not on par with the popularity of npm. Nevertheless, Docker has seen more desire to be used this year than npm itself.\nWhile generally, npm is the most used tool in the region, among students and the unemployed, Composer takes the lead in terms of usage. This suggests that a lot of students have been involved with development using PHP in 2023. However, npm still takes a notable second place and Pip still staying at the top five most used tools. Docker is not as commonly used among students and the unemployed compared to professionals.",
     "data": {
         "All": [
             ["npm", [0.488888888888889, 0.155555555555556, 0.0444444444444444]],

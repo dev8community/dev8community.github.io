@@ -1,3 +1,4 @@
+{% import 'pages/surveys/evtss2023/_sections.html' as sections %}
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
@@ -63,25 +64,30 @@
     <main>
         {% include 'pages/surveys/evtss2023/_highlights-section.html' %}
 
-        {% include 'pages/surveys/evtss2023/_primary-languages-section.html' %}
+        <section class="container">
+            <h1>Technologies</h1>
+            {{ sections.tool_count_section(primary_languages) }}
 
-        {% include 'pages/surveys/evtss2023/_languages-used-section.html' %}
+            {{ sections.tool_preference_section(languages_used) }}
 
-        {% include 'pages/surveys/evtss2023/_frameworks-used-section.html' %}
+            {{ sections.tool_preference_section(frameworks_used) }}
 
-        {% include 'pages/surveys/evtss2023/_tools-used-section.html' %}
+            {{ sections.tool_preference_section(tools_used) }}
 
-        {% include 'pages/surveys/evtss2023/_ides-used-section.html' %}
+            {{ sections.tool_preference_section(ides_used) }}
+            
+            {{ sections.tool_preference_section(databases_used) }}
 
-        {% include 'pages/surveys/evtss2023/_databases-used-section.html' %}
+            {{ sections.tool_preference_section(cloud_platforms_used) }}
 
-        {% include 'pages/surveys/evtss2023/_cloud-platforms-used-section.html' %}
+            {{ sections.tool_preference_section(work_management_used) }}
 
-        {% include 'pages/surveys/evtss2023/_work-management-used-section.html' %}
-
-        {% include 'pages/surveys/evtss2023/_communication-tools-used-section.html' %}
-
-        {% include 'pages/surveys/evtss2023/_software-being-developed-section.html' %}
+            {{ sections.tool_preference_section(communication_tools_used) }}
+        </section>
+        <section>
+            <h1>Development</h1>
+            {{ sections.tool_count_section(software_being_developed) }}
+        </section>
 
         {% include 'pages/surveys/evtss2023/_credits-licensing-section.html' %}
 

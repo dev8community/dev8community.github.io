@@ -1,5 +1,6 @@
 {
     "headers": ["Software Being Developed", "count"],
+    "description": "More than half of developers in Eastern Visayas work on websites, may they be professionals or still studying in school. Database/Data storage systems and system software are also among the top software being developed by developers in the region.",
     "data": {
         "All": [
             ["Websites", 0.611111111111111],

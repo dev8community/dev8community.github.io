@@ -1,5 +1,6 @@
 {
     "headers": ["Database", "Used", "Want to Use Next Year", "Did Not Like Using"],
+    "description": "MySQL and its fork, MariaDB, are the most used databases in the region. MySQL is also the database that most developers want to use again this 2024. This is true for professionals/freelancers, students, and the unemployed.\nSQLite and MongoDB are among the top five used databases. PostgreSQL is generally in the top five as well. However, it is more popular among professionals/freelancers than among students and the unemployed. The latter group reporting that they use Firebase Realtime Database more than PostgreSQL.",
     "data": {
         "All": [
             ["MySQL", [0.711111111111111, 0.266666666666667, 0]],
