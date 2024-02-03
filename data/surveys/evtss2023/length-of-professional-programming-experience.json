@@ -1,0 +1,20 @@
+{
+    "headers": ["Length of Professional Programming Experience", "count"],
+    "description": "While a third of our respondents have no professional experience, most of our developers reported that they have such experience. Most of these developers have less than 5 years of experience, with those with less than 10 years following. Developers in the region with 10 to more years of experience are a relative rarity, however.",
+    "data": [
+        ["No professional experience", 0.333333333333333],
+        ["1 - 4 years", 0.322222222222222],
+        ["5 - 9 years", 0.155555555555556],
+        ["Less than a year", 0.0777777777777778],
+        ["Less than half a year", 0.0555555555555556],
+        ["10 - 14 years", 0.0333333333333333],
+        ["20 - 24 years", 0.0111111111111111],
+        ["25 - 29 years", 0.0111111111111111],
+        ["15 - 19 years", 0],
+        ["30 - 34 years", 0],
+        ["35 - 39 years", 0],
+        ["40 - 44 years", 0],
+        ["45 - 49 years", 0],
+        ["50 years or more", 0]
+    ]
+}

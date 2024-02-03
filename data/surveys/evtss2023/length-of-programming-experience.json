@@ -1,0 +1,21 @@
+{
+    "headers": ["Length of Programming Experience", "count"],
+    "description": "Majority of the developers in Eastern Visayas have 10 years or less of programming experience. Only less than 10% have more than 10 years of programming experience.",
+    "data": [
+        ["1 - 2 years", 0.222222222222222],
+        ["5 - 6 years", 0.2],
+        ["3 - 4 years", 0.188888888888889],
+        ["7 - 10 years", 0.166666666666667],
+        ["Less than a year", 0.0888888888888889],
+        ["10 - 14 years", 0.0777777777777778],
+        ["Less than half a year", 0.0333333333333333],
+        ["20 - 24 years", 0.0111111111111111],
+        ["25 - 29 years", 0.0111111111111111],
+        ["15 - 19 years", 0],
+        ["30 - 34 years", 0],
+        ["35 - 39 years", 0],
+        ["40 - 44 years", 0],
+        ["45 - 49 years", 0],
+        ["50 years or more", 0]
+    ]
+}
