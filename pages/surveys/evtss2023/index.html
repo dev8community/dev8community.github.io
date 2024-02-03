@@ -66,27 +66,27 @@
 
         <section class="container">
             <h1>Technologies</h1>
-            {{ sections.tool_count_section(primary_languages) }}
+            {{ sections.tool_preferences_section(primary_languages) }}
 
-            {{ sections.tool_preference_section(languages_used) }}
+            {{ sections.tool_preferences_section(languages_used) }}
 
-            {{ sections.tool_preference_section(frameworks_used) }}
+            {{ sections.tool_preferences_section(frameworks_used) }}
 
-            {{ sections.tool_preference_section(tools_used) }}
+            {{ sections.tool_preferences_section(tools_used) }}
 
-            {{ sections.tool_preference_section(ides_used) }}
+            {{ sections.tool_preferences_section(ides_used) }}
             
-            {{ sections.tool_preference_section(databases_used) }}
+            {{ sections.tool_preferences_section(databases_used) }}
 
-            {{ sections.tool_preference_section(cloud_platforms_used) }}
+            {{ sections.tool_preferences_section(cloud_platforms_used) }}
 
-            {{ sections.tool_preference_section(work_management_used) }}
+            {{ sections.tool_preferences_section(work_management_used) }}
 
-            {{ sections.tool_preference_section(communication_tools_used) }}
+            {{ sections.tool_preferences_section(communication_tools_used) }}
         </section>
         <section>
             <h1>Development</h1>
-            {{ sections.tool_count_section(software_being_developed) }}
+            {{ sections.tool_preferences_section(software_being_developed) }}
         </section>
 
         {% include 'pages/surveys/evtss2023/_credits-licensing-section.html' %}

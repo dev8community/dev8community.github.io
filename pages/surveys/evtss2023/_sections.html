@@ -1,68 +1,4 @@
-{% macro tool_count_section(data_dict) -%}
-<section class="survey-item-section">
-    <div class="content">
-        <div class="category-description">
-            <h2>{{ data_dict['headers'][0] }}</h2>
-            {% set paragraphs = data_dict['description'].split('\n') %}
-            {% for p in paragraphs %}
-            <p>{{ p }}</p>
-            {% endfor %}
-        </div>
-        <div class="category-results">
-            <nav class="data-demographic-tabs">
-                {% for demographic in data_dict['data'].keys() %}
-                {% if loop.index == 1 %}
-                <menu class="selected">{{ demographic }}</menu>
-                {% else %}
-                <menu>{{ demographic }}</menu>
-                {% endif %}
-                {% endfor %}
-            </nav>
-            <div>
-                {% for data in data_dict['data'].values() %}
-                {% if loop.index == 1 %}
-                <div>
-                {% else %}
-                <div class="hide">
-                {% endif %}
-                    <ul class="bar-graph">
-                        {% for name, count in data %}
-                        <li>
-                            <div class="label">{{ name }}</div>
-                            <div class="bar">
-                                <svg width="100%" height="24">
-                                    <defs>
-                                        <linearGradient id="bar-gradient">
-                                            <stop offset="0%" stop-color="#17b9b6"/>
-                                            <stop offset="100%" stop-color="#83ffa6"/>
-                                        </linearGradient>
-                                    </defs>
-                                    {% if count > 0 %}
-                                    <rect class="bar-rect" y="0" width="{{ '{:.2f}'.format(count * 100) }}%" height="24" rx="3" ry="3"/>
-                                    {% if count > 0.2 %}
-                                    <text x="{{ '{:.2f}'.format((count - 0.01) * 100) }}%" y="12" fill="#212121" text-anchor="end" alignment-baseline="central">{{ '{:.2f}'.format(count * 100) }}%</text>
-                                    {% else %}
-                                    <text x="{{ '{:.2f}'.format((count + 0.01) * 100) }}%" y="12" fill="#ffffff" text-anchor="start" alignment-baseline="central">{{ '{:.2f}'.format(count * 100) }}%</text>
-                                    {% endif %}
-                                    {% else %}
-                                    <rect class="bar-rect" y="0" width="2px" height="24" rx="3" ry="3"/>
-                                    <text x="2.0%" y="12" fill="#ffffff" text-anchor="start" alignment-baseline="central">0.00%</text>
-                                    {% endif %}
-                                </svg>
-                            </div>
-                        </li>
-                        {% endfor %}                                                     
-                    </ul>
-                    <button type="button" class="toggle-data-btn">Show More</button>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-</section>
-{%- endmacro %}
-
-{% macro tool_preference_section(data_dict) -%}
+{% macro tool_preferences_section(data_dict) -%}
 <section class="survey-item-section">
     <div>
         <section>
@@ -96,6 +32,7 @@
                                 <li>
                                     <div class="label">{{ name }}</div>
                                     <div class="bar">
+                                        {% if counts is iterable %}
                                         {% for count in counts %}
                                         <div>
                                             <label>{{ data_dict['headers'][loop.index] }}</label>
@@ -124,6 +61,27 @@
                                             </svg>
                                         </div>
                                         {% endfor %}
+                                        {% else %}
+                                        <svg width="100%" height="24">
+                                            <defs>
+                                                <linearGradient id="bar-gradient">
+                                                    <stop offset="0%" stop-color="#17b9b6"/>
+                                                    <stop offset="100%" stop-color="#83ffa6"/>
+                                                </linearGradient>
+                                            </defs>
+                                            {% if counts > 0 %}
+                                            <rect class="bar-rect" y="0" width="{{ '{:.2f}'.format(counts * 100) }}%" height="24" rx="3" ry="3"/>
+                                            {% if counts > 0.2 %}
+                                            <text x="{{ '{:.2f}'.format((counts - 0.01) * 100) }}%" y="12" fill="#212121" text-anchor="end" alignment-baseline="central">{{ '{:.2f}'.format(counts * 100) }}%</text>
+                                            {% else %}
+                                            <text x="{{ '{:.2f}'.format((counts + 0.01) * 100) }}%" y="12" fill="#ffffff" text-anchor="start" alignment-baseline="central">{{ '{:.2f}'.format(counts * 100) }}%</text>
+                                            {% endif %}
+                                            {% else %}
+                                            <rect class="bar-rect" y="0" width="2px" height="24" rx="3" ry="3"/>
+                                            <text x="2.0%" y="12" fill="#ffffff" text-anchor="start" alignment-baseline="central">0.00%</text>
+                                            {% endif %}
+                                        </svg>
+                                        {% endif %}
                                     </div>
                                 </li>
                                 {% endfor %}                                                     
