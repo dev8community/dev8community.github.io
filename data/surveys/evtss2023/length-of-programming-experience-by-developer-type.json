@@ -1,0 +1,63 @@
+{
+    "title": "Length of Programming Experience By Developer Type",
+    "description": "While a third of our respondents have no professional experience, most of our developers reported that they have such experience. Most of these developers have less than 5 years of experience, with those with less than 10 years following. Developers in the region with 10 to more years of experience are a relative rarity, however.",
+    "headings": {
+        "stub": "Programming Experience Length",
+        "rows": [
+            "Less than half a year",
+            "Less than a year",
+            "1 - 2 years",
+            "3 - 4 years",
+            "5 - 6 years",
+            "7 - 10 years",
+            "10 - 14 years",
+            "15 - 19 years",
+            "20 - 24 years",
+            "25 - 29 years",
+            "30 - 34 years",
+            "35 - 39 years",
+            "40 - 44 years",
+            "45 - 49 years",
+            "50 years or more"
+        ],
+        "column_spanners": [{
+            "title": "Developer Type",
+            "colspan": 16
+        }],
+        "columns": [
+            "Full Stack Developer",
+            "Student",
+            "Front-end Developer",
+            "Back-end Developer",
+            "Desktop/Enterprise Applications Developer",
+            "QA/Test Developer",
+            "Academic Researcher",
+            "Cloud Infrastructure Engineer",
+            "Data Scientist/Machine Learning Specialist",
+            "Data Engineer",
+            "DevOps Specialist",
+            "Developer Experience",
+            "Embedded Systems Developer",
+            "Game Developer",
+            "Marketing/Sales Professional",
+            "Research & Development Role"
+        ]
+    },
+    "data": [
+        [0, 0.01111111111, 0, 0, 0, 0, 0.01111111111, 0, 0, 0, 0, 0, 0, 0, 0, 0.01111111111],
+        [0.03333333333, 0.04444444444, 0.01111111111, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0.02222222222, 0.07777777778, 0.04444444444, 0.02222222222, 0, 0.01111111111, 0, 0.01111111111, 0, 0, 0, 0.01111111111, 0, 0.01111111111, 0.01111111111, 0],
+        [0.08888888889, 0.04444444444, 0.03333333333, 0.01111111111, 0, 0.01111111111, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0.06666666667, 0.03333333333, 0.02222222222, 0.01111111111, 0.01111111111, 0.03333333333, 0, 0.01111111111, 0, 0, 0, 0, 0.01111111111, 0, 0, 0],
+        [0.1, 0, 0.01111111111, 0.02222222222, 0.01111111111, 0, 0, 0, 0, 0.01111111111, 0.01111111111, 0, 0, 0, 0, 0],
+        [0.02222222222, 0, 0, 0, 0.03333333333, 0, 0.01111111111, 0, 0.01111111111, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0.01111111111, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0.01111111111, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ]
+}

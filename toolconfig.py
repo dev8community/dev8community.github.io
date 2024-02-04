@@ -16,7 +16,8 @@ data = {
     'personal_description': 'data/surveys/evtss2023/personal-description.json',
     'developer_type': 'data/surveys/evtss2023/developer-type.json',
     'length_of_programming_experience': 'data/surveys/evtss2023/length-of-programming-experience.json',
-    'length_of_professional_programming_experience': 'data/surveys/evtss2023/length-of-professional-programming-experience.json'
+    'length_of_professional_programming_experience': 'data/surveys/evtss2023/length-of-professional-programming-experience.json',
+    'length_of_programming_experience_by_developer_type': 'data/surveys/evtss2023/length-of-programming-experience-by-developer-type.json'
 }
 
 # Routes that we can access in the URL. Paths are
