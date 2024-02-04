@@ -114,7 +114,7 @@
                 <defs>
                     <linearGradient id="legend-gradient">
                         <stop offset="0%" stop-color="hsla(0, 0%, 13%, 0%)"/>
-                        <stop offset="100%" stop-color="hsl(185, 87%, 24%)"/>
+                        <stop offset="100%" stop-color="hsl(137, 100%, 76%)"/>
                     </linearGradient>
                 </defs>
                 <rect y="0" width="150px" height="14px" fill="url(#legend-gradient)"/>
@@ -136,7 +136,11 @@
                         <tr>
                             <td>{{ data_dict['headings']['rows'][loop.index0] }}</td>
                             {% for col_data in row_data %}
-                            <td style="background-color: hsla(185, 87%, 24%, {{ (col_data / max_val) * 100 }}%) !important;">{{ '{:.2f}'.format(col_data * 100) }}%</td>
+                            {% if col_data / max_val > 0.5 %}
+                            <td style="background-color: hsla(137, 100%, 76%, {{ (col_data / max_val) * 100 }}%) !important; color: hsl(0, 0%, 13%);">{{ '{:.2f}'.format(col_data * 100) }}%</td>
+                            {% else %}
+                            <td style="background-color: hsla(137, 100%, 76%, {{ (col_data / max_val) * 100 }}%) !important;">{{ '{:.2f}'.format(col_data * 100) }}%</td>
+                            {% endif %}
                             {% endfor %}
                         {% endfor %}
                         </tr>
