@@ -264,56 +264,62 @@ main {
             &.matrix {
                 div {
                     &.category-results {
-                        overflow-x: scroll;
-
-                        &::-webkit-scrollbar {
-                            width: 8px;
-                            height: 8px;
+                        svg {
+                            font-size: 0.68rem
                         }
 
-                        &::-webkit-scrollbar-track {
-                            background: none;
-                        }
+                        div {                     
+                            overflow-x: scroll;
 
-                        &::-webkit-scrollbar-thumb {
-                            background-color: hsla(0, 0%, 100%, 65%);
-                            border-radius: 25px;
-                        }
-
-                        table {
-                            font-size: 0.68em;
-
-                            border-collapse: collapse;
-                            table-layout: fixed;
-
-                            width: 3250px;
-
-                            tr, th, td {
-                                box-sizing: border-box;
-                                padding: 0.1%;
+                            &::-webkit-scrollbar {
+                                width: 8px;
+                                height: 8px;
                             }
 
-                            thead {
-                                tr {
-                                    &:nth-child(2) {
-                                        border-top: solid 1px hsl(0, 0%, 50%);
+                            &::-webkit-scrollbar-track {
+                                background: none;
+                            }
+
+                            &::-webkit-scrollbar-thumb {
+                                background-color: hsla(0, 0%, 100%, 65%);
+                                border-radius: 25px;
+                            }
+
+                            table {
+                                font-size: 0.68em;
+
+                                border-collapse: collapse;
+                                table-layout: fixed;
+
+                                width: 3250px;
+
+                                tr, th, td {
+                                    box-sizing: border-box;
+                                    padding: 0.1%;
+                                }
+
+                                thead {
+                                    tr {
+                                        &:nth-child(2) {
+                                            border-top: solid 1px hsl(0, 0%, 50%);
+                                        }
                                     }
                                 }
-                            }
 
-                            tbody {
-                                tr {
-                                    &:hover {
-                                        background-color: hsl(0, 0%, 25%);
-                                    }
+                                tbody {
+                                    tr {
+                                        &:hover {
+                                            background-color: hsl(0, 0%, 25%);
+                                        }
 
-                                    td {
-                                        &:first-child {
-                                            text-align: right;
+                                        td {
+                                            &:first-child {
+                                                text-align: right;
 
-                                            padding-right: 0.35%;
+                                                padding-right: 0.35%;
 
-                                            position: sticky;
+                                                position: sticky;
+                                            }
                                         }
                                     }
                                 }

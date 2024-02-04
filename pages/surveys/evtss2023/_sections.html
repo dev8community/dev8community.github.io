@@ -108,32 +108,42 @@
         {% endfor %}
     </div>
     <div class="category-results">
-        <table>
-            <thead>
-                <tr>
-                    <th colspan="1" rowspan="2">{{ data_dict['headings']['stub'] }}</th>
-                    {% for spanner in data_dict['headings']['column_spanners'] %}
-                    <th colspan="{{ spanner['colspan'] }}">{{ spanner['title'] }}</th>
-                    {% endfor %}
-                </tr>
-                <tr>
-                    {% for col in data_dict['headings']['columns'] %}
-                    <th>{{ col }}</th>
-                    {% endfor %}
-                </tr>
-            </thead>
-            <tbody>
-                {% set max_val = data_dict['data'] | sum(start=[]) | max %}
-                {% for row_data in data_dict['data'] %}
-                <tr>
-                    <td>{{ data_dict['headings']['rows'][loop.index0] }}</td>
-                    {% for col_data in row_data %}
-                    <td style="background-color: hsla(185, 87%, 24%, {{ (col_data / max_val) * 100 }}%);">{{ '{:.2f}'.format(col_data * 100) }}%</td>
-                    {% endfor %}
-                {% endfor %}
-                </tr>
-            </tbody>
-        </table>
+        {% set max_val = data_dict['data'] | sum(start=[]) | max %}
+        <div class="matrix-table">
+            <svg width="100%" height="45px">
+                <defs>
+                    <linearGradient id="legend-gradient">
+                        <stop offset="0%" stop-color="hsla(0, 0%, 13%, 0%)"/>
+                        <stop offset="100%" stop-color="hsl(185, 87%, 24%)"/>
+                    </linearGradient>
+                </defs>
+                <rect y="0" width="150px" height="14px" fill="url(#legend-gradient)"/>
+                <text y="25px" fill="hsl(0, 0%, 100%)" text-anchor="start" alignment-baseline="central">0%</text>
+                <text x="150px" y="25px" fill="hsl(0, 0%, 100%)" text-anchor="end" alignment-baseline="central">{{ '{:.2f}'.format(max_val * 100) }}%</text>
+            </svg>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            {% for col in data_dict['headings']['columns'] %}
+                            <th>{{ col }}</th>
+                            {% endfor %}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row_data in data_dict['data'] %}
+                        <tr>
+                            <td>{{ data_dict['headings']['rows'][loop.index0] }}</td>
+                            {% for col_data in row_data %}
+                            <td style="background-color: hsla(185, 87%, 24%, {{ (col_data / max_val) * 100 }}%) !important;">{{ '{:.2f}'.format(col_data * 100) }}%</td>
+                            {% endfor %}
+                        {% endfor %}
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </section>
 {%- endmacro %}
