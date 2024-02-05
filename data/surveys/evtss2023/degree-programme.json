@@ -1,0 +1,17 @@
+{
+    "headers": ["Degree Programme", "count"],
+    "description": "Most developers in Eastern Visayas have a degree on either Information Technology or Computer Science.",
+    "data": [
+        ["Information Technology", 0.388888888888889],
+        ["Computer Science", 0.344444444444444],
+        ["A different degree", 0.0555555555555556],
+        ["Computer Engineering", 0.0333333333333333],
+        ["Applied Mathematics", 0],
+        ["Applied Physics", 0],
+        ["Electrical Engineering", 0],
+        ["Information Systems", 0],
+        ["Mathematics", 0],
+        ["Physics", 0],
+        ["Software Engineering", 0]
+    ]
+}
