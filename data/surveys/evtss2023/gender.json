@@ -1,0 +1,11 @@
+{
+    "headers": ["Gender", "count"],
+    "description": "An overwhelming majority of developers in Eastern Visayas are male, with only around 13% identifying themselves to be females.",
+    "data": [
+        ["Male", 0.822222222222222],
+        ["Female", 0.133333333333333],
+        ["Prefer not to say", 0.0333333333333333],
+        ["Transgender", 0.0111111111111111],
+        ["Non-binary, genderqueer, or other gender identities", 0]
+    ]
+}
