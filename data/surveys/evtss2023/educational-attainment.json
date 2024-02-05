@@ -1,0 +1,16 @@
+{
+    "headers": ["Educational Attainment", "count"],
+    "description": "More than two-thirds of developers in Eastern Visayas have Bachelor's Degree. Almost a third either only completed senior high school or have experience with undergraduate studies but never completed it. Only a few managed to obtain a graduate degree at 4.44%.",
+    "data": [
+        ["Bachelor's Degree (B.A., B.S., B.Eng, etc.)", 0.644444444444445],
+        ["High School (Senior)", 0.155555555555556],
+        ["Some university/college without earning a degree", 0.133333333333333],
+        ["Master's Degree (M.A., M.S., M.Eng., MBA, etc.)", 0.0444444444444444],
+        ["Something Else", 0.0222222222222222],
+        ["Associate Degree (A.A., A.S., etc.)", 0],
+        ["Elementary", 0],
+        ["High School (4-year Curriculum)", 0],
+        ["High School (Junior)", 0],
+        ["Professional Degree (JD, MD, Ph.D, Ed.D, etc.)", 0]
+    ]
+}
