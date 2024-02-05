@@ -101,7 +101,7 @@
 </section>
 {%- endmacro %}
 
-{% macro matrix_table_section(data_dict) -%}
+{% macro matrix_table_section(data_dict, require_headers=false) -%}
 <section class="survey-item-section matrix">
     <div class="category-description">
         <h2>{{ data_dict['title'] }}</h2>
@@ -127,8 +127,15 @@
             <div>
                 <table>
                     <thead>
+                        {% if require_headers %}
                         <tr>
-                            <th></th>
+                            <th rowspan="2">{{ data_dict['headings']['stub'] }}</th>
+                            {% for spanner in data_dict['headings']['column_spanners'] %}
+                            <th colspan="{{ spanner['colspan'] }}">{{ spanner['title'] }}</th>
+                            {% endfor %}
+                        </tr>
+                        {% endif %}
+                        <tr>
                             {% for col in data_dict['headings']['columns'] %}
                             <th>{{ col }}</th>
                             {% endfor %}

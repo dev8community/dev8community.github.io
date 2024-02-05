@@ -23,7 +23,8 @@ data = {
     'location': 'data/surveys/evtss2023/location.json',
     'gender': 'data/surveys/evtss2023/gender.json',
     'age': 'data/surveys/evtss2023/age.json',
-    'hometown': 'data/surveys/evtss2023/hometown.json'
+    'hometown': 'data/surveys/evtss2023/hometown.json',
+    'hometown_to_location': 'data/surveys/evtss2023/hometown-to-location.json'
 }
 
 # Routes that we can access in the URL. Paths are
