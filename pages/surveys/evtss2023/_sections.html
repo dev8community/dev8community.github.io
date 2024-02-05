@@ -111,7 +111,6 @@
         {% endfor %}
     </div>
     <div class="category-results">
-        {% set max_val = data_dict['data'] | sum(start=[]) | max %}
         <div class="matrix-table">
             <svg width="100%" height="45px">
                 <defs>
@@ -120,22 +119,32 @@
                         <stop offset="100%" stop-color="hsl(137, 100%, 76%)"/>
                     </linearGradient>
                 </defs>
+                {% if data_dict['raw_read'] %}
+                {% set displayed_start_val = '0' %}
+                {% set displayed_end_val = data_dict['max_data_val'] %}
+                {% else %}
+                {% set displayed_start_val = '0%' %}
+                {% set displayed_end_val = '{:.2f}'.format(data_dict['max_data_val'] * 100) %}
+                {% endif %}
                 <rect y="0" width="150px" height="14px" fill="url(#legend-gradient)"/>
-                <text y="25px" fill="hsl(0, 0%, 100%)" text-anchor="start" alignment-baseline="central">0%</text>
-                <text x="150px" y="25px" fill="hsl(0, 0%, 100%)" text-anchor="end" alignment-baseline="central">{{ '{:.2f}'.format(max_val * 100) }}%</text>
+                <text y="25px" fill="hsl(0, 0%, 100%)" text-anchor="start" alignment-baseline="central">{{ displayed_start_val }}</text>
+                <text x="150px" y="25px" fill="hsl(0, 0%, 100%)" text-anchor="end" alignment-baseline="central">{{ displayed_end_val }}</text>
             </svg>
             <div>
-                <table>
+                <table {% if data_dict['table_width'] %}width="{{ data_dict['table_width'] }}"{% else %}width="3250px"{% endif %}>
                     <thead>
                         {% if require_headers %}
                         <tr>
                             <th rowspan="2">{{ data_dict['headings']['stub'] }}</th>
                             {% for spanner in data_dict['headings']['column_spanners'] %}
-                            <th colspan="{{ spanner['colspan'] }}">{{ spanner['title'] }}</th>
+                            <th {% if 'rowspan' in spanner %}rowspan="{{ spanner['rowspan'] }}"{% endif %} colspan="{{ spanner['colspan'] }}">{{ spanner['title'] }}</th>
                             {% endfor %}
                         </tr>
                         {% endif %}
                         <tr>
+                            {% if not require_headers %}
+                            <th></th>
+                            {% endif %}
                             {% for col in data_dict['headings']['columns'] %}
                             <th>{{ col }}</th>
                             {% endfor %}
@@ -146,10 +155,20 @@
                         <tr>
                             <td>{{ data_dict['headings']['rows'][loop.index0] }}</td>
                             {% for col_data in row_data %}
-                            {% if col_data / max_val > 0.5 %}
-                            <td style="background-color: hsla(137, 100%, 76%, {{ (col_data / max_val) * 100 }}%) !important; color: hsl(0, 0%, 13%);">{{ '{:.2f}'.format(col_data * 100) }}%</td>
+                            {% if data_dict['raw_read'] %}
+                            {% set displayed_val = col_data %}
                             {% else %}
-                            <td style="background-color: hsla(137, 100%, 76%, {{ (col_data / max_val) * 100 }}%) !important;">{{ '{:.2f}'.format(col_data * 100) }}%</td>
+                            {% set displayed_val = '{:.2f}%'.format(col_data * 100) %}
+                            {% endif %}
+                            {% if loop.index in data_dict['focused_data_columns'] or 'focused_data_columns' not in data_dict %}
+                            {% set normalized_val = col_data / data_dict['max_data_val'] %}
+                            {% if normalized_val > 0.5 %}
+                            <td style="background-color: hsla(137, 100%, 76%, {{ normalized_val * 100 }}%) !important; color: hsl(0, 0%, 13%);">{{ displayed_val }}</td>
+                            {% else %}
+                            <td style="background-color: hsla(137, 100%, 76%, {{ normalized_val * 100 }}%) !important;">{{ displayed_val }}</td>
+                            {% endif %}
+                            {% else %}
+                            <td>{{ displayed_val }}</td>
                             {% endif %}
                             {% endfor %}
                         {% endfor %}

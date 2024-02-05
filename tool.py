@@ -39,6 +39,23 @@ for name, data in toolconfig.data.items():
     with open(data) as f:
         loaded_data[name] = json.load(f)
 
+        is_data_table: bool = ('headings' in loaded_data[name] and
+            ('rows' in loaded_data[name]['headings'] and
+             'columns' in loaded_data[name]['headings']))
+        if is_data_table:
+            if 'focused_data_columns' in loaded_data[name]:
+                data_list: list = []
+                for row in loaded_data[name]['data']:
+                    for i, col in enumerate(row):
+                        # Since the first element is the first column.
+                        idx = i + 1
+                        if idx in loaded_data[name]['focused_data_columns']:
+                            data_list.append(col)
+            else:
+                data_list: list = sum(loaded_data[name]['data'], start=[])
+
+            loaded_data[name]['max_data_val'] = max(data_list)
+
 
 class BuildException(Exception):
     pass

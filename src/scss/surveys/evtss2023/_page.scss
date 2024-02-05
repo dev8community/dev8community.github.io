@@ -291,11 +291,9 @@ main {
                                 border-collapse: collapse;
                                 table-layout: fixed;
 
-                                width: 3250px;
-
                                 tr, th, td {
                                     box-sizing: border-box;
-                                    padding: 0.1%;
+                                    padding: 3px;
                                 }
 
                                 thead {
@@ -308,8 +306,8 @@ main {
 
                                 tbody {
                                     tr {
-                                        &:hover {
-                                            background-color: hsl(0, 0%, 25%);
+                                        &:nth-child(even) {
+                                            background-color: hsl(0, 0%, 15%);
                                         }
 
                                         td {

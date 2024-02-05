@@ -27,7 +27,8 @@ data = {
     'hometown_to_location': 'data/surveys/evtss2023/hometown-to-location.json',
     'educational_attainment': 'data/surveys/evtss2023/educational-attainment.json',
     'college_alma_mater': 'data/surveys/evtss2023/college-alma-mater.json',
-    'degree_programme': 'data/surveys/evtss2023/degree-programme.json'
+    'degree_programme': 'data/surveys/evtss2023/degree-programme.json',
+    'academic_learning_satisfaction': 'data/surveys/evtss2023/academic-learning-satisfaction.json'
 }
 
 # Routes that we can access in the URL. Paths are

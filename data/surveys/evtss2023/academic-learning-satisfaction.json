@@ -1,0 +1,63 @@
+{
+    "title": "Academic Learning Satisfaction per School",
+    "description": "",
+    "headings": {
+        "stub": "College/University",
+        "rows": [
+            "Eastern Visayas State University",
+            "Other college/university outside Eastern Visayas",
+            "University of the Philippines Tacloban",
+            "AMA Computer Learning Center Tacloban (ACLC Tacloban)",
+            "Leyte Normal University",
+            "Visayas State University",
+            "Northwest Samar State University",
+            "Eastern Samar State University",
+            "Samar State University",
+            "Other college/university in Eastern Visayas",
+            "Asian Development Foundation College",
+            "Palompon Institute of Technology",
+            "Biliran Province State University",
+            "Southern Leyte State University",
+            "University of Eastern Philippines"
+        ],
+        "column_spanners": [
+            {
+                "title": "Number of Respondents",
+                "colspan": 1,
+                "rowspan": 2
+            },
+            {
+                "title": "Satisfaction Rating",
+                "colspan": 6
+            }
+        ],
+        "columns": [
+            "Average",
+            "Strongly Disagree (1 pt.)",
+            "Disagree (2 pts.)",
+            "Neutral (3 pts.)",
+            "Agree (4 pts)",
+            "Strongly Agree (5 pts.)"
+        ]
+    },
+    "data": [
+        [15, 3.53, 1, 4, 5, 2, 3],
+        [14, 3.93, 0, 1, 3, 6, 4],
+        [9, 4.33, 0, 1, 0, 3, 5],
+        [8, 3.75, 0, 0, 3, 4, 1],
+        [8, 2.88, 1, 1, 4, 2, 0],
+        [7, 4, 0, 0, 2, 3, 2],
+        [5, 3.6, 0, 1, 0, 4, 0],
+        [2, 4, 0, 0, 1, 0, 1],
+        [2, 4, 0, 0, 1, 0, 1],
+        [2, 3.5, 0, 0, 1, 1, 0],
+        [1, 4, 0, 0, 0, 1, 0],
+        [1, 3, 0, 0, 1, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0]
+    ],
+    "table_width": "1200px",
+    "raw_read": true,
+    "focused_data_columns": [3, 4, 5, 6, 7]
+}
