@@ -66,49 +66,51 @@
 
         <section class="container">
             <h1>Technologies</h1>
-            {{ sections.tool_preferences_section(primary_languages) }}
+            {{ sections.bar_graph_section(primary_languages) }}
 
-            {{ sections.tool_preferences_section(languages_used) }}
+            {{ sections.bar_graph_section(languages_used) }}
 
-            {{ sections.tool_preferences_section(frameworks_used) }}
+            {{ sections.bar_graph_section(frameworks_used) }}
 
-            {{ sections.tool_preferences_section(tools_used) }}
+            {{ sections.bar_graph_section(tools_used) }}
 
-            {{ sections.tool_preferences_section(ides_used) }}
+            {{ sections.bar_graph_section(ides_used) }}
             
-            {{ sections.tool_preferences_section(databases_used) }}
+            {{ sections.bar_graph_section(databases_used) }}
 
-            {{ sections.tool_preferences_section(cloud_platforms_used) }}
+            {{ sections.bar_graph_section(cloud_platforms_used) }}
 
-            {{ sections.tool_preferences_section(work_management_used) }}
+            {{ sections.bar_graph_section(work_management_used) }}
 
-            {{ sections.tool_preferences_section(communication_tools_used) }}
+            {{ sections.bar_graph_section(communication_tools_used) }}
         </section>
         <section class="container">
             <h1>Development</h1>
-            {{ sections.tool_preferences_section(software_being_developed) }}
+            {{ sections.bar_graph_section(software_being_developed) }}
 
-            {{ sections.tool_preferences_section(target_platforms) }}
+            {{ sections.bar_graph_section(target_platforms) }}
         </section>
         <section class="container">
             <h1>Developer Profile</h1>
-            {{ sections.tool_preferences_section(personal_description) }}
+            {{ sections.bar_graph_section(personal_description) }}
 
-            {{ sections.tool_preferences_section(developer_type) }}
+            {{ sections.bar_graph_section(developer_type) }}
 
-            {{ sections.tool_preferences_section(length_of_programming_experience) }}
+            {{ sections.bar_graph_section(length_of_programming_experience) }}
 
-            {{ sections.tool_preferences_section(length_of_professional_programming_experience) }}
+            {{ sections.bar_graph_section(length_of_professional_programming_experience) }}
 
             {{ sections.matrix_table_section(length_of_programming_experience_by_developer_type) }}
 
             {{ sections.matrix_table_section(length_of_professional_programming_experience_by_developer_type) }}
 
-            {{ sections.tool_preferences_section(developer_activities) }}
+            {{ sections.bar_graph_section(developer_activities) }}
 
-            {{ sections.tool_preferences_section(location) }}
+            {{ sections.bar_graph_section(location) }}
 
-            {{ sections.tool_preferences_section(gender) }}
+            {{ sections.bar_graph_section(gender) }}
+
+            {{ sections.bar_graph_section(age) }}
         </section>
 
         {% include 'pages/surveys/evtss2023/_credits-licensing-section.html' %}

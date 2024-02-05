@@ -1,0 +1,13 @@
+{
+    "headers": ["Age", "count"],
+    "description": "Majority of developers in Eastern Visayas are young. Most developers are aged from 18 to 34 years old.",
+    "data": [
+        ["Under 18 years old", 0],
+        ["18 - 24 years old", 0.455555555555556],
+        ["25 - 34 years old", 0.444444444444444],
+        ["35 - 44 years old", 0.0666666666666667],
+        ["45 - 54 years old", 0.0333333333333333],
+        ["55 - 64 years old", 0],
+        ["65 years or older", 0]
+    ]
+}

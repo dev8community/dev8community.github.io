@@ -23,12 +23,16 @@ def is_dict(var):
     # Based on: https://stackoverflow.com/a/11947595/1116098
     return isinstance(var, dict)
 
+def is_list(var):
+    return isinstance(var, list)
+
 template_loader: jinja2.FileSystemLoader = jinja2.FileSystemLoader('.')
 jinja_env: jinja2.Environment = jinja2.Environment(
     loader=template_loader,
     lstrip_blocks=True,
     trim_blocks=True)
 jinja_env.tests['dict'] = is_dict
+jinja_env.tests['list'] = is_list
 
 loaded_data: dict[str, any] = {}
 for name, data in toolconfig.data.items():

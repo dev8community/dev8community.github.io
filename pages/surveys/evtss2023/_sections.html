@@ -1,4 +1,4 @@
-{% macro tool_preferences_section(data_dict) -%}
+{% macro bar_graph_section(data_dict) -%}
 <section class="survey-item-section bar-graph">
     <div class="category-description">
         <h2>{{ data_dict['headers'][0] }}</h2>
@@ -90,7 +90,10 @@
                     </li>
                     {% endfor %}                                                     
                 </ul>
+                {% if not (data_dict['data'] is list and data_dict['data'] | length <= 10) %}
+                {# TODO: Make this more robust to also consider categorical bar graphs. #}
                 <button type="button" class="toggle-data-btn">Show More</button>
+                {% endif %}
             </div>
             {% endfor %}
         </div>
