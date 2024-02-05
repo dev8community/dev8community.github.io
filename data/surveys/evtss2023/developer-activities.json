@@ -1,0 +1,26 @@
+{
+    "headers": ["Developer Activities", "count"],
+    "description": "Almost all developers in Eastern Visayas were writing code in 2023. More than half reported they also review code and test, while less than half perform system design and deployment.",
+    "data": [
+        ["Programming", 0.888888888888889],
+        ["Code Reviewing", 0.544444444444444],
+        ["Testing", 0.533333333333333],
+        ["System Design", 0.444444444444444],
+        ["Deployment", 0.411111111111111],
+        ["UI/UX Design/Research", 0.277777777777778],
+        ["Data Analysis", 0.233333333333333],
+        ["Graphics Design/Art", 0.2],
+        ["System Administration", 0.2],
+        ["Teaching Programming", 0.166666666666667],
+        ["Academic Research", 0.155555555555556],
+        ["Infrastructure Development/DevOps", 0.133333333333333],
+        ["Technical Writing", 0.133333333333333],
+        ["People Management", 0.111111111111111],
+        ["Machine Learning", 0.1],
+        ["Other", 0.1],
+        ["Business Intelligence", 0.0777777777777778],
+        ["Data Engineering", 0.0555555555555556],
+        ["Marketing/Sales", 0.0555555555555556],
+        ["Product Management", 0.0555555555555556]
+    ]
+}
