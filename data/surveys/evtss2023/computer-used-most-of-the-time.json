@@ -1,0 +1,42 @@
+{
+    "headers": ["Computer Used Most of the Time", "Used", "Want to Use Next Year", "Did Not Like Using"],
+    "description": "PCs are the most used computing machine by developers in Eastern Visayas. Laptops, in particular, are the most popular. This is the case for all demographics. Macs are also used but professionals tend to be the ones to use them. None of the respondents who are students or unemployed reported that they use Macs most of the time.",
+    "data": {
+        "All": [
+            ["Laptop PC", 0.666666666666667],
+            ["Desktop PC", 0.2],
+            ["Mac", 0.111111111111111],
+            ["I don't have access to a computer", 0.0111111111111111],
+            ["Smartphone", 0.0111111111111111],
+            ["A mainframe computer or older", 0],
+            ["Dumbphone (e.g. Nokia 3310)", 0],
+            ["I do not know", 0],
+            ["Raspberry Pi or similar", 0],
+            ["Tablet", 0]
+        ],
+        "Professionals/Freelancers": [
+            ["Laptop PC", 0.634920634920635],
+            ["Desktop PC", 0.206349206349206],
+            ["Mac", 0.158730158730159],
+            ["A mainframe computer or older", 0],
+            ["Dumbphone (e.g. Nokia 3310)", 0],
+            ["I do not know", 0],
+            ["I don't have access to a computer", 0],
+            ["Raspberry Pi or similar", 0],
+            ["Smartphone", 0],
+            ["Tablet", 0]
+        ],
+        "Students and Unemployed": [
+            ["Laptop PC", 0.740740740740741],
+            ["Desktop PC", 0.185185185185185],
+            ["I don't have access to a computer", 0.037037037037037],
+            ["Smartphone", 0.037037037037037],
+            ["A mainframe computer or older", 0],
+            ["Dumbphone (e.g. Nokia 3310)", 0],
+            ["I do not know", 0],
+            ["Mac", 0],
+            ["Raspberry Pi or similar", 0],
+            ["Tablet", 0]
+        ]
+    }
+}
