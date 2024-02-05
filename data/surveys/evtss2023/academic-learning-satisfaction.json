@@ -1,6 +1,6 @@
 {
     "title": "Academic Learning Satisfaction per School",
-    "description": "",
+    "description": "We let our respondents whom had experience with higher education rate their satisfaction with the education they received. In order for us to evaluate their responses qualitatively, we assigned points to each of their ratings from 1 point for \"Strongly Disagree\" to 5 points for \"Strongly Agree\" and obtained their average. From this, we learned that UP Tacloban provided the most satisfying education for its students. Considering only schools with 3 or more respondents, this is followed by Visayas State University.",
     "headings": {
         "stub": "College/University",
         "rows": [
