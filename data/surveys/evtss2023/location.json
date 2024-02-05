@@ -1,0 +1,21 @@
+{
+    "headers": ["Location", "count"],
+    "description": "Almost half of our respondents report that they are currently located in Tacloban City.",
+    "data": [
+        ["Tacloban City", 0.455555555555556],
+        ["Calbayog City", 0.111111111111111],
+        ["Province of Leyte", 0.1],
+        ["Baybay City", 0.0777777777777778],
+        ["Palo, Leyte", 0.0666666666666667],
+        ["Catbalogan City", 0.0555555555555556],
+        ["Ormoc City", 0.0555555555555556],
+        ["Province of Eastern Samar", 0.0444444444444444],
+        ["Borongan City", 0.0111111111111111],
+        ["Province of Biliran", 0.0111111111111111],
+        ["Province of Samar", 0.0111111111111111],
+        ["Catarman, Northern Samar", 0],
+        ["Maasin City", 0],
+        ["Province of Northern Samar", 0],
+        ["Province of Southern Leyte", 0]
+    ]
+}
