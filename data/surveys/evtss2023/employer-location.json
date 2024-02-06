@@ -1,0 +1,21 @@
+{
+    "headers": ["Employer Location", "count"],
+    "description": "Around 30% of professional developers in Eastern Visayas are employed by a company in Tacloban City. 15% of these developers report that they are employed by a company outside of the Philippines. About half of them work for companies from various places that are outside Tacloban City but still within the country.",
+    "data": [
+        ["Tacloban City", 0.301587301587302],
+        ["Outside of the Philippines", 0.158730158730159],
+        ["Metro Cebu", 0.126984126984127],
+        ["Metro Manila", 0.0793650793650794],
+        ["Other places In the Philippines", 0.0793650793650794],
+        ["Both in and outside of the Philippines", 0.0634920634920635],
+        ["Calbayog City", 0.0634920634920635],
+        ["Baybay City", 0.0476190476190476],
+        ["Catbalogan City", 0.0317460317460317],
+        ["Borongan City", 0.0158730158730159],
+        ["Metro Davao", 0.0158730158730159],
+        ["Ormoc City", 0.0158730158730159],
+        ["Catarman, Northern Samar", 0],
+        ["Maasin City", 0],
+        ["Palo, Leyte", 0]
+    ]
+}
