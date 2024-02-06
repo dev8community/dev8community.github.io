@@ -1,0 +1,19 @@
+{
+    "headers": ["Annual Income Range", "count"],
+    "description": "Around 20% of our professional developers report that they have an annual income range of PHP 10,001 to PHP 100,000. At worst, this is equivalent to PHP 833.42 per month, while it is PHP 8,333.33 at best. However, most of these developers report earning more than PHP 100,000 annually, with one even reporting that they have annual income between PHP 5,000,000 and PHP 8,000,000.",
+    "data": [
+        ["PHP 10,001 - PHP 100,000", 0.206349206349206],
+        ["Prefer not to say", 0.19047619047619],
+        ["PHP 250,001 - PHP 400,000", 0.174603174603175],
+        ["PHP 400,001 - PHP 800,000", 0.142857142857143],
+        ["PHP 100,001 - PHP 250,000", 0.111111111111111],
+        ["PHP 800,001 - PHP 1,200,000", 0.111111111111111],
+        ["I did not earn any income", 0.0158730158730159],
+        ["PHP 1 - PHP 10,000", 0.0158730158730159],
+        ["PHP 1,200,001 - PHP 2,500,000", 0.0158730158730159],
+        ["PHP 5,000,001 - PHP 8,000,000", 0.0158730158730159],
+        ["PHP 10,000,001 or higher", 0],
+        ["PHP 2,500,001 - PHP 5,000,000", 0],
+        ["PHP 8,000,001 - PHP 10,000,000", 0]
+    ]
+}
