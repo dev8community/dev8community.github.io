@@ -1,0 +1,11 @@
+{
+    "headers": ["Mac Operating Systems", "count"],
+    "description": "macOS 14 Sonoma, the latest version of macOS, is the most used Mac operating system among developers that use Macs.",
+    "data": [
+        ["macOS 14 Sonoma", 0.6],
+        ["I do not know", 0.1],
+        ["OS X 10.10 Yosemite", 0.1],
+        ["macOS 12 Monterey", 0.1],
+        ["macOS 13 Ventura", 0.1]
+    ]
+}
