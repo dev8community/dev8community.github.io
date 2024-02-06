@@ -326,6 +326,14 @@ main {
                     }
                 }
             }
+            
+            &.text-only {
+                border-top: solid 1px $dev8-subtle-white;
+                border-bottom: solid 1px $dev8-subtle-white;
+
+                padding-top: 3%;
+                padding-bottom: 3%;
+            }
         }
     }
 }
