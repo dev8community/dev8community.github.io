@@ -1,0 +1,20 @@
+{
+    "headers": ["Mac Models", "count"],
+    "description": "Among developers that use Macs as their daily driver, most of them use MacBook Pros with the latest M-series chips. Older generation MacBooks with Intel CPUs are still being used but not as much as the newer models. Note that none of the students and the unemployed reported that they use Macs most of the time.",
+    "data": [
+        ["MacBook Pro (M-series CPUs)", 0.4],
+        ["MacBook Air (M-series CPUs)", 0.2],
+        ["MacBook Pro (Intel CPUs)", 0.2],
+        ["MacBook Air (Intel CPUs)", 0.1],
+        ["iMac (M-series CPUs)", 0.1],
+        ["iMac (Intel CPUs)", 0],
+        ["Mac mini (M-series CPUs)", 0],
+        ["Mac mini (Intel CPUs)", 0],
+        ["Mac Studio", 0],
+        ["Mac Pro (M-series CPUs)", 0],
+        ["Mac Pro (Intel CPUs)", 0],
+        ["MacBook", 0],
+        ["Other Mac models", 0],
+        ["Basta Mac 😅/I do not know", 0]
+    ]
+}

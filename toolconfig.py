@@ -31,7 +31,8 @@ data = {
     'academic_learning_satisfaction': 'data/surveys/evtss2023/academic-learning-satisfaction.json',
     'computer_used_most_of_the_time': 'data/surveys/evtss2023/computer-used-most-of-the-time.json',
     'pc_specs': 'data/surveys/evtss2023/pc-specs.json',
-    'pc_os': 'data/surveys/evtss2023/pc-os.json'
+    'pc_os': 'data/surveys/evtss2023/pc-os.json',
+    'mac_model': 'data/surveys/evtss2023/mac-model.json'
 }
 
 # Routes that we can access in the URL. Paths are
