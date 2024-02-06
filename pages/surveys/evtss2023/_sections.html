@@ -182,3 +182,13 @@
     </div>
 </section>
 {%- endmacro %}
+
+{% macro text_only_section(data_dict) -%}
+<section class="survey-item-section">
+    <h2>{{ data_dict['title'] }}</h2>
+    {% set paragraphs = data_dict['text'].split('\n') %}
+    {% for p in paragraphs %}
+    <p>{{ p }}</p>
+    {% endfor %}
+</section>
+{%- endmacro %}
