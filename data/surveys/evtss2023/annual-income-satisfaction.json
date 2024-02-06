@@ -1,0 +1,53 @@
+{
+    "title": "Annual Income Satisfaction",
+    "description": "Most professional developers who earn more than PHP 100,000 tend to be neutral or be satisfied with their current annual income range. Those earning PHP 10,001 to PHP 100,000 are the least satisfied with their annual income on average.",
+    "headings": {
+        "stub": "Annual Income Range",
+        "rows": [
+            "I did not earn any income",
+            "PHP 1 - PHP 10,000",
+            "PHP 10,000,001 or higher",
+            "PHP 10,001 - PHP 100,000",
+            "PHP 100,001 - PHP 250,000",
+            "PHP 250,001 - PHP 400,000",
+            "PHP 400,001 - PHP 800,000",
+            "PHP 800,001 - PHP 1,200,000",
+            "PHP 1,200,001 - PHP 2,500,000",
+            "PHP 2,500,001 - PHP 5,000,000",
+            "PHP 5,000,001 - PHP 8,000,000",
+            "PHP 8,000,001 - PHP 10,000,000",
+            "Prefer not to say"
+        ],
+        "column_spanners": [{
+            "title": "Satisfaction Rating",
+            "colspan": 7
+        }],
+        "columns": [
+            "Average",
+            "Very Dissatisfied (1 pt.)",
+            "Dissatisfied (2 pts.)",
+            "Neutral (3 pts.)",
+            "Satisfied (4 pts.)",
+            "Very Satisfied (5 pts.)",
+            "I do not earn any income. (No points)"
+        ]
+    },
+    "data": [
+        [0, 0, 0, 0, 0, 0, 1],
+        [2, 0, 1, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0],
+        [2.58, 2, 3, 5, 2, 0, 1],
+        [3.29, 0, 2, 1, 4, 0, 0],
+        [3.09, 1, 1, 5, 4, 0, 0],
+        [3.56, 0, 0, 5, 3, 1, 0],
+        [3.86, 0, 0, 2, 4, 1, 0],
+        [5, 0, 0, 0, 0, 1, 0],
+        [0, 0, 0, 0, 0, 0, 0],
+        [4, 0, 0, 0, 1, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0],
+        [3.25, 0, 3, 4, 4, 1, 0]
+    ],
+    "table_width": "100%",
+    "raw_read": true,
+    "focused_data_columns": [2, 3, 4, 5, 6]
+}
