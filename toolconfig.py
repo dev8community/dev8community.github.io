@@ -44,7 +44,8 @@ data = {
     'ai_search_tools_used': 'data/surveys/evtss2023/ai-search-tools-used.json',
     'ai_developer_tools_used': 'data/surveys/evtss2023/ai-developer-tools-used.json',
     'ai_datasets_opinion': 'data/surveys/evtss2023/ai-datasets-opinion.json',
-    'ai_art_opinion': 'data/surveys/evtss2023/ai-art-opinion.json'
+    'ai_art_opinion': 'data/surveys/evtss2023/ai-art-opinion.json',
+    'ai_code_generation_opinion': 'data/surveys/evtss2023/ai-code-generation-opinion.json'    
 }
 
 # Routes that we can access in the URL. Paths are

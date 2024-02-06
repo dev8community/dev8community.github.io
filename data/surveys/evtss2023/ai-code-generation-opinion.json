@@ -1,0 +1,27 @@
+{
+    "headers": ["AI Code Generation Opinion", "count"],
+    "description": "We asked developers in Eastern Visayas if it is okay for AI developer tools to be trained on open source repositories. Most developers report that they agree with this. 36.51% of them, however, take up a neutral stance.",
+    "data": {
+        "All": [
+            ["Neutral", 0.355555555555556],
+            ["Agree", 0.355555555555556],
+            ["Strongly Agree", 0.188888888888889],
+            ["Disagree", 0.0777777777777778],
+            ["Strongly Disagree", 0.0222222222222222]
+        ],
+        "Professionals/Freelancers": [
+            ["Neutral", 0.365079365079365],
+            ["Agree", 0.365079365079365],
+            ["Strongly Agree", 0.19047619047619],
+            ["Disagree", 0.0793650793650794],
+            ["Strongly Disagree", 0]
+        ],
+        "Students and Unemployed": [
+            ["Neutral", 0.333333333333333],
+            ["Agree", 0.333333333333333],
+            ["Strongly Agree", 0.185185185185185],
+            ["Strongly Disagree", 0.0740740740740741],
+            ["Disagree", 0.0740740740740741]
+        ]
+    }
+}
