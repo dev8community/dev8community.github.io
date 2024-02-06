@@ -1,0 +1,11 @@
+{
+    "headers": ["Academic Arrangement", "count"],
+    "description": "Most students in Eastern Visayas report that they are already conducting face-to-face classes in 2023, but 40% of them had hybrid set-ups.",
+    "data": [
+        ["Face-to-Face", 0.6],
+        ["Hybrid (mostly face-to-face)", 0.2],
+        ["Hybrid (mostly online)", 0.2],
+        ["I am not enrolled", 0],
+        ["Online", 0]
+    ]
+}

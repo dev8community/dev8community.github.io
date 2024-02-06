@@ -39,7 +39,8 @@ data = {
     'employer_location': 'data/surveys/evtss2023/employer-location.json',
     'employment_arrangement': 'data/surveys/evtss2023/employment-arrangement.json',
     'annual_income_range': 'data/surveys/evtss2023/annual-income-range.json',
-    'annual_income_satisfaction': 'data/surveys/evtss2023/annual-income-satisfaction.json'
+    'annual_income_satisfaction': 'data/surveys/evtss2023/annual-income-satisfaction.json',
+    'academic_arrangement': 'data/surveys/evtss2023/academic-arrangement.json'
 }
 
 # Routes that we can access in the URL. Paths are
