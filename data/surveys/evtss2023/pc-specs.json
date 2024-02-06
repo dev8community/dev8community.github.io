@@ -1,0 +1,63 @@
+{
+    "headers": ["PC Specs", "count"],
+    "description": "Most developers in Eastern Visayas who use PCs reported that they sport a mid-range CPU, though students tend to have entry-level CPUs. Most of them also sport an integrated GPU. In terms of memory, most developers report that they have at least 16 GB of RAM. Storage-wise, SSDs with at least 512 GB of storage are the most popular.",
+    "data": {
+        "All": [
+            ["My PC has a mid-range CPU (e.g. Ryzen 5 7600X, Intel Core i5 13600K).", 0.333333333333333],
+            ["My PC has an entry-level CPU (e.g. Ryzen 3 5300G, Intel Core i3 13100).", 0.128205128205128],
+            ["My PC has a high-end CPU (e.g. Ryzen 7 7700X, Intel Core i7 13700K).", 0.102564102564103],
+            ["My PC has an integrated GPU.", 0.256410256410256],
+            ["My PC has a mid-range GPU (e.g. AMD Radeon RX 7600, NVIDIA GeForce RTX 4060).", 0.166666666666667],
+            ["My PC has an entry-level GPU (e.g. AMD Radeon RX 6500 XT, NVIDIA GeForce GTX 1650).", 0.153846153846154],
+            ["My PC has a high-end GPU (e.g. AMD Radeon RX 7700 XT, NVIDIA GeForce RTX 4070).", 0.0512820512820513],
+            ["My PC has at least 16 GB of RAM.", 0.358974358974359],
+            ["My PC has at least 8 GB of RAM.", 0.294871794871795],
+            ["My PC has lower than 8 GB of RAM.", 0.0256410256410256],
+            ["My PC has an SSD that has at least 512 GB of storage.", 0.282051282051282],
+            ["My PC has an SSD that has at least 1 TB of storage.", 0.217948717948718],
+            ["My PC has an SSD that has lower than 512 GB of storage.", 0.102564102564103],
+            ["My PC has a hard drive that has at least 1 TB of storage.", 0.115384615384615],
+            ["My PC has a hard drive that has lower than 512 GB of storage.", 0.0384615384615385],
+            ["My PC has a hard drive that has at least 512 GB of storage.", 0.0256410256410256],
+            ["Prefer not to say", 0.0512820512820513]
+        ],
+        "Professionals/Freelancers": [
+            ["My PC has a mid-range CPU (e.g. Ryzen 5 7600X, Intel Core i5 13600K).", 0.380952380952381],
+            ["My PC has a high-end CPU (e.g. Ryzen 7 7700X, Intel Core i7 13700K).", 0.0943396226415094],
+            ["My PC has an entry-level CPU (e.g. Ryzen 3 5300G, Intel Core i3 13100).", 0.0754716981132076],
+            ["My PC has an integrated GPU.", 0.245283018867925],
+            ["My PC has a mid-range GPU (e.g. AMD Radeon RX 7600, NVIDIA GeForce RTX 4060).", 0.188679245283019],
+            ["My PC has an entry-level GPU (e.g. AMD Radeon RX 6500 XT, NVIDIA GeForce GTX 1650).", 0.150943396226415],
+            ["My PC has a high-end GPU (e.g. AMD Radeon RX 7700 XT, NVIDIA GeForce RTX 4070).", 0.0377358490566038],
+            ["My PC has at least 16 GB of RAM.", 0.415094339622642],
+            ["My PC has at least at 8 GB of RAM.", 0.30188679245283],
+            ["My PC has lower than 8 GB of RAM.", 0.0188679245283019],
+            ["My PC has an SSD that has at least 1 TB of storage.", 0.264150943396226],
+            ["My PC has an SSD that has at least 512 GB of storage.", 0.245283018867925],
+            ["My PC has an SSD that has lower than 512 GB of storage.", 0.132075471698113],
+            ["My PC has a hard drive that has at least 1 TB of storage.", 0.150943396226415],
+            ["My PC has a hard drive that has at least 512 GB of storage.", 0.0188679245283019],
+            ["My PC has a hard drive that has lower than 512 GB of storage.", 0.0566037735849057],
+            ["Prefer not to say", 0.0377358490566038]
+        ],
+        "Students and Unemployed": [
+            ["My PC has a mid-range CPU (e.g. Ryzen 5 7600X, Intel Core i5 13600K).", 0.222222222222222],
+            ["My PC has an entry-level CPU (e.g. Ryzen 3 5300G, Intel Core i3 13100).", 0.24],
+            ["My PC has a high-end CPU (e.g. Ryzen 7 7700X, Intel Core i7 13700K).", 0.12],
+            ["My PC has an integrated GPU.", 0.28],
+            ["My PC has an entry-level GPU (e.g. AMD Radeon RX 6500 XT, NVIDIA GeForce GTX 1650).", 0.16],
+            ["My PC has a mid-range GPU (e.g. AMD Radeon RX 7600, NVIDIA GeForce RTX 4060).", 0.12],
+            ["My PC has a high-end GPU (e.g. AMD Radeon RX 7700 XT, NVIDIA GeForce RTX 4070).", 0.08],
+            ["My PC has at least 8 GB of RAM.", 0.28],
+            ["My PC has at least 16 GB of RAM.", 0.24],
+            ["My PC has lower than 8 GB of RAM.", 0.04],
+            ["My PC has an SSD that has at least 512 GB of storage.", 0.36],
+            ["My PC has an SSD that has at least 1 TB of storage.", 0.12],
+            ["My PC has an SSD that has lower than 512 GB of storage.", 0.04],
+            ["My PC has a hard drive that has at least 1 TB of storage.", 0.04],
+            ["My PC has a hard drive that has at least 512 GB of storage.", 0.04],
+            ["My PC has a hard drive that has lower than 512 GB of storage.", 0],
+            ["Prefer not to say", 0.08]
+        ]
+    }
+}
