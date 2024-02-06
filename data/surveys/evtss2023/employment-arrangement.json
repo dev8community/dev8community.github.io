@@ -1,0 +1,15 @@
+{
+    "headers": ["Employment Arrangement", "count"],
+    "description": "Remote work is the most popular setup for developers in Eastern Visayas, with most having the privilege of flexitime. In-office set ups are still common, however.",
+    "data": [
+        ["In-office (fixed time)", 0.253968253968254],
+        ["Remote (flexitime)", 0.253968253968254],
+        ["Remote (fixed time)", 0.19047619047619],
+        ["Hybrid Remote (mostly in-office, flexitime)", 0.0952380952380952],
+        ["Hybrid Remote (half in-office, half online, flexitime)", 0.0793650793650794],
+        ["In-office (flexitime)", 0.0634920634920635],
+        ["Hybrid Remote (half in-office, half online, fixed time)", 0.0476190476190476],
+        ["Hybrid Remote (mostly remote, fixed time)", 0.0158730158730159],
+        ["Hybrid Remote (mostly in-office, fixed time)", 0]
+    ]
+}
