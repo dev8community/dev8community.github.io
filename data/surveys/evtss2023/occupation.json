@@ -1,0 +1,9 @@
+{
+    "headers": ["Occupation", "count"],
+    "description": "70% of our respondents report that they are professionals or freelancers, while almost 28% report that they are students. We only have 2.22% reporting that they are unemployed at the time of the survey.",
+    "data": [
+        ["Professional/Freelancer", 0.7],
+        ["Student", 0.277777777777778],
+        ["Unemployed", 0.0222222222222222]
+    ]
+}

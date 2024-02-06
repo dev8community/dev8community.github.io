@@ -34,7 +34,8 @@ data = {
     'pc_os': 'data/surveys/evtss2023/pc-os.json',
     'mac_models': 'data/surveys/evtss2023/mac-models.json',
     'mac_os': 'data/surveys/evtss2023/mac-os.json',
-    'tablets': 'data/surveys/evtss2023/tablets.json'
+    'tablets': 'data/surveys/evtss2023/tablets.json',
+    'occupation': 'data/surveys/evtss2023/occupation.json'
 }
 
 # Routes that we can access in the URL. Paths are
