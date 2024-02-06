@@ -90,8 +90,10 @@
                     </li>
                     {% endfor %}                                                     
                 </ul>
-                {% if not (data_dict['data'] is list and data_dict['data'] | length <= 10) %}
-                {# TODO: Make this more robust to also consider categorical bar graphs. #}
+                {% if not ((data_dict['data'] is list and data_dict['data'] | length <= 10) or
+                           (data_dict['data'] is dict and data_dict['data'].values() | map('length') | max <= 10)) %}
+                {# TODO: Make this more robust to also consider categorical bar graphs. Will not work if one demographic has more than 10 items while another has less than 10. #}
+                {# TODO: Make the buttons be on a per demographic basis. #}
                 <button type="button" class="toggle-data-btn">Show More</button>
                 {% endif %}
             </div>

@@ -1,0 +1,24 @@
+{
+    "headers": ["PC Operating Systems", "count"],
+    "description": "Windows is the most popular PC operating system among developers using PCs in Eastern Visayas. While Linux distros are also used, they are only mainly used by professionals. No student have reported that they use any PC OS outside of Windows.",
+    "data": {
+        "All": [
+            ["Windows 11", 0.4],
+            ["Windows 10", 0.448717948717949],
+            ["An Ubuntu-based distro (e.g. Pop! OS, Linux Mint, elementaryOS)", 0.0512820512820513],
+            ["Ubuntu 22.04 LTS Jammy Jellyfish", 0.0256410256410256],
+            ["Ubuntu 20.04 LTS Focal Fossa", 0.0128205128205128]
+        ],
+        "Professionals/Freelancers": [
+            ["Windows 11", 0.428571428571429],
+            ["Windows 10", 0.358490566037736],
+            ["An Ubuntu-based distro (e.g. Pop! OS, Linux Mint, elementaryOS)", 0.0754716981132076],
+            ["Ubuntu 22.04 LTS Jammy Jellyfish", 0.0377358490566038],
+            ["Ubuntu 20.04 LTS Focal Fossa", 0.0188679245283019]
+        ],
+        "Students and Unemployed": [
+            ["Windows 10", 0.592592592592593],
+            ["Windows 11", 0.36]
+        ]
+    }
+}
