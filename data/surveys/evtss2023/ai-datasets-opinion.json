@@ -1,0 +1,27 @@
+{
+    "headers": ["AI Data Sets Opinion", "count"],
+    "description": "We asked developers in Eastern Visayas if they believe that it is okay for AI developers to use any data (e.g. images, text) obtained through any means (e.g. web scraping, scanning), regardless of whether permission was obtained or not from the author of the data, for use in training AI models. Less than half say that they have a neutral stance on the issue. Among those with stances, there are slightly more developers who agree that it is okay for AI developers to use any data set for training AI models than those who do not.",
+    "data": {
+        "All": [
+            ["Neutral", 0.444444444444444],
+            ["Disagree", 0.177777777777778],
+            ["Agree", 0.166666666666667],
+            ["Strongly Agree", 0.122222222222222],
+            ["Strongly Disagree", 0.0888888888888889]
+        ],
+        "Professionals/Freelancers": [
+            ["Neutral", 0.476190476190476],
+            ["Disagree", 0.174603174603175],
+            ["Agree", 0.158730158730159],
+            ["Strongly Agree", 0.111111111111111],
+            ["Strongly Disagree", 0.0793650793650794]
+        ],
+        "Students and Unemployed": [
+            ["Neutral", 0.37037037037037],
+            ["Disagree", 0.185185185185185],
+            ["Agree", 0.185185185185185],
+            ["Strongly Agree", 0.148148148148148],
+            ["Strongly Disagree", 0.111111111111111]
+        ]
+    }
+}
