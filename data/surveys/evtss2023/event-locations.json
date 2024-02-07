@@ -1,0 +1,26 @@
+{
+    "headers": ["Event Locations", "count"],
+    "description": "We asked our respondents where Dev8 should prioritize its efforts in in the survey. We processed the data into specific locations. We interpret locations that neither cities or municipalities as \"any city or municipality in that area\". From what we gathered, many respondents want us to focus in Calbayog City, Baybay City, and the island of Samar.",
+    "data": [
+        ["Calbayog City", 0.205128205128205],
+        ["Baybay City", 0.153846153846154],
+        ["Samar Island", 0.115384615384615],
+        ["Eastern Visayas", 0.0769230769230769],
+        ["Catbalogan City", 0.0641025641025641],
+        ["Tacloban City", 0.0641025641025641],
+        ["Borongan City", 0.0512820512820513],
+        ["Carigara, Leyte", 0.0384615384615385],
+        ["Province of Biliran", 0.0384615384615385],
+        ["Southern Leyte", 0.0384615384615385],
+        ["Ormoc City", 0.0256410256410256],
+        ["Tolosa, Leyte", 0.0256410256410256],
+        ["Calubian, Leyte", 0.0128205128205128],
+        ["Leyte, Leyte", 0.0128205128205128],
+        ["Maasin City", 0.0128205128205128],
+        ["Northern Samar", 0.0128205128205128],
+        ["San Isidro, Leyte", 0.0128205128205128],
+        ["Tabango, Leyte", 0.0128205128205128],
+        ["Tanauan, Leyte", 0.0128205128205128],
+        ["Villaba, Leyte", 0.0128205128205128]
+    ]
+}

@@ -51,7 +51,8 @@ data = {
     'desired_tech_event_topics': 'data/surveys/evtss2023/desired-tech-event-topics.json',
     'survey_length': 'data/surveys/evtss2023/survey-length.json',
     'survey_difficulty': 'data/surveys/evtss2023/survey-difficulty.json',
-    'event_food_and_drinks': 'data/surveys/evtss2023/event-food-and-drinks.json'
+    'event_food_and_drinks': 'data/surveys/evtss2023/event-food-and-drinks.json',
+    'event_locations': 'data/surveys/evtss2023/event-locations.json'
 }
 
 # Routes that we can access in the URL. Paths are
