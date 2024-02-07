@@ -1,0 +1,9 @@
+{
+    "headers": ["Survey Difficulty", "count"],
+    "description": "Most respondents of our survey found it to be neither easy nor difficult.",
+    "data": [
+        ["Neither easy nor difficult", 0.6],
+        ["Easy", 0.388888888888889],
+        ["Difficult", 0.0111111111111111]
+    ]
+}

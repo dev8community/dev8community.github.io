@@ -49,7 +49,8 @@ data = {
     'local_cs_it_sentiments': 'data/surveys/evtss2023/local-cs-it-sentiments.json',
     'desired_tech_events_in_the_region': 'data/surveys/evtss2023/desired-tech-events-in-the-region.json',
     'desired_tech_event_topics': 'data/surveys/evtss2023/desired-tech-event-topics.json',
-    'survey_length': 'data/surveys/evtss2023/survey-length.json'
+    'survey_length': 'data/surveys/evtss2023/survey-length.json',
+    'survey_difficulty': 'data/surveys/evtss2023/survey-difficulty.json'
 }
 
 # Routes that we can access in the URL. Paths are
