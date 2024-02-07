@@ -1,0 +1,16 @@
+{
+    "headers": ["Desired Tech Events in the Region", "count"],
+    "description": "Developers in Eastern Visayas would like to see more tech-related seminars, bootcamps, conferences/talks, and coding competitions in the region. Developers would also like to see job fairs.",
+    "data": [
+        ["Trainings, Seminars, or Workshops", 0.9],
+        ["Bootcamps", 0.755555555555556],
+        ["Conferences/Talks", 0.733333333333333],
+        ["Coding Competitions (e.g. competitive programming, hackathons)", 0.644444444444445],
+        ["Job Fairs", 0.633333333333333],
+        ["None", 0.0222222222222222],
+        ["Meet and Greet", 0.0111111111111111],
+        ["Robotics Competition", 0.0111111111111111],
+        ["Talks with potential investors or mid-large enterprises in the tech scene", 0.0111111111111111],
+        ["\"Startup\"", 0.0111111111111111]
+    ]
+}
