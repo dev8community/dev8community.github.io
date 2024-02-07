@@ -3,6 +3,20 @@
 
 @import '_variables.scss';
 
+a {
+    color: $link-colour;
+
+    text-decoration: none;
+
+    &:visited {
+        color: $link-colour-active;
+    }
+
+    &:hover {
+        color: $link-colour-hovered;
+    }
+}
+
 button {
     border: none;
     border-radius: 5px;
