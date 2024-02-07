@@ -1,0 +1,9 @@
+{
+    "headers": ["Survey Length", "count"],
+    "description": "Most respondents to our survey found it to be too long, while around 44% found it to be approriate in length.",
+    "data": [
+        ["Too long", 0.555555555555556],
+        ["Appropriate in length", 0.444444444444444],
+        ["Too short", 0]
+    ]
+}
