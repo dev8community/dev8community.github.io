@@ -285,9 +285,11 @@ main {
                         div {                     
                             overflow-x: scroll;
 
+                            scrollbar-color: hsla(0, 0%, 100%, 65%);
+
                             &::-webkit-scrollbar {
-                                width: 8px;
-                                height: 8px;
+                                width: 5px;
+                                height: 5px;
                             }
 
                             &::-webkit-scrollbar-track {
