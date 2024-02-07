@@ -1,0 +1,35 @@
+name: Deploy Website
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Python dependencies. ⚙️
+        run: |
+          pip3 install pipenv
+          pipenv requirements > requirements.txt
+          pip3 install -r requirements.txt
+        working-directory: $GITHUB_WORKSPACE
+      - name: Get SASS. ⚙️
+        run: |
+          sudo snap install dart-sass
+          sudo snap alias dart-sass sass
+      - name: Build website. 🔨
+        run: |
+          python3 tool.py build
+        working-directory: $GITHUB_WORKSPACE
+      - name: Deploy website. 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: $GITHUB_WORKSPACE/dist
