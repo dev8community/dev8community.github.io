@@ -88,7 +88,7 @@
                             {% endif %}
                         </div>
                     </li>
-                    {% endfor %}                                                     
+                    {% endfor %}                           
                 </ul>
                 {% if not ((data_dict['data'] is list and data_dict['data'] | length <= 10) or
                            (data_dict['data'] is dict and data_dict['data'].values() | map('length') | max <= 10)) %}

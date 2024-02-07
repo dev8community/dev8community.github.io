@@ -81,10 +81,19 @@ header {
                 min-height: 100%;
 
                 grid-area: 1 / 1 / 1 / 1;
-                justify-self: end;
 
                 img {
                     height: 100%;
+
+                    // Edge (and possibly all Chromium-based browsers) properly
+                    // displays the Eastern Visayas image without this float
+                    // property and with just `justify-self: end;` in
+                    // `div#hero-image`. However, Firefox does not display the
+                    // image if we have `justify-self: end;`, so we removed it
+                    // and replaced it with the property below so that it's
+                    // pushed to the right. Both Edge and Firefox are happy
+                    // with this.
+                    float: right;
                 }
             }
 
