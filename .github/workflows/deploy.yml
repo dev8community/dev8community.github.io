@@ -20,7 +20,6 @@ jobs:
           pip3 install pipenv
           pipenv requirements > requirements.txt
           pip3 install -r requirements.txt
-        working-directory: $GITHUB_WORKSPACE
       - name: Get SASS. ⚙️
         run: |
           sudo snap install dart-sass
@@ -28,7 +27,6 @@ jobs:
       - name: Build website. 🔨
         run: |
           python3 tool.py build
-        working-directory: $GITHUB_WORKSPACE
       - name: Deploy website. 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
