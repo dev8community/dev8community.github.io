@@ -1,0 +1,21 @@
+{
+    "headers": ["Event Food and Drinks", "count"],
+    "description": "Historically, Dev8 served burger or burger-related meals or snacks in past events. We asked developers what food or drinks they would like us to serve in our next events. The majority wants us to provide coffee. However, spaghetti, chicken, and soft drinks are also the top non-burger food and drinks.\nAnd for around 20% of developers who responded to our survey, tiwala lang. May pake siguro naman siya sayo. 😉",
+    "data": [
+        ["Coffee", 0.533333333333333],
+        ["Chickenburger", 0.466666666666667],
+        ["Spaghetti", 0.411111111111111],
+        ["Chicken", 0.333333333333333],
+        ["Soft Drinks", 0.333333333333333],
+        ["Fruit Salad", 0.311111111111111],
+        ["Chicken Fillet", 0.288888888888889],
+        ["Vegetable Salad", 0.288888888888889],
+        ["Cake Slices", 0.266666666666667],
+        ["Tea", 0.266666666666667],
+        ["Beer", 0.244444444444444],
+        ["Pake niya sa akin.", 0.222222222222222],
+        ["Or me", 0.166666666666667],
+        ["Whole Cakes", 0.122222222222222],
+        ["None", 0.0555555555555556]
+    ]
+}
