@@ -42,7 +42,7 @@ button {
                     -1px -1px 3px hsl(185, 89%, 37%);
 
         &:hover {
-            background-color: color.change($btn-dark-color, $lightness: 32%);
+            background-color: color.change($btn-dark-color, $lightness: 28%);
         }
 
         &:active {            
