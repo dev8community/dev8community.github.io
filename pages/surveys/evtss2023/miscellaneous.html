@@ -1,0 +1,16 @@
+{% extends "pages/surveys/evtss2023/_subpage.html" %}
+
+{% block title %}Miscellaneous{% endblock %}
+{% block relative_url %}miscellaneous{% endblock %}
+{% block content %}
+{{ components.bar_graph_section(survey_length) }}
+
+{{ components.bar_graph_section(survey_difficulty) }}
+
+{{ components.bar_graph_section(event_food_and_drinks) }}
+
+{{ components.bar_graph_section(event_locations) }}
+{% endblock %}
+
+{% block previous_page_title %}State of the Eastern Visayas Tech Scene{% endblock %}
+{% block previous_page_url %}../state-of-the-eastern-visayas-tech-scene{% endblock %}

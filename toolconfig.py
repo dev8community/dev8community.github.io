@@ -66,7 +66,8 @@ routes = {
     '/surveys/evtss2023/developer-profile': 'pages/surveys/evtss2023/developer-profile.html',
     '/surveys/evtss2023/work-and-academics': 'pages/surveys/evtss2023/work-and-academics.html',
     '/surveys/evtss2023/recent-issues': 'pages/surveys/evtss2023/recent-issues.html',
-    '/surveys/evtss2023/state-of-the-eastern-visayas-tech-scene': 'pages/surveys/evtss2023/state-of-the-eastern-visayas-tech-scene.html'
+    '/surveys/evtss2023/state-of-the-eastern-visayas-tech-scene': 'pages/surveys/evtss2023/state-of-the-eastern-visayas-tech-scene.html',
+    '/surveys/evtss2023/miscellaneous': 'pages/surveys/evtss2023/miscellaneous.html'
 }
 
 # Processed files are files that are processed from a source file,

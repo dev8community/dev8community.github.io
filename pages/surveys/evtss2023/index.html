@@ -70,12 +70,8 @@
         <section class="container">
             <h1>Miscellaneous</h1>
             {{ components.bar_graph_section(survey_length) }}
-            
-            {{ components.bar_graph_section(survey_difficulty) }}
 
-            {{ components.bar_graph_section(event_food_and_drinks) }}
-
-            {{ components.bar_graph_section(event_locations) }}
+            {{ components.link_to_url("View More Miscellaneous Results", "miscellaneous") }}
         </section>
 
         {% include 'pages/surveys/evtss2023/_thank-you-section.html' %}
