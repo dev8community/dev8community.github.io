@@ -3,7 +3,7 @@
 @import '_variables.scss';
 @import '../../_mixins.scss';
 
-header {
+header.main-page {
     $bg-grid-colour: color.change($white, $alpha: 0.25);
 
     background-color: $dark-green;

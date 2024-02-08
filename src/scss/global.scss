@@ -62,9 +62,5 @@ img {
 }
 
 .hide {
-    // We can't just use display: none since that makes the browser no longer
-    // display our SVG gradients once we put any element containing them and
-    // possibly itself too back into view by removing this class.
-    visibility: hidden;
-    position: absolute;
+    display: none;
 }

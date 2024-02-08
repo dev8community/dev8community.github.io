@@ -1,0 +1,59 @@
+{% import 'pages/surveys/evtss2023/_components.html' as components %}
+
+{% set page_title %}{% block title %}{% endblock %}{% endset %}
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Dev8 Eastern Visayas Tech Scene Survey 2023 - {{ page_title }}</title>
+    <meta name="description" content="Learn the state of the tech scene of Eastern Visayas in 2023.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://dev8community.github.io/surveys/evtss2023/{% block relative_url %}{% endblock %}" />
+    <meta property="og:title" content="Dev8 Eastern Visayas Tech Scene Survey 2023 - {{ page_title }}" />
+    <meta property="og:image" content="/assets/surveys/evtss2023/img/og-fb-image.jpg" />
+    <meta property="og:image:alt" content="View the Dev8 Eastern Visayas Tech Scene Survey 2023 results." />
+    <meta property="og:description" content="Learn the state of the tech scene of Eastern Visayas in 2023." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Dev8" />
+    <meta property="og:locale" content="en_PH" />
+    <meta property="twitter:title" content="Dev8 Eastern Visayas Tech Scene Survey 2023 - {{ page_title }}" />
+    <meta property="twitter:image" content="/assets/surveys/evtss2023/img/twitter-image.jpg" />
+    <meta property="twitter:image:alt" content="View the Dev8 Eastern Visayas Tech Scene Survey 2023 results." />
+    <meta property="twitter:description" content="Learn the state of the tech scene of Eastern Visayas in 2023." />
+    <meta property="twitter:site" content="@dev8community" />
+    <meta property="twitter:card" content="summary" />
+    <link href="/assets/surveys/evtss2023/css/index.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="/assets/img/logo.png" rel="icon" type="image/x-icon">
+    <script type="text/javascript" src="/assets/surveys/evtss2023/js/page.js"></script>
+</head>
+<body class="subpage">
+    <header class="container">
+        <nav>
+            <a href="/surveys/evtss2023">
+                <button type="button" class="light-btn">&#8592; Return to Main Survey Page</button>
+            </a>
+        </nav>
+    </header>
+    <main class="container">
+        <section>
+            <h1>{{ page_title }}</h1>
+            {% block content %}
+            {% endblock %}
+        </section>
+    </main>
+    <nav id="pagination-buttons" class="container">
+        {% if self.previous_page_title() and self.previous_page_url() %}
+        <a id="previous-btn" href="{% block previous_page_url %}{% endblock %}">
+            <button type="button" class="light-btn">&#8592; <span class="btn-text">{% block previous_page_title %}{% endblock %}</span></button>
+        </a>
+        {% endif %}
+        {% if self.next_page_title() and self.next_page_url() %}
+        <a id="next-btn" href="{% block next_page_url %}{% endblock %}">
+            <button type="button" class="light-btn"><span class="btn-text">{% block next_page_title %}{% endblock %}</span> &#8594;</button>
+        </a>
+        {% endif %}
+    </nav>
+</body>
+</html>

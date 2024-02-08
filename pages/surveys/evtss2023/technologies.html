@@ -1,0 +1,26 @@
+{% extends "pages/surveys/evtss2023/_subpage.html" %}
+
+{% block title %}Technologies{% endblock %}
+{% block relative_url %}technologies{% endblock %}
+{% block content %}
+{{ components.bar_graph_section(primary_languages) }}
+
+{{ components.bar_graph_section(languages_used) }}
+
+{{ components.bar_graph_section(frameworks_used) }}
+
+{{ components.bar_graph_section(tools_used) }}
+
+{{ components.bar_graph_section(ides_used) }}
+
+{{ components.bar_graph_section(databases_used) }}
+
+{{ components.bar_graph_section(cloud_platforms_used) }}
+
+{{ components.bar_graph_section(work_management_used) }}
+
+{{ components.bar_graph_section(communication_tools_used) }}
+{% endblock %}
+
+{% block next_page_title %}Development{% endblock %}
+{% block next_page_url %}../development{% endblock %}

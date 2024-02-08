@@ -60,7 +60,8 @@ data = {
 # TODO: Add support for routes leading to files.
 routes = {
     '/': 'pages/index.html',
-    '/surveys/evtss2023': 'pages/surveys/evtss2023/index.html'
+    '/surveys/evtss2023': 'pages/surveys/evtss2023/index.html',
+    '/surveys/evtss2023/technologies': 'pages/surveys/evtss2023/technologies.html'
 }
 
 # Processed files are files that are processed from a source file,
