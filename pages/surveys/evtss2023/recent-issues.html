@@ -1,0 +1,20 @@
+{% extends "pages/surveys/evtss2023/_subpage.html" %}
+
+{% block title %}Recent Issues{% endblock %}
+{% block relative_url %}recent-issues{% endblock %}
+{% block content %}
+{{ components.bar_graph_section(ai_search_tools_used) }}
+
+{{ components.bar_graph_section(ai_developer_tools_used) }}
+
+{{ components.bar_graph_section(ai_datasets_opinion) }}
+
+{{ components.bar_graph_section(ai_art_opinion) }}
+
+{{ components.bar_graph_section(ai_code_generation_opinion) }}
+{% endblock %}
+
+{% block previous_page_title %}Work and Academics{% endblock %}
+{% block previous_page_url %}../work-and-academics{% endblock %}
+{% block next_page_title %}State of the Eastern Visayas Tech Scene{% endblock %}
+{% block next_page_url %}../state-of-the-eastern-visayas-tech-scene{% endblock %}

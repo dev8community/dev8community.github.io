@@ -27,7 +27,7 @@ body.subpage {
                 span.btn-text {
                     display: none;
 
-                    @include tablets {
+                    @include small-screens {
                         display: inline;
                     }
                 }
