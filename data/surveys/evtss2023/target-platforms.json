@@ -14,7 +14,7 @@
             ["I don't develop anything", 0.0888888888888889],
             ["Server or Infrastructure", 0.0888888888888889],
             ["Desktop (macOS)", 0.0666666666666667],
-            ["IoT/Embedded", 0.0666666666666667],
+            ["IoT or Embedded", 0.0666666666666667],
             ["Desktop (others)", 0.0333333333333333],
             ["Mobile (others)", 0.0333333333333333],
             ["Other", 0.0333333333333333]
@@ -28,10 +28,10 @@
             ["Mobile (iOS)", 0.206349206349206],
             ["Desktop (Linux)", 0.174603174603175],
             ["Consoles", 0.142857142857143],
-            ["Server/Infrastructure", 0.126984126984127],
+            ["Server or Infrastructure", 0.126984126984127],
             ["Desktop (macOS)", 0.0793650793650794],
             ["I don't develop anything", 0.0793650793650794],
-            ["IoT/Embedded", 0.0634920634920635],
+            ["IoT or Embedded", 0.0634920634920635],
             ["Other", 0.0476190476190476],
             ["Desktop (others)", 0.0317460317460317],
             ["Mobile (others)", 0.0317460317460317]
@@ -43,7 +43,7 @@
             ["Web (Backend)", 0.444444444444444],
             ["I don't develop anything", 0.111111111111111],
             ["Cloud", 0.0740740740740741],
-            ["IoT/Embedded", 0.0740740740740741],
+            ["IoT or Embedded", 0.0740740740740741],
             ["Mobile (iOS)", 0.0740740740740741],
             ["Desktop (macOS)", 0.037037037037037],
             ["Desktop (others)", 0.037037037037037],
@@ -51,7 +51,7 @@
             ["Consoles", 0],
             ["Desktop (Linux)", 0],
             ["Other", 0],
-            ["Server/Infrastructure", 0]
+            ["Server or Infrastructure", 0]
         ]
     }
 }

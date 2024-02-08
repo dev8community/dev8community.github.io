@@ -4,7 +4,7 @@
     "data": {
         "All": [
             ["Websites", 0.611111111111111],
-            ["Database/Data Storage", 0.277777777777778],
+            ["Database or Data Storage", 0.277777777777778],
             ["System Software", 0.244444444444444],
             ["Utilities", 0.144444444444444],
             ["Games", 0.122222222222222],
@@ -20,13 +20,13 @@
             ["Programming Tools", 0.0555555555555556],
             ["Hardware", 0.0444444444444444],
             ["Home Automation", 0.0444444444444444],
-            ["Libraries/Frameworks", 0.0333333333333333],
+            ["Libraries or Frameworks", 0.0333333333333333],
             ["Security", 0.0222222222222222]
         ],
         "Professionals/Freelancers": [
             ["Websites", 0.603174603174603],
             ["System Software", 0.26984126984127],
-            ["Database/Data Storage", 0.238095238095238],
+            ["Database or Data Storage", 0.238095238095238],
             ["Data Science", 0.142857142857143],
             ["Machine Learning", 0.142857142857143],
             ["Utilities", 0.142857142857143],
@@ -41,12 +41,12 @@
             ["Programming Tools", 0.0634920634920635],
             ["Hardware", 0.0476190476190476],
             ["Home Automation", 0.0476190476190476],
-            ["Libraries/Frameworks", 0.0476190476190476],
+            ["Libraries or Frameworks", 0.0476190476190476],
             ["Security", 0.0158730158730159]
         ],
         "Students and Unemployed": [
             ["Websites", 0.62962962962963],
-            ["Database/Data Storage", 0.37037037037037],
+            ["Database or Data Storage", 0.37037037037037],
             ["Games", 0.222222222222222],
             ["I don't develop anything", 0.185185185185185],
             ["System Software", 0.185185185185185],
@@ -63,7 +63,7 @@
             ["Blockchain", 0],
             ["Data Science", 0],
             ["Finance", 0],
-            ["Libraries/Frameworks", 0]
+            ["Libraries or Frameworks", 0]
         ]
     }
 }
