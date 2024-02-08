@@ -1,0 +1,14 @@
+{% extends "pages/surveys/evtss2023/_subpage.html" %}
+
+{% block title %}Development{% endblock %}
+{% block relative_url %}development{% endblock %}
+{% block content %}
+{{ components.bar_graph_section(software_being_developed) }}
+
+{{ components.bar_graph_section(target_platforms) }}
+{% endblock %}
+
+{% block previous_page_title %}Technologies{% endblock %}
+{% block previous_page_url %}../technologies{% endblock %}
+{% block next_page_title %}Developer Profile{% endblock %}
+{% block next_page_url %}../developer-profile{% endblock %}
