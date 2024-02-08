@@ -192,3 +192,12 @@
     {% endfor %}
 </section>
 {%- endmacro %}
+
+{% macro link_to_url(link_text, target_url) -%}
+<div class="link-to-url">
+    <a href="{{ target_url }}">
+        <button type="button" class="light-btn">{{ link_text }}</button>
+    </a>
+    <hr />
+</div>
+{%- endmacro %}

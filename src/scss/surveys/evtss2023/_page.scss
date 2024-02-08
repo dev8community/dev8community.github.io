@@ -6,6 +6,8 @@
 a {
     color: $link-colour;
 
+    display: inline-block;
+
     text-decoration: none;
 
     &:visited {
@@ -30,6 +32,8 @@ button {
 
     padding: 3%;
 
+    display: block;
+
     &.dark-btn {
         background-color: $btn-dark-color;
         color: $white;
@@ -43,12 +47,34 @@ button {
         }
     }
 
+    &.light-btn {
+        background-color: $btn-light-color;
+        color: $dev8-black;
+
+        box-shadow: 3px 3px 5px $btn-light-box-shadow-color,
+                    -1px -1px 3px $btn-light-box-shadow-2-color;
+
+        &:hover {
+            background-color: color.change($btn-light-color, $lightness: 68%);
+        }
+
+        &:active {            
+            box-shadow: inset 3px 3px 15px $btn-light-box-shadow-color,
+                        inset -3px -3px 15px $btn-light-box-shadow-2-color;
+        }
+    }
+
     &:hover {
         cursor: pointer;
     }
 
     @include tablets {
         padding: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        min-width: 100px;
+        max-width: fit-content;
     }
 }
 
@@ -141,6 +167,35 @@ ul.bar-graph {
                 display: flex;
             }
         }
+    }
+}
+
+div.link-to-url {
+    margin-top: 15%;
+    margin-bottom: 15%;
+
+    a {
+        width: -moz-fit-content;
+        width: fit-content;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+
+        display: block;
+    }
+
+    hr {
+        border: none;
+        border-top: solid 2px hsla(0, 0%, 100%, 60%);
+
+        width: 100%;
+        height: 0;
+    }
+
+    @include tablets {
+        margin-top: 0px;
+        margin-bottom: 25px;
     }
 }
 
@@ -349,6 +404,18 @@ main {
 
                 padding-top: 3%;
                 padding-bottom: 3%;
+            }
+        }
+
+        div.link-to-url {
+            button.light-btn {
+                box-shadow: 3px 3px 5px hsl(0, 0%, 8%),
+                            -1px -1px 3px $btn-light-box-shadow-2-color;
+
+                &:active {    
+                    box-shadow: inset 3px 3px 15px $dev8-black,
+                                inset -3px -3px 15px $btn-light-box-shadow-2-color;
+                }
             }
         }
     }

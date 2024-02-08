@@ -1,4 +1,4 @@
-{% import 'pages/surveys/evtss2023/_sections.html' as sections %}
+{% import 'pages/surveys/evtss2023/_components.html' as components %}
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
@@ -32,119 +32,121 @@
 
         <section class="container">
             <h1>Technologies</h1>
-            {{ sections.bar_graph_section(primary_languages) }}
+            {{ components.bar_graph_section(primary_languages) }}
 
-            {{ sections.bar_graph_section(languages_used) }}
+            {{ components.link_to_url("View More Technology Results", "/") }}
 
-            {{ sections.bar_graph_section(frameworks_used) }}
+            {{ components.bar_graph_section(languages_used) }}
 
-            {{ sections.bar_graph_section(tools_used) }}
+            {{ components.bar_graph_section(frameworks_used) }}
 
-            {{ sections.bar_graph_section(ides_used) }}
+            {{ components.bar_graph_section(tools_used) }}
+
+            {{ components.bar_graph_section(ides_used) }}
             
-            {{ sections.bar_graph_section(databases_used) }}
+            {{ components.bar_graph_section(databases_used) }}
 
-            {{ sections.bar_graph_section(cloud_platforms_used) }}
+            {{ components.bar_graph_section(cloud_platforms_used) }}
 
-            {{ sections.bar_graph_section(work_management_used) }}
+            {{ components.bar_graph_section(work_management_used) }}
 
-            {{ sections.bar_graph_section(communication_tools_used) }}
+            {{ components.bar_graph_section(communication_tools_used) }}
         </section>
         <section class="container">
             <h1>Development</h1>
-            {{ sections.bar_graph_section(software_being_developed) }}
+            {{ components.bar_graph_section(software_being_developed) }}
 
-            {{ sections.bar_graph_section(target_platforms) }}
+            {{ components.bar_graph_section(target_platforms) }}
         </section>
         <section class="container">
             <h1>Developer Profile</h1>
-            {{ sections.bar_graph_section(personal_description) }}
+            {{ components.bar_graph_section(personal_description) }}
 
-            {{ sections.bar_graph_section(developer_type) }}
+            {{ components.bar_graph_section(developer_type) }}
 
-            {{ sections.bar_graph_section(length_of_programming_experience) }}
+            {{ components.bar_graph_section(length_of_programming_experience) }}
 
-            {{ sections.bar_graph_section(length_of_professional_programming_experience) }}
+            {{ components.bar_graph_section(length_of_professional_programming_experience) }}
 
-            {{ sections.matrix_table_section(length_of_programming_experience_by_developer_type) }}
+            {{ components.matrix_table_section(length_of_programming_experience_by_developer_type) }}
 
-            {{ sections.matrix_table_section(length_of_professional_programming_experience_by_developer_type) }}
+            {{ components.matrix_table_section(length_of_professional_programming_experience_by_developer_type) }}
 
-            {{ sections.bar_graph_section(developer_activities) }}
+            {{ components.bar_graph_section(developer_activities) }}
 
-            {{ sections.bar_graph_section(location) }}
+            {{ components.bar_graph_section(location) }}
 
-            {{ sections.bar_graph_section(gender) }}
+            {{ components.bar_graph_section(gender) }}
 
-            {{ sections.bar_graph_section(age) }}
+            {{ components.bar_graph_section(age) }}
 
-            {{ sections.bar_graph_section(hometown) }}
+            {{ components.bar_graph_section(hometown) }}
 
-            {{ sections.matrix_table_section(hometown_to_location, require_headers=true) }}
+            {{ components.matrix_table_section(hometown_to_location, require_headers=true) }}
 
-            {{ sections.bar_graph_section(educational_attainment) }}
+            {{ components.bar_graph_section(educational_attainment) }}
 
-            {{ sections.bar_graph_section(college_alma_mater) }}
+            {{ components.bar_graph_section(college_alma_mater) }}
 
-            {{ sections.bar_graph_section(degree_programme) }}
+            {{ components.bar_graph_section(degree_programme) }}
 
-            {{ sections.matrix_table_section(academic_learning_satisfaction, require_headers=true) }}
+            {{ components.matrix_table_section(academic_learning_satisfaction, require_headers=true) }}
 
-            {{ sections.bar_graph_section(computer_used_most_of_the_time) }}
+            {{ components.bar_graph_section(computer_used_most_of_the_time) }}
 
-            {{ sections.bar_graph_section(pc_specs) }}
+            {{ components.bar_graph_section(pc_specs) }}
 
-            {{ sections.bar_graph_section(pc_os) }}
+            {{ components.bar_graph_section(pc_os) }}
 
-            {{ sections.bar_graph_section(mac_models) }}
+            {{ components.bar_graph_section(mac_models) }}
 
-            {{ sections.bar_graph_section(mac_os) }}
+            {{ components.bar_graph_section(mac_os) }}
 
-            {{ sections.text_only_section(tablets) }}
+            {{ components.text_only_section(tablets) }}
         </section>
         <section class="container">
             <h1>Work and Academics</h1>
-            {{ sections.bar_graph_section(occupation) }}
+            {{ components.bar_graph_section(occupation) }}
 
-            {{ sections.bar_graph_section(employer_location) }}
+            {{ components.bar_graph_section(employer_location) }}
 
-            {{ sections.bar_graph_section(employment_arrangement) }}
+            {{ components.bar_graph_section(employment_arrangement) }}
 
-            {{ sections.bar_graph_section(annual_income_range) }}
+            {{ components.bar_graph_section(annual_income_range) }}
 
-            {{ sections.matrix_table_section(annual_income_satisfaction, require_headers=true) }}
+            {{ components.matrix_table_section(annual_income_satisfaction, require_headers=true) }}
 
-            {{ sections.bar_graph_section(academic_arrangement) }}
+            {{ components.bar_graph_section(academic_arrangement) }}
         </section>
         <section class="container">
             <h1>Recent Issues</h1>
-            {{ sections.bar_graph_section(ai_search_tools_used) }}
+            {{ components.bar_graph_section(ai_search_tools_used) }}
 
-            {{ sections.bar_graph_section(ai_developer_tools_used) }}
+            {{ components.bar_graph_section(ai_developer_tools_used) }}
 
-            {{ sections.bar_graph_section(ai_datasets_opinion) }}
+            {{ components.bar_graph_section(ai_datasets_opinion) }}
 
-            {{ sections.bar_graph_section(ai_art_opinion) }}
+            {{ components.bar_graph_section(ai_art_opinion) }}
 
-            {{ sections.bar_graph_section(ai_code_generation_opinion) }}
+            {{ components.bar_graph_section(ai_code_generation_opinion) }}
         </section>
         <section class="container">
             <h1>State of the Eastern Visayas Tech Scene</h1>
-            {{ sections.text_only_section(local_cs_it_sentiments) }}
+            {{ components.text_only_section(local_cs_it_sentiments) }}
 
-            {{ sections.bar_graph_section(desired_tech_events_in_the_region) }}
+            {{ components.bar_graph_section(desired_tech_events_in_the_region) }}
 
-            {{ sections.bar_graph_section(desired_tech_event_topics) }}
+            {{ components.bar_graph_section(desired_tech_event_topics) }}
         </section>
         <section class="container">
             <h1>Miscellaneous</h1>
-            {{ sections.bar_graph_section(survey_length) }}
+            {{ components.bar_graph_section(survey_length) }}
             
-            {{ sections.bar_graph_section(survey_difficulty) }}
+            {{ components.bar_graph_section(survey_difficulty) }}
 
-            {{ sections.bar_graph_section(event_food_and_drinks) }}
+            {{ components.bar_graph_section(event_food_and_drinks) }}
 
-            {{ sections.bar_graph_section(event_locations) }}
+            {{ components.bar_graph_section(event_locations) }}
         </section>
 
         {% include 'pages/surveys/evtss2023/_thank-you-section.html' %}
