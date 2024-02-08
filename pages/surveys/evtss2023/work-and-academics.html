@@ -1,0 +1,22 @@
+{% extends "pages/surveys/evtss2023/_subpage.html" %}
+
+{% block title %}Work and Academics{% endblock %}
+{% block relative_url %}work-and-academics{% endblock %}
+{% block content %}
+{{ components.bar_graph_section(occupation) }}
+
+{{ components.bar_graph_section(employer_location) }}
+
+{{ components.bar_graph_section(employment_arrangement) }}
+
+{{ components.bar_graph_section(annual_income_range) }}
+
+{{ components.matrix_table_section(annual_income_satisfaction, require_headers=true) }}
+
+{{ components.bar_graph_section(academic_arrangement) }}
+{% endblock %}
+
+{% block previous_page_title %}Developer Profile{% endblock %}
+{% block previous_page_url %}../developer-profile{% endblock %}
+{% block next_page_title %}Recent Issues{% endblock %}
+{% block next_page_url %}../recent-issues{% endblock %}

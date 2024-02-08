@@ -63,7 +63,8 @@ routes = {
     '/surveys/evtss2023': 'pages/surveys/evtss2023/index.html',
     '/surveys/evtss2023/technologies': 'pages/surveys/evtss2023/technologies.html',
     '/surveys/evtss2023/development': 'pages/surveys/evtss2023/development.html',
-    '/surveys/evtss2023/developer-profile': 'pages/surveys/evtss2023/developer-profile.html'
+    '/surveys/evtss2023/developer-profile': 'pages/surveys/evtss2023/developer-profile.html',
+    '/surveys/evtss2023/work-and-academics': 'pages/surveys/evtss2023/work-and-academics.html'
 }
 
 # Processed files are files that are processed from a source file,
