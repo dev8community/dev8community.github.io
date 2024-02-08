@@ -1,0 +1,16 @@
+{% extends "pages/surveys/evtss2023/_subpage.html" %}
+
+{% block title %}State of the Eastern Visayas Tech Scene{% endblock %}
+{% block relative_url %}state-of-the-eastern-visayas-tech-scene{% endblock %}
+{% block content %}
+{{ components.text_only_section(local_cs_it_sentiments) }}
+
+{{ components.bar_graph_section(desired_tech_events_in_the_region) }}
+
+{{ components.bar_graph_section(desired_tech_event_topics) }}
+{% endblock %}
+
+{% block previous_page_title %}Recent Issues{% endblock %}
+{% block previous_page_url %}../recent-issues{% endblock %}
+{% block next_page_title %}Miscellaneous{% endblock %}
+{% block next_page_url %}../miscellaneous{% endblock %}
