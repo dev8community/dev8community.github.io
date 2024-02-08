@@ -1,0 +1,54 @@
+{% extends "pages/surveys/evtss2023/_subpage.html" %}
+
+{% block title %}Developer Profile{% endblock %}
+{% block relative_url %}developer-profile{% endblock %}
+{% block content %}
+{{ components.bar_graph_section(personal_description) }}
+
+{{ components.bar_graph_section(developer_type) }}
+
+{{ components.bar_graph_section(length_of_programming_experience) }}
+
+{{ components.bar_graph_section(length_of_professional_programming_experience) }}
+
+{{ components.matrix_table_section(length_of_programming_experience_by_developer_type) }}
+
+{{ components.matrix_table_section(length_of_professional_programming_experience_by_developer_type) }}
+
+{{ components.bar_graph_section(developer_activities) }}
+
+{{ components.bar_graph_section(location) }}
+
+{{ components.bar_graph_section(gender) }}
+
+{{ components.bar_graph_section(age) }}
+
+{{ components.bar_graph_section(hometown) }}
+
+{{ components.matrix_table_section(hometown_to_location, require_headers=true) }}
+
+{{ components.bar_graph_section(educational_attainment) }}
+
+{{ components.bar_graph_section(college_alma_mater) }}
+
+{{ components.bar_graph_section(degree_programme) }}
+
+{{ components.matrix_table_section(academic_learning_satisfaction, require_headers=true) }}
+
+{{ components.bar_graph_section(computer_used_most_of_the_time) }}
+
+{{ components.bar_graph_section(pc_specs) }}
+
+{{ components.bar_graph_section(pc_os) }}
+
+{{ components.bar_graph_section(mac_models) }}
+
+{{ components.bar_graph_section(mac_os) }}
+
+{{ components.text_only_section(tablets) }}
+{% endblock %}
+
+{% block previous_page_title %}Development{% endblock %}
+{% block previous_page_url %}../develoment{% endblock %}
+{% block next_page_title %}Work and Academics{% endblock %}
+{% block next_page_url %}../work-and-academics{% endblock %}
