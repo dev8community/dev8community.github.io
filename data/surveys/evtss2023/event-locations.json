@@ -1,6 +1,6 @@
 {
     "headers": ["Event Locations", "count"],
-    "description": "We asked our respondents where Dev8 should prioritize its efforts in in the survey. We processed the data into specific locations. We interpret locations that neither cities or municipalities as \"any city or municipality in that area\". From what we gathered, many respondents want us to focus in Calbayog City, Baybay City, and the island of Samar.",
+    "description": "In the survey, we asked our respondents where Dev8 should prioritize its efforts other than in Tacloban City, Palo, and Ormoc City. We processed the data we gathered into specific locations. We interpreted locations that neither mention specific cities nor municipalities as \"any city or municipality in that area\". From what we gathered, many respondents want us to focus on Calbayog City, Baybay City, and the island of Samar.",
     "data": [
         ["Calbayog City", 0.205128205128205],
         ["Baybay City", 0.153846153846154],
