@@ -3,7 +3,7 @@
     "description": "Web development, artificial intelligence/machine learning, career development in tech, UI/UX design, and data science are the top five topics developers in Eastern Visayas would like to be discussed in tech events in the region.",
     "data": [
         ["Web Development", 0.7],
-        ["Artificial Intelligence/Machine Learning", 0.622222222222222],
+        ["Artificial Intelligence or Machine Learning", 0.622222222222222],
         ["Career Development (Tech)", 0.611111111111111],
         ["UI/UX Design", 0.6],
         ["Data Science", 0.5],
@@ -20,7 +20,7 @@
         ["Internet of Things", 0.388888888888889],
         ["Compilers and Programming Languages", 0.311111111111111],
         ["Creative Coding", 0.311111111111111],
-        ["Cryptocurrency", 0.3],
+        ["Crypto-currency", 0.3],
         ["Human-Computer Interaction (HIC)", 0.277777777777778],
         ["Robotics", 0.277777777777778],
         ["Computer Graphics", 0.255555555555556],

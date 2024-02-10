@@ -4,7 +4,7 @@
     "data": [
         ["Trainings, Seminars, or Workshops", 0.9],
         ["Bootcamps", 0.755555555555556],
-        ["Conferences/Talks", 0.733333333333333],
+        ["Conferences or Talks", 0.733333333333333],
         ["Coding Competitions (e.g. competitive programming, hackathons)", 0.644444444444445],
         ["Job Fairs", 0.633333333333333],
         ["None", 0.0222222222222222],

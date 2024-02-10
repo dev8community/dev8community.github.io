@@ -4,7 +4,7 @@
     "data": [
         ["Bachelor's Degree (B.A., B.S., B.Eng, etc.)", 0.644444444444445],
         ["High School (Senior)", 0.155555555555556],
-        ["Some university/college without earning a degree", 0.133333333333333],
+        ["Some university or college without earning a degree", 0.133333333333333],
         ["Master's Degree (M.A., M.S., M.Eng., MBA, etc.)", 0.0444444444444444],
         ["Something Else", 0.0222222222222222],
         ["Associate Degree (A.A., A.S., etc.)", 0],

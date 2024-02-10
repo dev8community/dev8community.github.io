@@ -7,7 +7,7 @@
         ["Testing", 0.533333333333333],
         ["System Design", 0.444444444444444],
         ["Deployment", 0.411111111111111],
-        ["UI/UX Design/Research", 0.277777777777778],
+        ["UI/UX Design or Research", 0.277777777777778],
         ["Data Analysis", 0.233333333333333],
         ["Graphics Design/Art", 0.2],
         ["System Administration", 0.2],
@@ -20,7 +20,7 @@
         ["Other", 0.1],
         ["Business Intelligence", 0.0777777777777778],
         ["Data Engineering", 0.0555555555555556],
-        ["Marketing/Sales", 0.0555555555555556],
+        ["Marketing or Sales", 0.0555555555555556],
         ["Product Management", 0.0555555555555556]
     ]
 }
