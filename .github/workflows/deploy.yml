@@ -18,18 +18,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install Python dependencies. ⚙️
+      - name: Install Knitter. ⚙️
         run: |
-          pip3 install pipenv
-          pipenv requirements > requirements.txt
-          pip3 install -r requirements.txt
+          pip install git+https://github.com/dev8community/knitter
       - name: Get SASS. ⚙️
         run: |
           sudo snap install dart-sass
           sudo snap alias dart-sass sass
       - name: Build website. 🔨
         run: |
-          python3 tool.py build
+          knitter build
       - name: Upload artifact. ☁️
         uses: actions/upload-pages-artifact@v3
         with:
