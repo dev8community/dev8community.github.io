@@ -17,6 +17,10 @@ folder = 'assets/'
 # TODO: Add support for routes leading to files.
 [routes]
 '/' = 'pages/index.html'
+'/about' = 'pages/about.html'
+'/contacts' = 'pages/contacts.html'
+'/events' = 'pages/events.html'
+
 '/surveys/evtss2023' = 'pages/surveys/evtss2023/index.html'
 '/surveys/evtss2023/technologies' = 'pages/surveys/evtss2023/technologies.html'
 '/surveys/evtss2023/development' = 'pages/surveys/evtss2023/development.html'
