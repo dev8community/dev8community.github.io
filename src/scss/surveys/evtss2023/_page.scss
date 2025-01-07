@@ -1,7 +1,7 @@
 // Common CSS classes in the Eastern Visayas Tech Scene Survey 2023 page.
 @use 'sass:color';
 
-@import '_variables.scss';
+@import '../../_variables.scss';
 
 a {
     color: $link-colour;

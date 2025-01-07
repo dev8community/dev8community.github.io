@@ -1,0 +1,26 @@
+// Common CSS classes in the Eastern Visayas Tech Scene Survey 2023 page.
+@use 'sass:color';
+
+@import '_variables.scss';
+
+html {
+    margin: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(0, 134, 202, 0.23) 0%, rgba(131, 255, 166, 0.08) 100%) no-repeat, rgb(0, 0, 0);
+
+    color: rgb(255, 255, 255);
+
+    font-family: "Source Code Pro", monospace;
+    font-weight: 600;
+    font-size: 13px;
+
+    margin: 0;
+
+    min-height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,18 @@
+{% import 'pages/_components.html' as components %}
+
+<nav>
+    <ul>
+        <li>
+            {{ components.link_to_url("Home", "/") }}
+        </li>
+        <li>
+            {{ components.link_to_url("About", "about") }}
+        </li>
+        <li>
+            {{ components.link_to_url("Contacts", "contact") }}
+        </li>
+        <li>
+            {{ components.link_to_url("Events", "events") }}
+        </li>
+    </ul>
+</nav>
