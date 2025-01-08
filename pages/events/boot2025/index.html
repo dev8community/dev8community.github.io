@@ -1,0 +1,22 @@
+{% import 'pages/events/boot2025/_components.html' as components %}
+
+{% extends "pages/events/_subpage.html" %}
+
+{% block title %}Boot 2025{% endblock %}
+{% block relative_url %}boot2025{% endblock %}
+{% block css %}<link href="/assets/events/boot2025/css/index.css" rel="stylesheet" type="text/css">{% endblock %}
+{% block content %}
+
+
+
+<main>
+    {% include 'pages/events/boot2025/_hero-section.html' %}
+
+    {% include 'pages/events/boot2025/new-year-new-start.html' %}
+
+    {% include 'pages/events/boot2025/talks-and-demo.html' %}
+
+    {% include 'pages/events/boot2025/schedule.html' %}
+</main>
+
+{% endblock %}

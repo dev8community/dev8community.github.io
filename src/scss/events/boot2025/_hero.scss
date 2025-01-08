@@ -1,0 +1,104 @@
+@use 'sass:color';
+
+@import '../../_variables.scss';
+@import '../../_mixins.scss';
+
+.hero-section {
+    background-color: $boot2025-hero-color;
+    color: $boot2025-white;
+
+    padding-top: 0;
+
+    img#logo {
+        width: 200px;
+        display: block;
+        margin: auto;
+
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-family: "Prata", serif;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 64px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    h2 {
+        width: 420px;
+        margin: auto;
+
+        font-family: "Open Sans", serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32.68px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+    p.date {
+        font-family: "Ubuntu Mono", serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 14px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+        margin: 4px 0 8px 0;
+    }
+
+    p.bootloader {
+        font-family: "Open Sans", serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 19.07px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    button {
+        display: block;
+
+        background-color: #086972;
+        color: $boot2025-white;
+
+        border-width: 4px 4px 4px 4px;
+        border-style: solid;
+        border-color: #17B9B6;
+        border-bottom-color: black;
+        border-right-color: black;
+
+        width: 104px;
+        height: 30px;
+        margin: auto;
+
+        font-family: Ubuntu Mono;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 14px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+    div#bootloaders {
+        width: 200px;
+
+        display: flex;
+        margin: auto;
+
+        justify-content: space-evenly;
+
+        img {
+            height: 60px;
+        }
+    }
+}

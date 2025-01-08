@@ -35,7 +35,7 @@ header {
             display: inline;
             padding: 16px;
 
-            font-family: "Prata", serif;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
             font-size: 24px;
             font-weight: 400;
             font-style: normal;
@@ -47,7 +47,9 @@ header {
                 &:hover {
                     text-decoration: underline;
                 }
+                
             }
+
         }
     }
 }
@@ -77,7 +79,14 @@ header {
         font-weight: 400;
         font-style: normal;
         
-
         color: $dev8-green;
     }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+footer {
+    background-color: $btn-dark-color;
 }

@@ -1,0 +1,38 @@
+// Common CSS classes in the BOOT 2025 page.
+@use 'sass:color';
+
+@import '../../_variables.scss';
+
+body {
+    background: $boot2025-hero-color;
+}
+
+header {
+    filter: brightness(0) invert(1);
+
+    h1 {
+        display: none;
+    }
+    nav {
+        li {
+            font-size: 14px;
+        }
+    }
+}
+
+section {
+    background-color: $boot2025-section-color;
+
+    h1 {
+        color: $boot2025-white;
+        font-family: Prata;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32.52px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+}
+

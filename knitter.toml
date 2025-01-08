@@ -11,6 +11,7 @@ folder = 'assets/'
 # files into CSS files.
 [processed_files]
 'surveys/evtss2023/css/index.css' = 'src/scss/surveys/evtss2023/index.scss'
+'events/boot2025/css/index.css' = 'src/scss/events/boot2025/index.scss'
 'css/index.css' = 'src/scss/index.scss'
 
 # Routes that we can access in the URL. Paths are
