@@ -1,19 +1,21 @@
 {% import 'pages/_components.html' as components %}
 
-{{ components.dev8_logo() }}
-<nav>
-    <ul>
-        <li>
-            {{ components.link_to_url("Home", "/") }}
-        </li>
-        <li>
-            {{ components.link_to_url("About", "about") }}
-        </li>
-        <li>
-            {{ components.link_to_url("Contacts", "contacts") }}
-        </li>
-        <li>
-            {{ components.link_to_url("Events", "events") }}
-        </li>
-    </ul>
-</nav>
+<div id="header-content" class="container flex">
+    {{ components.dev8_logo() }}
+    <nav>
+        <ul>
+            <li>
+                {{ components.link_to_url("Home", "/") }}
+            </li>
+            <li>
+                {{ components.link_to_url("About", "about") }}
+            </li>
+            <li>
+                {{ components.link_to_url("Contacts", "contacts") }}
+            </li>
+            <li>
+                {{ components.link_to_url("Events", "events") }}
+            </li>
+        </ul>
+    </nav>
+</div>

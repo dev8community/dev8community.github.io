@@ -21,6 +21,7 @@ body {
 
 header {
     display: flex;
+    align-items: stretch;
     
     nav {
         box-sizing: border-box;
@@ -28,6 +29,7 @@ header {
         
         display: flex;
         justify-content: right;
+        flex: auto;
 
         li {
             display: inline;
@@ -53,7 +55,8 @@ header {
 
 .logo-section{
     box-sizing: border-box;
-    width: 50%;
+    width: 20%;
+    flex: initial;
 
     img {
         max-width: 45px;
