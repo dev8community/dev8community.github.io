@@ -26,7 +26,7 @@ folder = 'assets/'
 
 # Events page and subpages
 '/events' = 'pages/placeholder.html'
-'/events/dev8boot' = 'pages/events/dev8boot.html'
+'/events/boot2025' = 'pages/events/boot2025/index.html'
 
 # Surveys
 '/surveys/evtss2023' = 'pages/surveys/evtss2023/index.html'
