@@ -1,5 +1,14 @@
 {% macro link_to_url(link_text, target_url) -%}
 <a href="{{ target_url }}">
-    <button type="button" class="light-btn">{{ link_text }}</button>
+    {{ link_text }}
 </a>
+{%- endmacro %}
+
+{% macro dev8_logo() -%}
+<div class="logo-section">
+    <a href="/">
+        <img src="/assets/img/logo.png" alt="Dev8 Logo"/>
+    </a>
+    <h1>Dev8</h1>
+</div>
 {%- endmacro %}
