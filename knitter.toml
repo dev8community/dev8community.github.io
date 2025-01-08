@@ -17,11 +17,18 @@ folder = 'assets/'
 # relative to Knitter.
 # TODO: Add support for routes leading to files.
 [routes]
-'/' = 'pages/index.html'
-'/about' = 'pages/about.html'
-'/contacts' = 'pages/contacts.html'
-'/events' = 'pages/events.html'
+# For now, have routes go to placeholder.html
+'/' = 'pages/placeholder.html'
+'/working' = 'pages/index.html'
+'/about' = 'pages/placeholder.html'
+'/contacts' = 'pages/placeholder.html'
 
+
+# Events page and subpages
+'/events' = 'pages/placeholder.html'
+'/events/dev8boot' = 'pages/events/dev8boot.html'
+
+# Surveys
 '/surveys/evtss2023' = 'pages/surveys/evtss2023/index.html'
 '/surveys/evtss2023/technologies' = 'pages/surveys/evtss2023/technologies.html'
 '/surveys/evtss2023/development' = 'pages/surveys/evtss2023/development.html'
