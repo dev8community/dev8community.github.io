@@ -61,6 +61,10 @@ img {
     }
 }
 
+.flex {
+    display: flex;
+}
+
 .hide {
     // SVG gradients don't appear when shown from a hidden state if we use
     // use `display: none`. So, we're using `visibility: hidden` and a few

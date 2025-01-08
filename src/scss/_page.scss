@@ -10,20 +10,6 @@ html {
     height: 100%;
 }
 
-header {
-    display: flex;
-    nav {
-        box-sizing: border-box;
-        width: 50%;
-    
-        li {
-            display: inline;
-        }
-    }
-}
-
-
-
 body {
     background: $white;
 
@@ -32,6 +18,38 @@ body {
     min-height: 100%;
     width: 100%;
 }
+
+header {
+    display: flex;
+    
+    nav {
+        box-sizing: border-box;
+        width: 50%;
+        
+        display: flex;
+        justify-content: right;
+
+        li {
+            display: inline;
+            padding: 16px;
+
+            font-family: "Prata", serif;
+            font-size: 24px;
+            font-weight: 400;
+            font-style: normal;
+
+            a {
+                color: $dev8-black;
+                text-decoration: none;
+            
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
 
 .logo-section{
     box-sizing: border-box;
