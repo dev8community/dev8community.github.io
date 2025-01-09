@@ -1,3 +1,5 @@
+{% import 'pages/events/boot2025/_components.html' as components %}
+
 <section class="hero-section container">
     <img id="logo" src="/assets/events/boot2025/img/logo-02-hq.png" alt="BOOT 2025 Logo">
 
@@ -11,9 +13,7 @@
         Kickstart your 2025 with new learnings and discoveries!
     </h2>
     <br>
-    <button>
-        Register Now
-    </button>
+    {{ components.registration_button() }}
     <p class="bootloader">
         Bootloaded by:
     </p>

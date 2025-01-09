@@ -133,7 +133,7 @@ div.speaker {
     flex: 1;
     min-width: 560px;
     max-width: 612px;
-    min-height: 654px;
+    height: fit-content;
     margin: auto;
 
     background-color: $boot2025-white;
@@ -223,6 +223,62 @@ div.speaker {
     @include xlarge-screens {
         padding-top: 0;
     }
+}
 
-    padding-top: 0;
+section#adventure {
+    background-color: $boot2025-grey;
+}
+
+button {
+    display: block;
+
+    background-color: #086972;
+    color: $boot2025-white;
+
+    border-width: 4px 4px 4px 4px;
+    border-style: solid;
+    border-color: #17B9B6;
+    border-bottom-color: black;
+    border-right-color: black;
+
+    min-width: 88px;
+    width: 104px;
+    height: 30px;
+    margin: auto;
+
+    font-family: Ubuntu Mono;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+#adventure {
+    align-items: center;
+    justify-content: center;
+
+    .speaker {
+        flex: 1;
+        margin: 0 25px;
+
+        .fit-image {
+            display: block;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        padding-bottom: revert;
+    }
+
+    .adv-description {
+        flex: 1;
+        max-width: 450px;
+        
+        h1, p, button  {
+            text-align: left;
+            margin-left: initial;
+        }
+    }
 }

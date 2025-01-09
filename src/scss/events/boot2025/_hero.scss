@@ -61,32 +61,6 @@
         text-decoration-skip-ink: none;
     }
 
-    button {
-        display: block;
-
-        background-color: #086972;
-        color: $boot2025-white;
-
-        border-width: 4px 4px 4px 4px;
-        border-style: solid;
-        border-color: #17B9B6;
-        border-bottom-color: black;
-        border-right-color: black;
-
-        width: 104px;
-        height: 30px;
-        margin: auto;
-
-        font-family: Ubuntu Mono;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 14px;
-        text-align: center;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-
-    }
-
     div#bootloaders {
         width: 200px;
 
@@ -110,5 +84,4 @@
         padding-top: 0;
     }
 
-    padding-top: 0;
 }

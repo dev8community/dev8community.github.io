@@ -1,4 +1,4 @@
-{% import 'pages/events/boot2025/_components.html' as components %}
+{% import 'pages/events/boot2025/_components.html' as boot2025_components %}
 
 {% extends "pages/events/_subpage.html" %}
 
@@ -46,19 +46,18 @@
     </section>
 
     {# data/events/boot2025/schedule.json boot2025_schedule#}
-    {% set activities = boot2025_schedule['data'] %}
     <section class="top-pad-remove container">
         <img class="section-head-image" src="/assets/events/boot2025/img/demo.png" alt="A microcontroller">
         <h1>Schedule and Venue</h1>
         <p class="description">
-            <span>Dev8 BOOT 2025</span> will be held on February 15, 2025 from 1:00 PM to 6:00 PM (Philippine Standard Time) via <span>Zoom</span>.
+            <span>Dev8 BOOT 2025</span> will be held on February 15, 2025 from 1:00 PM to 6:00 PM (Philippine Standard Time) via <span>Zoom and Facebook Live</span>.
         </p>
         <table>
             <tr>
                 <th scope="col" colspan="2">Time</th>
                 <th scope="col">Activity</th>
             </tr>
-            {% for timeIn, timeOut, activity in activities %}
+            {% for timeIn, timeOut, activity in boot2025_schedule['data'] %}
             <tr>
                 <td class="time">{{ timeIn }}</td>
                 <td class="time">{{ timeOut }}</td>
@@ -70,6 +69,31 @@
             *May be subject to change.
         </p>
     </section>
+
+    <section id="adventure" class="flex container">
+        <div class="speaker">
+            <div class="window-tab">
+                <div class="window-title">Join the Adventure</div>
+                <img class="close-button" src="/assets/events/boot2025/img/close_button.svg">
+            </div>
+            <img class="fit-image" src="/assets/events/boot2025/img/adventure.png">
+        </div>
+        
+        <div class="adv-description">
+            <h1>Join the Adventure</h1>
+            <p>
+                You can join the event online via <span>Zoom or Facebook Live</span>. Participants who will join us via Zoom will be given certificates of participation and the opportunity to win raffle prizes. Register now to get access to the Zoom call before slots run out!
+            </p>
+            <p>
+                <span>Working for the city/municipality LGUs</span> of Tacloban City, Ormoc City, Calbayog City, Baybay City, Borongan City, Catarman, Catbalogan City, Maasin City, or Naval? We have some Zoom slot reservations for your office. You may inquire from your office if there are still slots available you can grab.</p>
+            <p>
+                <span>Part of Dev8, Valarx Projects, or DICT 8?</span> We also have reserved slots for our community and its partners. You may ask around internally first if you can avail of a slot.
+            </p>
+            {{ boot2025_components.registration_button() }}
+        </div>
+       
+    </section>
+    
 </main>
 
 {% endblock %}
