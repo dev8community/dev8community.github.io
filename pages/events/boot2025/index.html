@@ -13,15 +13,47 @@
     {% include 'pages/events/boot2025/_hero-section.html' %}
 
     <section class="container">
+        <img class="section-head-image" src="/assets/events/boot2025/img/old-computer-01.png" alt="Old pixelated computer">
         <h1>New Year, New Start</h1>
+        <p class="description">
+            A new year means another opportunity for growth, learning, and, most importantly, starting up with something new. Inspired from the technical term of “booting up” a computer, Dev8 is introducing its newest event, <span>Dev8 BOOT 2025</span>, a virtual conference for Eastern Visayas that aims to provide a platform for knowledge sharing and inspiring developers, students, and tech enthusiasts to do amazing things in <span>2025</span>.
+        </p>
     </section>
 
     <section class="container">
-        <h1>New Year, New Start</h1>
+        <img class="section-head-image" src="/assets/events/boot2025/img/old-computer-01.png" alt="Old pixelated computer">
+        <h1>Talks and Demonstrations</h1>
+        <p class="description">
+            We have a superb line of talks and demonstrations that you can learn from and be inspired by.
+        </p>
     </section>
 
+    {# data/events/boot2025/schedule.json boot2025_schedule#}
+    {% set activities = boot2025_schedule['data'] %}
     <section class="container">
-        <h1>New Year, New Start</h1>
+        <img class="section-head-image" src="/assets/events/boot2025/img/demo.png" alt="A microcontroller">
+        <h1>Schedule and Venue</h1>
+        
+        
+        <p class="description">
+            <span>Dev8 BOOT 2025</span> will be held on February 15, 2025 from 1:00 PM to 6:00 PM (Philippine Standard Time) via <span>Zoom</span>.
+        </p>
+        <table>
+            <tr>
+                <th scope="col" colspan="2">Time</th>
+                <th scope="col">Activity</th>
+            </tr>
+            {% for timeIn, timeOut, activity in activities %}
+            <tr>
+                <td class="time">{{ timeIn }}</td>
+                <td class="time">{{ timeOut }}</td>
+                <td class="activity">{{ activity }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <p>
+            *May be subject to change.
+        </p>
     </section>
 </main>
 

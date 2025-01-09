@@ -1,0 +1,22 @@
+{
+    "headers": ["Time Start", "Time End", "Activity"],
+    "data": [
+        ["01:00 PM", "01:30 PM", "Pre-Event"],
+        ["01:30 PM", "01:35 PM", "Introduction and Welcome Remarks"],
+        ["01:35 PM", "01:40 PM", "Inspirational Message"],
+        ["01:40 PM", "01:50 PM", "The Eastern Visayas Tech Scene in 2024"],
+        ["01:50 PM", "02:20 PM", "Talk #1"],
+        ["02:20 PM", "02:35 PM", "Demonstration #1"],
+        ["02:35 PM", "02:40 PM", "Mini-Break"],
+        ["02:40 PM", "03:10 PM", "Talk #2"],
+        ["03:10 PM", "03:25 PM", "Demonstration #2"],
+        ["03:25 PM", "03:40 PM", "Break"],
+        ["03:40 PM", "03:45 PM", "Community Introduction (Valarx Projects)"],
+        ["03:45 PM", "04:15 PM", "Talk #3"],
+        ["04:15 PM", "04:30 PM", "Demonstration #3"],
+        ["04:30 PM", "04:35 PM", "Mini-Break"],
+        ["04:35 PM", "05:05 PM", "Open Forum"],
+        ["05:05 PM", "05:20 PM", "Raffle Draw*"],
+        ["05:20 PM", "05:30 PM", "Closing Remarks and Credits"]
+    ]
+}
