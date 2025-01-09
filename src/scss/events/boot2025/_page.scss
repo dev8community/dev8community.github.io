@@ -144,8 +144,8 @@ div.speaker {
 
     padding-bottom: 20px;
 
-    h1, p {
-        color: $dev8-black;
+    h1, h2, p {
+        color: $boot2025-black;
     }
 
     h1 {
@@ -214,5 +214,6 @@ div.speaker {
         height: 125px;
         object-fit: cover;
     }
+
 }
 
