@@ -1,0 +1,29 @@
+{
+    "headers": ["Talk Title", "Slide Image", "Talk Description", "Speaker", "Speaker Pic", "Speaker Description"],
+    "data": [
+        [
+            "Talk Title #1",
+            "patholder.png",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque arcu  justo, faucibus sed placerat et, vehicula in libero. Sed est sem,  gravida a porttitor nec, tincidunt sed quam. Pellentesque et tortor non  velit pretium pulvinar. Mauris nisi lorem, ornare sit amet justo id,  pretium pellentesque felis. Cras vel nisl bibendum.",
+            "Patrick-Sama Sensei",
+            "patholder.png",
+            "is lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque arcu  justo, faucibus sed placerat et, vehicula in libero. Sed est sem,  gravida a porttitor nec, tincidunt sed quam. Pellentesque et tortor non  velit pretium pulvinar. Mauris nisi lorem, ornare sit amet justo id,  pretium pellentesque felis. Cras vel nisl bibendum."
+        ],
+        [
+            "Talk Title #2",
+            "patholder.png",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque arcu  justo, faucibus sed placerat et, vehicula in libero. Sed est sem,  gravida a porttitor nec, tincidunt sed quam. Pellentesque et tortor non  velit pretium pulvinar. Mauris nisi lorem, ornare sit amet justo id,  pretium pellentesque felis. Cras vel nisl bibendum.",
+            "Patrick-Sama Sensei",
+            "patholder.png",
+            "is lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque arcu  justo, faucibus sed placerat et, vehicula in libero. Sed est sem,  gravida a porttitor nec, tincidunt sed quam. Pellentesque et tortor non  velit pretium pulvinar. Mauris nisi lorem, ornare sit amet justo id,  pretium pellentesque felis. Cras vel nisl bibendum."
+        ],
+        [
+            "Talk Title #2",
+            "patholder.png",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque arcu  justo, faucibus sed placerat et, vehicula in libero. Sed est sem,  gravida a porttitor nec, tincidunt sed quam. Pellentesque et tortor non  velit pretium pulvinar. Mauris nisi lorem, ornare sit amet justo id,  pretium pellentesque felis. Cras vel nisl bibendum.",
+            "Patrick-Sama Sensei",
+            "patholder.png",
+            "is lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque arcu  justo, faucibus sed placerat et, vehicula in libero. Sed est sem,  gravida a porttitor nec, tincidunt sed quam. Pellentesque et tortor non  velit pretium pulvinar. Mauris nisi lorem, ornare sit amet justo id,  pretium pellentesque felis. Cras vel nisl bibendum."
+        ]
+    ]
+}

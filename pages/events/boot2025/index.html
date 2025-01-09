@@ -21,11 +21,28 @@
     </section>
 
     <section class="container">
-        <img class="section-head-image" src="/assets/events/boot2025/img/old-computer-01.png" alt="Old pixelated computer">
+        <img class="section-head-image" src="/assets/events/boot2025/img/lightbulb.png" alt="Lightbulb">
         <h1>Talks and Demonstrations</h1>
         <p class="description">
             We have a superb line of talks and demonstrations that you can learn from and be inspired by.
         </p>
+        <div id="speakers">
+            {# ["Talk Title", "Slide Image", "Talk Description", "Speaker", "Speaker Pic", "Speaker Description"] #}
+            {% for title, slide_image, talk_desc, speaker, speaker_pic, speaker_desc in boot2025_speakers['data']%}
+            <div class="speaker">
+                <div class="window-tab">
+                    <div class="window-title">[{{speaker}}] {{title}}</div>
+                    <img class="close-button" src="/assets/events/boot2025/img/close_button.svg">
+                </div>
+                <img class="slide-image" src="/assets/events/boot2025/img/{{slide_image}}">
+                <h1>{{title}}</h1>
+                <h2>{{speaker}}</h2>
+                <p>{{talk_desc}}</p>
+                <img class="speaker-image" src="/assets/events/boot2025/img/{{speaker_pic}}">
+                <p><strong>{{speaker}}</strong> {{speaker_desc}}</p>
+            </div>
+            {% endfor %}
+        </div>
     </section>
 
     {# data/events/boot2025/schedule.json boot2025_schedule#}
@@ -33,8 +50,6 @@
     <section class="container">
         <img class="section-head-image" src="/assets/events/boot2025/img/demo.png" alt="A microcontroller">
         <h1>Schedule and Venue</h1>
-        
-        
         <p class="description">
             <span>Dev8 BOOT 2025</span> will be held on February 15, 2025 from 1:00 PM to 6:00 PM (Philippine Standard Time) via <span>Zoom</span>.
         </p>
