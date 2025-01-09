@@ -36,8 +36,6 @@ section {
         margin: 10px 0 10px 0;
     }
 
-
-
     p {
         color: $boot2025-white;
         font-family: "Open Sans", serif;
@@ -217,3 +215,14 @@ div.speaker {
 
 }
 
+.top-pad-remove {
+    @include tablets {
+        padding-top: 0;
+    }
+
+    @include xlarge-screens {
+        padding-top: 0;
+    }
+
+    padding-top: 0;
+}
