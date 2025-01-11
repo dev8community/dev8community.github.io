@@ -8,27 +8,82 @@
     "data": [
         [
             "organizers/sean.png",
-            "",
-            "",
-            []
+            "Sean Ballais",
+            "Freelance Shopify Developer (Dev8)",
+            [
+                ["web", ""],
+                ["email", ""],
+                ["bluesky", ""]
+            ]
         ],
         [
             "organizers/omi.png",
-            "",
-            "",
-            []
+            "Michael Omisol",
+            "Undergraduate CS Student, UPD (Dev8)",
+            [
+                ["web", ""],
+                ["email", ""],
+                ["bluesky", ""]
+            ]
         ],
         [
             "organizers/shann.png",
-            "",
-            "",
-            []
+            "Shann Ripalda",
+            "Undergraduate CS Student, UPTC (Dev8)",
+            [
+                ["web", ""],
+                ["email", ""],
+                ["bluesky", ""]
+            ]
+        ],
+        [
+            "organizers/shann.png",
+            "Elgin Espanto",
+            "Undergraduate CS Student, VSU (Dev8)",
+            [
+                ["web", ""],
+                ["email", ""],
+                ["bluesky", ""]
+            ]
+        ],
+        [
+            "organizers/shann.png",
+            "Justmer Rivera",
+            "Undergraduate CS Student, LNU (Dev8)",
+            [
+                ["web", ""],
+                ["email", ""],
+                ["bluesky", ""]
+            ]
         ],
         [
             "speakers/aris.png",
-            "",
-            "",
-            []
+            "Keen Mahinay",
+            "Undergraduate CS Student AMA Tacloban (Valarx Projects)",
+            [
+                ["web", ""],
+                ["email", ""],
+                ["bluesky", ""]
+            ]
+        ],
+        [
+            "speakers/aris.png",
+            "Aris Artates",
+            "Undergraduate CS Student AMA Tacloban (Valarx Projects)",
+            [
+                ["web", ""],
+                ["email", ""],
+                ["bluesky", ""]
+            ]
+        ],
+        [
+            "speakers/aris.png",
+            "Rangel Corrales",
+            "Undergraduate CS Student AMA Tacloban (Valarx Projects)",
+            [
+                ["email", ""],
+                ["github", ""]
+            ]
         ]
     ]
 }

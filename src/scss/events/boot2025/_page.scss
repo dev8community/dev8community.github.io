@@ -316,9 +316,9 @@ img.speaker-image {
 }
 
 p.emcee {
-    width: 160px;
+    width: 180px;
 
-    margin: 6px auto 14px auto;
+    margin: 3px auto 3px auto;
     font-family: "Ubuntu Mono", serif;
     font-style: normal;
     font-weight: 700;
@@ -334,7 +334,7 @@ p.emcee-name {
 
     width: 150px;
 
-    margin: auto auto 6px auto;
+    margin: 3px auto 3px auto;
 
     font-family: 'Open Sans', serif;
     font-style: normal;
@@ -367,18 +367,31 @@ supersection {
 
 div#organizers {
     display: flex;
-    align-items: stretch;
-    justify-content: center;
+    align-items: start;
+    justify-content: safe center;
     flex-wrap: wrap;
     width: 900px;
     margin: auto;
-    column-gap: 20px;
     row-gap: 20px;
 }
 
 div.organizer {
     flex: 1;
-    min-width: 160px;
+    min-width: 200px;
     height: fit-content;
     margin: auto;
+
+    img {
+        margin: auto;
+    }
+}
+
+div.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    column-gap: 10px;
+
 }

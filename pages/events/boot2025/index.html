@@ -50,15 +50,23 @@
         <img class="section-head-image" src="/assets/events/boot2025/img/microphone.png" alt="Lightbulb">
         <h1>Emcee</h1>
         
-        <img class="speaker-image" src="/assets/events/boot2025/img/speakers/aris.png">
-        <p class="emcee-name">
-            Aris Artates
-        </p>
-        <p class="emcee">
-            Undergraduate CS Student <br>
-            AMA Tacloban <br>
-            (Valarx Projects)
-        </p>
+        <div id="organizers">
+            {% set emcee =  boot2025_organizers["data"][6] %}
+            <div class="organizer">
+                <img class="speaker-image" src="/assets/events/boot2025/img/{{ emcee[0] }}">
+                <p class="emcee-name">
+                    {{ emcee[1] }}
+                </p>
+                <p class="emcee">
+                    {{ emcee[2] }}
+                </p>
+                <div class="socials">
+                    {% for social_type, link in emcee[3] %}
+                    <a href="{{link}}"><img src="/assets/events/boot2025/img/icons/social_{{social_type}}.png"></a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -140,10 +148,13 @@
                         {{ name }}
                     </p>
                     <p class="emcee">
-                        Undergraduate CS Student <br>
-                        AMA Tacloban <br>
-                        (Valarx Projects)
+                        {{ descrip }}
                     </p>
+                    <div class="socials">
+                        {% for social_type, link in socials %}
+                        <a href="{{link}}"><img src="/assets/events/boot2025/img/icons/social_{{social_type}}.png"></a>
+                        {% endfor %}
+                    </div>
                 </div>
                 {% endfor %}
             </div>
