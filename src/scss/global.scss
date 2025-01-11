@@ -38,6 +38,15 @@ img {
     height: auto;
 }
 
+footer {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .container {
     width: 100%; // Expands the div to the entire width of parent.
     max-width: 1440px;
@@ -46,7 +55,7 @@ img {
     // of the final width of the element. Otherwise, any element using this
     // class could overflow its parent, especially if the element is using
     // a CSS Grid.
-    box-sizing: content-box;
+    box-sizing: border-box;
 
     margin-left: auto;
     margin-right: auto;

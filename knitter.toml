@@ -98,3 +98,4 @@ event_locations = 'data/surveys/evtss2023/event-locations.json'
 # BOOT 2025 Data
 boot2025_schedule = 'data/events/boot2025/schedule.json'
 boot2025_speakers = 'data/events/boot2025/speakers.json'
+boot2025_organizers = 'data/events/boot2025/organizers.json'

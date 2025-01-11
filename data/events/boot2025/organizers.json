@@ -1,0 +1,34 @@
+{
+    "headers": [
+        "Image",
+        "Name",
+        "Descriptor",
+        "Socials"
+    ],
+    "data": [
+        [
+            "organizers/sean.png",
+            "",
+            "",
+            []
+        ],
+        [
+            "organizers/omi.png",
+            "",
+            "",
+            []
+        ],
+        [
+            "organizers/shann.png",
+            "",
+            "",
+            []
+        ],
+        [
+            "speakers/aris.png",
+            "",
+            "",
+            []
+        ]
+    ]
+}

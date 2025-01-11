@@ -12,6 +12,7 @@
 <main>
     {% include 'pages/events/boot2025/_hero-section.html' %}
 
+    <supersection class="dark-grey-area">
     <section class="container">
         <img class="section-head-image" src="/assets/events/boot2025/img/old-computer-01.png" alt="Old pixelated computer">
         <h1>New Year, New Start</h1>
@@ -24,7 +25,7 @@
         <img class="section-head-image" src="/assets/events/boot2025/img/lightbulb.png" alt="Lightbulb">
         <h1>Talks and Demonstrations</h1>
         <p class="description">
-            We have a superb line of talks and demonstrations that you can learn from and be inspired by.
+            We're still working on finalizing the list of speakers for this year's Dev8 BOOT. We're on a search for people who would love to share their knowledge and love for tech. We're making sure that you'll meet a wonderful set of people that you can learn from and be inspired by. Please feel to contact us via dev8community@gmail.com or our Facebook page if you would like us to consider you as a possible speaker or if you know anyone who might be interested!
         </p>
         <div id="speakers">
             {# ["Talk Title", "Slide Image", "Talk Description", "Speaker", "Speaker Pic", "Speaker Description"] #}
@@ -86,6 +87,9 @@
         </p>
     </section>
 
+    </supersection>
+
+    <supersection class="grey-area">
     <section id="adventure" class="flex container">
         {#
             <div class="adventure-header">
@@ -118,7 +122,33 @@
         </div>
        
     </section>
-    
+    </supersection>
+
+    <supersection class="light-grey-area">
+        {# emcee, emcee-name #}
+        <section class="container">
+            <img class="section-head-image" src="/assets/events/boot2025/img/hammer.png" alt="Hammer">
+            <h1>Organizers</h1>
+            <p class="description">
+                The organizing team of Dev8 BOOT 2025 is composed of members of Dev8 and Valarx Projects.
+            </p>
+            <div id="organizers">
+                {% for img, name, descrip, socials in boot2025_organizers["data"] %}
+                <div class="organizer">
+                    <img class="speaker-image" src="/assets/events/boot2025/img/{{ img }}">
+                    <p class="emcee-name">
+                        {{ name }}
+                    </p>
+                    <p class="emcee">
+                        Undergraduate CS Student <br>
+                        AMA Tacloban <br>
+                        (Valarx Projects)
+                    </p>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+    </supersection>
 </main>
 
 {% endblock %}
