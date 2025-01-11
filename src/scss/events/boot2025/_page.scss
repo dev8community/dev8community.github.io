@@ -316,7 +316,7 @@ img.speaker-image {
 }
 
 p.emcee {
-    width: 180px;
+    width: 170px;
 
     margin: 3px auto 3px auto;
     font-family: "Ubuntu Mono", serif;
@@ -367,19 +367,18 @@ supersection {
 
 div#organizers {
     display: flex;
-    align-items: start;
-    justify-content: safe center;
+    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    width: 900px;
+    width: 800px;
     margin: auto;
     row-gap: 20px;
+    column-gap: 10px;
 }
 
 div.organizer {
     flex: 1;
-    min-width: 200px;
     height: fit-content;
-    margin: auto;
 
     img {
         margin: auto;
