@@ -46,7 +46,7 @@ img {
     // of the final width of the element. Otherwise, any element using this
     // class could overflow its parent, especially if the element is using
     // a CSS Grid.
-    box-sizing: border-box;
+    box-sizing: content-box;
 
     margin-left: auto;
     margin-right: auto;
