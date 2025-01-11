@@ -204,14 +204,7 @@ div.speaker {
         object-fit: cover;
     }
 
-    .speaker-image {
-        display: block;
-        margin: 20px auto 10px auto;
 
-        width: 125px;
-        height: 125px;
-        object-fit: cover;
-    }
 
 }
 
@@ -225,8 +218,8 @@ div.speaker {
     }
 }
 
-section#adventure {
-    background-color: $boot2025-grey;
+.top-margin-remove {
+    margin-top: 0px;
 }
 
 button {
@@ -256,17 +249,35 @@ button {
 }
 
 #adventure {
+    background-color: $boot2025-dark-grey;
+
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .adventure-header {
+        width: 100%;
+        flex-basis: 100%;
+    }
 
     .speaker {
-        flex: 1;
+        min-width: initial;
+        max-width: 430px;
+        min-height: 390px;
+        flex: initial;
+        
         margin: 0 25px;
 
         .fit-image {
+            max-width: initial;
             display: block;
+            overflow: hidden;
+            
             width: 100%;
-            object-fit: contain;
+            height: 390px;
+            
+            object-fit: cover;
         }
 
         padding-bottom: revert;
@@ -280,5 +291,60 @@ button {
             text-align: left;
             margin-left: initial;
         }
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        br {
+            line-height: 1.2;
+        }
+
+        .section-head-image {
+            margin: initial;
+        }
     }
 }
+
+img.speaker-image {
+    display: block;
+    margin: 20px auto 10px auto;
+
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+p.emcee {
+    width: 160px;
+
+    margin: 6px auto 14px auto;
+    font-family: "Ubuntu Mono", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+
+    color: #EFEFEF;
+}
+
+p.emcee-name {
+    /* Aris Artates */
+
+    width: 150px;
+
+    margin: auto auto 6px auto;
+
+    font-family: 'Open Sans', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #83FFA6;
+
+
+}
+
