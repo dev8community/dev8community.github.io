@@ -1,0 +1,24 @@
+// Common CSS classes in the BOOT 2025 page.
+@use 'sass:color';
+
+@import '../_variables.scss';
+
+footer {
+    background-color: $white;
+
+    img.dev8-logo {
+        content: url("/assets/img/logo-with-text-black.png");
+    }
+    
+    div.container {
+        border-top: 1px solid $dev8-black;
+    }
+
+    nav {
+        li {
+            a {
+                color: $dev8-black;
+            }
+        }
+    }
+}
