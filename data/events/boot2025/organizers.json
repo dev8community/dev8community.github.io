@@ -9,9 +9,11 @@
         [
             "organizers/sean.png",
             "Sean Ballais",
-            "Freelance Shopify Developer (Dev8)",
+            "Freelance Shopify Developer<br>Gray Software Solutions<br>(Dev8)",
             [
                 ["web", "https://seanballais.com/"],
+                ["linkedin", "https://www.linkedin.com/in/seanballais/"],
+                ["github", "https://github.com/seanballais"],
                 ["email", "mailto:seanballais.com"],
                 ["bluesky", "https://bsky.app/profile/seanballais.bsky.social"]
             ]
@@ -19,7 +21,7 @@
         [
             "organizers/gin.png",
             "Elgin Espanto",
-            "Undergraduate CS Student, VSU (Dev8)",
+            "Undergraduate CS Student<br>Visayas State University<br>(Dev8)",
             [
                 ["web", "mailto:elginespanto@gmail.com"],
                 ["email", "http://github.com/elginray"]
@@ -28,41 +30,43 @@
         [
             "organizers/rivera.png",
             "Justmer Rivera",
-            "Undergraduate CS Student, LNU (Dev8)",
+            "Undergraduate CS Student<br>Leyte Normal University<br>(Dev8)",
             [
-                ["email", "mailto:justmerrivera@pm.me"]
+                ["email", "mailto:justmerrivera@pm.me"],
+                ["facebook", "https://facebook.com/justmer.rivera"]
             ]
         ],
         [
             "organizers/shann.png",
             "Shann Ripalda",
-            "Undergraduate CS Student, UPTC (Dev8)",
+            "Undergraduate CS Student<br>UP Tacloban<br>(Dev8)",
             [
+                ["email", "mailto:shannaurelleg@gmail.com"]
             ]
         ],
         [
             "organizers/omi.png",
             "Michael Omisol",
-            "Undergraduate CS Student, UPD (Dev8)",
+            "Undergraduate CS Student<br>UP Diliman<br>(Dev8)",
             [
+                ["email", "mailto:msbbomisol@gmail.com"],
                 ["web", "https://flamingherb.github.io/"],
                 ["github", "https://github.com/FlamingHerb"],
-                ["email", "mailto:msbbomisol@gmail.com"],
                 ["bluesky", "https://bsky.app/profile/vaccaria.bsky.social"]
             ]
         ],
         [
             "organizers/kereen.png",
             "Kereen Mahinay",
-            "Undergraduate CS Student AMA Tacloban (Valarx Projects)",
+            "Undergraduate CS Student<br>AMA Tacloban<br>(Valarx Projects)",
             [
-                ["email", "mailto:justmerrivera@pm.me"]
+                ["email", "mailto:kereenvalarx.official@gmail.com"]
             ]
         ],
         [
             "speakers/aris.png",
             "Aris Artates",
-            "Undergraduate CS Student AMA Tacloban (Valarx Projects)",
+            "Undergraduate CS Student<br>AMA Tacloban<br>(Valarx Projects)",
             [
                 ["email", "mailto:arisvalarx.official@gmail.com"],
                 ["github", "https://github.com/drink-your-water"]
@@ -71,7 +75,7 @@
         [
             "speakers/aris.png",
             "Rangel Corrales",
-            "Undergraduate CS Student AMA Tacloban (Valarx Projects)",
+            "Undergraduate CS Student<br>AMA Tacloban<br>(Valarx Projects)",
             [
             ]
         ]

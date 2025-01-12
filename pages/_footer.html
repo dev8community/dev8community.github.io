@@ -1,5 +1,22 @@
 {% import 'pages/_components.html' as components %}
 
-<footer id="footer-content" class="flex">
-    {{ components.dev8_logo() }}
+<footer id="footer-content" class="container flex">
+    <img class="dev8-logo" src="/assets/img/logo-with-text.png">
+    <nav>
+        <ul>
+            <li>
+                {{ components.link_to_url("About", "/about") }}
+            </li>
+            <li>
+                {{ components.link_to_url("Contacts", "/contacts") }}
+            </li>
+            <li>
+                {{ components.link_to_url("Event Code of Conduct", "/events") }}
+            </li>
+            <li>
+                {{ components.link_to_url("Privacy Policy", "/events") }}
+            </li>
+        </ul>
+    </nav>
+    <img class="facebook-logo" src="/assets/img/facebook-logo.png">
 </footer>

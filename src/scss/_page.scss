@@ -19,6 +19,7 @@ body {
     width: 100%;
 }
 
+
 header {
     display: flex;
     align-items: stretch;
@@ -36,7 +37,7 @@ header {
             padding: 16px;
 
             font-family: "Open Sans", Helvetica, Arial, sans-serif;
-            font-size: 24px;
+            font-size: 14px;
             font-weight: 400;
             font-style: normal;
 
@@ -54,6 +55,51 @@ header {
     }
 }
 
+
+footer {
+    background-color: $footer-bg;
+    display: flex;
+    align-items: center;
+    
+    nav {
+        box-sizing: border-box;
+        width: 50%;
+        
+        display: flex;
+        justify-content: center;
+        flex: auto;
+
+        li {
+            display: inline;
+            padding: 16px;
+
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+
+            a {
+                color: white;
+                text-decoration: none;
+            
+                &:hover {
+                    text-decoration: underline;
+                }
+                
+            }
+
+        }
+    }
+    
+    img.dev8-logo {
+        height: 45px;
+    }
+
+    img.facebook-logo {
+        width: 20px;
+        height: 20px;
+    }
+}
 
 .logo-section{
     box-sizing: border-box;
@@ -87,6 +133,3 @@ header {
     }
 }
 
-footer {
-    background-color: $btn-dark-color;
-}
