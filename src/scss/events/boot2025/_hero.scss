@@ -23,10 +23,12 @@
         text-align: center;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
+
+        margin-bottom: 0;
     }
 
     h2 {
-        width: 420px;
+        width: 540px;
         margin: auto;
 
         font-family: "Open Sans", serif;
@@ -41,9 +43,10 @@
 
     p.date {
         font-family: "Ubuntu Mono", serif;
-        font-size: 14px;
+        font-style: normal;
         font-weight: 700;
-        line-height: 14px;
+        font-size: 18px;
+        line-height: 18px;
         text-align: center;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
@@ -62,7 +65,7 @@
     }
 
     div#bootloaders {
-        width: 200px;
+        width: 300px;
 
         display: flex;
         margin: auto;
