@@ -11,9 +11,9 @@
             "Sean Ballais",
             "Freelance Shopify Developer (Dev8)",
             [
-                ["web", ""],
-                ["email", ""],
-                ["bluesky", ""]
+                ["web", "https://seanballais.com/"],
+                ["email", "mailto:seanballais.com"],
+                ["bluesky", "https://bsky.app/profile/seanballais.bsky.social"]
             ]
         ],
         [
@@ -21,9 +21,10 @@
             "Michael Omisol",
             "Undergraduate CS Student, UPD (Dev8)",
             [
-                ["web", ""],
-                ["email", ""],
-                ["bluesky", ""]
+                ["web", "https://flamingherb.github.io/"],
+                ["github", "https://github.com/FlamingHerb"],
+                ["email", "mailto:msbbomisol@gmail.com"],
+                ["bluesky", "https://bsky.app/profile/vaccaria.bsky.social"]
             ]
         ],
         [
@@ -31,29 +32,23 @@
             "Shann Ripalda",
             "Undergraduate CS Student, UPTC (Dev8)",
             [
-                ["web", ""],
-                ["email", ""],
-                ["bluesky", ""]
             ]
         ],
         [
-            "organizers/shann.png",
+            "organizers/gin.png",
             "Elgin Espanto",
             "Undergraduate CS Student, VSU (Dev8)",
             [
-                ["web", ""],
-                ["email", ""],
-                ["bluesky", ""]
+                ["web", "mailto:elginespanto@gmail.com"],
+                ["email", "http://github.com/elginray"]
             ]
         ],
         [
-            "organizers/shann.png",
+            "organizers/rivera.png",
             "Justmer Rivera",
             "Undergraduate CS Student, LNU (Dev8)",
             [
-                ["web", ""],
-                ["email", ""],
-                ["bluesky", ""]
+                ["email", "mailto:justmerrivera@pm.me"]
             ]
         ],
         [
@@ -61,9 +56,6 @@
             "Keen Mahinay",
             "Undergraduate CS Student AMA Tacloban (Valarx Projects)",
             [
-                ["web", ""],
-                ["email", ""],
-                ["bluesky", ""]
             ]
         ],
         [
@@ -71,9 +63,8 @@
             "Aris Artates",
             "Undergraduate CS Student AMA Tacloban (Valarx Projects)",
             [
-                ["web", ""],
-                ["email", ""],
-                ["bluesky", ""]
+                ["email", "mailto:arisvalarx.official@gmail.com"],
+                ["github", "https://github.com/drink-your-water"]
             ]
         ],
         [
@@ -81,8 +72,6 @@
             "Rangel Corrales",
             "Undergraduate CS Student AMA Tacloban (Valarx Projects)",
             [
-                ["email", ""],
-                ["github", ""]
             ]
         ]
     ]
