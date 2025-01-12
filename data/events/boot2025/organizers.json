@@ -17,24 +17,6 @@
             ]
         ],
         [
-            "organizers/omi.png",
-            "Michael Omisol",
-            "Undergraduate CS Student, UPD (Dev8)",
-            [
-                ["web", "https://flamingherb.github.io/"],
-                ["github", "https://github.com/FlamingHerb"],
-                ["email", "mailto:msbbomisol@gmail.com"],
-                ["bluesky", "https://bsky.app/profile/vaccaria.bsky.social"]
-            ]
-        ],
-        [
-            "organizers/shann.png",
-            "Shann Ripalda",
-            "Undergraduate CS Student, UPTC (Dev8)",
-            [
-            ]
-        ],
-        [
             "organizers/gin.png",
             "Elgin Espanto",
             "Undergraduate CS Student, VSU (Dev8)",
@@ -52,10 +34,29 @@
             ]
         ],
         [
-            "speakers/aris.png",
-            "Keen Mahinay",
+            "organizers/shann.png",
+            "Shann Ripalda",
+            "Undergraduate CS Student, UPTC (Dev8)",
+            [
+            ]
+        ],
+        [
+            "organizers/omi.png",
+            "Michael Omisol",
+            "Undergraduate CS Student, UPD (Dev8)",
+            [
+                ["web", "https://flamingherb.github.io/"],
+                ["github", "https://github.com/FlamingHerb"],
+                ["email", "mailto:msbbomisol@gmail.com"],
+                ["bluesky", "https://bsky.app/profile/vaccaria.bsky.social"]
+            ]
+        ],
+        [
+            "organizers/kereen.png",
+            "Kereen Mahinay",
             "Undergraduate CS Student AMA Tacloban (Valarx Projects)",
             [
+                ["email", "mailto:justmerrivera@pm.me"]
             ]
         ],
         [
