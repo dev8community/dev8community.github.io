@@ -30,6 +30,7 @@ folder = 'assets/'
 # Events page and subpages
 '/events' = 'pages/placeholder.html'
 '/events/code-of-conduct' = 'pages/events/code-of-conduct.html'
+'/events/privacy-policy' = 'pages/events/privacy-policy.html'
 '/events/boot2025' = 'pages/events/boot2025/index.html'
 
 # Surveys
