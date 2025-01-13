@@ -11,12 +11,14 @@
                 <li>
                     {{ components.link_to_url("Contacts", "/contacts") }}
                 </li>
+                {% if active_page == "events"%}
                 <li>
                     {{ components.link_to_url("Event Code of Conduct", "/events/code-of-conduct") }}
                 </li>
                 <li>
                     {{ components.link_to_url("Privacy Policy", "/events/privacy-policy") }}
                 </li>
+                {% endif %}
             </ul>
         </nav>
         <div><img class="facebook-logo" src="/assets/img/facebook-logo.png"></div>
