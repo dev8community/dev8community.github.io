@@ -2,6 +2,7 @@
 
 {% extends "pages/events/_subpage.html" %}
 {% set active_page = "events" %}
+{% set preregistration = true%}
 
 {% block title %}Boot 2025{% endblock %}
 {% block relative_url %}boot2025{% endblock %}
@@ -26,8 +27,14 @@
         <img class="section-head-image" src="/assets/events/boot2025/img/lightbulb.png" alt="Lightbulb">
         <h1>Talks and Demonstrations</h1>
         <p class="description">
+        {% if preregistration %}
             We're still working on finalizing the list of speakers for this year's Dev8 BOOT. We're on a search for people who would love to share their knowledge and love for tech. We're making sure that you'll meet a wonderful set of people that you can learn from and be inspired by. Please feel to contact us via <a href="dev8community@gmail.com"><samp>dev8community@gmail.com</samp></a> or <strong><a href="https://www.facebook.com/dev8community">our Facebook page</a></strong> if you would like us to consider you as a possible speaker or if you know anyone who might be interested!
+        {% else %}
+            We have a superb line of talks and demonstrations that you can learn from and be inspired by.
+        {% endif %}
         </p>
+
+        {% if not preregistration %}
         <div id="speakers">
             {# ["Talk Title", "Slide Image", "Talk Description", "Speaker", "Speaker Pic", "Speaker Description"] #}
             {% for title, slide_image, talk_desc, speaker, speaker_pic, speaker_desc in boot2025_speakers['data']%}
@@ -45,6 +52,7 @@
             </div>
             {% endfor %}
         </div>
+        {% endif %}
     </section>
 
     <section class="top-pad-remove container">
@@ -124,7 +132,9 @@
             <p>
                 <span>Part of Dev8, Valarx Projects, or DICT 8?</span> We also have reserved slots for our community and its partners. You may ask around internally first if you can avail of a slot.
             </p>
+            {% if not preregistration %}
             {{ boot2025_components.registration_button() }}
+            {% endif %}
         </div>
        
     </section>
