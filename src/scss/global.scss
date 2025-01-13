@@ -53,6 +53,11 @@ footer {
     align-items: center;
     justify-content: stretch;
     
+    nav li a {
+        color: $white;
+        text-decoration: none;
+    }
+
     img.dev8-logo {
         
         height: 45px;
