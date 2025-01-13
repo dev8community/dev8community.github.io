@@ -1,5 +1,5 @@
-{% macro link_to_url(link_text, target_url) -%}
-<a href="{{ target_url }}">
+{% macro link_to_url(link_text, target_url, active = false) -%}
+<a {% if active %} class="active"{% endif %} href="{{ target_url }}">
     {{ link_text }}
 </a>
 {%- endmacro %}

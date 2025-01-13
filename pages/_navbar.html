@@ -1,21 +1,26 @@
 {% import 'pages/_components.html' as components %}
 
-<div id="header-content" class="container flex">
+{% set navigation_bar = [
+    ('Home', '/'),
+    ('About', '/about'),
+    ('Contacts', '/contacts'),
+    ('Events', '/events'),
+]
+-%}
+
+<div class="container flex">
     {{ components.dev8_logo() }}
     <nav>
         <ul>
+            {% for caption, href in navigation_bar %}
             <li>
-                {{ components.link_to_url("Home", "/") }}
+                {% if active_page == caption %}
+                {{ components.link_to_url(caption, href, true) }}
+                {% else %}
+                {{ components.link_to_url(caption, href) }}
+                {% endif %}
             </li>
-            <li>
-                {{ components.link_to_url("About", "/about") }}
-            </li>
-            <li>
-                {{ components.link_to_url("Contacts", "/contacts") }}
-            </li>
-            <li>
-                {{ components.link_to_url("Events", "/events") }}
-            </li>
+            {% endfor %}
         </ul>
     </nav>
 </div>

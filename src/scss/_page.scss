@@ -25,34 +25,45 @@ header {
     align-items: stretch;
     
     nav {
-        box-sizing: border-box;
-        width: 50%;
-        
-        display: flex;
         justify-content: right;
-        flex: auto;
-
-        li {
-            display: inline;
-            padding: 16px;
-
-            font-family: "Open Sans", Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            font-weight: 400;
-            font-style: normal;
-
-            a {
-                color: $dev8-black;
-                text-decoration: none;
-            
-                &:hover {
-                    text-decoration: underline;
-                }
-                
-            }
-
-        }
     }
+
+    // nav {
+    //     box-sizing: border-box;
+    //     width: 50%;
+        
+    //     display: flex;
+    //     justify-content: right;
+    //     flex: auto;
+
+    //     li {
+    //         display: inline;
+    //         padding: 16px;
+
+    //         font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    //         font-size: 14px;
+    //         font-weight: 400;
+    //         font-style: normal;
+
+    //         a {
+    //             color: $dev8-black;
+    //             text-decoration: none;
+            
+    //             &:hover {
+    //                 color: $dev8-green;
+    //                 text-decoration: underline;
+    //             }
+                
+    //         }
+
+    //         a.active {
+    //             color: $dev8-green;
+    //             font-weight: 700;
+    //             text-decoration: underline;
+    //         }
+
+    //     }
+    // }
 }
 
 .logo-section{

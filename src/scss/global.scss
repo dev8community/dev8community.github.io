@@ -52,36 +52,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: stretch;
-
-    nav {
-        box-sizing: border-box;
-        width: 50%;
-        
-        display: flex;
-        justify-content: center;
-        flex: auto;
-
-        li {
-            display: inline;
-            padding: 16px;
-
-            font-family: "Open Sans", Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            font-weight: 400;
-            font-style: normal;
-
-            a {
-                color: white;
-                text-decoration: none;
-            
-                &:hover {
-                    text-decoration: underline;
-                }
-                
-            }
-
-        }
-    }
     
     img.dev8-logo {
         
@@ -111,6 +81,44 @@ footer {
         }
     }
 }
+
+nav {
+    box-sizing: border-box;
+    width: 50%;
+    
+    display: flex;
+    justify-content: center;
+    flex: auto;
+
+    li {
+        display: inline;
+        padding: 16px;
+
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+
+        a {
+            color: $dev8-black;
+            text-decoration: none;
+        
+            &:hover {
+                color: $dev8-green;
+                text-decoration: underline;
+            }
+            
+        }
+
+        a.active {
+            color: $dev8-green;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+    }
+}
+
 
 .container {
     width: 100%; // Expands the div to the entire width of parent.
