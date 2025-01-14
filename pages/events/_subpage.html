@@ -3,6 +3,11 @@
 {% set page_title %}{% block title %}{% endblock %}{% endset %}
 {% set custom_css %}{% block css %}{% endblock %}{% endset %}
 
+{% set page_description %}{% block opengraph_desc %}{% endblock %}{% endset %}
+{% set img_description %}{% block opengraph_img_desc %}{% endblock %}{% endset %}
+{% set og_img_url %}{% block opengraph_og_img %}{% endblock %}{% endset %}
+{% set twt_img_url %}{% block opengraph_twt_img %}{% endblock %}{% endset %}
+
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
@@ -15,29 +20,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    {#
-    <meta name="description" content="[INSERT DESCRIPTION HERE]">
-    #}
+    <meta name="description" content="{{ page_description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:url" content="https://dev8community.github.io/events/{% block relative_url %}{% endblock %}" />
-    <meta property="og:title" content="Dev8" />
+    <meta property="og:title" content="{{ page_title }} - Dev8" />
 
-    {#
-    <meta property="og:image" content="[INSERT IMAGE HERE]" />
-    <meta property="og:image:alt" content="[INSERT DESCRIPTION HERE]" />
-    <meta property="og:description" content="[INSERT DESCRIPTION HERE]" />
-    #}
+
+    <meta property="og:image" content="{{ og_img_url }}" />
+    <meta property="og:image:alt" content="{{ img_description }}" />
+    <meta property="og:description" content="{{ page_description }}" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Dev8" />
+    <meta property="og:site_name" content="{{ page_title }} - Dev8" />
     <meta property="og:locale" content="en_PH" />
-    <meta property="twitter:title" content="Dev8" />
+    <meta property="twitter:title" content="{{ page_title }}- Dev8" />
 
-    {#
-    <meta property="twitter:image" content="[INSERT IMAGE HERE]" />
-    <meta property="twitter:image:alt" content="[INSERT DESCRIPTION HERE]" />
-    <meta property="twitter:description" content="[INSERT DESCRIPTION HERE]" />
-    #}
+    <meta property="twitter:image" content="{{ twt_img_url }}" />
+    <meta property="twitter:image:alt" content="{{ img_description }}" />
+    <meta property="twitter:description" content="{{ page_description }}" />
 
     <meta property="twitter:site" content="@dev8community" />
     <meta property="twitter:card" content="summary" />
