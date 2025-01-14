@@ -56,20 +56,20 @@
             ]
         ],
         [
-            "organizers/kereen.png",
-            "Kereen Mahinay",
-            "Undergraduate CS Student<br>AMA Tacloban<br>(Valarx Projects)",
-            [
-                ["email", "mailto:kereenvalarx.official@gmail.com"]
-            ]
-        ],
-        [
             "speakers/aris.png",
             "Aris Artates",
             "Undergraduate CS Student<br>AMA Tacloban<br>(Valarx Projects)",
             [
                 ["email", "mailto:arisvalarx.official@gmail.com"],
                 ["github", "https://github.com/drink-your-water"]
+            ]
+        ],
+        [
+            "organizers/kereen.png",
+            "Kereen Mahinay",
+            "Undergraduate CS Student<br>AMA Tacloban<br>(Valarx Projects)",
+            [
+                ["email", "mailto:kereenvalarx.official@gmail.com"]
             ]
         ],
         [
