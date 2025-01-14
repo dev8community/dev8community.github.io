@@ -14,8 +14,8 @@
                 ["web", "https://seanballais.com/"],
                 ["linkedin", "https://www.linkedin.com/in/seanballais/"],
                 ["github", "https://github.com/seanballais"],
-                ["email", "mailto:seanballais.com"],
-                ["bluesky", "https://bsky.app/profile/seanballais.bsky.social"]
+                ["bluesky", "https://bsky.app/profile/seanballais.bsky.social"],
+                ["email", "mailto:seanballais.com"]
             ]
         ],
         [
@@ -23,8 +23,8 @@
             "Elgin Espanto",
             "Undergraduate CS Student<br>Visayas State University<br>(Dev8)",
             [
-                ["web", "mailto:elginespanto@gmail.com"],
-                ["email", "http://github.com/elginray"]
+                ["github", "http://github.com/elginray"],
+                ["email", "mailto:elginespanto@gmail.com"]
             ]
         ],
         [
@@ -32,8 +32,8 @@
             "Justmer Rivera",
             "Undergraduate CS Student<br>Leyte Normal University<br>(Dev8)",
             [
-                ["email", "mailto:justmerrivera@pm.me"],
-                ["facebook", "https://facebook.com/justmer.rivera"]
+                ["facebook", "https://facebook.com/justmer.rivera"],
+                ["email", "mailto:justmerrivera@pm.me"]
             ]
         ],
         [
@@ -49,10 +49,10 @@
             "Michael Omisol",
             "Undergraduate CS Student<br>UP Diliman<br>(Dev8)",
             [
-                ["email", "mailto:msbbomisol@gmail.com"],
                 ["web", "https://flamingherb.github.io/"],
                 ["github", "https://github.com/FlamingHerb"],
-                ["bluesky", "https://bsky.app/profile/vaccaria.bsky.social"]
+                ["bluesky", "https://bsky.app/profile/vaccaria.bsky.social"],
+                ["email", "mailto:msbbomisol@gmail.com"]
             ]
         ],
         [
@@ -60,8 +60,8 @@
             "Aris Artates",
             "Undergraduate CS Student<br>AMA Tacloban<br>(Valarx Projects)",
             [
-                ["email", "mailto:arisvalarx.official@gmail.com"],
-                ["github", "https://github.com/drink-your-water"]
+                ["github", "https://github.com/drink-your-water"],
+                ["email", "mailto:arisvalarx.official@gmail.com"]
             ]
         ],
         [
