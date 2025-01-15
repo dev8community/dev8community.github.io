@@ -330,9 +330,7 @@ p.emcee {
 }
 
 p.emcee-name {
-    /* Aris Artates */
-
-    width: 150px;
+    width: 160px;
 
     margin: 3px auto 3px auto;
 
@@ -407,4 +405,14 @@ samp {
 
 a {
     color: $boot2025-white;
+}
+
+.speaker-title {
+        font-family: 'Open Sans', serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+
+        color: #DDB9DF;
 }

@@ -60,7 +60,31 @@
     </section>
 
     <section class="top-pad-remove container">
-        <img class="section-head-image" src="/assets/events/boot2025/img/microphone.png" alt="Lightbulb">
+        <img class="section-head-image" src="/assets/events/boot2025/img/message.png" alt="Message">
+        <h1>Messages</h1>
+        
+        <div id="organizers">
+            {% set messenger =  boot2025_organizers["data"][8] %}
+            <div class="organizer">
+                <p class="speaker-title">Inspirational Message</p>
+                <img class="speaker-image" src="/assets/events/boot2025/img/{{ messenger[0] }}">
+                <p class="emcee-name">
+                    {{ messenger[1] }}
+                </p>
+                <p class="emcee">
+                    {{ messenger[2] }}
+                </p>
+                <div class="socials">
+                    {% for social_type, link in messenger[3] %}
+                    <a href="{{link}}"><img src="/assets/events/boot2025/img/icons/social_{{social_type}}.png"></a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="top-pad-remove container">
+        <img class="section-head-image" src="/assets/events/boot2025/img/microphone.png" alt="Emcee">
         <h1>Emcee</h1>
         
         <div id="organizers">

@@ -79,6 +79,14 @@
             [
                 ["email", "mailto:rangeltan26@gmail.com"]
             ]
+        ],
+        [
+            "speakers/barroa.png",
+            "Atty. Melvyn Barroa",
+            "OIC - Regional Director<br>DICT Regional Office 8",
+            [
+                ["email", "mailto:region8@dict.gov.ph"]
+            ]
         ]
     ]
 }
