@@ -64,22 +64,23 @@
         <h1>Messages</h1>
         
         <div id="organizers">
-            {% set messenger =  boot2025_organizers["data"][8] %}
+            {% for img, name, descrip, socials, type in boot2025_organizers["data"] if  name == "Atty. Melvyn Barroa" %}
             <div class="organizer">
                 <p class="speaker-title">Inspirational Message</p>
-                <img class="speaker-image" src="/assets/events/boot2025/img/{{ messenger[0] }}">
+                <img class="speaker-image" src="/assets/events/boot2025/img/{{ img }}">
                 <p class="emcee-name">
-                    {{ messenger[1] }}
+                    {{ name }}
                 </p>
                 <p class="emcee">
-                    {{ messenger[2] }}
+                    {{ descrip }}
                 </p>
                 <div class="socials">
-                    {% for social_type, link in messenger[3] %}
+                    {% for social_type, link in socials %}
                     <a href="{{link}}"><img src="/assets/events/boot2025/img/icons/social_{{social_type}}.png"></a>
                     {% endfor %}
                 </div>
             </div>
+            {% endfor %}
         </div>
     </section>
 
@@ -88,21 +89,22 @@
         <h1>Emcee</h1>
         
         <div id="organizers">
-            {% set emcee =  boot2025_organizers["data"][5] %}
+            {% for img, name, descrip, socials, type in boot2025_organizers["data"] if  name == "Aris Artates" %}
             <div class="organizer">
-                <img class="speaker-image" src="/assets/events/boot2025/img/{{ emcee[0] }}">
+                <img class="speaker-image" src="/assets/events/boot2025/img/{{ img }}">
                 <p class="emcee-name">
-                    {{ emcee[1] }}
+                    {{ name }}
                 </p>
                 <p class="emcee">
-                    {{ emcee[2] }}
+                    {{ descrip }}
                 </p>
                 <div class="socials">
-                    {% for social_type, link in emcee[3] %}
+                    {% for social_type, link in socials %}
                     <a href="{{link}}"><img src="/assets/events/boot2025/img/icons/social_{{social_type}}.png"></a>
                     {% endfor %}
                 </div>
             </div>
+            {% endfor %}
         </div>
     </section>
 
