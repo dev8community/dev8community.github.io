@@ -1,0 +1,60 @@
+// Common CSS classes in the Eastern Visayas Tech Scene Survey 2023 page.
+@use 'sass:color';
+
+@import '_mixins.scss';
+@import '_variables.scss';
+
+h1 {
+    font-family: "Prata", serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 64px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 0;
+}
+
+p {
+    font-family: "Open Sans", serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    span {
+        font-weight: 700;
+        color: $dev8-light-green;
+    }
+}
+
+section.container {
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-logo {
+    flex: initial;
+    width: 200px;
+
+    margin: auto 100px;
+}
+.about-us-description {
+    width: 900px;
+
+    h1 {
+        font-size: 48px;
+        color: $btn-dark-color;
+    }
+
+    margin-right: 50px;
+}
+
+.mission-vision {
+    min-width: 500px;
+    margin: auto 50px;
+
+    h1 {
+        text-align: center;
+    }
+}

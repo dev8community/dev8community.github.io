@@ -13,6 +13,7 @@ folder = 'assets/'
 'surveys/evtss2023/css/index.css' = 'src/scss/surveys/evtss2023/index.scss'
 'css/index.css' = 'src/scss/index.scss'
 'css/about.css' = 'src/scss/about.scss'
+'css/contacts.css' = 'src/scss/contacts.scss'
 
 'events/boot2025/css/index.css' = 'src/scss/events/boot2025/index.scss'
 'events/css/code-of-conduct.css' = 'src/scss/events/code-of-conduct.scss'
@@ -23,9 +24,8 @@ folder = 'assets/'
 [routes]
 # For now, have routes go to placeholder.html
 '/' = 'pages/placeholder.html'
-'/working' = 'pages/about.html'
-'/about' = 'pages/placeholder.html'
-'/contacts' = 'pages/placeholder.html'
+'/working/about' = 'pages/about.html'
+'/working/contacts' = 'pages/contacts.html'
 
 
 # Events page and subpages
