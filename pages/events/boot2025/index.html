@@ -177,7 +177,7 @@
                 The organizing team of Dev8 BOOT 2025 is composed of members of Dev8 and Valarx Projects.
             </p>
             <div id="organizers">
-                {% for img, name, descrip, socials in boot2025_organizers["data"] %}
+                {% for img, name, descrip, socials, type in boot2025_organizers["data"] if not type == "speaker" %}
                 <div class="organizer">
                     <img class="speaker-image" src="/assets/events/boot2025/img/{{ img }}">
                     <p class="emcee-name">

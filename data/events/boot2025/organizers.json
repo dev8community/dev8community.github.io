@@ -3,7 +3,8 @@
         "Image",
         "Name",
         "Descriptor",
-        "Socials"
+        "Socials",
+        "Type"
     ],
     "data": [
         [
@@ -16,7 +17,8 @@
                 ["github", "https://github.com/seanballais"],
                 ["bluesky", "https://bsky.app/profile/seanballais.com"],
                 ["email", "mailto:seanballais.com"]
-            ]
+            ],
+            "organizer"
         ],
         [
             "organizers/gin.png",
@@ -25,7 +27,8 @@
             [
                 ["github", "http://github.com/elginray"],
                 ["email", "mailto:elginespanto@gmail.com"]
-            ]
+            ],
+            "organizer"
         ],
         [
             "organizers/rivera.png",
@@ -34,7 +37,8 @@
             [
                 ["facebook", "https://facebook.com/justmer.rivera"],
                 ["email", "mailto:justmerrivera@pm.me"]
-            ]
+            ],
+            "organizer"
         ],
         [
             "organizers/shann.png",
@@ -42,7 +46,8 @@
             "Undergraduate CS Student<br>UP Tacloban<br>(Dev8)",
             [
                 ["email", "mailto:shannaurelleg@gmail.com"]
-            ]
+            ],
+            "organizer"
         ],
         [
             "organizers/omi.png",
@@ -53,7 +58,8 @@
                 ["github", "https://github.com/FlamingHerb"],
                 ["bluesky", "https://bsky.app/profile/vaccaria.bsky.social"],
                 ["email", "mailto:msbbomisol@gmail.com"]
-            ]
+            ],
+            "organizer"
         ],
         [
             "speakers/aris.png",
@@ -62,7 +68,8 @@
             [
                 ["github", "https://github.com/drink-your-water"],
                 ["email", "mailto:arisvalarx.official@gmail.com"]
-            ]
+            ],
+            "organizer"
         ],
         [
             "organizers/kereen.png",
@@ -70,7 +77,8 @@
             "Undergraduate CS Student<br>AMA Tacloban<br>(Valarx Projects)",
             [
                 ["email", "mailto:kereenvalarx.official@gmail.com"]
-            ]
+            ],
+            "organizer"
         ],
         [
             "organizers/rangel.png",
@@ -78,7 +86,8 @@
             "Undergraduate CS Student<br>AMA Tacloban<br>(Valarx Projects)",
             [
                 ["email", "mailto:rangeltan26@gmail.com"]
-            ]
+            ],
+            "organizer"
         ],
         [
             "speakers/barroa.png",
@@ -86,7 +95,8 @@
             "OIC - Regional Director<br>DICT Regional Office 8",
             [
                 ["email", "mailto:region8@dict.gov.ph"]
-            ]
+            ],
+            "speaker"
         ]
     ]
 }
