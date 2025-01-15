@@ -12,6 +12,7 @@ folder = 'assets/'
 [processed_files]
 'surveys/evtss2023/css/index.css' = 'src/scss/surveys/evtss2023/index.scss'
 'css/index.css' = 'src/scss/index.scss'
+'css/about.css' = 'src/scss/about.scss'
 
 'events/boot2025/css/index.css' = 'src/scss/events/boot2025/index.scss'
 'events/css/code-of-conduct.css' = 'src/scss/events/code-of-conduct.scss'

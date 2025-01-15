@@ -148,6 +148,18 @@ nav {
     }
 }
 
+.top-most {
+    @include tablets {
+        padding: 3%;
+        padding-top: 0;
+    }
+
+    @include xlarge-screens {
+        padding: 2%;
+        padding-top: 0;
+    }
+}
+
 .flex {
     display: flex;
 }
