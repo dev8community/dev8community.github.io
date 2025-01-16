@@ -24,6 +24,7 @@ folder = 'assets/'
 [routes]
 # For now, have routes go to placeholder.html
 '/' = 'pages/placeholder.html'
+'/working/' = 'pages/index.html'
 '/working/about' = 'pages/about.html'
 '/working/contacts' = 'pages/contacts.html'
 

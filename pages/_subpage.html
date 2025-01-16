@@ -1,3 +1,8 @@
+{#
+    Uses `set active_page` to define what is the current page around the entire site.
+    Uses `{% block relative_url %}{% endblock %}` to tell where the page is.
+#}
+
 {% import 'pages/_components.html' as components %}
 
 {% set page_title %}{% block title %}{% endblock %}{% endset %}
@@ -11,7 +16,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <title>{{ page_title }} - Dev8</title>
+    <title>{%if not active_page == "Home"%}{{ page_title }} -{% endif %} Dev8</title>
     <link rel="icon" type="image/x-icon" href="/assets/img/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,18 +27,17 @@
 
     <meta name="description" content="{{ page_description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url" content="https://dev8community.github.io/events/{% block relative_url %}{% endblock %}" />
-    <meta property="og:title" content="{{ page_title }} - Dev8" />
-
-
+    <meta property="og:url" content="https://dev8community.github.io/{% block relative_url %}{% endblock %}" />
+    <meta property="og:title" content="{%if not active_page == 'Home'%}{{ page_title }} -{% endif %} Dev8" />
+    
     <meta property="og:image" content="{{ og_img_url }}" />
     <meta property="og:image:alt" content="{{ img_description }}" />
     <meta property="og:description" content="{{ page_description }}" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="{{ page_title }} - Dev8" />
+    <meta property="og:site_name" content="{%if not active_page == 'Home'%}{{ page_title }} -{% endif %} Dev8" />
     <meta property="og:locale" content="en_PH" />
-    <meta property="twitter:title" content="{{ page_title }}- Dev8" />
+    <meta property="twitter:title" content="{%if not active_page == 'Home'%}{{ page_title }} -{% endif %} Dev8" />
 
     <meta property="twitter:image" content="{{ twt_img_url }}" />
     <meta property="twitter:image:alt" content="{{ img_description }}" />
