@@ -64,8 +64,8 @@
         text-decoration-skip-ink: none;
     }
 
-    div#bootloaders {
-        width: 300px;
+    div.bootloaders {
+        width: 320px;
 
         display: flex;
         margin: auto;
@@ -75,7 +75,13 @@
         img {
             height: 60px;
         }
+
+        img.jetbrains {
+            height: 60px;
+        }
     }
+
+    
 
     @include tablets {
         padding: 3%;
