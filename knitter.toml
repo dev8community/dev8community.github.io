@@ -14,9 +14,9 @@ folder = 'assets/'
 'css/index.css' = 'src/scss/index.scss'
 'css/about.css' = 'src/scss/about.scss'
 'css/contacts.css' = 'src/scss/contacts.scss'
+'css/code-of-conduct.css' = 'src/scss/code-of-conduct.scss'
 
 'events/boot2025/css/index.css' = 'src/scss/events/boot2025/index.scss'
-'events/css/code-of-conduct.css' = 'src/scss/events/code-of-conduct.scss'
 
 # Routes that we can access in the URL. Paths are
 # relative to Knitter.
@@ -28,11 +28,11 @@ folder = 'assets/'
 '/working/about' = 'pages/about.html'
 '/working/contacts' = 'pages/contacts.html'
 
+'/privacy-policy' = 'pages/privacy-policy.html'
 
 # Events page and subpages
 '/events' = 'pages/placeholder.html'
 '/events/code-of-conduct' = 'pages/events/code-of-conduct.html'
-'/events/privacy-policy' = 'pages/events/privacy-policy.html'
 '/events/boot2025' = 'pages/events/boot2025/index.html'
 
 # Surveys

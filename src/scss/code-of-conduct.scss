@@ -1,8 +1,8 @@
 // Common CSS classes in the BOOT 2025 page.
 @use 'sass:color';
 
-@import '../_mixins.scss';
-@import '../_variables.scss';
+@import '_mixins.scss';
+@import '_variables.scss';
 
 main {
     color: $grey;

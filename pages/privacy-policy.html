@@ -1,7 +1,7 @@
-{% import 'pages/events/_components.html' as events_components %}
+{% import 'pages/_components.html' as components %}
 
-{% extends "pages/events/_subpage.html" %}
-{% set active_page = "Events" %}
+{% extends "pages/_subpage.html" %}
+{% set active_page = "main" %}
 
 {% block title %}Privacy Policy{% endblock %}
 {% block relative_url %}privacy-policy{% endblock %}
@@ -11,7 +11,7 @@
 {% block opengraph_og_img %}/assets/events/boot2025/img/socials/og-fb-image.png{% endblock %}
 {% block opengraph_twt_img %}/assets/events/boot2025/img/socials/og-twt-image.png{% endblock %}
 
-{% block css %}<link href="/assets/events/css/code-of-conduct.css" rel="stylesheet" type="text/css">{% endblock %}
+{% block css %}<link href="/assets/css/code-of-conduct.css" rel="stylesheet" type="text/css">{% endblock %}
 {% block content %}
 
 <main>
