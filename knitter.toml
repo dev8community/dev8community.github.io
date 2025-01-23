@@ -34,6 +34,7 @@ folder = 'assets/'
 '/events' = 'pages/placeholder.html'
 '/events/code-of-conduct' = 'pages/events/code-of-conduct.html'
 '/events/boot2025' = 'pages/events/boot2025/index.html'
+'/events/boot2025/registration/reserved-slots' = 'pages/events/boot2025/registration/reserved-slots.html'
 
 # Surveys
 '/surveys/evtss2023' = 'pages/surveys/evtss2023/index.html'

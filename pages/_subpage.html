@@ -52,6 +52,11 @@
     {{ custom_css }}
 </head>
 <body>
+    <script>
+        function redirect(url){
+            window.location.replace(url);
+        }
+    </script>
     <header>
         {% include 'pages/_navbar.html' %}
     </header>

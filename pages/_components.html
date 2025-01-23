@@ -13,3 +13,15 @@
     </a>
 </div>
 {%- endmacro %}
+
+{% macro redirect_to_url(url) -%}
+<section class="container flex redirect-notice">
+    <div style="margin: auto">
+        <h1>You are now being redirected to:</h1>
+        <h2><a href="{{url}}">{{url}}</a></h2>
+    </div>
+</section>
+<script>
+    redirect("{{url}}");
+</script>
+{%- endmacro %}
