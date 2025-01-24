@@ -21,12 +21,31 @@
             "organizer"
         ],
         [
+            "organizers/arvin.png",
+            "Arvin Arguilles",
+            "Undergraduate CS Student<br>Visayas State University<br>(Dev8)",
+            [
+                ["email", "mailto:youmu880@gmail.com"]
+            ],
+            "organizer"
+        ],
+        [
             "organizers/gin.png",
             "Elgin Espanto",
             "Undergraduate CS Student<br>Visayas State University<br>(Dev8)",
             [
                 ["github", "http://github.com/elginray"],
                 ["email", "mailto:elginespanto@gmail.com"]
+            ],
+            "organizer"
+        ],
+        [
+            "organizers/hazel.png",
+            "Hazel-Ivy Acebuche",
+            "Quality Assurance Engineer<br>ISR Cebu<br>(Dev8)",
+            [
+                ["linkedin", "https://www.linkedin.com/in/hazelacebuche/"],
+                ["email", "mailto:acebuche.hazelivy@gmail.com"]
             ],
             "organizer"
         ],
@@ -41,15 +60,6 @@
             "organizer"
         ],
         [
-            "organizers/shann.png",
-            "Shann Ripalda",
-            "Undergraduate CS Student<br>UP Tacloban<br>(Dev8)",
-            [
-                ["email", "mailto:shannaurelleg@gmail.com"]
-            ],
-            "organizer"
-        ],
-        [
             "organizers/omi.png",
             "Michael Omisol",
             "Undergraduate CS Student<br>UP Diliman<br>(Dev8)",
@@ -59,6 +69,15 @@
                 ["github", "https://github.com/FlamingHerb"],
                 ["bluesky", "https://bsky.app/profile/vaccaria.bsky.social"],
                 ["email", "mailto:msbbomisol@gmail.com"]
+            ],
+            "organizer"
+        ],
+        [
+            "organizers/shann.png",
+            "Shann Ripalda",
+            "Undergraduate CS Student<br>UP Tacloban<br>(Dev8)",
+            [
+                ["email", "mailto:shannaurelleg@gmail.com"]
             ],
             "organizer"
         ],

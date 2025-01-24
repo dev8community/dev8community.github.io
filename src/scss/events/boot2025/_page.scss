@@ -365,7 +365,18 @@ div#organizers {
     align-items: stretch;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 800px;
+    width: 600px;
+    margin: auto;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+
+div#emcees {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 380px;
     margin: auto;
     row-gap: 20px;
     column-gap: 10px;
