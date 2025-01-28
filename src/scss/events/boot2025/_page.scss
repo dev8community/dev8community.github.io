@@ -313,7 +313,7 @@ img.speaker-image {
 }
 
 p.emcee {
-    width: 170px;
+    width: 180px;
 
     margin: 3px auto 3px auto;
     font-family: "Ubuntu Mono", serif;
@@ -360,7 +360,7 @@ supersection {
     background-color: $boot2025-light-grey;
 }
 
-div#organizers {
+div.organizers {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
@@ -371,12 +371,12 @@ div#organizers {
     column-gap: 10px;
 }
 
-div#emcees {
+div.emcees {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 380px;
+    width: 420px;
     margin: auto;
     row-gap: 20px;
     column-gap: 10px;
@@ -416,6 +416,13 @@ a {
 }
 
 .speaker-title {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 69px;
+
+    p {
         font-family: 'Open Sans', serif;
         font-style: normal;
         font-weight: 600;
@@ -423,6 +430,7 @@ a {
         text-align: center;
 
         color: #DDB9DF;
+    }
 }
 
 .code-of-conduct {

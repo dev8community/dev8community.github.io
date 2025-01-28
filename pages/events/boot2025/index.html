@@ -63,10 +63,31 @@
         <img class="section-head-image" src="/assets/events/boot2025/img/icons/message.png" alt="Message">
         <h1>Messages</h1>
         
-        <div id="organizers">
+        <div class="emcees">
+            {% for img, name, descrip, socials, type in boot2025_organizers["data"] if  name == "Sean Ballais" %}
+            <div class="organizer">
+                <div class="speaker-title">
+                    <p >Introduction and Welcome/Closing Remarks</p>
+                </div>
+                <img class="speaker-image" src="/assets/events/boot2025/img/{{ img }}">
+                <p class="emcee-name">
+                    {{ name }}
+                </p>
+                <p class="emcee">
+                    {{ descrip }}
+                </p>
+                <div class="socials">
+                    {% for social_type, link in socials %}
+                    <a href="{{link}}"><img src="/assets/events/boot2025/img/icons/social_{{social_type}}.png"></a>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
             {% for img, name, descrip, socials, type in boot2025_organizers["data"] if  name == "Atty. Melvyn Barroa" %}
             <div class="organizer">
-                <p class="speaker-title">Inspirational Message</p>
+                <div class="speaker-title">
+                    <p>Inspiration Message</p>
+                </div>
                 <img class="speaker-image" src="/assets/events/boot2025/img/{{ img }}">
                 <p class="emcee-name">
                     {{ name }}
@@ -88,7 +109,7 @@
         <img class="section-head-image" src="/assets/events/boot2025/img/icons/microphone.png" alt="Microphone">
         <h1>Emcee</h1>
         
-        <div id="emcees">
+        <div class="emcees">
             {% for img, name, descrip, socials, type in boot2025_organizers["data"] if name == "Aris Artates" %}
             <div class="organizer">
                 <img class="speaker-image" src="/assets/events/boot2025/img/{{ img }}">
