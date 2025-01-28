@@ -172,10 +172,10 @@
 
     <supersection class="grey-area">
     <section id="adventure" class="flex container">
-            <div class="adventure-header">
-                <img class="section-head-image" src="/assets/events/boot2025/img/lightning.png" alt="Lightning">
-                <h1>Boot Up Your Year</h1>
-            </div>
+        <div class="adventure-header">
+            <img class="section-head-image" src="/assets/events/boot2025/img/lightning.png" alt="Lightning">
+            <h1>Boot Up Your Year</h1>
+        </div>
         <div class="speaker">
             <div class="window-tab">
                 <div class="window-title">Boot Up Your Year</div>
@@ -216,7 +216,7 @@
             <p class="description">
                 The organizing team of Dev8 BOOT 2025 is composed of members of Dev8 and Valarx Projects.
             </p>
-            <div id="organizers">
+            <div class="organizers">
                 {% for img, name, descrip, socials, type in boot2025_organizers["data"] if not type == "speaker" %}
                 <div class="organizer">
                     <img class="speaker-image" src="/assets/events/boot2025/img/{{ img }}">
