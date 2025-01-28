@@ -219,7 +219,7 @@ div.speaker {
     margin-top: 0px;
 }
 
-.register-button {
+.register-button, .coc-button {
     display: block;
 
     background-color: #086972;
@@ -244,6 +244,10 @@ div.speaker {
     text-underline-position: from-font;
     text-decoration: none;
     text-decoration-skip-ink: none;
+}
+
+.coc-button {
+    width: 270px;
 }
 
 #adventure {
