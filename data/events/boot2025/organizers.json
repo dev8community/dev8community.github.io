@@ -10,7 +10,7 @@
         [
             "organizers/sean.png",
             "Sean Ballais",
-            "Freelance Shopify Developer<br>Gray Software Solutions<br>(Dev8)",
+            "Head Organizer<br>Dev8",
             [
                 ["web", "https://seanballais.com/"],
                 ["linkedin", "https://www.linkedin.com/in/seanballais/"],
@@ -23,7 +23,7 @@
         [
             "organizers/arvin.png",
             "Arvin Arguilles",
-            "Undergraduate CS Student<br>Visayas State University<br>(Dev8)",
+            "Programme, Technical<br>Dev8",
             [
                 ["email", "mailto:youmu880@gmail.com"]
             ],
@@ -32,7 +32,7 @@
         [
             "organizers/gin.png",
             "Elgin Espanto",
-            "Undergraduate CS Student<br>Visayas State University<br>(Dev8)",
+            "Public Relations and Communications<br>Dev8",
             [
                 ["github", "http://github.com/elginray"],
                 ["email", "mailto:elginespanto@gmail.com"]
@@ -42,7 +42,7 @@
         [
             "organizers/hazel.png",
             "Hazel-Ivy Acebuche",
-            "Quality Assurance Engineer<br>ISR Cebu<br>(Dev8)",
+            "Public Relations and Communications<br>Dev8",
             [
                 ["linkedin", "https://www.linkedin.com/in/hazelacebuche/"],
                 ["email", "mailto:acebuche.hazelivy@gmail.com"]
@@ -52,7 +52,7 @@
         [
             "organizers/rivera.png",
             "Justmer Rivera",
-            "Undergraduate IT Student<br>Leyte Normal University<br>(Dev8)",
+            "Technical<br>Dev8",
             [
                 ["facebook", "https://facebook.com/justmer.rivera"],
                 ["email", "mailto:justmerrivera@pm.me"]
@@ -62,7 +62,7 @@
         [
             "organizers/omi.png",
             "Michael Omisol",
-            "Undergraduate CS Student<br>UP Diliman<br>(Dev8)",
+            "Public Relations and Communications, Technical<br>Dev8",
             [
                 ["web", "https://flamingherb.github.io/"],
                 ["linkedin", "https://www.linkedin.com/in/msbbomisol/"],
@@ -75,7 +75,7 @@
         [
             "organizers/shann.png",
             "Shann Ripalda",
-            "Undergraduate CS Student<br>UP Tacloban<br>(Dev8)",
+            "Financial and Sponsorship<br>Dev8",
             [
                 ["email", "mailto:shannaurelleg@gmail.com"]
             ],
@@ -84,7 +84,7 @@
         [
             "speakers/aris.png",
             "Aris Artates",
-            "Undergraduate CS Student<br>AMA Tacloban<br>(Valarx Projects)",
+            "Multimedia<br>Valarx Projects",
             [
                 ["github", "https://github.com/drink-your-water"],
                 ["email", "mailto:arisvalarx.official@gmail.com"]
@@ -94,7 +94,7 @@
         [
             "organizers/kereen.png",
             "Kereen Mahinay",
-            "Undergraduate CS Student<br>AMA Tacloban<br>(Valarx Projects)",
+            "Multimedia<br>Valarx Projects",
             [
                 ["email", "mailto:kereenvalarx.official@gmail.com"]
             ],
@@ -103,7 +103,7 @@
         [
             "organizers/rangel.png",
             "Rangel Corrales",
-            "Undergraduate CS Student<br>AMA Tacloban<br>(Valarx Projects)",
+            "Multimedia<br>Valarx Projects",
             [
                 ["email", "mailto:rangeltan26@gmail.com"]
             ],
