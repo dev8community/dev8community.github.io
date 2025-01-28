@@ -219,7 +219,7 @@ div.speaker {
     margin-top: 0px;
 }
 
-button {
+.register-button {
     display: block;
 
     background-color: #086972;
@@ -233,15 +233,16 @@ button {
 
     min-width: 88px;
     width: 104px;
-    height: 30px;
+    padding: 5px 0;
     margin: auto;
 
-    font-family: Ubuntu Mono;
+    font-family: "Ubuntu Mono", serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 14px;
     text-align: center;
     text-underline-position: from-font;
+    text-decoration: none;
     text-decoration-skip-ink: none;
 }
 
@@ -284,9 +285,13 @@ button {
         flex: 1;
         max-width: 450px;
         
-        h1, p, button  {
+        h1, p  {
             text-align: left;
             margin-left: initial;
+        
+        }
+        .register-button {
+            margin: 0;
         }
 
         h1 {
@@ -436,4 +441,20 @@ a {
 .code-of-conduct {
     font-weight: 700;
     color: $dev8-light-green;
+}
+
+.raffle-disclaimer {
+    width: 260px;
+    border-top: 1px solid $boot2025-white;
+    margin-top: 20px;
+    p {
+        margin: 0;
+        font-family: 'Open Sans', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 12px;
+
+        color: $boot2025-white;
+    }
 }
