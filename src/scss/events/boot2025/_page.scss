@@ -337,6 +337,21 @@ p.emcee {
     color: #EFEFEF;
 }
 
+p.organizing-team {
+    width: 280px;
+
+    margin: 3px auto 3px auto;
+    font-family: "Ubuntu Mono", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+
+    color: #EFEFEF;
+}
+
+
 p.emcee-name {
     width: 160px;
 
@@ -376,10 +391,9 @@ div.organizers {
     align-items: stretch;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 600px;
+    width: 850px;
     margin: auto;
     row-gap: 20px;
-    column-gap: 10px;
 }
 
 div.emcees {
