@@ -219,11 +219,15 @@ div.speaker {
     margin-top: 0px;
 }
 
+.button-link {
+    width: fit-content;
+}
+
 .register-button, .coc-button {
     display: block;
 
     background-color: #086972;
-    color: $boot2025-white;
+    
 
     border-width: 4px 4px 4px 4px;
     border-style: solid;
@@ -236,6 +240,7 @@ div.speaker {
     padding: 5px 0;
     margin: auto;
 
+    color: $boot2025-white;
     font-family: "Ubuntu Mono", serif;
     font-size: 14px;
     font-weight: 700;
