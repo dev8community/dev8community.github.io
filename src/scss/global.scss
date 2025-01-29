@@ -8,7 +8,10 @@ body {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 1rem;
+
+    margin: 0;
 }
+
 
 h1, h2 {
     font-family: "Prata", Helvetica, Arial, sans-serif;
@@ -33,13 +36,69 @@ strong.extra-emphasized-text {
     font-size: 1.75rem;
 }
 
-body {
-    margin: 0;
-}
-
 img {
     max-width: 100%;
     height: auto;
+}
+
+header {    
+    div#navbar {
+        display: flex;
+        flex-direction: column;
+        
+        div.logo-section {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+
+            flex: initial;
+        
+            img {
+                max-width: 45px;
+                height: auto;
+            
+                display: block;
+                float: left;
+        
+                position: relative;
+                top: 5px;
+            }
+        
+            h1 {
+                font-family: "Prata", serif;
+                font-weight: 400;
+                font-style: normal;
+                
+                color: $dev8-green;
+            }
+        
+            a {
+                text-decoration: none;
+            }
+        }
+
+        nav {
+            justify-content: center;
+
+            width: 100%;
+
+            ul {
+                padding: 0;
+
+                li {
+                    text-align: center;
+                }
+            }
+
+            @include tablets {
+                justify-content: right;
+            }
+        }
+
+        @include tablets {
+            flex-direction: row;
+        }
+    }
 }
 
 footer {
