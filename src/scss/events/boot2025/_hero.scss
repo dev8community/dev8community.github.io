@@ -64,24 +64,31 @@
         text-decoration-skip-ink: none;
     }
 
-    div.bootloaders {
-        width: 260px;
-
+    div#partners {
         display: flex;
-        margin: auto;
+        flex-direction: column;
 
-        justify-content: space-evenly;
-
-        img {
-            height: 60px;
+        div.bootloaders {
+            width: 260px;
+    
+            display: flex;
+            margin: auto;
+    
+            justify-content: space-evenly;
+    
+            img {
+                height: 60px;
+            }
+    
+            img.jetbrains {
+                height: 40px;
+            }
         }
 
-        img.jetbrains {
-            height: 40px;
+        @include tablets {
+            flex-direction: row;
         }
     }
-
-    
 
     @include tablets {
         padding: 3%;
@@ -92,5 +99,4 @@
         padding: 2%;
         padding-top: 0;
     }
-
 }
