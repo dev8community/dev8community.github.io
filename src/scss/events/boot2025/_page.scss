@@ -264,10 +264,14 @@ div.speaker {
 #adventure {
     //background-color: $boot2025-dark-grey;
 
+    display: flex;
+
     align-items: center;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+
+    max-width: 900px;
 
     .link-button {
         margin: 0;
@@ -280,12 +284,13 @@ div.speaker {
 
     .speaker {
         min-width: initial;
-        width: 430px;
-        max-height: 315px;
+        max-width: 430px;
+        height: 100%;
         overflow: hidden;
-        flex: initial;
-        
-        margin: 0 25px;
+        flex: 1;
+
+        margin-left: auto;
+        margin-right: auto;
 
         .fit-image {
             max-width: initial;
@@ -299,20 +304,37 @@ div.speaker {
         }
 
         padding-bottom: revert;
+
+        @include small-screens {
+            margin: 0;
+        }
     }
 
     .adv-description {
         flex: 1;
-        max-width: 450px;
         
         h1, p  {
             line-height: 19px;
-            text-align: left;
             margin-left: initial;
-        
         }
-        .register-button {
-            margin: 0;
+
+        p {
+            &:first-child {
+                margin-top: 0;
+            }
+
+            @include small-screens {
+                text-align: left;
+            }
+        }
+
+        .link-button {
+            margin-left: auto;
+            margin-right: auto;
+
+            @include small-screens {
+                margin: 0;
+            }
         }
 
         h1 {
@@ -325,6 +347,31 @@ div.speaker {
 
         .section-head-image {
             margin: initial;
+        }
+
+        .raffle-disclaimer {
+            max-width: 260px;
+            border-top: 1px solid $boot2025-white;
+            
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+
+            p {
+                margin: 0;
+                font-family: 'Open Sans', serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 9px;
+                line-height: 12px;
+        
+                color: $boot2025-white;
+            }
+
+            @include small-screens {
+                margin-left: initial;
+                margin-right: initial;
+            }
         }
     }
 }
@@ -476,22 +523,6 @@ a {
 .code-of-conduct {
     font-weight: 700;
     color: $dev8-light-green;
-}
-
-.raffle-disclaimer {
-    max-width: 260px;
-    border-top: 1px solid $boot2025-white;
-    margin-top: 20px;
-    p {
-        margin: 0;
-        font-family: 'Open Sans', serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 9px;
-        line-height: 12px;
-
-        color: $boot2025-white;
-    }
 }
 
 .admission-title {

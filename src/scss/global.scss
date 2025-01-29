@@ -173,3 +173,13 @@ nav {
     top: 0;
     left: 0;
 }
+
+div.image-with-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include small-screens {
+        flex-direction: row;
+    }
+}
