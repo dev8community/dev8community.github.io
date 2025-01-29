@@ -27,41 +27,47 @@
         margin-bottom: 0;
     }
 
-    h2 {
-        width: 540px;
-        margin: auto;
+    p {
+        &.hero-text {
+            margin: auto;
 
-        font-family: "Open Sans", serif;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 32.68px;
-        text-align: center;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
+            max-width: 540px;
+    
+            font-family: "Open Sans", serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32.68px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
 
+        &.date {
+            font-family: "Ubuntu Mono", serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 18px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+    
+            margin: 4px 0 8px 0;
+        }
+
+        &.bootloader {
+            font-family: "Open Sans", serif;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 19.07px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
     }
 
-    p.date {
-        font-family: "Ubuntu Mono", serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 18px;
-        text-align: center;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-
-        margin: 4px 0 8px 0;
-    }
-
-    p.bootloader {
-        font-family: "Open Sans", serif;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 19.07px;
-        text-align: center;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
+    a.link-button {
+        margin-top: 15px;
     }
 
     div#partners {

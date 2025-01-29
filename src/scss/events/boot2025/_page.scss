@@ -53,7 +53,7 @@ section {
     }
 
     p.description {
-        width: 900px;
+        max-width: 900px;
         margin: auto auto 14px auto;
 
     }
@@ -339,7 +339,7 @@ img.speaker-image {
 }
 
 p.emcee {
-    width: 180px;
+    max-width: 180px;
 
     margin: 3px auto 3px auto;
     font-family: "Ubuntu Mono", serif;
@@ -353,7 +353,7 @@ p.emcee {
 }
 
 p.organizing-team {
-    width: 280px;
+    max-width: 280px;
 
     margin: 3px auto 3px auto;
     font-family: "Ubuntu Mono", serif;
@@ -368,7 +368,7 @@ p.organizing-team {
 
 
 p.emcee-name {
-    width: 160px;
+    max-width: 160px;
 
     margin: 3px auto 3px auto;
 
@@ -406,7 +406,7 @@ div.organizers {
     align-items: stretch;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 850px;
+    max-width: 850px;
     margin: auto;
     row-gap: 20px;
 }
@@ -416,7 +416,7 @@ div.emcees {
     align-items: stretch;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 420px;
+    max-width: 420px;
     margin: auto;
     row-gap: 20px;
     column-gap: 10px;
@@ -479,7 +479,7 @@ a {
 }
 
 .raffle-disclaimer {
-    width: 260px;
+    max-width: 260px;
     border-top: 1px solid $boot2025-white;
     margin-top: 20px;
     p {
@@ -503,5 +503,5 @@ a {
     text-align: center;
 
     margin: 0px auto 10px auto;
-    width: 420px;
+    max-width: 420px;
 }
