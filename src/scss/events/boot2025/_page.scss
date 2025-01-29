@@ -448,16 +448,6 @@ supersection {
     background-color: $boot2025-light-grey;
 }
 
-div.organizers {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 850px;
-    margin: auto;
-    row-gap: 20px;
-}
-
 div.emcees {
     display: flex;
     align-items: stretch;
@@ -467,6 +457,25 @@ div.emcees {
     margin: auto;
     row-gap: 20px;
     column-gap: 10px;
+}
+
+div.organizers {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+
+    margin: auto;
+
+    @include tablets {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 400px;
+    }
+
+    @include small-screens {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 710px;
+    }
 }
 
 div.organizer {
