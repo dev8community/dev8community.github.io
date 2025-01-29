@@ -219,16 +219,12 @@ div.speaker {
     margin-top: 0px;
 }
 
-.button-link {
+.link-button {
     width: fit-content;
-}
-
-.register-button, .coc-button {
     display: block;
 
     background-color: #086972;
     
-
     border-width: 4px 4px 4px 4px;
     border-style: solid;
     border-color: #17B9B6;
@@ -249,6 +245,16 @@ div.speaker {
     text-underline-position: from-font;
     text-decoration: none;
     text-decoration-skip-ink: none;
+
+    &:active {
+        border-bottom-color: initial;
+        border-right-color: initial;
+        
+        border-color: #17B9B6;
+
+        border-top-color: black;
+        border-left-color: black;
+    }
 }
 
 .coc-button {
@@ -262,6 +268,10 @@ div.speaker {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+
+    .link-button {
+        margin: 0;
+    }
 
     .adventure-header {
         width: 100%;
