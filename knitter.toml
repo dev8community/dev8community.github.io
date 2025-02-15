@@ -37,6 +37,7 @@ folder = 'assets/'
 '/events/boot2025/registration/reserved-slots' = 'pages/events/boot2025/registration/reserved-slots.html'
 '/events/boot2025/registration' = 'pages/events/boot2025/registration/register.html'
 '/events/boot2025/press-kit' = 'pages/events/boot2025/press-kit.html'
+'/events/boot2025/shout-out' = 'pages/events/boot2025/shout-out.html'
 
 # Surveys
 '/surveys/evtss2023' = 'pages/surveys/evtss2023/index.html'
