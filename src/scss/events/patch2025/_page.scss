@@ -1,0 +1,547 @@
+// Common CSS classes in the BOOT 2025 page.
+@use 'sass:color';
+
+@import '../../_variables.scss';
+
+body {
+    background: $boot2025-hero-color;
+}
+
+header {
+    filter: brightness(0) invert(1);
+
+    h1 {
+        display: none;
+    }
+    nav {
+        li {
+            font-size: 14px;
+        }
+    }
+}
+
+section {
+    //background-color: $boot2025-section-color;
+
+    h1 {
+        color: $boot2025-white;
+        font-family: "Prata", serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32.52px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+        margin: 10px 0 10px 0;
+    }
+
+    p {
+        color: $boot2025-white;
+        font-family: "Open Sans", serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.07px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+        span {
+            font-weight: 700;
+            color: $dev8-light-green;
+        }
+    }
+
+    p.description {
+        max-width: 900px;
+        margin: auto auto 14px auto;
+
+    }
+
+    img.section-head-image {
+        display: block;
+        width: 65px;
+        height: 65px;
+        margin: auto;
+    }
+
+    table, tr, th, td {
+        border-collapse: collapse;
+        border-spacing: 0;
+        border: 4px solid black;
+    }
+
+    table {
+        margin: auto;
+
+        tbody {
+            tr:nth-child(odd) {
+                background-color: $dev8-light-green;
+            }
+                  
+            tr:nth-child(even) {
+                background-color: $dev8-green;
+            }
+        }
+
+        th, td {
+            padding: 9px;
+        }
+
+        th {
+            color: $boot2025-white;
+            background-color: #086972;
+
+            font-family: "Open Sans", serif;
+            font-size: 14px;
+            font-weight: 700;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+
+        td {
+            font-family: "Open Sans", serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+
+        td.time {
+            text-align: center;
+        }
+        
+        td.activity {
+            max-width: 176px;
+        }
+
+    }
+}
+
+div#speakers {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+div.speaker {
+    flex: 1;
+    min-width: 560px;
+    max-width: 612px;
+    height: fit-content;
+    margin: auto;
+
+    background-color: $boot2025-white;
+    border: 4px solid $dev8-green;
+    box-shadow: 4px 4px black;
+
+    padding-bottom: 20px;
+
+    h1, h2, p {
+        color: $boot2025-black;
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    h2 {
+        font-family: "Open Sans", serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21.79px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+        margin: 0 auto 5px auto;
+    }
+
+    p {
+        margin: auto;
+        max-width: 560px;
+    }
+
+    .window-tab {
+        display: flex;
+
+        font-family: "Ubuntu Mono", serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 14px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+        background-color: $btn-dark-color;
+        color: $boot2025-white;
+
+        padding: 5px 0 5px 5px;
+
+        border-bottom: 4px solid $dev8-green;
+    }
+
+    .window-title {
+        flex: auto;
+    }
+
+    .close-button {
+        display: flex;
+        flex: initial;
+
+        width: 14px;
+        padding-right: 5px;
+    }
+
+    .slide-image {
+        width: 100%;
+        max-height: 220px;
+        object-fit: cover;
+    }
+}
+
+.top-pad-remove {
+    @include tablets {
+        padding-top: 0;
+    }
+
+    @include xlarge-screens {
+        padding-top: 0;
+    }
+}
+
+.top-margin-remove {
+    margin-top: 0px;
+}
+
+.link-button {
+    width: fit-content;
+    display: block;
+
+    background-color: #086972;
+    
+    border-width: 4px 4px 4px 4px;
+    border-style: solid;
+    border-color: #17B9B6;
+    border-bottom-color: black;
+    border-right-color: black;
+
+    min-width: 88px;
+    width: 104px;
+    padding: 5px 0;
+    margin: auto;
+
+    color: $boot2025-white;
+    font-family: "Ubuntu Mono", serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration: none;
+    text-decoration-skip-ink: none;
+
+    &:active {
+        border-bottom-color: initial;
+        border-right-color: initial;
+        
+        border-color: #17B9B6;
+
+        border-top-color: black;
+        border-left-color: black;
+    }
+}
+
+.coc-button {
+    width: 270px;
+}
+
+#adventure {
+    //background-color: $boot2025-dark-grey;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    max-width: 900px;
+
+    .link-button {
+        margin: 0;
+    }
+
+    .adventure-header {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .speaker {
+        min-width: initial;
+        max-width: 430px;
+        height: 100%;
+        overflow: hidden;
+        flex: 1;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        .fit-image {
+            max-width: initial;
+            display: block;
+            overflow: hidden;
+            
+            width: 100%;
+            max-height: 315px;
+            
+            object-fit: cover;
+        }
+
+        padding-bottom: revert;
+
+        @include small-screens {
+            margin: 0;
+        }
+    }
+
+    .adv-description {
+        flex: 1;
+        
+        h1, p  {
+            line-height: 19px;
+            margin-left: initial;
+        }
+
+        p {
+            &:first-child {
+                margin-top: 0;
+            }
+
+            @include small-screens {
+                text-align: left;
+            }
+        }
+
+        .link-button {
+            margin-left: auto;
+            margin-right: auto;
+
+            @include small-screens {
+                margin: 0;
+            }
+        }
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        br {
+            line-height: 1.2;
+        }
+
+        .section-head-image {
+            margin: initial;
+        }
+
+        .raffle-disclaimer {
+            max-width: 260px;
+            border-top: 1px solid $boot2025-white;
+            
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+
+            p {
+                margin: 0;
+                font-family: 'Open Sans', serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 9px;
+                line-height: 12px;
+        
+                color: $boot2025-white;
+            }
+
+            @include small-screens {
+                margin-left: initial;
+                margin-right: initial;
+            }
+        }
+    }
+}
+
+img.speaker-image {
+    display: block;
+    margin: 20px auto 10px auto;
+
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+p.emcee {
+    max-width: 180px;
+
+    margin: 3px auto 3px auto;
+    font-family: "Ubuntu Mono", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+
+    color: #EFEFEF;
+}
+
+p.organizing-team {
+    max-width: 280px;
+
+    margin: 3px auto 3px auto;
+    font-family: "Ubuntu Mono", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+
+    color: #EFEFEF;
+}
+
+
+p.emcee-name {
+    max-width: 160px;
+
+    margin: 3px auto 3px auto;
+
+    font-family: 'Open Sans', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #83FFA6;
+
+
+}
+
+supersection {
+    display: block;
+    width: 100%;
+}
+
+.dark-grey-area {
+    background-color: $boot2025-dark-grey;
+}
+
+.grey-area {
+    background-color: $boot2025-grey;
+}
+
+.light-grey-area {
+    background-color: $boot2025-light-grey;
+}
+
+div.emcees {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 420px;
+    margin: auto;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+
+div.organizers {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+
+    margin: auto;
+
+    @include tablets {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 400px;
+    }
+
+    @include small-screens {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 710px;
+    }
+}
+
+div.organizer {
+    flex: 1;
+    height: fit-content;
+
+    img {
+        margin: auto;
+    }
+}
+
+div.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    column-gap: 5px;
+
+    a {
+        width: 16px;
+    }
+
+}
+
+samp {
+    font-family: "Ubuntu Mono", serif;
+    font-style: normal;
+    font-weight: 800;
+}
+
+a {
+    color: $dev8-light-green;
+}
+
+.speaker-title {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 69px;
+
+    p {
+        font-family: 'Open Sans', serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+
+        color: #DDB9DF;
+    }
+}
+
+.code-of-conduct {
+    font-weight: 700;
+    color: $dev8-light-green;
+}
+
+.admission-title {
+    font-family: 'Prata', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+
+    margin: 0px auto 10px auto;
+    max-width: 420px;
+}

@@ -17,6 +17,7 @@ folder = 'assets/'
 'css/code-of-conduct.css' = 'src/scss/code-of-conduct.scss'
 
 'events/boot2025/css/index.css' = 'src/scss/events/boot2025/index.scss'
+'events/patch2025/css/index.css' = 'src/scss/events/patch2025/index.scss'
 
 # Routes that we can access in the URL. Paths are
 # relative to Knitter.
@@ -33,12 +34,17 @@ folder = 'assets/'
 # Events page and subpages
 '/events' = 'pages/placeholder.html'
 '/events/code-of-conduct' = 'pages/events/code-of-conduct.html'
+
+# Boot 2025
 '/events/boot2025' = 'pages/events/boot2025/index.html'
 '/events/boot2025/registration/reserved-slots' = 'pages/events/boot2025/registration/reserved-slots.html'
 '/events/boot2025/registration' = 'pages/events/boot2025/registration/register.html'
 '/events/boot2025/press-kit' = 'pages/events/boot2025/press-kit.html'
 '/events/boot2025/shout-out' = 'pages/events/boot2025/shout-out.html'
 '/events/boot2025/feedback' = 'pages/events/boot2025/feedback.html'
+
+# Patch 2025
+'/events/patch2025' = 'pages/events/patch2025/index.html'
 
 # Surveys
 '/surveys/evtss2023' = 'pages/surveys/evtss2023/index.html'
@@ -110,3 +116,6 @@ event_locations = 'data/surveys/evtss2023/event-locations.json'
 boot2025_schedule = 'data/events/boot2025/schedule.json'
 boot2025_speakers = 'data/events/boot2025/speakers.json'
 boot2025_organizers = 'data/events/boot2025/organizers.json'
+
+# Patch 2025 Data
+patch2025_organizers = 'data/events/patch2025/organizers.json'

@@ -1,0 +1,122 @@
+{
+    "headers": [
+        "Image",
+        "Name",
+        "Descriptor",
+        "Socials",
+        "Type"
+    ],
+    "data": [
+        [
+            "organizers/sean.png",
+            "Sean Ballais",
+            "Head Organizer<br>Dev8",
+            [
+                ["web", "https://seanballais.com/"],
+                ["linkedin", "https://www.linkedin.com/in/seanballais/"],
+                ["github", "https://github.com/seanballais"],
+                ["bluesky", "https://bsky.app/profile/seanballais.com"],
+                ["email", "mailto:seanballais.com"]
+            ],
+            "organizer"
+        ],
+        [
+            "organizers/arvin.png",
+            "Arvin Arguilles",
+            "Programme, Technical<br>Dev8",
+            [
+                ["email", "mailto:youmu880@gmail.com"]
+            ],
+            "organizer"
+        ],
+        [
+            "organizers/gin.png",
+            "Elgin Espanto",
+            "Public Relations and Communications<br>Dev8",
+            [
+                ["github", "http://github.com/elginray"],
+                ["email", "mailto:elginespanto@gmail.com"]
+            ],
+            "organizer"
+        ],
+        [
+            "organizers/hazel.png",
+            "Hazel-Ivy Acebuche",
+            "Public Relations and Communications<br>Dev8",
+            [
+                ["linkedin", "https://www.linkedin.com/in/hazelacebuche/"],
+                ["email", "mailto:acebuche.hazelivy@gmail.com"]
+            ],
+            "organizer"
+        ],
+        [
+            "organizers/rivera.png",
+            "Justmer Rivera",
+            "Technical<br>Dev8",
+            [
+                ["facebook", "https://facebook.com/justmer.rivera"],
+                ["email", "mailto:justmerrivera@pm.me"]
+            ],
+            "organizer"
+        ],
+        [
+            "organizers/omi.png",
+            "Michael Omisol",
+            "Public Relations and Communications, Technical<br>Dev8",
+            [
+                ["web", "https://flamingherb.github.io/"],
+                ["linkedin", "https://www.linkedin.com/in/msbbomisol/"],
+                ["github", "https://github.com/FlamingHerb"],
+                ["bluesky", "https://bsky.app/profile/vaccaria.bsky.social"],
+                ["email", "mailto:msbbomisol@gmail.com"]
+            ],
+            "organizer"
+        ],
+        [
+            "organizers/shann.png",
+            "Shann Ripalda",
+            "Financial and Sponsorship<br>Dev8",
+            [
+                ["email", "mailto:shannaurelleg@gmail.com"]
+            ],
+            "organizer"
+        ],
+        [
+            "speakers/aris.png",
+            "Aris Artates",
+            "Multimedia<br>Valarx Projects",
+            [
+                ["github", "https://github.com/drink-your-water"],
+                ["email", "mailto:arisvalarx.official@gmail.com"]
+            ],
+            "organizer"
+        ],
+        [
+            "organizers/kereen.png",
+            "Kereen Mahinay",
+            "Multimedia<br>Valarx Projects",
+            [
+                ["email", "mailto:kereenvalarx.official@gmail.com"]
+            ],
+            "organizer"
+        ],
+        [
+            "organizers/rangel.png",
+            "Rangel Corrales",
+            "Multimedia<br>Valarx Projects",
+            [
+                ["email", "mailto:rangeltan26@gmail.com"]
+            ],
+            "organizer"
+        ],
+        [
+            "speakers/barroa.png",
+            "Atty. Melvyn Barroa",
+            "OIC - Regional Director<br>DICT Regional Office 8",
+            [
+                ["email", "mailto:region8@dict.gov.ph"]
+            ],
+            "speaker"
+        ]
+    ]
+}
