@@ -45,6 +45,7 @@ folder = 'assets/'
 
 # Patch 2025
 '/events/patch/2025/fullstack-web-101' = 'pages/events/patch2025/index.html'
+'/events/patch/2025/fullstack-web-101/register' = 'pages/events/patch2025/registration/register.html'
 
 # Surveys
 '/surveys/evtss2023' = 'pages/surveys/evtss2023/index.html'
