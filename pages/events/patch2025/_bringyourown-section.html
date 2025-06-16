@@ -1,0 +1,33 @@
+{% set maria_link = "https://unsplash.com/@lyumotech?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" %}
+{% set unsplash_link = "https://unsplash.com/license" %}
+{% set photo_link = "https://unsplash.com/photos/a-laptop-computer-sitting-on-top-of-a-wooden-desk-wt586UQXwL8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" %}
+
+{% import 'pages/events/patch2025/_components.html' as components %}
+
+<section class="container">
+    <div class="image-with-text">
+        
+        {{ components.window_tab(
+            "Bring Your Own Devices",
+            "/assets/events/patch2025/img/image_3.png"
+        ) }}
+
+        <div class="description has-disclaimer">
+            <div class="main-concent">
+                <img class="section-head-image-left" src="/assets/events/patch2025/img/icons/old_computer.png" alt="old computer icon">
+                <h1>Bring Your Own Devices</h1>
+                
+                <p>
+                    Participants should bring their own devices to the workshops. Unfortunately, we will not be able to provide development machines to our participants. Because of that, we would like every participant to bring their own. We'll do our best to make sure to ensure that you will still have a great experience regardless of the device you use.
+                </p>
+            </div>
+            <div class="raffle-disclaimer">
+                <p>
+                    Photo Credits: The laptop photo used in this section was taken by <a target="_blank" rel="noreferrer" href="{{maria_link}}">Maria</a>, used under the <a target="_blank" rel="noreferrer" href="{{unsplash_link}}">Unsplash License</a>, and retrieved from <a target="_blank" rel="noreferrer" href="{{photo_link}}">Unsplash</a>. Original image was resized, cropped, and optimized for use in this website.
+                </p>
+            </div>
+        </div>
+
+        
+    </div>
+</section>

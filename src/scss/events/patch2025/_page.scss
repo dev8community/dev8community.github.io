@@ -53,10 +53,20 @@ section {
         }
     }
 
-    p.description {
+    p.section-description {
         max-width: 900px;
         margin: auto auto 14px auto;
+    }
 
+    ul, li {
+        color: variables.$boot2025-white;
+
+        font-family: "Open Sans", serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+
+        text-align: justify;
     }
 
     img.section-head-image {
@@ -64,6 +74,12 @@ section {
         width: 65px;
         height: 65px;
         margin: auto;
+    }
+
+    img.section-head-image-left {
+        display: block;
+        width: 65px;
+        height: 65px;
     }
 
     table, tr, th, td {
@@ -130,18 +146,28 @@ div#speakers {
     row-gap: 20px;
 }
 
-div.speaker {
-    flex: 1;
+div.section-image {
     min-width: 560px;
-    max-width: 612px;
-    height: fit-content;
-    margin: auto;
+    max-width: 600px;
 
+    max-height: 472px;
+}
+
+div.location-image {
+    margin: auto;
+    max-width: 1280px;
+}
+
+div#map{
+    height: 400px;
+}
+
+div.window-image {
+    flex: 1;
     background-color: variables.$boot2025-white;
     border: 4px solid variables.$dev8-green;
     box-shadow: 4px 4px black;
 
-    padding-bottom: 20px;
 
     h1, h2, p {
         color: variables.$boot2025-black;
@@ -204,6 +230,17 @@ div.speaker {
         max-height: 220px;
         object-fit: cover;
     }
+
+    .fit-image {
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        
+        width: 100%;
+        max-width: initial;
+        max-height: 431px;
+        
+    }
 }
 
 .top-pad-remove {
@@ -257,6 +294,11 @@ div.speaker {
     }
 }
 
+.centered-link-button {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
 .limited-only {
     width: fit-content;
     height: fit-content;
@@ -285,98 +327,34 @@ div.speaker {
 .coc-button {
     width: 270px;
 }
+    
 
-#adventure {
-    //background-color: $boot2025-dark-grey;
+    
+.image-with-text {
+    margin: auto;
+    justify-content: center;
 
     display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    h1, p {
+        text-align: left;
+    }
 
     align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
 
-    max-width: 900px;
-
-    .link-button {
-        margin: 0;
+    @include mixins.small-screens {
+        flex-direction: row;
     }
 
-    .adventure-header {
-        width: 100%;
-        flex-basis: 100%;
-    }
-
-    .speaker {
-        min-width: initial;
-        max-width: 430px;
-        height: 100%;
-        overflow: hidden;
-        flex: 1;
-
-        margin-left: auto;
-        margin-right: auto;
-
-        .fit-image {
-            max-width: initial;
-            display: block;
-            overflow: hidden;
-            
-            width: 100%;
-            max-height: 315px;
-            
-            object-fit: cover;
-        }
-
-        padding-bottom: revert;
-
-        @include mixins.small-screens {
-            margin: 0;
-        }
-    }
-
-    .adv-description {
-        flex: 1;
-        
-        h1, p  {
-            line-height: 19px;
-            margin-left: initial;
-        }
-
-        p {
-            &:first-child {
-                margin-top: 0;
-            }
-
-            @include mixins.small-screens {
-                text-align: left;
-            }
-        }
-
-        .link-button {
-            margin-left: auto;
-            margin-right: auto;
-
-            @include mixins.small-screens {
-                margin: 0;
-            }
-        }
-
-        h1 {
-            margin-bottom: 5px;
-        }
-
-        br {
-            line-height: 1.2;
-        }
-
-        .section-head-image {
-            margin: initial;
-        }
+    div.description {
+        max-width: 600px;
 
         .raffle-disclaimer {
-            max-width: 260px;
+            position: relative;
             border-top: 1px solid variables.$boot2025-white;
+            bottom: 0;
             
             margin-top: 20px;
             margin-left: auto;
@@ -385,7 +363,7 @@ div.speaker {
             p {
                 margin: 0;
                 font-family: 'Open Sans', serif;
-                font-style: normal;
+                font-style: italic;
                 font-weight: 400;
                 font-size: 9px;
                 line-height: 12px;
@@ -397,6 +375,22 @@ div.speaker {
                 margin-left: initial;
                 margin-right: initial;
             }
+        }
+
+    }
+
+    .has-disclaimer {
+        height: 470px;
+        display: flex;
+        flex-direction: column;
+
+        .main-concent {
+            flex-grow: 1;
+
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
         }
     }
 }

@@ -1,0 +1,29 @@
+{% import 'pages/events/patch2025/_components.html' as components %}
+
+<section class="container">
+    <div class="image-with-text">
+        
+        <div class="description">
+            
+            <img class="section-head-image-left" src="/assets/events/patch2025/img/icons/www.png" alt="www icon">
+            <h1>Here's What to Expect</h1>
+            
+            <p>
+                We cannot wait to introduce you to fullstack web development. In the two-hour workshop, we hope that we can provide the following experiences:
+            </p>
+            <ul>
+                <li>Be introduced to fullstack web development, and the client-server model.</li>
+                <li>Learn how to build a basic API with Django.</li>
+                <li>Familiarize yourself with API testing using Postman.</li>
+                <li>Get acquainted with React and integrating APIs into your web app.</li>
+                <li>Discover how Docker eases development and deployment.</li>
+            </ul>
+
+        </div>
+
+        {{ components.window_tab(
+            "Here's What to Expect",
+            "/assets/events/patch2025/img/image_2.png"
+        ) }}
+    </div>
+</section>

@@ -1,38 +1,28 @@
 {% import 'pages/events/patch2025/_components.html' as components %}
 
-<section id="adventure" class="container">
-    <div class="adventure-header">
-        <img class="section-head-image" src="/assets/events/boot2025/img/icons/lightning.png" alt="Lightning">
-        <h1>Boot Up Your Year</h1>
-    </div>
+<section class="container">
     <div class="image-with-text">
-        <div class="speaker">
-            <div class="window-tab">
-                <div class="window-title">Boot Up Your Year</div>
-                <img class="close-button" src="/assets/events/boot2025/img/close_button.svg">
-            </div>
-            <img class="fit-image" src="/assets/events/boot2025/img/adventure.png">
-        </div>
         
-        <div class="adv-description">
-            {#
-            <img class="section-head-image" src="/assets/events/boot2025/img/icons/lightning.png" alt="Lightning">
-            <h1>Boot Up Your Year</h1>
-            #}
-            {# <h1>Join the Adventure</h1> #}
+        {{ components.window_tab(
+            "Honneluv Labanan",
+            "/assets/events/patch2025/img/image_1.png"
+        ) }}
+
+        <div class="description">
+            
+            <img class="section-head-image-left" src="/assets/events/patch2025/img/icons/lightbulb.png" alt="lightbulb icon">
+            <h1>Conducted by Honneluv Labanan</h1>
+            
             <p>
-                Join us via <span>Zoom</span> and receive certificates of participation and a chance to win a raffle prize<sup>[1]</sup>. <span><a href="/events/boot2025/registration">Register now</a> before it's too late!</span>
+                <span>Honneluv Labanan</span> is a professional fullstack web developer at Cerena Solutions and Core Team member of Dev8, with programming experience going as far back as high school. He has explored various fields from mobile development to script, but has always known that his heart has always been with web development. His <span>5-year industry experience</span> revolves around full stack development, particularly with vanilla web, ReactJS environments, and Django ORM. Outside of the industry, he has worked on various web-based personal projects, such as a custom frontend and backend framework, 3D renderer, and 2D grapher.
             </p>
+
             <p>
-                <span>Working for the city/municipality LGUs</span> <em>of Tacloban City, Ormoc City, Calbayog City, Baybay City, Borongan City, Catarman, Catbalogan City, Maasin City,</em> or <em>Naval</em>? We are reserving Zoom slot reservations for your office. We have sent formal invitations already. Please check with your office if you can avail of reserved slots. They're only reserved until <span>February 7, 2025</span>.
+                <em>
+                    <strong>Random Fun Fact:</strong> In Dev8, he is known as one of the ✨ J A V A S C R I P T     B O I S ✨, an internal duo (currently) of two of the most enthusiastic and passionate JavaScript developers of the community.
+                </em>
             </p>
-            <p>
-                <span>Part of Dev8, Valarx Projects, DICT 8, or Paytaca?</span> We also have reserved slots for our community and your organization. Please check internally first if and when you can avail of a reserved slot.
-            </p>
-            {{ boot2025_components.registration_button() }}
-            <div class="raffle-disclaimer">
-                <p><sup>[1]</sup>The raffle is limited to professionals and the unemployed.</p>
-            </div>
+
         </div>
     </div>
 </section>

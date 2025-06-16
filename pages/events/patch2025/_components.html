@@ -4,6 +4,12 @@
 </a>
 {%- endmacro %}
 
+{% macro centered_registration_button() -%}
+<a href="/events/patch2025/registration" class="link-button centered-link-button">
+    Register Now
+</a>
+{%- endmacro %}
+
 {% macro limited_only() -%}
 <span href="/events/patch2025/registration" class="limited-only">
     15 Slots Only!
@@ -20,3 +26,12 @@
 
 {%- endmacro %}
 
+{% macro window_tab(win_title, img_src) -%}
+<div class="window-image section-image">
+    <div class="window-tab">
+        <div class="window-title">{{ win_title }}</div>
+        <img class="close-button" src="/assets/events/boot2025/img/close_button.svg">
+    </div>
+    <img class="fit-image" src="{{ img_src }}">
+</div>
+{%- endmacro%}
