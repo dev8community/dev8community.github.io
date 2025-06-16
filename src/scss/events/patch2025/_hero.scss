@@ -1,11 +1,11 @@
 @use 'sass:color';
 
-@import '../../_variables.scss';
-@import '../../_mixins.scss';
+@use '../../_variables.scss';
+@use '../../_mixins.scss';
 
 .hero-section {
-    background-color: $boot2025-hero-color;
-    color: $boot2025-white;
+    background-color: variables.$boot2025-hero-color;
+    color: variables.$boot2025-white;
 
     img#logo {
         width: 200px;
@@ -91,17 +91,17 @@
             }
         }
 
-        @include tablets {
+        @include mixins.tablets {
             flex-direction: row;
         }
     }
 
-    @include tablets {
+    @include mixins.tablets {
         padding: 3%;
         padding-top: 0;
     }
 
-    @include xlarge-screens {
+    @include mixins.xlarge-screens {
         padding: 2%;
         padding-top: 0;
     }

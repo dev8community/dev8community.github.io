@@ -1,3 +1,5 @@
+@use "../../mixins";
+
 main section#highlights {
     h1 {
         background: linear-gradient(180deg, rgb(131, 255, 166), rgb(23, 185, 182));
@@ -46,7 +48,7 @@ main section#highlights {
                     linear-gradient(0deg, hsla(0, 0%, 16%, 0.75), transparent),
                     url('/assets/surveys/evtss2023/img/js.svg');
                 
-                @include tablets {
+                @include mixins.tablets {
                     grid-area: a;
                 }
             }
@@ -56,7 +58,7 @@ main section#highlights {
                     linear-gradient(0deg, hsla(0, 0%, 16%, 0.75), transparent),
                     url('/assets/surveys/evtss2023/img/code.webp');
 
-                @include tablets {
+                @include mixins.tablets {
                     grid-area: b;
                 }
             }
@@ -64,7 +66,7 @@ main section#highlights {
             &#top-languages-want-highlight {
                 background-image: linear-gradient(270deg, rgba(131, 255, 166, 0.4), transparent);
 
-                @include tablets {
+                @include mixins.tablets {
                     grid-area: c;
                 }
             }
@@ -74,7 +76,7 @@ main section#highlights {
                     linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
                     url('/assets/surveys/evtss2023/img/it-students.jpg');
 
-                @include tablets {
+                @include mixins.tablets {
                     grid-area: d;
                 }
             }
@@ -84,7 +86,7 @@ main section#highlights {
                     linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
                     url('/assets/surveys/evtss2023/img/tacloban.webp');
 
-                @include tablets {
+                @include mixins.tablets {
                     grid-area: e;
                 }
             }
@@ -94,7 +96,7 @@ main section#highlights {
                     linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
                     url('/assets/surveys/evtss2023/img/up-tacloban.webp');
 
-                @include tablets {
+                @include mixins.tablets {
                     grid-area: f;
                 }
             }
@@ -102,7 +104,7 @@ main section#highlights {
             &#annual-income-range-highlight {
                 background-image: linear-gradient(270deg, rgba(23, 185, 182, 0.4), transparent);
                 
-                @include tablets {
+                @include mixins.tablets {
                     grid-area: g;
                 }
             }
@@ -112,17 +114,17 @@ main section#highlights {
                     linear-gradient(0deg, rgba(41, 41, 41, 0.75), transparent),
                     url('/assets/surveys/evtss2023/img/ai.webp');
 
-                @include tablets {
+                @include mixins.tablets {
                     grid-area: h;
                 }
             }
 
-            @include tablets {
+            @include mixins.tablets {
                 padding: 12px;
             }
         }
 
-        @include tablets {
+        @include mixins.tablets {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             grid-template-rows: repeat(4, 1fr);
@@ -134,7 +136,7 @@ main section#highlights {
                 'e e h h h h';
         }
 
-        @include small-screens {
+        @include mixins.small-screens {
             grid-template-columns: repeat(6, 1fr);
             grid-template-rows: repeat(4, 1fr);
             grid-template-areas:
@@ -144,7 +146,7 @@ main section#highlights {
                 'd d g g h h';
         }
 
-        @include large-screens {
+        @include mixins.large-screens {
             grid-template-columns: repeat(8, 1fr);
             grid-template-rows: repeat(3, 1fr);
             grid-template-areas:

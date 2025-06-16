@@ -1,8 +1,8 @@
 // Common CSS classes in the Eastern Visayas Tech Scene Survey 2023 page.
 @use 'sass:color';
 
-@import '_mixins.scss';
-@import '_variables.scss';
+@use '_mixins.scss';
+@use '_variables.scss';
 
 
 
@@ -16,7 +16,7 @@ p {
 
     span {
         font-weight: 700;
-        color: $dev8-light-green;
+        color: variables.$dev8-light-green;
     }
 }
 
@@ -27,7 +27,7 @@ section.container {
 
 h1 {
     font-size: 48px;
-    color: $btn-dark-color;
+    color: variables.$btn-dark-color;
     text-align: center;
 }
 
@@ -49,14 +49,14 @@ div.box-contents {
     height: fit-content;
     margin: auto;
 
-    background-color: $boot2025-white;
-    border: 4px solid $dev8-green;
+    background-color: variables.$boot2025-white;
+    border: 4px solid variables.$dev8-green;
     box-shadow: 4px 4px black;
 
     padding-bottom: 20px;
 
     h1, h2{
-        color: $boot2025-black;
+        color: variables.$boot2025-black;
     }
 
     h1 {
@@ -79,12 +79,12 @@ div.box-contents {
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
 
-        background-color: $btn-dark-color;
-        color: $boot2025-white;
+        background-color: variables.$btn-dark-color;
+        color: variables.$boot2025-white;
 
         padding: 5px 0 5px 5px;
 
-        border-bottom: 4px solid $dev8-green;
+        border-bottom: 4px solid variables.$dev8-green;
     }
 
     .window-title {
@@ -143,11 +143,11 @@ div.box-contents {
     margin: auto;
     text-decoration: none;
 
-    color: $btn-dark-color;
+    color: variables.$btn-dark-color;
 
     &:hover {
         text-decoration: underline;
-        color: $dev8-green;
+        color: variables.$dev8-green;
         filter: drop-shadow(2px 2px 0 black);
     }
 

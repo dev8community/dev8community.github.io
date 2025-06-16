@@ -1,6 +1,9 @@
+@use "../../mixins";
+@use "../../variables";
+
 body.subpage {
-    background-color: $dev8-black;
-    color: $white;
+    background-color: variables.$dev8-black;
+    color: variables.$white;
 
     main, nav#pagination-buttons {
         padding-top: 0;
@@ -27,7 +30,7 @@ body.subpage {
                 span.btn-text {
                     display: none;
 
-                    @include small-screens {
+                    @include mixins.small-screens {
                         display: inline;
                     }
                 }

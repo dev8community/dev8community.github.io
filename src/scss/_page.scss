@@ -1,7 +1,7 @@
 // Common CSS classes in the Eastern Visayas Tech Scene Survey 2023 page.
 @use 'sass:color';
 
-@import '_variables.scss';
+@use '_variables.scss';
 
 html {
     margin: 0;
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background: $white;
+    background: variables.$white;
 
     margin: 0;
 

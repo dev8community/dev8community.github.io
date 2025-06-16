@@ -1,10 +1,11 @@
 // Common CSS classes in the BOOT 2025 page.
 @use 'sass:color';
 
-@import '../../_variables.scss';
+@use '../../_variables.scss';
+@use "../../mixins";
 
 body {
-    background: $boot2025-hero-color;
+    background: variables.$boot2025-hero-color;
 }
 
 header {
@@ -24,7 +25,7 @@ section {
     //background-color: $boot2025-section-color;
 
     h1 {
-        color: $boot2025-white;
+        color: variables.$boot2025-white;
         font-family: "Prata", serif;
         font-size: 24px;
         font-weight: 400;
@@ -37,7 +38,7 @@ section {
     }
 
     p {
-        color: $boot2025-white;
+        color: variables.$boot2025-white;
         font-family: "Open Sans", serif;
         font-size: 14px;
         font-weight: 400;
@@ -48,7 +49,7 @@ section {
 
         span {
             font-weight: 700;
-            color: $dev8-light-green;
+            color: variables.$dev8-light-green;
         }
     }
 
@@ -76,11 +77,11 @@ section {
 
         tbody {
             tr:nth-child(odd) {
-                background-color: $dev8-light-green;
+                background-color: variables.$dev8-light-green;
             }
                   
             tr:nth-child(even) {
-                background-color: $dev8-green;
+                background-color: variables.$dev8-green;
             }
         }
 
@@ -89,7 +90,7 @@ section {
         }
 
         th {
-            color: $boot2025-white;
+            color: variables.$boot2025-white;
             background-color: #086972;
 
             font-family: "Open Sans", serif;
@@ -136,14 +137,14 @@ div.speaker {
     height: fit-content;
     margin: auto;
 
-    background-color: $boot2025-white;
-    border: 4px solid $dev8-green;
+    background-color: variables.$boot2025-white;
+    border: 4px solid variables.$dev8-green;
     box-shadow: 4px 4px black;
 
     padding-bottom: 20px;
 
     h1, h2, p {
-        color: $boot2025-black;
+        color: variables.$boot2025-black;
     }
 
     h1 {
@@ -178,12 +179,12 @@ div.speaker {
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
 
-        background-color: $btn-dark-color;
-        color: $boot2025-white;
+        background-color: variables.$btn-dark-color;
+        color: variables.$boot2025-white;
 
         padding: 5px 0 5px 5px;
 
-        border-bottom: 4px solid $dev8-green;
+        border-bottom: 4px solid variables.$dev8-green;
     }
 
     .window-title {
@@ -206,11 +207,11 @@ div.speaker {
 }
 
 .top-pad-remove {
-    @include tablets {
+    @include mixins.tablets {
         padding-top: 0;
     }
 
-    @include xlarge-screens {
+    @include mixins.xlarge-screens {
         padding-top: 0;
     }
 }
@@ -236,7 +237,7 @@ div.speaker {
     padding: 5px 0;
     margin: auto;
 
-    color: $boot2025-white;
+    color: variables.$boot2025-white;
     font-family: "Ubuntu Mono", serif;
     font-size: 14px;
     font-weight: 700;
@@ -305,7 +306,7 @@ div.speaker {
 
         padding-bottom: revert;
 
-        @include small-screens {
+        @include mixins.small-screens {
             margin: 0;
         }
     }
@@ -323,7 +324,7 @@ div.speaker {
                 margin-top: 0;
             }
 
-            @include small-screens {
+            @include mixins.small-screens {
                 text-align: left;
             }
         }
@@ -332,7 +333,7 @@ div.speaker {
             margin-left: auto;
             margin-right: auto;
 
-            @include small-screens {
+            @include mixins.small-screens {
                 margin: 0;
             }
         }
@@ -351,7 +352,7 @@ div.speaker {
 
         .raffle-disclaimer {
             max-width: 260px;
-            border-top: 1px solid $boot2025-white;
+            border-top: 1px solid variables.$boot2025-white;
             
             margin-top: 20px;
             margin-left: auto;
@@ -365,10 +366,10 @@ div.speaker {
                 font-size: 9px;
                 line-height: 12px;
         
-                color: $boot2025-white;
+                color: variables.$boot2025-white;
             }
 
-            @include small-screens {
+            @include mixins.small-screens {
                 margin-left: initial;
                 margin-right: initial;
             }
@@ -437,15 +438,15 @@ supersection {
 }
 
 .dark-grey-area {
-    background-color: $boot2025-dark-grey;
+    background-color: variables.$boot2025-dark-grey;
 }
 
 .grey-area {
-    background-color: $boot2025-grey;
+    background-color: variables.$boot2025-grey;
 }
 
 .light-grey-area {
-    background-color: $boot2025-light-grey;
+    background-color: variables.$boot2025-light-grey;
 }
 
 div.emcees {
@@ -467,12 +468,12 @@ div.organizers {
 
     margin: auto;
 
-    @include tablets {
+    @include mixins.tablets {
         grid-template-columns: repeat(2, 1fr);
         max-width: 400px;
     }
 
-    @include small-screens {
+    @include mixins.small-screens {
         grid-template-columns: repeat(3, 1fr);
         max-width: 710px;
     }
@@ -508,7 +509,7 @@ samp {
 }
 
 a {
-    color: $dev8-light-green;
+    color: variables.$dev8-light-green;
 }
 
 .speaker-title {
@@ -531,7 +532,7 @@ a {
 
 .code-of-conduct {
     font-weight: 700;
-    color: $dev8-light-green;
+    color: variables.$dev8-light-green;
 }
 
 .admission-title {

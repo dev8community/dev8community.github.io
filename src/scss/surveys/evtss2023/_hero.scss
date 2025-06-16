@@ -1,18 +1,18 @@
 @use 'sass:color';
 
-@import '../../_variables.scss';
-@import '../../_mixins.scss';
+@use '../../_variables.scss';
+@use '../../_mixins.scss';
 
 header.main-page {
-    $bg-grid-colour: color.change($white, $alpha: 0.25);
+    $bg-grid-colour: color.change(variables.$white, $alpha: 0.25);
 
-    background-color: $dark-green;
+    background-color: variables.$dark-green;
     background-image:
         linear-gradient(90deg, $bg-grid-colour 1px, transparent 1px),
         linear-gradient(0deg, $bg-grid-colour 1px, transparent 1px);
     background-size: 3rem 3rem;
     background-position: center;
-    color: $white;
+    color: variables.$white;
 
     height: 100vh;
 
@@ -64,7 +64,7 @@ header.main-page {
                 display: block;
             }
 
-            @include tablets {
+            @include mixins.tablets {
                 margin-bottom: 0;
             }
         }
@@ -107,7 +107,7 @@ header.main-page {
                 
                     margin-bottom: 2%;
 
-                    @include tablets {
+                    @include mixins.tablets {
                         font-size: 2.5rem;
                         line-height: 2.5rem;
                     
@@ -119,7 +119,7 @@ header.main-page {
                     margin-top: 0;
                     margin-bottom: 3%;
 
-                    @include tablets {
+                    @include mixins.tablets {
                         max-width: 50%;
                         margin-bottom: 1%;
                     }
@@ -127,7 +127,7 @@ header.main-page {
 
                 a {
                     button {
-                        @include tablets {
+                        @include mixins.tablets {
                             max-width: 220px;
                         }
                     }

@@ -1,21 +1,22 @@
 // Common CSS classes in the Eastern Visayas Tech Scene Survey 2023 page.
 @use 'sass:color';
 
-@import '../../_variables.scss';
+@use '../../_variables.scss';
+@use "../../mixins";
 
 a {
-    color: $link-colour;
+    color: variables.$link-colour;
 
     display: inline-block;
 
     text-decoration: none;
 
     &:visited {
-        color: $link-colour-active;
+        color: variables.$link-colour-active;
     }
 
     &:hover {
-        color: $link-colour-hovered;
+        color: variables.$link-colour-hovered;
     }
 }
 
@@ -35,14 +36,14 @@ button {
     display: block;
 
     &.dark-btn {
-        background-color: $btn-dark-color;
-        color: $white;
+        background-color: variables.$btn-dark-color;
+        color: variables.$white;
 
         box-shadow: 3px 3px 5px hsl(185, 42%, 15%),
                     -1px -1px 3px hsl(185, 89%, 37%);
 
         &:hover {
-            background-color: color.change($btn-dark-color, $lightness: 28%);
+            background-color: color.change(variables.$btn-dark-color, $lightness: 28%);
         }
 
         &:active {            
@@ -52,19 +53,19 @@ button {
     }
 
     &.light-btn {
-        background-color: $btn-light-color;
-        color: $dev8-black;
+        background-color: variables.$btn-light-color;
+        color: variables.$dev8-black;
 
-        box-shadow: 3px 3px 5px $btn-light-box-shadow-color,
-                    -1px -1px 3px $btn-light-box-shadow-2-color;
+        box-shadow: 3px 3px 5px variables.$btn-light-box-shadow-color,
+                    -1px -1px 3px variables.$btn-light-box-shadow-2-color;
 
         &:hover {
-            background-color: color.change($btn-light-color, $lightness: 68%);
+            background-color: color.change(variables.$btn-light-color, $lightness: 68%);
         }
 
         &:active {            
-            box-shadow: inset 3px 3px 15px $btn-light-box-shadow-color,
-                        inset -3px -3px 15px $btn-light-box-shadow-2-color;
+            box-shadow: inset 3px 3px 15px variables.$btn-light-box-shadow-color,
+                        inset -3px -3px 15px variables.$btn-light-box-shadow-2-color;
         }
     }
 
@@ -72,7 +73,7 @@ button {
         cursor: pointer;
     }
 
-    @include tablets {
+    @include mixins.tablets {
         padding: 5px;
         padding-left: 15px;
         padding-right: 15px;
@@ -199,17 +200,17 @@ div.link-to-url {
         height: 0;
     }
 
-    @include tablets {
+    @include mixins.tablets {
         margin-top: 0;
         margin-bottom: 0;
     }
 }
 
 main {
-    background-color: $dev8-black;
+    background-color: variables.$dev8-black;
 
     section {
-        color: $white;
+        color: variables.$white;
 
         h1 {
             margin-bottom: 1rem;
@@ -237,7 +238,7 @@ main {
                             }
                         }
     
-                        @include small-screens {
+                        @include mixins.small-screens {
                             flex: 1;
                         }
                     }
@@ -260,15 +261,15 @@ main {
                             }
     
                             &:active {
-                                background-color: $white;
-                                border-color: $dev8-black;
-                                color: $dev8-black;
+                                background-color: variables.$white;
+                                border-color: variables.$dev8-black;
+                                color: variables.$dev8-black;
                                 
-                                box-shadow: inset 3px 3px 15px $dev8-black,
-                                            inset -3px -3px 15px $white;
+                                box-shadow: inset 3px 3px 15px variables.$dev8-black,
+                                            inset -3px -3px 15px variables.$white;
                             }
     
-                            @include tablets {
+                            @include mixins.tablets {
                                 min-width: 100px;
                                 max-width: fit-content;
                             }
@@ -283,11 +284,11 @@ main {
                             gap: 15px;
     
                             menu {
-                                border: solid $white 1px;
+                                border: solid variables.$white 1px;
                                 border-radius: 1000px;
     
                                 font-size: 0.81rem;
-                                color: $white;
+                                color: variables.$white;
     
                                 cursor: pointer;
                                 user-select: none;
@@ -298,38 +299,38 @@ main {
                                 padding-right: 3%;
     
                                 &:hover {
-                                    background-color: $white;
-                                    color: $dev8-black;
+                                    background-color: variables.$white;
+                                    color: variables.$dev8-black;
                                 }
     
                                 &:active,
                                 &.selected {
-                                    background-color: $white;
-                                    border-color: $dev8-black;
-                                    color: $dev8-black;
+                                    background-color: variables.$white;
+                                    border-color: variables.$dev8-black;
+                                    color: variables.$dev8-black;
                                 }
     
                                 &:active {
-                                    box-shadow: inset 3px 3px 15px $dev8-black;
+                                    box-shadow: inset 3px 3px 15px variables.$dev8-black;
                                 }
     
                                 &.selected {
-                                    box-shadow: inset 1px 1px 15px $dev8-black;
+                                    box-shadow: inset 1px 1px 15px variables.$dev8-black;
                                 }
                             }
     
-                            @include tablets {
+                            @include mixins.tablets {
                                 flex-direction: row;
                             }
                         }
     
-                        @include small-screens {
+                        @include mixins.small-screens {
                             flex: 2;
                         }
                     }
                 }
     
-                @include small-screens {
+                @include mixins.small-screens {
                     display: flex;
                     flex-direction: row;
                     gap: 3%;
@@ -405,8 +406,8 @@ main {
             }
             
             &.text-only {
-                border-top: solid 1px $dev8-subtle-white;
-                border-bottom: solid 1px $dev8-subtle-white;
+                border-top: solid 1px variables.$dev8-subtle-white;
+                border-bottom: solid 1px variables.$dev8-subtle-white;
 
                 padding-top: 3%;
                 padding-bottom: 3%;
@@ -416,11 +417,11 @@ main {
         div.link-to-url {
             button.light-btn {
                 box-shadow: 3px 3px 5px hsl(0, 0%, 8%),
-                            -1px -1px 3px $btn-light-box-shadow-2-color;
+                            -1px -1px 3px variables.$btn-light-box-shadow-2-color;
 
                 &:active {    
-                    box-shadow: inset 3px 3px 15px $dev8-black,
-                                inset -3px -3px 15px $btn-light-box-shadow-2-color;
+                    box-shadow: inset 3px 3px 15px variables.$dev8-black,
+                                inset -3px -3px 15px variables.$btn-light-box-shadow-2-color;
                 }
             }
         }
