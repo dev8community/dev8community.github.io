@@ -54,6 +54,15 @@ section {
     }
 
     p.section-description {
+        max-width: 1000px;
+        margin: auto auto 14px auto;
+    }
+    p.coc-description {
+        max-width: 1280px;
+        margin: auto auto 14px auto;
+    }
+
+    p.space-description {
         max-width: 900px;
         margin: auto auto 14px auto;
     }
@@ -325,6 +334,7 @@ div.window-image {
 }
 
 .coc-button {
+    margin: auto;
     width: 270px;
 }
     
@@ -510,6 +520,8 @@ div.organizers {
     gap: 20px;
 
     margin: auto;
+    margin-top: 40px;
+    
 
     @include mixins.tablets {
         grid-template-columns: repeat(2, 1fr);
@@ -529,6 +541,10 @@ div.organizer {
     img {
         margin: auto;
     }
+}
+
+div.last-organizer {
+    grid-column: 2;
 }
 
 div.socials {
@@ -587,5 +603,32 @@ a {
     text-align: center;
 
     margin: 0px auto 10px auto;
-    max-width: 420px;
+    max-width: 480px;
+}
+
+p.patcher {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+div.patch-logo {
+    
+    display: flex;
+    margin: auto;
+
+    justify-content: center;
+
+    img {
+        margin: auto;
+    }
+
+    img.paytaca {
+        height: 50px;
+    }
+
+    img.trabahadoor {
+        height: 34px;
+    }
+
+    margin-bottom: 20px;
 }

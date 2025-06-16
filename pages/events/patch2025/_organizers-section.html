@@ -1,0 +1,29 @@
+{% import 'pages/events/patch2025/_components.html' as components %}
+
+<section class="container">
+    <img class="section-head-image" src="/assets/events/patch2025/img/icons/hammer.png" alt="hammer icon">
+    <h1>The People Behind the Scenes</h1>
+    <p class="section-description">
+        Dev8 PATCH 2025: Fullstack Web 101 is proudly organized by volunteers from Dev8.
+    </p>
+    <div class="organizers">
+        {% for img, name, descrip, socials, type in patch2025_organizers["data"]%}
+        
+            <div class="organizer {% if name == 'Shann Ripalda' %}last-organizer{%endif%}">
+            
+            <img class="speaker-image" src="/assets/events/patch2025/img/{{ img }}">
+            <p class="emcee-name">
+                {{ name }}
+            </p>
+            <p class="organizing-team">
+                {{ descrip }}
+            </p>
+            <div class="socials">
+                {% for social_type, link in socials %}
+                <a href="{{link}}"><img src="/assets/events/patch2025/img/socials/social_{{social_type}}.png"></a>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
