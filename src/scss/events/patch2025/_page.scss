@@ -264,7 +264,7 @@ div.speaker {
 
     background-color: variables.$boot2025-white;
     
-    border-width: 4px 4px 4px 4px;
+    border-width: 2px;
     border-style: solid;
     border-color: variables.$patch2025-dark-grey;
     
@@ -459,6 +459,31 @@ p.emcee-name {
 supersection {
     display: block;
     width: 100%;
+}
+
+
+.space-section {
+    @include mixins.tablets {
+        padding: 3%;
+        padding-bottom: 0;
+    }
+
+    @include mixins.xlarge-screens {
+        padding: 2%;
+        padding-bottom: 0;
+    }
+}
+
+.space-area {
+
+    padding-top: 8rem;
+    padding-bottom: 16rem;
+
+    background: url("/assets/events/patch2025/img/space_earth.png"), url("/assets/events/patch2025/img/space_space.png");
+    background-position-x: center, center;
+    background-position-y: bottom -64px, center;
+    background-size: 90%, cover;
+    background-repeat: no-repeat, repeat;
 }
 
 .dark-grey-area {

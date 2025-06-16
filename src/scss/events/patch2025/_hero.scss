@@ -25,7 +25,6 @@
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
 
-        margin-top: 0;
         margin-bottom: 0;
     }
 
@@ -122,6 +121,8 @@
         display: flex;
 
         gap: 16px;
+
+        align-items: center;
     }
 
     
@@ -138,13 +139,57 @@
         }
     }
 
+    div#right-side {
+        display: flex;
+        align-items: baseline;
+    }
+
+    div#speaker-container {
+        position: relative;
+        bottom: 0;
+        transition: all 0.3s ease;
+        
+        .original {    
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            opacity: 0;
+            transition: all 0.3s ease;
+
+            z-index: 2;
+        }
+        .pixelart {
+            position: relative;
+            top: 4.8px;
+            bottom: 0;
+
+            opacity: 1;
+            transition: all 0.3s ease;
+            z-index: 1;
+        }
+
+        &:hover {
+            .original {
+                opacity: 1;
+                transition: all 0.3s ease;
+            }
+            .pixelart {
+                opacity: 0;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+
     @include mixins.tablets {
         padding: 3%;
         padding-top: 0;
+        padding-bottom: 0;
     }
 
     @include mixins.xlarge-screens {
         padding: 2%;
         padding-top: 0;
+        padding-bottom: 0;
     }
 }
