@@ -1,39 +1,68 @@
 {% import 'pages/events/patch2025/_components.html' as components %}
 
 <section class="hero-section container">
-    <img id="logo" src="/assets/events/boot2025/img/logo-02-hq.png" alt="BOOT 2025 Logo">
+    <div id="left-side">
+        <img id="logo" src="/assets/events/patch2025/img/logos/patch_logo.png" alt="PATCH 2025 Logo">
 
-    <h1>
-        Dev8 BOOT 2025
-    </h1>
-    <p class="date">
-        February 15, 2024 1:00 - 6:00 PM PHT <br>
-        Zoom
-    </p>
-    <p class="hero-text">
-        Kickstart your 2025 with new learnings and discoveries!
-    </p>
-    {{ components.registration_button() }}
-    <div id="partners" style="justify-content: center">
-        <div>
-            <p class="bootloader">
-                Bootloaded with:
-            </p>
-            <div class="bootloaders">
-                {#<a href="https://www.facebook.com/dev8community/"><img src="/assets/events/boot2025/img/logos/logo-with-text.png" alt="Dev8 Logo"></a>#}
-                <img src="/assets/events/boot2025/img/logos/valarx-colorized.png" alt="Valarx Logo">
-                <a href="https://www.facebook.com/dictregionaloffice8/"><img src="/assets/events/boot2025/img/logos/dict.png" alt="DICT8 Logo"></a>
-            </div>
+        <h1 class="title">
+            Dev8 PATCH 2025
+        </h1>
+        <span class="subtitle">
+            Fullstack Web 101
+        </span>
+        
+        <p class="hero-text">
+            with Honneluv Labanan
+        </p>
+
+        {{ components.hero_details(
+            "/assets/events/patch2025/img/icons/calendar.png",
+            "June 25, 2025",
+            "date"
+            )
+        }}
+        {{ components.hero_details(
+            "/assets/events/patch2025/img/icons/clock.png",
+            "1:00PM - 3:00PM PHT",
+            "time"
+            )
+        }}
+        {{ components.hero_details(
+            "/assets/events/patch2025/img/icons/pin.png",
+            "La Maison Cafe, Naval, Biliran",
+            "location"
+            )
+        }}
+
+        <div id="button-section">
+            {{ components.registration_button() }}
+            {{ components.limited_only() }}
         </div>
-        <div>
-            <p class="bootloader">
-                Sponsored by:
-            </p>
-            <div class="bootloaders">
-                <a href="https://www.jetbrains.com/"><img class="jetbrains" src="/assets/events/boot2025/img/logos/jetbrains.svg" alt="Jetbrains"></a>
+
+        <div id="partners">
+            <div>
+                <p class="bootloader">
+                    Patched with:
+                </p>
+                <div class="bootloaders">
+                    <a target="_blank" rel="noreferrer" href="https://www.paytaca.com/">
+                        <img class="paytaca" src="/assets/events/patch2025/img/logos/paytaca.png" alt="Paytaca Logo">
+                    </a>
+                    
+                </div>
+            </div>
+            <div>
+                <p class="bootloader">
+                    Special Thanks
+                </p>
+                <div class="bootloaders">
+                    <a target="_blank" rel="noreferrer" href="https://trabahadoor.com/">
+                    <img class="trabahadoor" src="/assets/events/patch2025/img/logos/trabahadoor.png" alt="Trabahadoor"></a>
+                </div>
             </div>
         </div>
     </div>
-    
-    
+    <div id="right-side">
+        <img src="/assets/events/patch2025/img/speaker_pixelart.png" alt="Speaker">
+    </div>
 </section>

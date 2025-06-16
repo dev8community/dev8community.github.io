@@ -4,23 +4,36 @@
 @use '../../_mixins.scss';
 
 .hero-section {
-    background-color: variables.$boot2025-hero-color;
+    background-color: variables.$patch2025-hero-color;
     color: variables.$boot2025-white;
+
+    display: flex;
+    justify-content: space-between;
 
     img#logo {
         width: 200px;
         display: block;
-        margin: auto;
 
-        margin-bottom: 20px;
     }
 
-    h1 {
+    .title {
         font-family: "Prata", serif;
         font-size: 48px;
         font-weight: 400;
         line-height: 64px;
-        text-align: center;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .subtitle {
+        font-family: "Prata", serif;
+        font-size: 36px;
+        font-weight: 400;
+        text-align: left;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
 
@@ -29,70 +42,99 @@
 
     p {
         &.hero-text {
-            margin: auto;
 
+            margin-top: 0;
+            margin-bottom: 12px;
             max-width: 540px;
     
             font-family: "Open Sans", serif;
             font-size: 24px;
             font-weight: 400;
             line-height: 32.68px;
-            text-align: center;
+            text-align: left;
             text-underline-position: from-font;
             text-decoration-skip-ink: none;
         }
 
-        &.date {
+        &.details {
             font-family: "Ubuntu Mono", serif;
             font-style: normal;
             font-weight: 700;
             font-size: 18px;
             line-height: 18px;
-            text-align: center;
+            text-align: left;
             text-underline-position: from-font;
             text-decoration-skip-ink: none;
     
-            margin: 4px 0 8px 0;
+            margin: 4px 0;
         }
 
         &.bootloader {
+            margin-bottom: 4px;
             font-family: "Open Sans", serif;
             font-size: 14px;
             font-weight: 700;
             line-height: 19.07px;
-            text-align: center;
+            text-align: left;
             text-underline-position: from-font;
             text-decoration-skip-ink: none;
         }
     }
 
-    a.link-button {
-        margin-top: 15px;
-    }
 
     div#partners {
         display: flex;
         flex-direction: column;
 
+        gap: 16px;
+
+        margin-top: 48px;
+
         div.bootloaders {
-            width: 260px;
     
             display: flex;
             margin: auto;
     
-            justify-content: space-evenly;
+            justify-content: space-between;
     
+
+
             img {
                 height: 60px;
             }
     
-            img.jetbrains {
-                height: 40px;
+            img.paytaca {
+                height: 50px;
+            }
+    
+            img.trabahadoor {
+                height: 34px;
             }
         }
 
         @include mixins.tablets {
             flex-direction: row;
+        }
+    }
+
+    div#button-section {
+        margin-top: 8px;
+        display: flex;
+
+        gap: 16px;
+    }
+
+    
+
+    div.hero-details {
+        display: flex;
+        margin: auto;
+
+        align-items: center;
+
+        img {
+            height: 20px;
+            margin-right: 8px;
         }
     }
 

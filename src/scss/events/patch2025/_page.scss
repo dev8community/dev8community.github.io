@@ -5,7 +5,7 @@
 @use "../../mixins";
 
 body {
-    background: variables.$boot2025-hero-color;
+    background: variables.$patch2025-hero-color;
 }
 
 header {
@@ -235,7 +235,6 @@ div.speaker {
     min-width: 88px;
     width: 104px;
     padding: 5px 0;
-    margin: auto;
 
     color: variables.$boot2025-white;
     font-family: "Ubuntu Mono", serif;
@@ -256,6 +255,31 @@ div.speaker {
         border-top-color: black;
         border-left-color: black;
     }
+}
+
+.limited-only {
+    width: fit-content;
+    height: fit-content;
+    display: block;
+
+    background-color: variables.$boot2025-white;
+    
+    border-width: 4px 4px 4px 4px;
+    border-style: solid;
+    border-color: variables.$patch2025-dark-grey;
+    
+    box-shadow: 4px 4px black;
+
+    padding: 3px 8px;
+
+    color: variables.$patch2025-dark-grey;
+    font-family: "Inter", serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration: none;
+    text-decoration-skip-ink: none;
 }
 
 .coc-button {
