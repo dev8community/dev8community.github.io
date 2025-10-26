@@ -1,0 +1,314 @@
+// Common CSS classes in the BOOT 2025 page.
+@use "sass:color";
+@use "../../../_variables.scss";
+@use "../../../mixins";
+
+body {
+  background: variables.$compile2025-hero-color;
+}
+
+header {
+  filter: brightness(0) invert(1);
+  h1 {
+    display: none;
+  }
+  nav {
+    li {
+      font-size: 14px;
+    }
+  }
+}
+
+.container {
+  gap: 2.5rem;
+}
+
+.image-container {
+  display: flex;
+  align-items: stretch;
+
+  border-right: 7px solid #000000;
+  border-bottom: 7px solid #000000;
+
+  margin: 0;
+
+  width: 100%;
+  overflow: hidden;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    border: 4px solid #17b9b6;
+
+    width: 100%;
+
+    .image-container__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      background: variables.$compile2025-hero-color;
+      border-bottom: 4px solid #17b9b6;
+
+      padding: 0.25rem;
+
+      .image-container__title {
+        font-family: "Ubuntu Mono", serif;
+        font-size: 14px;
+        font-weight: 700;
+
+        color: variables.$dev8-white;
+
+        margin: 0;
+      }
+
+      .image-container__close {
+        display: flex;
+        align-content: center;
+
+        background: none;
+        border: none;
+
+        padding: 0;
+
+        cursor: pointer;
+
+        svg {
+          width: 16px;
+          height: 16px;
+          fill: white;
+        }
+      }
+    }
+
+    .image-container__content {
+      flex-grow: 1;
+
+      img {
+        display: block;
+        object-fit: cover;
+        object-position: top left;
+      }
+    }
+  }
+}
+
+.weird-description {
+    p {
+        text-align: left;
+        font-family: "Ubuntu Mono";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 37px;
+        line-height: 37px;
+
+        margin-top: 0;
+    }
+}
+
+.speakers {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 40px;
+    padding: 40px;
+    background: #d4d4d4;
+
+    &__left {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: auto auto;
+        gap: 30px;
+    }
+
+    &__image {
+        background: #1a7b7b;
+        min-height: 280px;
+    }
+
+    &__header {
+        display: grid;
+        gap: 15px;
+        align-content: start;
+    }
+
+    &__name {
+        font-family: "Ubuntu Mono";
+        font-size: 20px;
+        font-weight: 700;
+        color: variables.$compile2025-text-color !important;
+        margin: 0;
+    }
+
+    &__title {
+        font-family: "Ubuntu Mono";
+        font-size: 24px;
+        font-weight: 700;
+        color: variables.$compile2025-text-color !important;
+        margin: 0;
+    }
+
+    &__description {
+        font-family: "Ubuntu Mono" !important;
+        grid-column: 1 / 3;
+        font-size: 16px;
+        line-height: 1.6;
+        color: variables.$compile2025-text-color !important;
+        margin: 0;
+    }
+
+    &__right {
+        background: #e6e3e3;
+        padding: 40px;
+    }
+
+    &__bio-list {
+        display: grid;
+        gap: 20px;
+    }
+
+    &__bio {
+        font-family: "Ubuntu Mono" !important;
+        font-size: 14px;
+        line-height: 1.6;
+        color: variables.$compile2025-text-color !important;
+        margin: 0;
+    }
+}
+
+section {
+  h1 {
+    color: variables.$dev8-white;
+    font-family: "Prata", serif;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 10px 0 10px 0;
+
+    &.left {
+      text-align: left;
+    }
+  }
+
+  p {
+    color: variables.$dev8-white;
+    font-family: "Open Sans", serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    span {
+      font-weight: 700;
+      color: variables.$dev8-light-green;
+    }
+
+    &.left {
+      text-align: left;
+    }
+  }
+  p.description {
+    max-width: 1245px;
+    margin: auto auto 14px auto;
+
+    &.left {
+      margin: 0 0 14px 0;
+    }
+  }
+  .section-head-image {
+    display: block;
+    width: auto;
+    height: 65px;
+    margin: auto;
+
+    &.left {
+        margin: 0;
+    }
+  }
+
+  .details {
+    font-family: "Ubuntu Mono", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    margin: 4px 0;
+  }
+}
+
+.link-button {
+  display: block;
+
+  font-family: "Ubuntu Mono", serif;
+  font-size: 22px;
+  font-weight: 700;
+
+  color: variables.$dev8-white;
+
+  background-color: #086972;
+  border-width: 4px 4px 4px 4px;
+  border-style: solid;
+  border-color: #17b9b6;
+  border-bottom-color: black;
+  border-right-color: black;
+
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration: none;
+  text-decoration-skip-ink: none;
+
+  margin: auto;
+  padding: 0.25rem 0.45rem 0.25rem 0.45rem;
+
+  width: fit-content;
+
+  &:active {
+      border-bottom-color: initial;
+      border-right-color: initial;
+      border-color: #17b9b6;
+      border-top-color: black;
+      border-left-color: black;
+  }
+
+  &.left {
+      margin: 0;
+  }
+}
+
+supersection {
+    display: block;
+    width: 100%;
+}
+
+.dark-grey-area {
+    background-color: variables.$boot2025-dark-grey;
+}
+
+.grey-area {
+    background-color: variables.$boot2025-grey;
+}
+
+.light-grey-area {
+    background-color: variables.$boot2025-light-grey;
+}
+
+samp {
+    font-family: "Ubuntu Mono", serif;
+    font-style: normal;
+    font-weight: 800;
+}
+
+a {
+    color: variables.$dev8-light-green;
+}
+
+.code-of-conduct {
+    font-weight: 700;
+    color: variables.$dev8-light-green;
+}

@@ -1,0 +1,53 @@
+{%
+  import 'pages/events/compile/2025/_components.html' as compile2025_components
+%}
+{% extends "pages/events/_subpage.html" %} {% set active_page = "Events" %}
+
+{% set preregistration = true%}
+
+{% block title %}Dev8 COMPILE 2025{% endblock %}
+{% block relative_url %}events/compile/2025{% endblock %}
+{% block opengraph_desc %}
+Celebrating tech and geekery in Eastern Visayas.
+{% endblock %}
+{% block opengraph_img_desc %}
+View the details on Dev8 COMPILE 2025 here!
+{% endblock %}
+{% block opengraph_og_img %}
+/assets/events/compile/2025/img/socials/og-fb-image.png
+{% endblock %}
+
+{% block css %}
+<link href="/assets/events/compile/2025/css/index.css"
+      rel="stylesheet"
+      type="text/css"/>
+{% endblock %}
+
+{% block js %}
+<script src="/assets/events/compile/2025/js/index.js"></script>
+{% endblock %}
+
+{% block content %}
+<main>
+    {% include 'pages/events/compile/2025/_hero-section.html' %}
+    <section class="dark-grey-area flex">
+        {% include 'pages/events/compile/2025/_partners.html' %}
+    </section>
+    <supersection class="grey-area">
+        <!--{% include 'pages/events/compile/2025/_what-to-expect.html' %}-->
+        {% include 'pages/events/compile/2025/_organized.html' %}
+    </supersection>
+
+    <supersection class="dark-grey-area">
+        <!--{% include 'pages/events/compile/2025/_limited-slots-only.html' %}-->
+        {% include 'pages/events/compile/2025/_venue.html' %}
+        <!--{% include 'pages/events/compile/2025/_speakers.html' %}-->
+    </supersection>
+
+    <supersection class="grey-area">
+        {% include 'pages/events/compile/2025/_code-of-conduct.html' %}
+    </supersection>
+
+    {% include 'pages/events/compile/2025/_call-to-action.html' %}
+</main>
+{% endblock %}

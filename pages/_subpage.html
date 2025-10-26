@@ -6,7 +6,8 @@
 {% import 'pages/_components.html' as components %}
 
 {% set page_title %}{% block title %}{% endblock %}{% endset %}
-{% set custom_css %}{% block css %}{% endblock %}{% endset %}
+{% set custom_css %}{% block css   %}{% endblock %}{% endset %}
+{% set custom_js  %}{% block js    %}{% endblock %}{% endset %}
 
 {% set page_description %}{% block opengraph_desc %}{% endblock %}{% endset %}
 {% set img_description %}{% block opengraph_img_desc %}{% endblock %}{% endset %}
@@ -27,7 +28,7 @@
 
     <meta name="description" content="{{ page_description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url" content="https://dev8community.github.io/{% block relative_url %}{% endblock %}" />
+    <meta property="og:url" content="https://dev8.org.ph/{% block relative_url %}{% endblock %}" />
     <meta property="og:title" content="{%if not active_page == 'Home'%}{{ page_title }} -{% endif %} Dev8" />
     
     <meta property="og:image" content="{{ og_img_url }}" />
@@ -51,6 +52,9 @@
     {# Put custom CSS here#}
     {{ custom_css }}
 
+    {# JS #}
+    {{ custom_js }}
+
     {# Leaflet #}
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
 
@@ -58,9 +62,22 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 <body>
-    <script>
+    <script type="text/javascript">
         function redirect(url){
             window.location.replace(url);
+        }
+        function spinSpinner() {
+            let chars = ['|', '/', '-', '\\'];
+            let spinner = document.getElementById('spinner');
+
+            let idx = 0;
+            setInterval(() => { spinner.textContent = chars[idx++ % chars.length]; }, 150);
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', spinSpinner);
+        } else {
+            spinSpinner();
         }
     </script>
     <header>

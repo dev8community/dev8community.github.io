@@ -1,0 +1,52 @@
+<section class="venue-section container flex">
+    <div>
+        <img class="section-head-image left"
+             src="/assets/events/patch2025/img/icons/pin.png"
+             alt="pin icon">
+        <h1 class="left">Venue</h1>
+        <p class="description left">
+            Philippine Science High School - Eastern Visayas Campus in Leyte
+        </p>
+        <p class="details">
+            PSHS-EVC in Leyte, Palo, Leyte
+        </p>
+    </div>
+    <div class="image-container">
+        <div class="image-container__body">
+            <div class="image-container__header">
+                <span class="image-container__title">Venue Map</span>
+                <button class="image-container__close">
+                    <img src="/assets/events/compile/2025/img/icons/close_button.svg">
+                </button>
+            </div>
+            <div class="image-container__content">
+                <div id="map" style="width: 602px; height: 484px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    var greenIcon = new L.Icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41]
+    });
+
+    var map = L.map('map').setView([11.180331, 125.003820], 50);
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    var marker = L.marker(
+        [11.180331, 125.003820],
+        { icon: greenIcon }
+    ).addTo(map);
+
+    marker.bindPopup("See you at<br><strong>PSHS-EVC in Leyte!</strong>").openPopup();
+</script>

@@ -1,0 +1,145 @@
+@use 'sass:color';
+
+@use "../../../_variables.scss";
+@use "../../../mixins";
+
+.hero-section {
+  background-color: variables.$compile2025-hero-color;
+  color: variables.$boot2025-white;
+
+  img#logo {
+      width: 200px;
+      display: block;
+  }
+
+  .title {
+      font-family: "Prata", serif;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 64px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+
+      margin-bottom: 0;
+  }
+
+  .subtitle {
+      font-family: "Prata", serif;
+      font-size: 36px;
+      font-weight: 400;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+
+      margin-bottom: 0;
+  }
+
+  p {
+      &.hero-text {
+
+          margin-top: 0;
+          margin-bottom: 12px;
+          max-width: 540px;
+
+          font-family: "Open Sans", serif;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 32.68px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+      }
+
+      &.details {
+        font-family: "Ubuntu Mono", serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+
+        line-height: 22px;
+
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+        margin: 4px 0;
+      }
+
+      &.bootloader {
+          margin-bottom: 4px;
+          font-family: "Open Sans", serif;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 19.07px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+      }
+  }
+
+  div#button-section {
+      margin-top: 8px;
+      display: flex;
+
+      gap: 16px;
+
+      align-items: center;
+
+      &.left {
+          text-align: left;
+
+          a {
+              margin: 8px 0 0 0;
+          }
+      }
+  }
+
+  div.hero-details {
+    display: flex;
+    align-items: center;
+
+    margin: auto;
+
+    img {
+      height: 20px;
+      margin-right: 8px;
+    }
+  }
+
+  div.image-container {;
+    width: auto;
+
+    .image-container__content {
+      background-color: variables.$grey;
+
+      .code-space {
+        padding: 0.25rem;
+
+        p {
+          font-family: 'Ubuntu Mono', sans-serif;
+          font-weight: 600;
+          font-size: 18px;
+
+          margin: 0 0 0.12rem;
+
+          line-height: 18px;
+          text-align: left;
+
+          white-space: pre-wrap;
+          width: 589px;
+
+          span {
+            &#spinner {
+              color: variables.$dev8-white;
+            }
+
+            &.user {
+              color: variables.$link-colour;
+            }
+          }
+        }
+      }
+    }
+  }
+}

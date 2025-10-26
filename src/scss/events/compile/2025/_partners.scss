@@ -1,0 +1,53 @@
+﻿section.partners-section {
+  flex-direction: column;
+  gap: 1.5rem;
+
+  div.category {
+    h1 {
+      font-family: "Open Sans", serif;
+      font-size: 22px;
+      font-weight: 600;
+
+      margin-top: 0;
+    }
+
+    .logos {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 2.5rem;
+    }
+
+    &.co-developers {
+      .logos {
+        img {
+          height: 100px;
+        }
+      }
+    }
+
+    &.maintainers {
+      .logos {
+        img {
+          height: 90px;
+        }
+      }
+    }
+
+    &.contributors, &.community-partners {
+      .logos {
+        img {
+          height: 70px;
+        }
+      }
+    }
+
+    &.supporters {
+      .logos {
+        img {
+          height: 55px;
+        }
+      }
+    }
+  }
+}

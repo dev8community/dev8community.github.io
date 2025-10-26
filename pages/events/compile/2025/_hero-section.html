@@ -1,0 +1,72 @@
+{% import 'pages/events/compile/2025/_components.html' as components %}
+
+<section class="hero-section container flex">
+    <div id="left-side">
+        <img id="logo"
+             src="/assets/events/compile/2025/img/logo-frames/logo-frame-0.png"
+             alt="COMPILE 2025 Logo">
+        <h1 class="title">Dev8 COMPILE 2025</h1>
+        <span class="subtitle">
+            Celebrating Tech and Geekery<br>in Eastern Visayas
+        </span>
+
+        {{
+          components.hero_details(
+            "/assets/events/compile/2025/img/icons/calendar.png",
+            "December 6, 2025",
+            "date"
+          )
+        }}
+        {{
+          components.hero_details(
+            "/assets/events/compile/2025/img/icons/clock.png",
+            "9:00AM - 6:00PM PHT",
+            "time"
+          )
+        }}
+        {{
+          components.hero_details(
+            "/assets/events/compile/2025/img/icons/pin.png",
+            "PSHS-EVC in Leyte, Palo, Leyte",
+            "location"
+          )
+        }}
+
+        <div id="button-section" class="left">
+            {{ components.registration_button() }}
+        </div>
+    </div>
+    <div class="image-container margin-left-auto">
+        <div class="image-container__body">
+            <div class="image-container__header">
+                <h1 class="image-container__title">Terminal</h1>
+                <button class="image-container__close">
+                    <img src="/assets/events/boot2025/img/close_button.svg">
+                </button>
+            </div>
+            <div class="image-container__content">
+                <div class="code-space">
+                    <p><span class="user">dev8 ~ </span>$ ./compile.sh</p>
+                    <p>-- The compiler identification is COMPILE 2025</p>
+                    <p>-- Detecting event configuration - done</p>
+                    <p>-- Check for working compiler: /usr/bin/compile</p>
+                    <p>-- Check for working compiler: /usr/bin/compile - done</p>
+                    <p>-- Detecting event features</p>
+                    <p>-- Detecting event feature - done</p>
+                    <p>-- Performing Test HAS_EVENT_VENUE_AND_DATE</p>
+                    <p>-- Performing Test HAS_EVENT_VENUE_AND_DATE - Success</p>
+                    <p>-- Performing Test HAS_SPEAKERS</p>
+                    <p>-- Performing Test HAS_SPEAKERS - Success</p>
+                    <p>-- Performing Test HAS_PARTNERS</p>
+                    <p>-- Performing Test HAS_PARTNERS - Success</p>
+                    <p>-- Performing Test RETICULATING_SPLINES</p>
+                    <p>-- Performing Test RETICULATING_SPLINES - Success</p>
+                    <p>-- Performing TEST ATTEMPT_TO_EXIT_VIM</p>
+                    <p>-- Performing TEST ATTEMPT_TO_EXIT_VIM - Failure, skipped</p>
+                    <p>-- Loading event data</p>
+                    <p><span id="spinner"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

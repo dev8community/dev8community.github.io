@@ -1,5 +1,9 @@
 // Based off of "Sass and Media Queries" by Paul Duvali.
 // Link: https://dev.to/paul_duvall/sass-and-media-queries-hb2
+@mixin phones {
+    @media screen and (min-width: 300px) { @content };
+}
+
 @mixin tablets {
     @media screen and (min-width: 481px) { @content };
 }

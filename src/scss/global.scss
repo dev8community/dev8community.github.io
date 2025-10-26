@@ -185,26 +185,26 @@ nav {
 
 
 .container {
-    width: 100%; // Expands the div to the entire width of parent.
-    max-width: 1440px;
+  width: 100%; // Expands the div to the entire width of parent.
+  max-width: 1440px;
 
-    // Makes sure the paddings and margins are included in the computation
-    // of the final width of the element. Otherwise, any element using this
-    // class could overflow its parent, especially if the element is using
-    // a CSS Grid.
-    box-sizing: border-box;
+  // Makes sure the paddings and margins are included in the computation
+  // of the final width of the element. Otherwise, any element using this
+  // class could overflow its parent, especially if the element is using
+  // a CSS Grid.
+  box-sizing: border-box;
 
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5%;
 
-    @include mixins.tablets {
-        padding: 3%;
-    }
+  @include mixins.tablets {
+    padding: 3%;
+  }
 
-    @include mixins.xlarge-screens {
-        padding: 2%;
-    }
+  @include mixins.xlarge-screens {
+    padding: 3% 2%;
+  }
 }
 
 .top-most {
@@ -221,6 +221,10 @@ nav {
 
 .flex {
     display: flex;
+}
+
+.margin-left-auto {
+  margin-left: auto !important;
 }
 
 .hide {

@@ -18,6 +18,7 @@ folder = 'assets/'
 
 'events/boot2025/css/index.css' = 'src/scss/events/boot2025/index.scss'
 'events/patch2025/css/index.css' = 'src/scss/events/patch2025/index.scss'
+'events/compile/2025/css/index.css' = 'src/scss/events/compile/2025/index.scss'
 
 # Routes that we can access in the URL. Paths are
 # relative to Knitter.
@@ -48,6 +49,10 @@ folder = 'assets/'
 '/events/patch/2025/fullstack-web-101/register' = 'pages/events/patch2025/registration/register.html'
 '/events/patch/2025/fullstack-web-101/feedback' = 'pages/events/patch2025/feedback.html'
 '/events/patch/2025/fullstack-web-101/post-workshop-feedback' = 'pages/events/patch2025/post-workshop-feedback.html'
+
+# Compile 2025
+'/events/compile/2025/' = 'pages/events/compile/2025/index.html'
+'/events/compile/2025/registration' = 'pages/events/compile/2025/registration/register.html'
 
 # Surveys
 '/surveys/evtss2023' = 'pages/surveys/evtss2023/index.html'
