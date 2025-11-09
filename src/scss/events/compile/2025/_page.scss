@@ -20,7 +20,13 @@ header {
 }
 
 .container {
-  gap: 2.5rem;
+  flex-direction: column;
+  gap: 1rem;
+
+  @include mixins.large-screens {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
 }
 
 .image-container {
@@ -33,7 +39,6 @@ header {
   margin: 0;
 
   width: 100%;
-  overflow: hidden;
 
   &__body {
     display: flex;
@@ -183,7 +188,7 @@ section {
     font-family: "Prata", serif;
     font-size: 32px;
     font-weight: 400;
-    text-align: center;
+
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     margin: 10px 0 10px 0;
