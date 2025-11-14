@@ -53,6 +53,7 @@ folder = 'assets/'
 # Compile 2025
 '/events/compile/2025/' = 'pages/events/compile/2025/index.html'
 '/events/compile/2025/registration' = 'pages/events/compile/2025/registration/register.html'
+'/events/compile/2025/registration/partners' = 'pages/events/compile/2025/registration/partners.html'
 '/events/compile/2025/ama' = 'pages/events/compile/2025/ama.html'
 
 # Surveys
