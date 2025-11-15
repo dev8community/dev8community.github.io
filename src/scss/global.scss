@@ -262,6 +262,19 @@ nav {
     left: 0;
 }
 
+.blur {
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  user-select: none;
+
+  h1, p, li, a {
+    color: transparent !important;
+  }
+
+  img {
+    filter: blur(12px);
+  }
+}
+
 div.image-with-texts {
     display: flex;
     flex-direction: column;

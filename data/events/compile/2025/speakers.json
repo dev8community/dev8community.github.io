@@ -1,0 +1,42 @@
+[
+  {
+    "talk": {
+      "title": "Building the Future of React Apps with TanStack Start",
+      "description": "Get an inside look at TanStack Start, the new full-stack framework that redefines how we build React applications. This talk will introduce its core concepts and philosophy, then dive into how routing, data loading, and server rendering work together to create a seamless, type-safe developer experience."
+    },
+    "speaker": {
+      "name": "Joshua Chu",
+      "title": "Full-Stack Developer",
+      "description": "Joshua is a full-stack developer who thinks the best part of coding isn't the finished product - it's everything you learn getting there. He's worked across different domains and loves helping new developers discover that web development is more accessible (and fun) than they might think.",
+      "photo": "/assets/events/compile/2025/img/speaker-pictures/joshua-chu.webp"
+    },
+    "urls": [
+      {
+        "name": "Website",
+        "url": "https://home.joshuachu.dev/"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/joshuachudev/"
+      }
+    ]
+  },
+  {
+    "talk": {
+      "title": "A Case Against<br>Super Apps",
+      "description": "For many years, there has been a rise in the development of super apps, which provides users with multiple services from one app. However, super apps are not necessarily ideal and bring in disadvantages such as inconsistent user experience and a more complex development process. Learn why software developers building their SaaS business should become specialists and focus on small and specific problem scopes."
+    },
+    "speaker": {
+      "name": "Janroe Cordero",
+      "title": "Full-Stack Developer at BlueShores",
+      "description": "Janroe Cordero is a self-taught full-stack developer specializing in PHP/Laravel and Vue.js, with experience building international SaaS products. With a background in Economics, he brings a unique perspective to solving complex technical challenges through clean, maintainable code.",
+      "photo": "/assets/events/compile/2025/img/speaker-pictures/janroe-cordero.webp"
+    },
+    "custom_classes": "blur"
+  },
+  {
+    "talk": {
+      "title": "Revealing more speakers soon..."
+    }
+  }
+]
