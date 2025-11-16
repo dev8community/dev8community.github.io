@@ -41,9 +41,9 @@
                         <p class="speaker__title">
                             {{ s["speaker"]["title"] }}
                         </p>
-                        {% if s["urls"] %}
+                        {% if "urls" in s["speaker"] %}
                         <ul class="speaker__links">
-                            {% for u in s["urls"] %}
+                            {% for u in s["speaker"]["urls"] %}
                             <li>
                                 <a href="{{ u['url'] }}">{{ u["name"] }}</a>
                             </li>

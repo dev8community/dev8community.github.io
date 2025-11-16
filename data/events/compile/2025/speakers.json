@@ -8,18 +8,18 @@
       "name": "Joshua Chu",
       "title": "Full-Stack Developer",
       "description": "Joshua is a full-stack developer who thinks the best part of coding isn't the finished product - it's everything you learn getting there. He's worked across different domains and loves helping new developers discover that web development is more accessible (and fun) than they might think.",
-      "photo": "/assets/events/compile/2025/img/speaker-pictures/joshua-chu.webp"
-    },
-    "urls": [
-      {
-        "name": "Website",
-        "url": "https://home.joshuachu.dev/"
-      },
-      {
-        "name": "LinkedIn",
-        "url": "https://www.linkedin.com/in/joshuachudev/"
-      }
-    ]
+      "photo": "/assets/events/compile/2025/img/speaker-pictures/joshua-chu.webp",
+      "urls": [
+        {
+          "name": "Website",
+          "url": "https://home.joshuachu.dev/"
+        },
+        {
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/in/joshuachudev/"
+        }
+      ]
+    }
   },
   {
     "talk": {
@@ -30,7 +30,13 @@
       "name": "Janroe Cordero",
       "title": "Full-Stack Developer at BlueShores",
       "description": "Janroe Cordero is a self-taught full-stack developer specializing in PHP/Laravel and Vue.js, with experience building international SaaS products. With a background in Economics, he brings a unique perspective to solving complex technical challenges through clean, maintainable code.",
-      "photo": "/assets/events/compile/2025/img/speaker-pictures/janroe-cordero.webp"
+      "photo": "/assets/events/compile/2025/img/speaker-pictures/janroe-cordero.webp",
+      "urls": [
+        {
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/in/janroe-cordero-a3aa4b115"
+        }
+      ]
     },
     "custom_classes": "blur"
   },

@@ -270,6 +270,10 @@ nav {
     color: transparent !important;
   }
 
+  a {
+    pointer-events: none;
+  }
+
   img {
     filter: blur(12px);
   }
