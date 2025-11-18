@@ -41,6 +41,19 @@
   },
   {
     "talk": {
+      "title": "Ship Ideas Fast: Building Production-Ready Next.js Apps with AI",
+      "description": "In 2025, with countless tools and AI at everyone’s fingertips, the idea that wins is the one that gets executed. As an engineer, your job is to solve real problems - not build overly complex systems. All you need is one meaningful idea and the ability to build it fast, before someone else does."
+    },
+    "speaker": {
+      "name": "Cyril Cabo",
+      "title": "Software Engineer at Changing Digital (UK)",
+      "description": "Cyril Cabo is an experienced Software Engineer with over five years of professional experience in software engineering and systems development. He has collaborated with organizations across various sectors—including finance, freight, software, and publishing—providing comprehensive expertise in designing, developing, and deploying robust digital solutions. His professional work primarily involves coordinating with project managers to plan and implement software development initiatives, ensuring alignment between technical execution and strategic business objectives. In addition to his development responsibilities, he has also led small development teams, guiding them in delivering efficient, secure, and scalable applications.",
+      "photo": "/assets/events/compile/2025/img/speaker-pictures/cyril-cabo.webp",
+      "urls": []
+    }
+  },
+  {
+    "talk": {
       "title": "Revealing more speakers soon..."
     }
   }
