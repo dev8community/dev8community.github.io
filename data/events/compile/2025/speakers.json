@@ -28,7 +28,7 @@
     },
     "speaker": {
       "name": "Janroe Cordero",
-      "title": "Full-Stack Developer at BlueShores",
+      "title": "Full-Stack Developer @ BlueShores",
       "description": "Janroe Cordero is a self-taught full-stack developer specializing in PHP/Laravel and Vue.js, with experience building international SaaS products. With a background in Economics, he brings a unique perspective to solving complex technical challenges through clean, maintainable code.",
       "photo": "/assets/events/compile/2025/img/speaker-pictures/janroe-cordero.webp",
       "urls": [
@@ -46,9 +46,22 @@
     },
     "speaker": {
       "name": "Cyril Cabo",
-      "title": "Software Engineer at Changing Digital (UK)",
+      "title": "Software Engineer @ Changing Digital (UK)",
       "description": "Cyril Cabo is an experienced Software Engineer with over five years of professional experience in software engineering and systems development. He has collaborated with organizations across various sectors—including finance, freight, software, and publishing—providing comprehensive expertise in designing, developing, and deploying robust digital solutions. His professional work primarily involves coordinating with project managers to plan and implement software development initiatives, ensuring alignment between technical execution and strategic business objectives. In addition to his development responsibilities, he has also led small development teams, guiding them in delivering efficient, secure, and scalable applications.",
       "photo": "/assets/events/compile/2025/img/speaker-pictures/cyril-cabo.webp",
+      "urls": []
+    }
+  },
+  {
+    "talk": {
+      "title": "Watch Now: Exploring the World of Adaptive Bitrate Streaming",
+      "description": "Discover adaptive bitrate streaming and its role in transforming online video playback. Learn how HLS and DASH address common streaming problems, and discover the underlying structure and logic that enable videos to start instantly and play seamlessly."
+    },
+    "speaker": {
+      "name": "Felix Flores",
+      "title": "Software Developer @ SciBiz Informatics",
+      "description": "Felix Flores is a full-stack developer passionate about technology and endlessly curious. He enjoys exploring new tools, frameworks, and approaches to solve complex problems. For him, the thrill of coding comes not just from building solutions, but from discovering how things work along the way.",
+      "photo": "/assets/events/compile/2025/img/speaker-pictures/felix-flores.webp",
       "urls": []
     }
   },
