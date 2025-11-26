@@ -68,13 +68,26 @@
   {
     "talk": {
       "title": "From Developer to Agile Leader: A Decade of Lessons in Work and Life",
-      "description": "Agile is often described as a framework of processes—sprints, ceremonies, roles, and tools—but in practice, it is driven by people, leadership, and the everyday decisions that shape how teams work. In this talk, Moi shares insights gained over more than a decade in the tech industry, beginning as a junior developer in 2013 and growing into an Agile-driven professional. Backed by certifications including Scrum Master, PMI-CAPM, and PMI-ACP, Moidraws from real-world experiences to illustrate how Agile leadership influences not only software delivery, but also how individuals communicate, prioritize, and adapt. Through these lessons, the audience gains a deeper understanding of what it truly means to lead—and thrive—within Agile environments."
+      "description": "Agile is often described as a framework of processes—sprints, ceremonies, roles, and tools—but in practice, it is driven by people, leadership, and the everyday decisions that shape how teams work. In this talk, Moi shares insights gained over more than a decade in the tech industry, beginning as a junior developer in 2013 and growing into an Agile-driven professional. Backed by certifications including Scrum Master, PMI-CAPM, and PMI-ACP, Moi draws from real-world experiences to illustrate how Agile leadership influences not only software delivery, but also how individuals communicate, prioritize, and adapt. Through these lessons, the audience gains a deeper understanding of what it truly means to lead—and thrive—within Agile environments."
     },
     "speaker": {
       "name": "John Temoty Roca",
       "title": "Freelance Senior Software Developer",
       "description": "John Temoty \"Moi\" Roca is a technology professional with over a decade of experience, starting his career in 2013 and growing from a junior developer into an Agile-oriented leader. He holds certifications including Scrum Master, PMI-CAPM, and PMI-ACP, reflecting his commitment to continuous improvement and people-centered delivery. His journey has shown him how Agile leadership goes beyond projects—it influences communication, problem-solving, and the way teams and individuals navigate everyday challenges. He is passionate about helping students and professionals understand what the real world of modern work looks like and how an Agile mindset can help them thrive.",
       "photo": "/assets/events/compile/2025/img/speaker-pictures/john-temoty-roca.webp",
+      "urls": []
+    }
+  },
+  {
+    "talk": {
+      "title": "Parkly: Helping you Find Parking Spaces Anytime, Anywhere",
+      "description": "Discover Parkly, an app being built to help you find parking spaces easily. Learn the challenges, experiences, and innovations that are involved with developing a mobile app for a parking reservation service."
+    },
+    "speaker": {
+      "name": "John Anthony Dilao",
+      "title": "Software Developer at Parkly",
+      "description": "John Anthony \"Nio\" Dilao is primarily a backend developer and embedded systems hobbyist, but recently picked up mobile development with FlutterFlow. Outside of building Parkly, he is studying computer science at the University of the Philippines Tacloban College.",
+      "photo": "/assets/events/compile/2025/img/speaker-pictures/john-anthony-dilao.webp",
       "urls": []
     }
   },
