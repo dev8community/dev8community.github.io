@@ -62,7 +62,16 @@
       "title": "Software Developer @ SciBiz Informatics",
       "description": "Felix Flores is a full-stack developer passionate about technology and endlessly curious. He enjoys exploring new tools, frameworks, and approaches to solve complex problems. For him, the thrill of coding comes not just from building solutions, but from discovering how things work along the way.",
       "photo": "/assets/events/compile/2025/img/speaker-pictures/felix-flores.webp",
-      "urls": []
+      "urls": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/Jxst-Felix"
+        },
+        {
+          "name": "Bluesky",
+          "url": "https://bsky.app/profile/jxst-felix.bsky.social/"
+        }
+      ]
     }
   },
   {
@@ -93,7 +102,15 @@
   },
   {
     "talk": {
-      "title": "Revealing more speakers soon..."
+      "title": "The Icarus Code: Flying Fast Without Crashing… Too Much",
+      "description": "A technical deep dive into how Icarus – The Endless Flyer was built in the Unity game engine, covering the systems behind endless world generation, difficulty scaling, physics, and mobile launching."
+    },
+    "speaker": {
+      "name": "Marc Mico Mapalo",
+      "title": "Co-Founder & Head Artist of No Loading Games Studio",
+      "description": "Marc Mico Mapalo, also known as Paperbagart.ph in Instagram, is a virtual assistant by day, and an indie-game developer & artist by night. He and his friend founded No Loading Games Studios, and their first published game is called Icarus - The Endless Flyer, only available in Google Play.",
+      "photo": "/assets/events/compile/2025/img/speaker-pictures/mico-mapalo.webp",
+      "urls": []
     }
   }
 ]
