@@ -1,0 +1,19 @@
+@use "../../../mixins";
+
+section.article {
+  flex-direction: column;
+  gap: 1.5rem;
+
+  div.category {
+    h1, h2 {
+        text-align: center;
+        margin-top: 0;
+    }
+  }
+}
+
+section.article-section {
+    p {
+        line-height: 20px;
+    }
+}
