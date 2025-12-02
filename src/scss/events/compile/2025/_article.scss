@@ -1,4 +1,6 @@
+@use "sass:color";
 @use "../../../mixins";
+@use "../../../_variables.scss";
 
 section.article {
   flex-direction: column;
@@ -14,6 +16,30 @@ section.article {
 
 section.article-section {
     p {
-        line-height: 20px;
+        line-height: 125%;
+        text-align: left;
+    }
+    figure:first-of-type {
+        display: block;
+        margin-bottom: 3.5rem;
+        margin-top: 0;
+    }
+    figure:not(:first-of-type) {
+        display: block;
+        margin-bottom: 3.5rem;
+        margin-top: 3.5rem;
+      }
+    img {
+        display: block;
+        margin: 1.5rem auto;
+        max-width: 75%;
+        height: auto;
+      }
+    label {
+        display: block;
+        text-align: center;
+        font-size: 0.875rem;
+        color: variables.$dev8-white;
+        margin-top: 0.5rem;
     }
 }
