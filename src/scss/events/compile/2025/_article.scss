@@ -2,6 +2,10 @@
 @use "../../../mixins";
 @use "../../../_variables.scss";
 
+section.return {
+  
+  }
+
 section.article {
   flex-direction: column;
   gap: 1.5rem;
@@ -10,6 +14,7 @@ section.article {
     h1, h2 {
         text-align: center;
         margin-top: 0;
+        color: variables.$dev8-white;
     }
   }
 }

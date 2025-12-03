@@ -8,6 +8,7 @@
 {# #region: Article Settings #}
 {% set article_title %}{% block art_title %}{% endblock %}{% endset %}
 {% set article_subtitle %}{% block art_subtitle %}{% endblock %}{% endset %}
+{% set article_date %}{% block art_date %}{% endblock %}{% endset %}
 {% set article_opengraph_desc %}{% block art_opengraph_desc %}{% endblock %}{% endset %}
 {% set article_opengraph_img_desc %}{% block art_opengraph_img_desc %}{% endblock %}{% endset %}
 {% set article_opengraph_img %}{% block art_opengraph_img %}{% endblock %}{% endset %}
@@ -40,16 +41,18 @@
 
 {% block content %}
 <main>
-    {% include 'pages/events/compile/2025/_hero-section.html' %}
+    {# {% include 'pages/events/compile/2025/_hero-section.html' %} #}
     {# Somewhat a header? #}
-    <supersection class="grey-area">
-        <section class="article container">
-            <div class="category">
-                <h1>{{ article_title }}</h1>
-                <h2>{{ article_subtitle }}</h2>
-            </div>
-        </section>
-    </supersection>
+    <section class="return container">
+        <a href="/events/compile/2025/">← Return to COMPILE 2025</a>
+    </section>
+    <section class="article container">
+        <div class="category">
+            <h1>{{ article_title }}</h1>
+            <p>{{ article_subtitle }}</p>
+            <p>{{ article_date }}</p>
+        </div>
+    </section>
     {% block article_content %}
     {% endblock  %}
     {% include 'pages/events/compile/2025/_call-to-action.html' %}
