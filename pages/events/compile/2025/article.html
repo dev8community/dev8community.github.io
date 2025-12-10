@@ -42,10 +42,6 @@
 {% block content %}
 <main>
     {# {% include 'pages/events/compile/2025/_hero-section.html' %} #}
-    {# Somewhat a header? #}
-    <section class="return container">
-        <a href="/events/compile/2025/">← Return to COMPILE 2025</a>
-    </section>
     <section class="article container">
         <div class="category">
             <h1>{{ article_title }}</h1>
@@ -53,8 +49,15 @@
             <p>{{ article_date }}</p>
         </div>
     </section>
-    {% block article_content %}
-    {% endblock  %}
+    <supersection class="grey-area">
+        <section class="flex column container">
+            {% block article_content %}
+            {% endblock  %}
+            <div class="article-controls">
+                <a href="/events/compile/2025/">← Return to COMPILE 2025</a>
+            </div>
+        </section>
+    </supersection>
     {% include 'pages/events/compile/2025/_call-to-action.html' %}
 </main>
 {% endblock %}
