@@ -1,0 +1,23 @@
+<section class="schedule-section container">
+    <img class="section-head-image"
+         src="/assets/events/compile/2025/img/icons/calendar.png"
+         alt="Calendar">
+    <h1>Schedule</h1>
+    <p class="description">
+        Dev8 COMPILE 2025 will be held on <span>December 13, 2025</span> at <span>Philippine Science High School - Eastern Visayas Campus in Leyte</span>.
+    </p>
+    <table class="schedule-table">
+        <tr>
+            <th scope="col">Activity</th>
+            <th scope="col">Start Time</th>
+            <th scope="col">End Time</th>
+        </tr>
+        {% for startTime, endTime, activity in compile2025_schedule['data'] %}
+        <tr>
+            <td class="activity">{{ activity }}</td>
+            <td class="time">{{ startTime }}</td>
+            <td class="time">{{ endTime }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</section>

@@ -1,0 +1,67 @@
+@use "../../../_variables.scss";
+@use "../../../mixins.scss";
+
+.schedule-section {
+    h1 {
+        text-align: center;
+    }
+
+    .section-head-image {
+        display: block;
+        width: 65px;
+        height: 65px;
+        margin: auto;
+    }
+
+    table, tr, th, td {
+        border-collapse: collapse;
+        border-spacing: 0;
+        border: 4px solid black;
+    }
+
+    table {
+        margin: auto;
+        width: 100%;
+
+        tbody {
+            tr:nth-child(odd) {
+                background-color: #17b9b6;
+            }
+
+            tr:nth-child(even) {
+                background-color: #83ffa6;
+            }
+        }
+
+        th, td {
+            padding: 9px;
+        }
+
+        th {
+            color: variables.$dev8-white;
+            background-color: #086972;
+
+            font-family: "Open Sans", serif;
+            font-size: 14px;
+            font-weight: 700;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+
+        td {
+            font-family: "Open Sans", serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+
+        td.time {
+            text-align: center;
+        }
+
+        td.activity {
+            max-width: 176px;
+        }
+    }
+}

@@ -246,6 +246,10 @@ nav {
 
 .flex {
     display: flex;
+
+    &.column {
+      flex-direction: column;
+    }
 }
 
 .margin-left-auto {
