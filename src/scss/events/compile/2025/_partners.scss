@@ -1,92 +1,206 @@
-﻿@use "../../../mixins";
+﻿@use "../../../variables";
+@use "../../../mixins";
 
 section.partners-section {
   flex-direction: column;
   gap: 1.5rem;
 
-  div.category {
-    h1 {
-      font-family: "Open Sans", serif;
-      font-size: 22px;
-      font-weight: 600;
+  div {
+    &.partner-window {
+      margin-top: 1rem;
 
-      text-align: center;
-
-      margin-top: 0;
-    }
-
-    .logos {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 1rem;
-
-      @include mixins.tablets {
-        flex-direction: row;
-        gap: 2.5rem;
-      }
-
-      img {
-        align-self: center;
-      }
-    }
-
-    &.co-developers {
-      .logos {
+      .partner-content {
+        display: flex;
         flex-direction: column;
-        gap: 1rem;
-        
-        img {
-          max-height: 100px;
+        align-items: center;
+
+        background-color: variables.$dev8-white;
+        color: variables.$text-dark-colour;
+
+        text-align: center;
+
+        padding: 1rem;
+
+        h1, p, address {
+          color: variables.$text-dark-colour;
+
+          margin: 0 0 0.5rem;
         }
 
-        @media screen and (min-width: 1135px) {
+        p {
+          margin-bottom: 0.75rem;
+        }
+
+        h1 {
+          &.partner-content__talk-title {
+            font-size: 32px;
+          }
+        }
+
+        div.partner-content__details {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.12rem;
+
+          margin-bottom: 0.5rem;
+
+          p {
+            &.partner-content__name {
+              font-weight: 600;
+            }
+
+            &.partner-content__title {
+              font-family: "Ubuntu Mono", monospace;
+              font-weight: 800;
+            }
+
+            &.partner-content__name, &.speaker__title {
+              font-size: 26px;
+
+              margin: 0;
+            }
+          }
+
+          div#co-developer-partners {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            @include mixins.xlarge-screens {
+              flex-direction: row;
+            }
+
+            div.co-developer-partners__partner {
+              display: flex;
+              flex-direction: column;
+              gap: 1.5rem;
+
+              a {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                align-items: center;
+
+                div {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 1rem;
+                }
+              }
+
+              img {
+                display: block;
+                object-fit: fill;
+                object-position: 50% 50%;
+
+                max-height: 200px;
+              }
+
+              p.co-developer-partner-name {
+                font-size: 24px;
+                margin: auto 0 0;
+              }
+            }
+
+            div#co-developer-partners__cs-areglaw {
+              a {
+                div {
+                  width: 350px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.category {
+      h1 {
+        font-family: "Open Sans", serif;
+        font-size: 22px;
+        font-weight: 600;
+
+        text-align: center;
+
+        margin-top: 0;
+      }
+
+      .logos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+
+        @include mixins.tablets {
           flex-direction: row;
           gap: 2.5rem;
-        };
-      }
-    }
-
-    &.maintainers {
-      .logos {
-        img {
-          max-height: 90px;
         }
-      }
-    }
-
-    &.contributors, &.community-partners {
-      .logos {
-        img {
-          max-height: 70px;
-        }
-      }
-    }
-
-    &.community-partners {
-      .logos {
-        flex-direction: column;
-        gap: 1rem;
-
-        @media screen and (min-width: 572px) {
-          flex-direction: row;
-          gap: 2.5rem;
-        }
-      }
-    }
-
-    &.supporters {
-      .logos {
-        flex-direction: column;
-        gap: 1rem;
 
         img {
-          max-height: 55px;
+          align-self: center;
         }
+      }
 
-        @media screen and (min-width: 760px) {
-          flex-direction: row;
-          gap: 2.5rem;
+      &.co-developers {
+        .logos {
+          flex-direction: column;
+          gap: 1rem;
+
+          img {
+            max-height: 100px;
+          }
+
+          @media screen and (min-width: 1135px) {
+            flex-direction: row;
+            gap: 2.5rem;
+          };
+        }
+      }
+
+      &.maintainers {
+        .logos {
+          img {
+            max-height: 90px;
+          }
+        }
+      }
+
+      &.contributors, &.community-partners {
+        .logos {
+          img {
+            max-height: 70px;
+          }
+        }
+      }
+
+      &.community-partners {
+        .logos {
+          flex-direction: column;
+          gap: 1rem;
+
+          @media screen and (min-width: 572px) {
+            flex-direction: row;
+            gap: 2.5rem;
+          }
+        }
+      }
+
+      &.supporters {
+        .logos {
+          flex-direction: column;
+          gap: 1rem;
+
+          img {
+            max-height: 55px;
+          }
+
+          @media screen and (min-width: 760px) {
+            flex-direction: row;
+            gap: 2.5rem;
+          }
         }
       }
     }
