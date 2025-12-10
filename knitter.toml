@@ -60,7 +60,7 @@ folder = 'assets/'
 ## Compile Articles
 # '/events/compile/2025/article' = 'pages/events/compile/2025/article.html'
 '/events/compile/2025/article/1' = 'pages/events/compile/2025/articles/article-1.html'
-'/events/compile/2025/article/pshs-evc' = 'pages/events/compile/2025/articles/pshs-evc.html'
+'/events/compile/2025/article/pshs-evcil' = 'pages/events/compile/2025/articles/pshs-evcil.html'
 
 
 # Surveys
