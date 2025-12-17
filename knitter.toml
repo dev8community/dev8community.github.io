@@ -56,6 +56,7 @@ folder = 'assets/'
 '/events/compile/2025/registration/partners' = 'pages/events/compile/2025/registration/partners.html'
 '/events/compile/2025/ama' = 'pages/events/compile/2025/ama.html'
 '/events/compile/2025/reveal-jb-code' = 'pages/events/compile/2025/reveal-jb-code.html'
+'/events/compile/2025/feedback' = 'pages/events/compile/2025/feedback.html'
 
 ## Compile Articles
 '/events/compile/2025/article/pshs-evcl' = 'pages/events/compile/2025/articles/pshs-evcl.html'
