@@ -1,0 +1,23 @@
+﻿{% extends "pages/events/_subpage.html" %}
+{% set active_page = "Dev8 COMPILE 2025" %}
+
+{% block title %}Dev8 COMPILE 2025 Event Report{% endblock %}
+{% block relative_url %}events/compile/2025/report{% endblock %}
+
+{% block opengraph_desc %}
+Celebrating tech and geekery in Eastern Visayas.
+{% endblock %}
+{% block opengraph_img_desc %}
+View the Dev8 COMPILE 2025 Event Report here!
+{% endblock %}
+{% block opengraph_og_img %}
+/assets/events/compile/2025/img/socials/og-fb-image.jpg
+{% endblock %}
+
+{% block content %}
+
+<main>
+    {{ components.redirect_to_url("https://drive.google.com/file/d/1vidIAqhZjNWTsONhT5F8nU1YuAJa_INv/view?usp=drive_link") }}
+</main>
+
+{% endblock %}
