@@ -1,0 +1,116 @@
+﻿@use "../../../_variables.scss";
+@use "../../../mixins";
+
+section.speakers-section {
+  h1 {
+    text-align: center;
+  }
+
+  div {
+    &#speakers {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+
+      @include mixins.large-screens {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      width: 100%;
+    }
+
+    &.speaker-window {
+      .speaker {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: variables.$dev8-white;
+        color: variables.$text-dark-colour;
+
+        text-align: center;
+
+        padding: 1rem;
+
+        h1, p, address {
+          color: variables.$text-dark-colour;
+
+          margin: 0 0 0.5rem;
+        }
+
+        p {
+          margin-bottom: 0.75rem;
+        }
+
+        h1 {
+          &.speaker__talk-title {
+            font-size: 32px;
+          }
+        }
+
+        div.speaker__details {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.12rem;
+
+          margin-bottom: 0.5rem;
+
+          p {
+            &.speaker__name {
+              font-weight: 600;
+            }
+
+            &.speaker__title {
+              font-family: "Ubuntu Mono", monospace;
+              font-weight: 800;
+            }
+
+            &.speaker__name, &.speaker__title {
+              font-size: 26px;
+
+              margin: 0;
+            }
+          }
+
+          ul {
+            &.speaker__links {
+              display: flex;
+              flex-direction: row;
+              gap: 1rem;
+
+              list-style-type: none;
+
+              margin: 0;
+              padding: 0;
+
+              li {
+                text-align: center;
+
+                a {
+                  font-family: "Ubuntu Mono", monospace;
+                  font-weight: 800;
+                  font-size: 22px;
+
+                  color: variables.$dev8-dark-green;
+
+                  text-decoration-line: none;
+                }
+              }
+            }
+          }
+        }
+
+        img {
+          &.speaker__image {
+            width: 200px;
+            height: 200px;
+
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

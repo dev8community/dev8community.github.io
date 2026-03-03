@@ -12,12 +12,12 @@
     {{ components.dev8_logo() }}
     <nav>
         <ul>
-            {% for caption, href in navigation_bar %}
+            {% for title, href in navigation_bar %}
             <li>
-                {% if active_page == caption %}
-                {{ components.link_to_url(caption, href, true) }}
+                {% if active_page == title %}
+                {{ components.link_to_url(title, href, true) }}
                 {% else %}
-                {{ components.link_to_url(caption, href) }}
+                {{ components.link_to_url(title, href) }}
                 {% endif %}
             </li>
             {% endfor %}

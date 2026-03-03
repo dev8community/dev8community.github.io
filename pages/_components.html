@@ -31,3 +31,24 @@
     redirect("{{url}}");
 </script>
 {%- endmacro %}
+
+{%
+    macro link_button_to_url(
+        link_text,
+        target_url,
+        left = false,
+        active = false
+    )
+-%}
+<a href="{{ target_url }}"
+   class="link-button {% if left %}left{% endif %} {% if active %}active{% endif %}">
+    {{ link_text }}
+</a>
+{%- endmacro %}
+
+{% macro hero_details(img_src, details, alt) -%}
+<div class="hero-details">
+    <img src="{{ img_src }}" alt="{{ alt }}"/>
+    <p class="details">{{ details }}</p>
+</div>
+{%- endmacro %}

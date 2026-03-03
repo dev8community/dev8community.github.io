@@ -1,0 +1,27 @@
+﻿@use "../../../_variables.scss";
+
+div#shutdown-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    background-color: variables.$boot-hero-color;
+
+    color: variables.$dev8-white;
+    font-family: "Ubuntu Mono", serif;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: 700;
+
+    &.phase-2 {
+        background-color: variables.$dev8-black;
+    }
+}

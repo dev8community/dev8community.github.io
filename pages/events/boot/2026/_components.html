@@ -1,0 +1,21 @@
+{% macro registration_button() -%}
+<a href="/events/compile/2025/registration/" class="link-button">
+    Register Now
+</a>
+
+{%- endmacro %}
+
+{% macro link_to_url(link_text, target_url, left = false, active = false) -%}
+<a href="{{ target_url }}" class="link-button {% if left %}left{% endif %} {% if active %}active{% endif %}">
+    {{ link_text }}
+</a>
+{%- endmacro %}
+
+{% macro hero_details(imgSrc, details, alt) -%}
+<div class="hero-details">
+    <img src="{{ imgSrc }}" alt="{{ alt }}">
+    <p class="details">
+        {{ details }}
+    </p>
+</div>
+{%- endmacro %}

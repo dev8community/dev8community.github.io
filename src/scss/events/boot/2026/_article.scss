@@ -1,0 +1,50 @@
+@use "sass:color";
+@use "../../../mixins";
+@use "../../../_variables.scss";
+
+section.return {
+  
+  }
+
+section.article {
+  flex-direction: column;
+  gap: 1.5rem;
+
+  div.category {
+    h1, h2 {
+        text-align: center;
+        margin-top: 0;
+        color: variables.$dev8-white;
+    }
+  }
+}
+
+section.article-section {
+    p {
+        line-height: 125%;
+        text-align: left;
+    }
+    figure:first-of-type {
+        display: block;
+        margin-bottom: 3.5rem;
+        margin-top: 0;
+    }
+    figure:not(:first-of-type) {
+        display: block;
+        margin-bottom: 3.5rem;
+        margin-top: 3.5rem;
+      }
+    img {
+        display: block;
+        margin: 1.5rem auto;
+        max-width: 75%;
+        height: auto;
+      }
+    label {
+        display: block;
+        text-align: center;
+        font-size: 0.875rem;
+        color: variables.$dev8-white;
+        margin-top: 0.5rem;
+    }
+}

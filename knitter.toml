@@ -17,6 +17,7 @@ folder = 'assets/'
 'css/code-of-conduct.css' = 'src/scss/code-of-conduct.scss'
 
 'events/boot2025/css/index.css' = 'src/scss/events/boot2025/index.scss'
+'events/boot/2026/css/index.css' = 'src/scss/events/boot/2026/index.scss'
 'events/patch2025/css/index.css' = 'src/scss/events/patch2025/index.scss'
 'events/compile/2025/css/index.css' = 'src/scss/events/compile/2025/index.scss'
 
@@ -62,6 +63,9 @@ folder = 'assets/'
 ## Compile Articles
 '/events/compile/2025/article/pshs-evcl' = 'pages/events/compile/2025/articles/pshs-evcl.html'
 '/events/compile/2025/article/cerena-solutions-areglaw-ai' = 'pages/events/compile/2025/articles/cerena-solutions-areglaw-ai.html'
+
+# BOOT 2026
+'/events/boot/2026/' = 'pages/events/boot/2026/index.html'
 
 # Surveys
 '/surveys/evtss2023' = 'pages/surveys/evtss2023/index.html'

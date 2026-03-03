@@ -24,15 +24,26 @@ $link-colour: hsl(137, 100%, 76%);
 $link-colour-hovered: hsl(137, 100%, 90%);
 $link-colour-active: hsl(137, 100%, 65%);
 
+$text-font-size: 22px;
+
 $footer-bg: hsl(0, 0%, 20%);
 
-$boot2025-white: #EFEFEF;
-$boot2025-dark-grey: hsl(0, 0%, 25%);
-$boot2025-grey: hsl(0, 0%, 38%);
-$boot2025-light-grey: hsl(0, 0%, 50%);
-$boot2025-black: hsla(0, 0%, 20%, 1);
-$boot2025-hero-color: #4060e0;
-$boot2025-section-color: hsl(0, 0%, 20%);
+$boot-white: #EFEFEF;
+$boot-dark-grey: hsl(0, 0%, 25%);
+$boot-grey: hsl(0, 0%, 38%);
+$boot-light-grey: hsl(0, 0%, 50%);
+$boot-black: hsla(0, 0%, 20%, 1);
+$boot-hero-color: #4060e0;
+$boot-section-color: hsl(0, 0%, 20%);
+
+// For backwards-compatibility.
+$boot2025-white: $boot-white;
+$boot2025-dark-grey: $boot-dark-grey;
+$boot2025-grey: $boot-grey;
+$boot2025-light-grey: $boot-light-grey;
+$boot2025-black: $boot-black;
+$boot2025-hero-color: $boot-hero-color;
+$boot2025-section-color: $boot-section-color;
 
 $patch2025-hero-color: hsl(185, 87%, 24%);
 $patch2025-dark-grey: hsl(0, 0%, 25%);

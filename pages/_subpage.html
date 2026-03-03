@@ -70,8 +70,12 @@
             let chars = ['|', '/', '-', '\\'];
             let spinner = document.getElementById('spinner');
 
-            let idx = 0;
-            setInterval(() => { spinner.textContent = chars[idx++ % chars.length]; }, 150);
+            if (spinner) {
+                let idx = 0;
+                setInterval(() => {
+                    spinner.textContent = chars[idx++ % chars.length];
+                }, 150);
+            }
         }
 
         if (document.readyState === 'loading') {
@@ -80,9 +84,11 @@
             spinSpinner();
         }
     </script>
+    {% if not no_default_header %}
     <header>
         {% include 'pages/_navbar.html' %}
     </header>
+    {% endif %}
     {% block content %}
     {% endblock %}
     {% include 'pages/_footer.html' %}

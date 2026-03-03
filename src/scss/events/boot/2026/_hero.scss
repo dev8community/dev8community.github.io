@@ -1,0 +1,133 @@
+@use 'sass:color';
+
+@use "../../../_variables.scss";
+@use "../../../mixins";
+
+section.hero-section {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+    max-height: 100vh;
+
+    background-color: variables.$boot-hero-color;
+    color: variables.$dev8-white;
+
+    cursor: text;
+
+    div#hero-section-content {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        gap: 0;
+
+        padding-top: 1%;
+        padding-bottom: 1%;
+
+        overflow: auto;
+
+        $hero-section-font-size: 24px;
+        h1, h2, p, label, input {
+            font-family: "Ubuntu Mono", serif;
+            font-style: normal;
+            font-size: 24px;
+            font-weight: 700;
+
+            line-height: 24px;
+
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+
+            margin: 4px 0;
+        }
+
+        .green-highlight {
+            color: variables.$dev8-light-green;
+        }
+
+        div#hero-terminal-output {
+            text-align: left;
+
+            h1#title {
+                margin-top: 10px;
+            }
+
+            img#logo {
+                width: 150px;
+                display: block;
+            }
+
+            p {
+                max-width: 80ch;
+            }
+
+            h1, h2, p {
+                word-break: break-all;
+            }
+
+            div.hero-details {
+                display: flex;
+                align-items: center;
+
+                img {
+                    display: inline-block;
+                    height: $hero-section-font-size;
+                }
+
+                span.console-space {
+                    content: ' ';
+                    width: 1ch;
+                }
+            }
+        }
+
+        div.hero-terminal-prompt {
+            display: flex;
+            gap: 15px;
+
+            label {
+                display: block;
+                color: variables.$dev8-light-green;
+            }
+
+            span.prompt-input {
+                flex: 1;
+
+                color: variables.$dev8-white;
+                border: none;
+                outline: none;
+                background-color: transparent;
+
+                margin: 0;
+                padding: 0;
+
+                caret-color: variables.$dev8-white;
+                caret-shape: block;
+
+                word-break: break-all;
+
+                &:focus-visible {
+                    outline: none;
+                }
+            }
+        }
+
+        div#button-section {
+            margin-top: 8px;
+            display: flex;
+
+            gap: 16px;
+
+            align-items: center;
+
+            &.left {
+                text-align: left;
+
+                a {
+                    margin: 8px 0 0 0;
+                }
+            }
+        }
+    }
+}

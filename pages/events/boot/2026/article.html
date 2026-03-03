@@ -1,0 +1,63 @@
+{%
+  import 'pages/events/compile/2025/_components.html' as compile2025_components
+%}
+{% extends "pages/events/_subpage.html" %} {% set active_page = "Events" %}
+
+{% set preregistration = true%}
+
+{# #region: Article Settings #}
+{% set article_title %}{% block art_title %}{% endblock %}{% endset %}
+{% set article_subtitle %}{% block art_subtitle %}{% endblock %}{% endset %}
+{% set article_date %}{% block art_date %}{% endblock %}{% endset %}
+{% set article_opengraph_desc %}{% block art_opengraph_desc %}{% endblock %}{% endset %}
+{% set article_opengraph_img_desc %}{% block art_opengraph_img_desc %}{% endblock %}{% endset %}
+{% set article_opengraph_img %}{% block art_opengraph_img %}{% endblock %}{% endset %}
+{# #endregion #}
+
+
+{% block title %}{{ article_title }} - Dev8 COMPILE 2025{% endblock %}
+{% block relative_url %}events/compile/2025/article{% endblock %}
+{% block opengraph_desc %}
+{{ article_opengraph_desc }}
+{% endblock %}
+{% block opengraph_img_desc %}
+{{ article_opengraph_img_desc }}
+{% endblock %}
+{% block opengraph_og_img %}
+{# /assets/events/compile/2025/img/socials/og-fb-image.jpg #}
+{{ article_opengraph_img }}
+{% endblock %}
+
+
+{% block css %}
+<link href="/assets/events/compile/2025/css/index.css"
+      rel="stylesheet"
+      type="text/css"/>
+{% endblock %}
+
+{% block js %}
+<script src="/assets/events/compile/2025/js/index.js"></script>
+{% endblock %}
+
+{% block content %}
+<main>
+    {# {% include 'pages/events/compile/2025/_hero-section.html' %} #}
+    <section class="article container">
+        <div class="category">
+            <h1>{{ article_title }}</h1>
+            <p>{{ article_subtitle }}</p>
+            <p>{{ article_date }}</p>
+        </div>
+    </section>
+    <supersection class="grey-area">
+        <section class="flex column container">
+            {% block article_content %}
+            {% endblock  %}
+            <div class="article-controls">
+                <a href="/events/compile/2025/">← Return to COMPILE 2025</a>
+            </div>
+        </section>
+    </supersection>
+    {% include 'pages/events/compile/2025/_call-to-action.html' %}
+</main>
+{% endblock %}
