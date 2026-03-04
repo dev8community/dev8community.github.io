@@ -1,0 +1,17 @@
+{
+    "data": [
+        ["12:30 PM", "01:00 PM", "Pre-Event"],
+        ["01:00 PM", "01:15 PM", "Opening"],
+        ["01:15 PM", "02:00 PM", "Panel Discussion"],
+        ["02:00 PM", "02:20 PM", "\"LiSyQ – The Journey from V1\" by Justmer Rivera"],
+        ["02:20 PM", "02:40 PM", "\"ARCTOAD: An Educational Online Platform for Learning, Creating, and Publishing Games\" by Chrysgel Abesamis"],
+        ["02:40 PM", "02:50 PM", "Break"],
+        ["02:50 PM", "03:35 PM", "A Talk by Mark Roland Alueta"],
+        ["03:35 PM", "04:20 PM", "A Talk by Marlon Guao"],
+        ["04:20 PM", "05:05 PM", "\"Behind the Screens: An Introduction to the Cyber Kill Chain\" by Joenne Amancio"],
+        ["05:05 PM", "05:15 PM", "Break"],
+        ["05:15 PM", "05:45 PM", "Open Forum"],
+        ["05:45 PM", "05:55 PM", "Raffle and Photo Ops"],
+        ["05:55 PM", "06:00 PM", "Closing"]
+    ]
+}

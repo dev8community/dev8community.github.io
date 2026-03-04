@@ -278,7 +278,7 @@ const defaultHeroSectionContent = `
         <span>------------------------------</span>
     </h1>
     <h2>
-        &gt; Spark your developer skills. &lt;
+        &gt; Load up your developer skills. &lt;
     </h2>
     <div class="hero-details">
         <img src="/assets/img/icons/calendar.png"

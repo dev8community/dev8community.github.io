@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Joenne Amancio",
+    "title": "Network & Security Operations Center Analyst @ Astute Cybersecurity",
+    "description": "Joenne is a junior cybersecurity analyst who likes exploring how systems can be attacked and defended. She enjoys analyzing data, finding patterns, and constantly challenging herself to better understand how systems, networks, and organizations can be protected in a field that is always evolving. She graduated from the University of the Philippines Tacloban College and holds the ISC2 Certified in Cybersecurity (CC) and CompTIA Security+ (Sec+) certifications.",
+    "photo": "/assets/events/boot/2026/img/speakers/joenne-amancio.webp",
+    "urls": [
+        {
+          "name": "LinkedIn",
+          "url": "https://linkedin.com/in/joenne-mied-amancio/"
+        }
+    ]
+  },
+  {
+    "name": "Justmer Rivera",
+    "title": "4th Year BS IT Student @ Leyte Normal University",
+    "description": "Justmer is a passionate Software Developer who loves to thinker with Electronics at the same time.",
+    "photo": "/assets/events/boot/2026/img/speakers/justmer-rivera.webp",
+    "urls": [
+      {
+        "name": "Facebook",
+        "url": "https://facebook.com/justmer.rivera"
+      }
+    ]
+  },
+  {
+    "name": "Chrysgel Abesamis",
+    "title": "2nd Year BS IT Student @ University of Eastern Philippines",
+    "description": "Chrysgel is a 2nd Year BS IT student and aspiring game developer/software developer, passionate about making programming fun and accessible. He enjoys building small games, Python scripting, composing music, writing stories, playing video games, and creating random interesting projects. His goal is to inspire people to see game development and programming not just as a waste of time, but as a creative skill.",
+    "photo": "/assets/events/boot/2026/img/speakers/chrysgel-abesamis.webp",
+    "urls": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/Jaggernat47"
+      },
+      {
+        "name": "Facebook",
+        "url": "https://facebook.com/chrysgel.abesamis/"
+      }
+    ]
+  }
+]

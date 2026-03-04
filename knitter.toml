@@ -144,3 +144,7 @@ patch2025_organizers = 'data/events/patch2025/organizers.json'
 # COMPILE 2025 Data
 compile2025_speakers = 'data/events/compile/2025/speakers.json'
 compile2025_schedule = 'data/events/compile/2025/schedule.json'
+
+# BOOT 2026 Data
+boot2026_schedule = 'data/events/boot/2026/schedule.json'
+boot2026_speakers = 'data/events/boot/2026/speakers.json'

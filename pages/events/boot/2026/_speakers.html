@@ -1,20 +1,19 @@
 <section class="speakers-section container">
     <img class="section-head-image"
          src="/assets/events/compile/2025/img/icons/microphone.png"
-         alt="Lightning">
+         alt="Microphone">
     <h1>Speakers</h1>
     <p class="section-description">
-        We're excited to showcase an exciting line-up of speakers who will
-        discuss about awesome topics in tech and cool personal projects.
+        More of our speakers will be included in the coming days.
     </p>
     <div id="speakers">
-        {% for s in compile2025_speakers %}
-        <div class="image-container speaker-window {% if s['custom_classes'] %}{{ s['custom_classes'] }}{% endif %}">
+        {% for s in boot2026_speakers %}
+        <div class="image-container speaker-window{% if s['custom_classes'] %} {{ s['custom_classes'] }}{% endif %}">
             <div class="image-container__body">
                 <div class="image-container__header">
                     <h1 class="image-container__title">
-                        {% if "name" in s["speaker"] %}
-                        {{ s["speaker"]["name"] }}
+                        {% if "name" in s %}
+                        {{ s["name"] }}
                         {% else %}
                         Speaker
                         {% endif %}
@@ -24,27 +23,22 @@
                     </button>
                 </div>
                 <div class="image-container__content speaker">
-                    {% if "talk" in s %}
-                    <h1 class="speaker__talk-title">
-                        {{ s["talk"]["title"] }}
-                    </h1>
-                    {% endif %}
-                    {% if "photo" in s["speaker"] and "name" in s["speaker"] %}
+                    {% if "photo" in s and "name" in s %}
                     <img class="speaker__image"
-                         src="{{ s['speaker']['photo'] }}"
-                         alt="{{ s['speaker']['name'] }}">
+                         src="{{ s['photo'] }}"
+                         alt="{{ s['name'] }}">
                     {% endif %}
-                    {% if "name" in s["speaker"] %}
+                    {% if "name" in s %}
                     <div class="speaker__details">
                         <p class="speaker__name">
-                            {{ s["speaker"]["name"] }}
+                            {{ s["name"] }}
                         </p>
                         <p class="speaker__title">
-                            {{ s["speaker"]["title"] }}
+                            {{ s["title"] }}
                         </p>
-                        {% if "urls" in s["speaker"] %}
+                        {% if "urls" in s %}
                         <ul class="speaker__links">
-                            {% for u in s["speaker"]["urls"] %}
+                            {% for u in s["urls"] %}
                             <li>
                                 <a href="{{ u['url'] }}">{{ u["name"] }}</a>
                             </li>
@@ -53,15 +47,10 @@
                         {% endif %}
                     </div>
                     {% endif %}
-                    {% if "talk" in s %}
-                    <p class="speaker__description">
-                        {{ s["talk"]["description"] }}
-                    </p>
-                    {% endif %}
-                    {% if "speaker" in s %}
+                    {% if "description" in s %}
                     <div class="speaker__bio-list">
                         <p class="speaker__bio">
-                            {{ s["speaker"]["description"] }}
+                            {{ s["description"] }}
                         </p>
                     </div>
                     {% endif %}

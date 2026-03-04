@@ -31,24 +31,13 @@ View the details on Dev8 COMPILE 2025 here!
 <main>
     {% include 'pages/events/boot/2026/_shutdown-overlay.html' %}
     {% include 'pages/events/boot/2026/_hero-section.html' %}
-    <!-- <section class="dark-grey-area flex">-->
-    <!--     {% include 'pages/events/boot/2026/_partners.html' %}-->
-    <!-- </section>-->
-    <supersection class="grey-area">
-        {% include 'pages/events/boot/2026/_organized.html' %}
-    </supersection>
-    <!-- <supersection class="dark-grey-area">-->
-    <!--     {% include 'pages/events/compile/2025/_speakers.html' %}-->
-    <!-- </supersection>-->
-    <supersection class="grey-area">
+    <div class="dark-grey-area flex column">
+        {% include 'pages/events/boot/2026/_partners.html' %}
+        {% include 'pages/events/boot/2026/_promotion-1.html' %}
+        {% include 'pages/events/boot/2026/_speakers.html' %}
         {% include 'pages/events/boot/2026/_schedule.html' %}
-    </supersection>
-    <supersection class="dark-grey-area">
-        {% include 'pages/events/boot/2026/_venue.html' %}
-    </supersection>
-    <supersection class="grey-area">
         {% include 'pages/events/boot/2026/_code-of-conduct.html' %}
-    </supersection>
-    {% include 'pages/events/boot/2026/_call-to-action.html' %}
+    </div>
+    <!-- {% include 'pages/events/boot/2026/_call-to-action.html' %} -->
 </main>
 {% endblock %}

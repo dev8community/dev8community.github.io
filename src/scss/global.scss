@@ -208,8 +208,10 @@ nav {
   }
 }
 
-
 .container {
+    flex-direction: column;
+    gap: 1rem;
+
     width: 100%; // Expands the div to the entire width of parent.
     max-width: 1440px;
 
@@ -224,11 +226,16 @@ nav {
     padding: 5%;
 
     @include mixins.tablets {
-      padding: 3%;
+        padding: 3%;
+    }
+
+    @include mixins.large-screens {
+        flex-direction: row;
+        gap: 2.5rem;
     }
 
     @include mixins.xlarge-screens {
-      padding: 3% 2%;
+        padding: 3% 2%;
     }
 }
 
@@ -289,6 +296,18 @@ nav {
   img {
     filter: blur(12px);
   }
+}
+
+.dark-grey-area {
+    background-color: variables.$boot2025-dark-grey;
+}
+
+.grey-area {
+    background-color: variables.$boot2025-grey;
+}
+
+.light-grey-area {
+    background-color: variables.$boot2025-light-grey;
 }
 
 div.image-with-texts {

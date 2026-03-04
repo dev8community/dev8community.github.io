@@ -4,7 +4,9 @@
          alt="Calendar">
     <h1>Schedule</h1>
     <p class="description">
-        Dev8 COMPILE 2025 will be held on <span>December 13, 2025</span> at <span>Philippine Science High School - Eastern Visayas Campus in Leyte</span>.
+        Dev8 BOOT 2026 will be held on <strong>April 4, 2026</strong>
+        via <strong>Zoom</strong>. The schedule below is tentative and is
+        subject to change.
     </p>
     <table class="schedule-table">
         <tr>
@@ -12,7 +14,7 @@
             <th scope="col">Start Time</th>
             <th scope="col">End Time</th>
         </tr>
-        {% for startTime, endTime, activity in compile2025_schedule['data'] %}
+        {% for startTime, endTime, activity in boot2026_schedule['data'] %}
         <tr>
             <td class="activity">{{ activity }}</td>
             <td class="time">{{ startTime }}</td>
