@@ -1,6 +1,8 @@
 ﻿section.organized-section {
-  .image-container {
-    .image-container__content {
+  .window {
+    width: 100%;
+
+    .window__content {
       background:
         hsl(0, 0%, 38%)
         url("/assets/events/boot/2026/img/event-photo-1.webp")

@@ -41,8 +41,14 @@ function processPromptInput()
                 case 'register':
                     handleRegisterInput(parameters, terminalOutput);
                     break;
+                case 'info':
+                    handleInfoInput(parameters, terminalOutput);
+                    break;
                 case 'message':
                     handleMessageInput(parameters, terminalOutput);
+                    break;
+                case 'login':
+                    handleLoginInput(parameters, terminalOutput);
                     break;
                 case 'help':
                     handleHelpInput(parameters, terminalOutput);
@@ -65,6 +71,22 @@ function processPromptInput()
                     handleOtherInputs(c, terminalOutput);
                     break;
             }
+        });
+    }
+}
+
+function handleInfoInput(parameters, terminalOutput)
+{
+    if (parameters.length > 0) {
+        displayUnrecognizedParamsWarning(parameters, terminalOutput);
+    }
+
+    const sections = document.getElementsByClassName('partners-section');
+    if (sections.length > 0) {
+        const section = sections[0];
+        section.scrollIntoView({
+            behavior: 'smooth',
+            block:    'start'
         });
     }
 }
@@ -93,6 +115,18 @@ function handleMessageInput(parameters, terminalOutput)
     }
 
     addNewTerminalOutput(defaultHeroSectionContent, terminalOutput);
+}
+
+function handleLoginInput(parameters, terminalOutput)
+{
+    if (parameters.length > 0) {
+        displayUnrecognizedParamsWarning(parameters, terminalOutput);
+    }
+
+    addNewTerminalOutput(
+        '<p>ERROR: No user accounts available.</p>',
+        terminalOutput
+    );
 }
 
 function handleHelpInput(parameters, terminalOutput)
@@ -267,7 +301,7 @@ function doesSelectionExist()
 }
 
 const defaultHeroSectionContent = `
-    <img id="logo"
+    <img class="logo"
          src="/assets/img/logos/boot/logo.png"
          alt="Dev8 BOOT Logo">
     <h1 id="title">
@@ -295,28 +329,37 @@ const defaultHeroSectionContent = `
              alt="Location Icon"/>
         <p class="details">&nbsp;Zoom</p>
     </div>
-    <div id="hero-details-container">
+    <p>&nbsp;</p>
+    <p>Bootloaded with</p>
+    <div class="partner-logos">
+        <img id="dict8-logo" src="/assets/img/logos/partners/dict8-light-sm.webp"
+             alt="DICT 8 Logo"/>
+        <img id="jetbrains-logo"
+             src="/assets/img/logos/partners/jetbrains-light.svg"
+             alt="JetBrains Logo"/>
     </div>
     <p>&nbsp;</p>
     <p>
         Dev8's online virtual mini-conference for developers, students,
         and tech enthusiasts of Eastern Visayas is back this 2026 to provide
-        you with new talks, discussions, demos, and ideas. Scroll down for
-        further details.
+        you with new talks, discussions, demos, and ideas. Enter "info" or
+        scroll down for further details.
     </p>
     <p>&nbsp;</p>
     <p>Registrations will be open soon.</p>
     <p>&nbsp;</p>
-    <p>If you need a full list of supported commands, type "help".</p>
+    <p>If you need a full list of supported commands, enter "help".</p>
 `;
 
 const helpMessageContent = `
     <p>Dev8 BOOT 2026 Basic Input/Output Terminal</p>
     <p>&nbsp;</p>
     <p>Commands:</p>
+    <p>&nbsp;&nbsp;info&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View more information about Dev8 BOOT 2026.</p>
     <p>&nbsp;&nbsp;message&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print the default Dev8 BOOT 2026 message.</p>
-    <p>&nbsp;&nbsp;help&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print this help text.</p>
+    <p>&nbsp;&nbsp;login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login to a user session.</p>
     <p>&nbsp;&nbsp;echo &lt;text&gt;...&nbsp;&nbsp;Print the texts after the command.</p>
+    <p>&nbsp;&nbsp;help&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print this help text.</p>
     <p>&nbsp;&nbsp;shutdown&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Shuts down" the page.</p>
     <p>&nbsp;&nbsp;restart&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reload the page.</p>
     <p>&nbsp;&nbsp;clear&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears the terminal output.</p>
@@ -325,7 +368,7 @@ const helpMessageContent = `
 const terminalPromptHTML = `
     <div class="hero-terminal-prompt">
         <p>
-            <span class="green-highlight">dev8 &#126; &dollar;</span>
+            <span class="green-highlight">&gt;</span>
             <span class="prompt-input"
                   contenteditable="plaintext-only"
                   spellcheck="false"></span>

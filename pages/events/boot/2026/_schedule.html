@@ -8,18 +8,31 @@
         via <strong>Zoom</strong>. The schedule below is tentative and is
         subject to change.
     </p>
-    <table class="schedule-table">
-        <tr>
-            <th scope="col">Activity</th>
-            <th scope="col">Start Time</th>
-            <th scope="col">End Time</th>
-        </tr>
-        {% for startTime, endTime, activity in boot2026_schedule['data'] %}
-        <tr>
-            <td class="activity">{{ activity }}</td>
-            <td class="time">{{ startTime }}</td>
-            <td class="time">{{ endTime }}</td>
-        </tr>
-        {% endfor %}
-    </table>
+    <div class="window">
+        <div class="window__body">
+            <div class="window__header">
+                <h1 class="window__title">Schedule</h1>
+                <button class="window__close">
+                    <img src="/assets/img/icons/close-button.svg"
+                         alt="Window Close Button">
+                </button>
+            </div>
+            <div class="window__content">
+                <table class="schedule-table">
+                    <tr>
+                        <th scope="col">Activity</th>
+                        <th scope="col">Start Time</th>
+                        <th scope="col">End Time</th>
+                    </tr>
+                    {% for startTime, endTime, activity in boot2026_schedule['data'] %}
+                    <tr>
+                        <td class="activity">{{ activity }}</td>
+                        <td class="time">{{ startTime }}</td>
+                        <td class="time">{{ endTime }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
 </section>

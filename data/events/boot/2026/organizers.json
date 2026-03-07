@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Sean Ballais",
+        "photo": "/assets/events/boot/2026/img/organizers/sean-ballais.webp",
+        "urls": [
+            {
+                "icon-id": "web",
+                "url": "https://seanballais.com"
+            },
+            {
+                "icon-id": "linkedin",
+                "url": "https://www.linkedin.com/in/seanballais/"
+            },
+            {
+                "icon-id": "github",
+                "url": "https://github.com/seanballais"
+            },
+            {
+                "icon-id": "bluesky",
+                "url": "https://bsky.app/profile/seanballais.com"
+            },
+            {
+                "icon-id": "email",
+                "url": "mailto:hello@seanballais.com"
+            }
+        ]
+    },
+    {
+        "name": "Sean Fabia",
+        "photo": "/assets/events/boot/2026/img/organizers/sean-fabia.webp",
+        "urls": [
+            {
+                "icon-id": "github",
+                "url": "https://github.com/lirrnaiad"
+            },
+            {
+                "icon-id": "linkedin",
+                "url": "https://www.linkedin.com/in/seanfabia"
+            }
+        ]
+    },
+    {
+        "name": "Paul Notorio",
+        "photo": "/assets/events/boot/2026/img/organizers/paul-notorio.webp",
+        "urls": [
+            {
+                "icon-id": "linkedin",
+                "url": "https://www.linkedin.com/in/paul-notorio-50231938b"
+            }
+        ]
+    }
+]

@@ -1,6 +1,6 @@
 ﻿@use '_variables.scss';
 
-.image-container {
+div.window {
     display: flex;
     align-items: stretch;
 
@@ -11,9 +11,7 @@
 
     margin: 0;
 
-    width: 100%;
-
-    &__body {
+    .window__body {
         display: flex;
         flex-direction: column;
         align-items: stretch;
@@ -22,7 +20,7 @@
 
         width: 100%;
 
-        .image-container__header {
+        .window__header {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -32,7 +30,7 @@
 
             padding: 0.25rem;
 
-            .image-container__title {
+            .window__title {
                 font-family: "Ubuntu Mono", serif;
                 font-size: 14px;
                 font-weight: 700;
@@ -42,7 +40,7 @@
                 margin: 0;
             }
 
-            .image-container__close {
+            .window__close {
                 display: flex;
                 align-content: center;
 
@@ -61,13 +59,97 @@
             }
         }
 
-        .image-container__content {
+        .window__content {
+            display: flex;
+            flex-direction: column;
             flex-grow: 1;
+            align-items: center;
+
+            background-color: variables.$dev8-white;
+            color: variables.$text-dark-colour;
+
+            text-align: center;
+
+            padding: 1rem;
+
+            h1, p, address {
+                color: variables.$text-dark-colour;
+
+                margin: 0 0 0.5rem;
+            }
+
+            p {
+                margin-bottom: 0.75rem;
+            }
+        }
+    }
+
+    &.person-showcase {
+        div.window__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.12rem;
+
+            p {
+                &.person__name {
+                    font-weight: 600;
+                }
+
+                &.person__title {
+                    font-family: "Ubuntu Mono", monospace;
+                    font-weight: 800;
+                }
+
+                &.person__name, &.person__title {
+                    font-size: 26px;
+
+                    margin: 0;
+                }
+            }
 
             img {
-                display: block;
-                object-fit: cover;
-                object-position: top left;
+                &.person__photo {
+                    width: 200px;
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+ul {
+    &.horizontal-links {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+
+        list-style-type: none;
+
+        margin: 0;
+        padding: 0;
+
+        li {
+            text-align: center;
+
+            a {
+                font-family: "Ubuntu Mono", monospace;
+                font-weight: 800;
+                font-size: 22px;
+
+                color: variables.$dev8-dark-green;
+
+                text-decoration-line: none;
+            }
+        }
+
+        &.with-icons {
+            li {
+                a {
+                    img {
+                        width: 32px;
+                    }
+                }
             }
         }
     }
@@ -100,8 +182,6 @@
     width: fit-content;
 
     &:active {
-        border-bottom-color: initial;
-        border-right-color: initial;
         border-color: #17b9b6;
         border-top-color: black;
         border-left-color: black;

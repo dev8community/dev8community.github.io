@@ -1,0 +1,39 @@
+﻿<section class="organizers-section container">
+    <img class="section-head-image" src="/assets/img/icons/hammer.png" alt="Hammer">
+    <h1>Organizers</h1>
+    <p class="description">
+        Dev8 BOOT 2026 is organized by volunteer members of Dev8.
+    </p>
+    <div id="organizers">
+        {% for o in boot2026_organizers  %}
+        <div class="window person-showcase">
+            <div class="window__body">
+                <div class="window__header">
+                    <h1 class="window__title">{{ o["name"] }}</h1>
+                    <button class="window__close">
+                        <img src="/assets/img/icons/close-button.svg"
+                             alt="Window Close Button">
+                    </button>
+                </div>
+                <div class="window__content">
+                    <img class="person__photo"
+                         src="{{ o['photo'] }}"
+                         alt="{{ o['name'] }}">
+                    <p class="person__name">
+                        {{ o["name"] }}
+                    </p>
+                    {% if "urls" in o %}
+                    <ul class="horizontal-links with-icons">
+                        {% for u in o['urls'] %}
+                        <li>
+                            <a href="{{ u['url'] }}"><img src="/assets/img/icons/{{ u['icon-id'] }}-xs.webp" alt="{{ u['icon-id'] | capitalize }}"></a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
