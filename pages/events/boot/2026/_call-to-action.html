@@ -1,13 +1,16 @@
-{% import 'pages/events/compile/2025/_components.html' as components %}
+{% import 'pages/_components.html' as components %}
 
 <section class="call-to-action-section container">
     <img class="section-head-image"
-         src="/assets/events/compile/2025/img/icons/ticket.png"
+         src="/assets/img/icons/ticket.png"
          alt="Ticket">
     <h1 class="admission-title">
-        Join in the Celebration of Tech<br> and Geekery Now!
+        Don't miss this chance to<br/>load up your developer skills!
     </h1>
     {{
-        components.registration_button()
+        components.link_button_to_url(
+            'Register Now',
+            '/events/boot/2026/register'
+        )
     }}
 </section>

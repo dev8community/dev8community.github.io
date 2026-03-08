@@ -10,7 +10,7 @@ section.hero-section {
     height: 100vh;
     max-height: 100vh;
 
-    background-color: variables.$boot-hero-color;
+    background-color: variables.$boot-main-bg-color;
     color: variables.$dev8-white;
 
     cursor: text;
@@ -91,29 +91,31 @@ section.hero-section {
                     gap: 20px;
                 }
 
-                img {
-                    width: auto;
-                    max-height: 57px;
-
+                a {
                     align-self: start;
 
                     @include mixins.tablets {
                         align-self: center;
                     }
 
-                    &#jetbrains-logo {
-                        height: 57px;
-                    }
+                    img {
+                        width: auto;
+                        max-height: 57px;
 
-                    &#dict8-logo {
-                        max-height: 75px;
-
-                        @include mixins.tablets {
-                            max-height: 86px;
+                        &#jetbrains-logo {
+                            height: 57px;
                         }
 
-                        @include mixins.large-screens {
-                            max-height: 100px;
+                        &#dict8-logo {
+                            max-height: 75px;
+
+                            @include mixins.tablets {
+                                max-height: 86px;
+                            }
+
+                            @include mixins.large-screens {
+                                max-height: 100px;
+                            }
                         }
                     }
                 }

@@ -1,6 +1,3 @@
-{%
-import 'pages/events/boot/2026/_components.html' as boot2026_components
-%}
 {% extends "pages/events/_subpage.html" %}
 {% set active_page = "Events" %}
 {% set no_default_header = true %}
@@ -38,6 +35,8 @@ Learn more about Dev8 BOOT 2026.
         {% include 'pages/events/boot/2026/_code-of-conduct.html' %}
         {% include 'pages/events/boot/2026/_organizers.html' %}
     </div>
-    <!-- {% include 'pages/events/boot/2026/_call-to-action.html' %} -->
+    <div class="boot-blue-area flex column">
+        {% include 'pages/events/boot/2026/_call-to-action.html' %}
+    </div>
 </main>
 {% endblock %}

@@ -97,15 +97,11 @@ function handleRegisterInput(parameters, terminalOutput)
         displayUnrecognizedParamsWarning(parameters, terminalOutput);
     }
 
-    // addNewTerminalOutput(
-    //     '<p>You are now being redirected to the registration page.</p>',
-    //     terminalOutput
-    // );
-    // window.location.href = 'https://luma.com/';
     addNewTerminalOutput(
-        '<p>Halt! You\'re not supposed to run that yet! >:(</p>',
+        '<p>You are now being redirected to the registration page.</p>',
         terminalOutput
     );
+    window.location.href = '/events/boot/2026/register';
 }
 
 function handleMessageInput(parameters, terminalOutput)
@@ -332,11 +328,8 @@ const defaultHeroSectionContent = `
     <p>&nbsp;</p>
     <p>Bootloaded with</p>
     <div class="partner-logos">
-        <img id="dict8-logo" src="/assets/img/logos/partners/dict8-light-sm.webp"
-             alt="DICT 8 Logo"/>
-        <img id="jetbrains-logo"
-             src="/assets/img/logos/partners/jetbrains-light.svg"
-             alt="JetBrains Logo"/>
+        <a href="https://www.dict.gov.ph/"><img id="dict8-logo" src="/assets/img/logos/partners/dict8-light-sm.webp" alt="DICT 8 Logo"/></a>
+        <a href="https://www.jetbrains.com/"><img id="jetbrains-logo" src="/assets/img/logos/partners/jetbrains-light.svg" alt="JetBrains Logo"/></a>
     </div>
     <p>&nbsp;</p>
     <p>
@@ -346,7 +339,7 @@ const defaultHeroSectionContent = `
         scroll down for further details.
     </p>
     <p>&nbsp;</p>
-    <p>Registrations will be open soon.</p>
+    <p>To register, enter "register". Limited slots only!</p>
     <p>&nbsp;</p>
     <p>If you need a full list of supported commands, enter "help".</p>
 `;
