@@ -81,7 +81,8 @@ function handleInfoInput(parameters, terminalOutput)
         displayUnrecognizedParamsWarning(parameters, terminalOutput);
     }
 
-    const sections = document.getElementsByClassName('partners-section');
+    const sections = document.getElementsByClassName('promotion-1-section');
+    console.log(sections);
     if (sections.length > 0) {
         const section = sections[0];
         section.scrollIntoView({
@@ -348,6 +349,7 @@ const helpMessageContent = `
     <p>Dev8 BOOT 2026 Basic Input/Output Terminal</p>
     <p>&nbsp;</p>
     <p>Commands:</p>
+    <p>&nbsp;&nbsp;register&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register for Dev8 BOOT 2026.</p>
     <p>&nbsp;&nbsp;info&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View more information about Dev8 BOOT 2026.</p>
     <p>&nbsp;&nbsp;message&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print the default Dev8 BOOT 2026 message.</p>
     <p>&nbsp;&nbsp;login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login to a user session.</p>
