@@ -1,17 +1,76 @@
-{
-    "data": [
-        ["12:30 PM", "01:00 PM", "Pre-Event"],
-        ["01:00 PM", "01:15 PM", "Opening"],
-        ["01:15 PM", "02:00 PM", "Panel Discussion"],
-        ["02:00 PM", "02:20 PM", "\"LiSyQ – The Journey from V1\" by Justmer Rivera"],
-        ["02:20 PM", "02:40 PM", "\"ARCTOAD: An Educational Online Platform for Learning, Creating, and Publishing Games\" by Chrysgel Abesamis"],
-        ["02:40 PM", "02:50 PM", "Break"],
-        ["02:50 PM", "03:35 PM", "A Talk by Mark Roland Alueta"],
-        ["03:35 PM", "04:20 PM", "A Talk by Marlon Guao"],
-        ["04:20 PM", "05:05 PM", "\"Behind the Screens: An Introduction to the Cyber Kill Chain\" by Joenne Amancio"],
-        ["05:05 PM", "05:15 PM", "Break"],
-        ["05:15 PM", "05:45 PM", "Open Forum"],
-        ["05:45 PM", "05:55 PM", "Raffle and Photo Ops"],
-        ["05:55 PM", "06:00 PM", "Closing"]
-    ]
-}
+[
+    {
+        "title": "Pre-Event",
+        "start": "12:30 PM",
+        "end": "01:00 PM"
+    },
+    {
+        "title": "Opening",
+        "start": "01:00 PM",
+        "end": "01:15 PM"
+    },
+    {
+        "title": "Panel Discussion",
+        "start": "01:15 PM",
+        "end": "02:00 PM"
+    },
+    {
+        "title": "LiSyQ – The Journey from V1",
+        "subtitle": "Justmer Rivera",
+        "start": "02:00 PM",
+        "end": "02:20 PM",
+        "description": "Last shown in Dev8 Tech Talks 2023, LiSyQ is back with new updates and features. Discover what changed with the app and the challenges and lessons Justmer encountered since version 1.0."
+    },
+    {
+        "title": "ARCTOAD: An Educational Online Platform for Learning, Creating, and Publishing Games",
+        "subtitle": "Chrysgel Abesamis",
+        "start": "02:20 PM",
+        "end": "02:40 PM",
+        "description": "The 2000s saw the rise of community and game platforms such as Newgrounds, Miniclip, and Y8. They ushered an era of online collaboration, fun, and sharing. This 2026, you will be introduced to a similar platform built by Chrysgel called ARCTOAD. ARCTOAD is a web-based collaborative community platform to empower creative individuals by providing a space for publishing and sharing their works from games to music. It includes Toad-Engine, a powerful 2D game engine offering beginner-friendly drag-and-drop block-style coding."
+    },
+    {
+        "title": "Break",
+        "start": "02:40 PM",
+        "end": "02:50 PM"
+    },
+    {
+        "title": "Supercharging your Monorepos with Turborepo",
+        "subtitle": "Mark Alueta",
+        "start": "02:50 PM",
+        "end": "03:35 PM",
+        "description": "Developing web apps necessitate the use of proper tooling for a good developer experience, especially when working with monorepos. Monorepos tend to struggle when scaling, but with Turborepo, this problem is easier to deal with. In this talk, learn how to set up a monorepo for shared internal dependency management using Turborepo, a build system for JavaScript and TypeScript codebases."
+    },
+    {
+        "title": "Talk #2",
+        "subtitle": "Marlon Guao",
+        "start": "03:35 PM",
+        "end": "04:20 PM"
+    },
+    {
+        "title": "Behind the Screens: An Introduction to the Cyber Kill Chain",
+        "subtitle": "Joenne Amancio",
+        "start": "04:20 PM",
+        "end": "05:05 PM",
+        "description": "Cybersecurity threats are present every single day, and no one is completely immune from them. Awareness is one of the best tools to combat them and make your digital life safe. In this talk, learn about the cyber kill chain, which shows how digital attacks unfold and how defenders detect them."
+    },
+    {
+        "title": "Break",
+        "start": "05:05 PM",
+        "end": "05:15 PM"
+    },
+    {
+        "title": "Open Forum",
+        "start": "05:15 PM",
+        "end": "05:45 PM"
+    },
+    {
+        "title": "Raffle and Photo Ops",
+        "start": "05:45 PM",
+        "end": "05:55 PM"
+    },
+    {
+        "title": "Closing",
+        "start": "05:55 PM",
+        "end": "06:00 PM"
+    }
+]

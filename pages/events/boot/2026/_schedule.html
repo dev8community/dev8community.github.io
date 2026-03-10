@@ -2,7 +2,7 @@
     <img class="section-head-image"
          src="/assets/events/compile/2025/img/icons/calendar.png"
          alt="Calendar">
-    <h1>Schedule</h1>
+    <h1>Talks and Schedule</h1>
     <p class="description">
         Dev8 BOOT 2026 will be held on <strong>April 4, 2026</strong>
         via <strong>Zoom</strong>. The schedule below is tentative and is
@@ -24,11 +24,17 @@
                         <th scope="col">Start Time</th>
                         <th scope="col">End Time</th>
                     </tr>
-                    {% for startTime, endTime, activity in boot2026_schedule['data'] %}
+                    {% for s in boot2026_schedule %}
                     <tr>
-                        <td class="activity">{{ activity }}</td>
-                        <td class="time">{{ startTime }}</td>
-                        <td class="time">{{ endTime }}</td>
+                        <td class="activity">
+                            <h1 class="title">{{ s["title"] }}</h1>
+                            {% if "subtitle" in s %}
+                            <p class="subtitle">{{ s["subtitle"] }}</p>
+                            {% endif %}
+                            <p class="description">{{ s["description"] }}</p>
+                        </td>
+                        <td class="time">{{ s["start"] }}</td>
+                        <td class="time">{{ s["end"] }}</td>
                     </tr>
                     {% endfor %}
                 </table>

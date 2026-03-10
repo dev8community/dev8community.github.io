@@ -93,17 +93,17 @@ div.window {
 
             p {
                 &.person__name {
+                    font-size: 26px;
                     font-weight: 600;
                 }
 
                 &.person__title {
                     font-family: "Ubuntu Mono", monospace;
                     font-weight: 800;
+                    font-size: 21px;
                 }
 
                 &.person__name, &.person__title {
-                    font-size: 26px;
-
                     margin: 0;
                 }
             }
