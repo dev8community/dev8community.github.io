@@ -17,11 +17,6 @@ section.speakers-section {
                 grid-template-columns: 1fr 1fr;
             }
 
-            @include mixins.large-screens {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-
             width: 100%;
 
             div.window {
