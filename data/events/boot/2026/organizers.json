@@ -48,5 +48,23 @@
                 "url": "https://www.linkedin.com/in/paul-notorio-50231938b"
             }
         ]
+    },
+    {
+        "name": "Patricia Husain",
+        "photo": "/assets/events/boot/2026/img/organizers/patricia-husain.webp",
+        "urls": [
+            {
+                "icon-id": "github",
+                "url": "https://github.com/patrice365"
+            },
+            {
+                "icon-id": "linkedin",
+                "url": "https://linkedin.com/in/patricia-june-husain-94aa2b394"
+            },
+            {
+                "icon-id": "facebook",
+                "url": "https://www.facebook.com/jassisjustaghost404"
+            }
+        ]
     }
 ]
