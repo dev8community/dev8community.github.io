@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Delfin Mengote III",
+        "title": "Chief Executive Officer<br/>@ Advanced Thinkers, Co.",
+        "description": "Delfin is the CEO of Advanced Thinkers, Co., CTO of Miaustore S.L., and a tech consultant of TESDA. Having graduated with degrees in computer engineering major in robotics and electronics engineering major in mechatronics, his first job was as a test engineer at Fujitsu Ten, where he worked in the Car Infotainment Research and Development department in Japan. After returning to the Philippines, he decided that a corporate life was not for him. So, he worked as a freelance developer until he founded his own startup developing tech solutions for the government and the community.",
+        "photo": "/assets/events/boot/2026/img/panelists/delfin-mengote-iii.webp",
+        "urls": [
+            {
+                "icon-id": "web",
+                "url": "https://advancedthinkers.ph"
+            },
+            {
+                "icon-id": "facebook",
+                "url": "https://facebook.com/trabahadoorph"
+            }
+        ]
+    },
+    {
+        "name": "Claire Fernandez",
+        "title": "Leyte Provincial Officer<br/>@ DICT Regional Office 8",
+        "description": "Claire Fernandez is an information technology officer at DICT Regional Office 8 with over 20 years of experience in government service. She has a masters in Information Systems, graduating from UP Open University. Her career is marked by high-impact results in cybersecurity, digital literacy and ICT adoption, earning her prestigious recognitions such as the \"Top Master Trainer\" award at the 2023 ASEAN Digital Literacy Forum in Indonesia and multiple \"Regional IT Coordinator of the Year\" honors.",
+        "photo": "/assets/events/boot/2026/img/panelists/claire-fernandez.webp"
+    },
+    {
+        "name": "Diane Remot",
+        "title": "Associate Professor V<br/>@ Eastern Visayas State University",
+        "description": "Diane is currently an Associate Professor V in Eastern Visayas State University. She graduated with a BS Computer Engineering degree at the Cebu Institute of Technology, and finished her Masters in Science Teaching major in Computer Science. She is currently under dissertation for her Doctorate in Information Technology at Isabela State University - Cauayan Campus. Being in academia for years, she has had Scopus-indexed research outputs, and is interested in data science, image processing, and computer networks.",
+        "photo": "/assets/events/boot/2026/img/panelists/diane-remot.webp"
+    }
+]

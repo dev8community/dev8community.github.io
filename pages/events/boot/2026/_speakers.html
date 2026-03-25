@@ -3,9 +3,6 @@
          src="/assets/events/compile/2025/img/icons/microphone.png"
          alt="Microphone">
     <h1>Speakers</h1>
-    <p class="section-description">
-        More of our speakers will be included in the coming days.
-    </p>
     <div id="speakers">
         {% for s in boot2026_speakers %}
         <div class="window person-showcase">
@@ -33,17 +30,18 @@
                         {{ s["title"] }}
                     </p>
                     {% if "urls" in s %}
-                    <ul class="horizontal-links">
-                        {% for u in s["urls"] %}
-                        <li>
-                            <a href="{{ u['url'] }}">{{ u["name"] }}</a>
-                        </li>
-                        {% endfor %}
-                    </ul>
                     <ul class="horizontal-links with-icons">
                         {% for u in s['urls'] %}
                         <li>
                             <a href="{{ u['url'] }}"><img src="/assets/img/icons/{{ u['icon-id'] }}-xs.webp" alt="{{ u['icon-id'] | capitalize }}"></a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% else %}
+                    <ul class="horizontal-links">
+                        {% for u in s["urls"] %}
+                        <li>
+                            <a href="{{ u['url'] }}">{{ u["name"] }}</a>
                         </li>
                         {% endfor %}
                     </ul>

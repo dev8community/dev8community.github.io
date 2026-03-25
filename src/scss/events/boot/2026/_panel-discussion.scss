@@ -1,21 +1,20 @@
 ﻿@use "../../../_variables.scss";
 @use "../../../mixins";
 
-section.speakers-section {
+section.panel-discussion-section {
     h1 {
         text-align: center;
-        margin-bottom: 14px;
     }
 
     div {
-        &#speakers {
+        &#panelists {
             display: flex;
             flex-direction: column;
             gap: 1.2rem;
 
-            @include mixins.small-screens {
+            @include mixins.large-screens {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
             }
 
             width: 100%;

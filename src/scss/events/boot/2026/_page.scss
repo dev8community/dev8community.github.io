@@ -66,6 +66,10 @@ section {
         &.left {
             text-align: left;
         }
+
+        &.right {
+            text-align: right;
+        }
     }
 
     p {
@@ -78,16 +82,16 @@ section {
         text-decoration-skip-ink: none;
 
         &.left {
-          text-align: left;
+            text-align: left;
+        }
+
+        &.right {
+            text-align: right;
         }
 
         &.description {
             max-width: 1245px;
             margin: auto auto 14px auto;
-
-            &.left {
-                margin: 0 0 14px 0;
-            }
         }
 
         strong {
@@ -104,6 +108,10 @@ section {
 
         &.left {
             margin: 0;
+        }
+
+        &.right {
+            margin: 0 0 0 auto;
         }
     }
 
