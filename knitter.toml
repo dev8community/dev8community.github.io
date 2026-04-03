@@ -67,6 +67,7 @@ folder = 'assets/'
 # BOOT 2026
 '/events/boot/2026/' = 'pages/events/boot/2026/index.html'
 '/events/boot/2026/register' = 'pages/events/boot/2026/register.html'
+'/events/boot/2026/feedback' = 'pages/events/boot/2026/feedback.html'
 
 # Surveys
 '/surveys/evtss2023' = 'pages/surveys/evtss2023/index.html'
