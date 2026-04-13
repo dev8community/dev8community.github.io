@@ -1,117 +1,158 @@
 ﻿@use '_variables.scss';
 
-div.window {
-    display: flex;
-    align-items: stretch;
-
-    box-sizing: border-box;
-
-    border-right: 7px solid #000000;
-    border-bottom: 7px solid #000000;
-
-    margin: 0;
-
-    .window__body {
+div {
+    &.window {
         display: flex;
-        flex-direction: column;
         align-items: stretch;
 
-        border: 4px solid #17b9b6;
+        box-sizing: border-box;
 
-        width: 100%;
+        border-right: 7px solid #000000;
+        border-bottom: 7px solid #000000;
 
-        .window__header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+        margin: 0;
 
-            background: variables.$compile2025-hero-color;
-            border-bottom: 4px solid #17b9b6;
-
-            padding: 0.25rem;
-
-            .window__title {
-                font-family: "Ubuntu Mono", serif;
-                font-size: 14px;
-                font-weight: 700;
-
-                color: variables.$dev8-white;
-
-                margin: 0;
-            }
-
-            .window__close {
-                display: flex;
-                align-content: center;
-
-                background: none;
-                border: none;
-
-                padding: 0;
-
-                cursor: pointer;
-
-                svg {
-                    width: 16px;
-                    height: 16px;
-                    fill: white;
-                }
-            }
-        }
-
-        .window__content {
+        .window__body {
             display: flex;
             flex-direction: column;
-            flex-grow: 1;
-            align-items: center;
+            align-items: stretch;
 
-            background-color: variables.$dev8-white;
-            color: variables.$text-dark-colour;
+            border: 4px solid #17b9b6;
 
-            text-align: center;
+            width: 100%;
 
-            padding: 1rem;
+            .window__header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
 
-            h1, p, address {
+                background: variables.$compile2025-hero-color;
+                border-bottom: 4px solid #17b9b6;
+
+                padding: 0.25rem;
+                gap: 1rem;
+
+                .window__title {
+                    font-family: "Ubuntu Mono", serif;
+                    font-size: 14px;
+                    font-weight: 700;
+
+                    color: variables.$dev8-white;
+
+                    text-align: left;
+
+                    margin: 0;
+
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+
+                    min-width: 0;
+                }
+
+                .window__close {
+                    display: flex;
+                    align-content: center;
+
+                    background: none;
+                    border: none;
+
+                    padding: 0;
+
+                    cursor: pointer;
+
+                    svg {
+                        width: 16px;
+                        height: 16px;
+                        fill: white;
+                    }
+                }
+            }
+
+            .window__content {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                align-items: center;
+
+                background-color: variables.$dev8-white;
                 color: variables.$text-dark-colour;
 
-                margin: 0 0 0.5rem;
-            }
+                text-align: center;
 
-            p {
-                margin-bottom: 0.75rem;
+                padding: 1rem;
+
+                h1, p, address {
+                    color: variables.$text-dark-colour;
+
+                    margin: 0 0 0.5rem;
+                }
+
+                p {
+                    margin-bottom: 0.75rem;
+                }
             }
         }
-    }
 
-    &.person-showcase {
-        div.window__content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.12rem;
-
-            p {
-                &.person__name {
-                    font-size: 26px;
-                    font-weight: 600;
-                }
-
-                &.person__title {
-                    font-family: "Ubuntu Mono", monospace;
-                    font-weight: 800;
-                    font-size: 21px;
-                }
-
-                &.person__name, &.person__title {
-                    margin: 0;
+        &.video {
+            .window__body {
+                .window__content {
+                    padding: 0;
                 }
             }
 
-            img {
-                &.person__photo {
-                    width: 200px;
-                    margin-bottom: 0.5rem;
+            &.iframe {
+                .window__body {
+                    .window__content {
+                        width: 100%;
+                        padding-top: 56.25%;
+
+                        position: relative;
+
+                        iframe {
+                            border: none;
+
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.person-showcase {
+            div.window__content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.12rem;
+
+                p {
+                    &.person__name {
+                        font-size: 26px;
+                        font-weight: 600;
+                    }
+
+                    &.person__title {
+                        font-family: "Ubuntu Mono", monospace;
+                        font-weight: 800;
+                        font-size: 21px;
+                    }
+
+                    &.person__name, &.person__title {
+                        margin: 0;
+                    }
+                }
+
+                img {
+                    &.person__photo {
+                        width: 200px;
+                        margin-bottom: 0.5rem;
+                    }
                 }
             }
         }

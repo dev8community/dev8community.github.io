@@ -1,0 +1,36 @@
+﻿@use "../../../_variables.scss";
+@use "../../../mixins";
+
+section.watch-section {
+    h1 {
+        text-align: center;
+    }
+
+    div {
+        &#specific-videos {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+
+            @include mixins.large-screens {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            div.window {
+                width: 100%;
+            }
+
+            section.video {
+                display: flex;
+                flex-direction: column;
+
+                min-width: 0;
+
+                h2 {
+                    color: variables.$dev8-white;
+                }
+            }
+        }
+    }
+}

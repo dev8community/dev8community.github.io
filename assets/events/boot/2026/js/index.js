@@ -38,8 +38,8 @@ function processPromptInput()
             const c          = parts[0].trim();
             const parameters = parts.slice(1);
             switch (c) {
-                case 'register':
-                    handleRegisterInput(parameters, terminalOutput);
+                case 'watch':
+                    handleWatchInput(parameters, terminalOutput);
                     break;
                 case 'info':
                     handleInfoInput(parameters, terminalOutput);
@@ -92,17 +92,17 @@ function handleInfoInput(parameters, terminalOutput)
     }
 }
 
-function handleRegisterInput(parameters, terminalOutput)
+function handleWatchInput(parameters, terminalOutput)
 {
     if (parameters.length > 0) {
         displayUnrecognizedParamsWarning(parameters, terminalOutput);
     }
 
     addNewTerminalOutput(
-        '<p>You are now being redirected to the registration page.</p>',
+        '<p>You are now being redirected to the videos.</p>',
         terminalOutput
     );
-    window.location.href = '/events/boot/2026/register';
+    window.location.href = '/events/boot/2026/videos';
 }
 
 function handleMessageInput(parameters, terminalOutput)
@@ -302,15 +302,12 @@ const defaultHeroSectionContent = `
          src="/assets/img/logos/boot/logo.png"
          alt="Dev8 BOOT Logo">
     <h1 id="title">
-        <span>------------------------------</span><br/>
-        <span>|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span><br/>
-        <span>| WELCOME TO DEV8 BOOT 2026! |</span><br/>
-        <span>|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span><br/>
-        <span>------------------------------</span>
+        <span>-----------------------------------------</span><br/>
+        <span>|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span><br/>
+        <span>| THANK YOU FOR JOINING DEV8 BOOT 2026! |</span><br/>
+        <span>|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span><br/>
+        <span>-----------------------------------------</span>
     </h1>
-    <h2>
-        &gt; Load up your developer skills. &lt;
-    </h2>
     <div class="hero-details">
         <img src="/assets/img/icons/calendar.png"
              alt="Date Icon"/>
@@ -334,13 +331,15 @@ const defaultHeroSectionContent = `
     </div>
     <p>&nbsp;</p>
     <p>
-        Dev8's online virtual mini-conference for developers, students,
-        and tech enthusiasts of Eastern Visayas is back this 2026 to provide
-        you with new talks, discussions, demos, and ideas. Enter "info" or
-        scroll down for further details.
+        Dev8 BOOT 2026, an online virtual mini-conference for developers,
+        students, and tech enthusiasts of Eastern Visayas this 2026, has
+        wrapped up last April 4, 2026. We thank all the participants,
+        speakers, organizers, and partners for making the event a reality.
+        If you want to learn more about the event again, enter "info" or scroll
+        down.
     </p>
     <p>&nbsp;</p>
-    <p>To register, enter "register". Limited slots only!</p>
+    <p>To watch video recordings of the event, enter "watch".</p>
     <p>&nbsp;</p>
     <p>If you need a full list of supported commands, enter "help".</p>
 `;
@@ -349,7 +348,7 @@ const helpMessageContent = `
     <p>Dev8 BOOT 2026 Basic Input/Output Terminal</p>
     <p>&nbsp;</p>
     <p>Commands:</p>
-    <p>&nbsp;&nbsp;register&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register for Dev8 BOOT 2026.</p>
+    <p>&nbsp;&nbsp;watch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Watch video recordings of Dev8 BOOT 2026.</p>
     <p>&nbsp;&nbsp;info&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View more information about Dev8 BOOT 2026.</p>
     <p>&nbsp;&nbsp;message&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print the default Dev8 BOOT 2026 message.</p>
     <p>&nbsp;&nbsp;login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login to a user session.</p>
