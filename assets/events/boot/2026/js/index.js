@@ -331,15 +331,17 @@ const defaultHeroSectionContent = `
     </div>
     <p>&nbsp;</p>
     <p>
-        Dev8 BOOT 2026, an online virtual mini-conference for developers,
-        students, and tech enthusiasts of Eastern Visayas this 2026, has
-        wrapped up last April 4, 2026. We thank all the participants,
-        speakers, organizers, and partners for making the event a reality.
-        If you want to learn more about the event again, enter "info" or scroll
-        down.
+        Dev8 BOOT 2026, a virtual mini-conference for developers, students, and
+        tech enthusiasts of Eastern Visayas this 2026, has finished booting
+        last April 4, 2026. We thank all the participants, speakers,
+        organizers, and partners for making the event a reality. We hope to see
+        you in our next events.
     </p>
     <p>&nbsp;</p>
-    <p>To watch video recordings of the event, enter "watch".</p>
+    <p>
+        To watch video recordings of the event, enter "watch". If you want to
+        learn more about the event, enter "info" or scroll down.
+    </p>
     <p>&nbsp;</p>
     <p>If you need a full list of supported commands, enter "help".</p>
 `;
