@@ -1,23 +1,32 @@
-﻿{% extends "pages/events/_subpage.html" %}
-{% set active_page = "Dev8 COMPILE 2025" %}
+﻿{%
+import 'pages/_components.html' as components
+%}
+{% extends "pages/events/_subpage.html" %}
+{% set no_default_header = true %}
 
-{% block title %}Dev8 COMPILE 2025 Event Report{% endblock %}
-{% block relative_url %}events/compile/2025/report{% endblock %}
-
+{% block title %}View the Dev8 BOOT 2026 Event Report{% endblock %}
+{% block relative_url %}events/boot/2026/report{% endblock %}
 {% block opengraph_desc %}
-Celebrating tech and geekery in Eastern Visayas.
+Get the event report on Dev8 BOOT 2026, a virtual mini-conference for
+developers, students, and tech enthusiasts of Eastern Visayas in 2026. Learn
+what happened during the event, the composition of our participants and their
+feedback, the lessons we encountered, and more!
 {% endblock %}
 {% block opengraph_img_desc %}
-View the Dev8 COMPILE 2025 Event Report here!
+Grab the Dev8 BOOT 2026 Event Report
 {% endblock %}
 {% block opengraph_og_img %}
-/assets/events/compile/2025/img/socials/og-fb-image.jpg
+{{ website['base-url'] }}/assets/events/boot/2026/img/facebook-og-banner.png
 {% endblock %}
 
 {% block content %}
 
 <main>
-    {{ components.redirect_to_url("https://drive.google.com/file/d/1vidIAqhZjNWTsONhT5F8nU1YuAJa_INv/view?usp=drive_link") }}
+    {{
+        components.redirect_to_url(
+            "https://drive.google.com/file/d/1t_uxJCMGMS6jjCjBxwAFfmN4RuDZgTud/view?usp=sharing"
+        )
+    }}
 </main>
 
 {% endblock %}
