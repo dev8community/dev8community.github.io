@@ -285,6 +285,22 @@ nav {
     display: none !important;
 }
 
+.show-in-xs-screen-only {
+    display: block !important;
+
+    @include mixins.tablets {
+        display: none !important;
+    }
+}
+
+.show-in-tablets-or-larger {
+    display: none !important;
+
+    @include mixins.tablets {
+        display: block !important;
+    }
+}
+
 .blur {
   text-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
   user-select: none;

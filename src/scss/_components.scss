@@ -1,4 +1,5 @@
-﻿@use '_variables.scss';
+﻿@use '_mixins.scss';
+@use '_variables.scss';
 
 div {
     &.window {
@@ -31,6 +32,8 @@ div {
 
                 padding: 0.25rem;
                 gap: 1rem;
+
+                user-select: none;
 
                 .window__title {
                     font-family: "Ubuntu Mono", serif;
@@ -157,6 +160,101 @@ div {
             }
         }
     }
+
+    &.desktop-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+
+        max-width: 72px;
+
+        user-select: none;
+
+        img {
+            &.desktop-icon__icon {
+                height: 48px;
+            }
+        }
+
+        p {
+            &.desktop-icon__label {
+                font-family: "Ubuntu Mono", sans-serif;
+                font-style: normal;
+                font-weight: 800;
+
+                margin: 0;
+
+                color: variables.$dev8-white;
+
+                text-align: center;
+
+                width: 100%;
+            }
+        }
+
+        &.selected {
+            p {
+                &.desktop-icon__label {
+                    background-color: variables.$dev8-console-blue;
+                }
+            }
+        }
+    }
+
+    &.taskbar {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+
+        padding: 0.55rem;
+
+        background-color: variables.$dev8-dark-green;
+
+        font-family: "Ubuntu Mono", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+
+        border-color: variables.$dev8-green;
+        border-top-width: 4px;
+        border-top-style: solid;
+
+        div.active-window-tab {
+            background-color: variables.$dev8-green;
+            border-color: variables.$black;
+            border-right-color: variables.$dev8-white;
+            border-bottom-color: variables.$dev8-white;
+
+            color: variables.$dev8-black;
+
+            max-width: 350px;
+            width: 350px;
+
+            text-align: left;
+            text-wrap: nowrap;
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            user-select: none;
+        }
+
+        div.datetime-area {
+            border-color: variables.$black;
+            border-right-color: variables.$dev8-white;
+            border-bottom-color: variables.$dev8-white;
+
+            margin-left: auto;
+
+            display: none;
+
+            user-select: none;
+
+            @include mixins.small-screens {
+                display: block;
+            }
+        }
+    }
 }
 
 ul {
@@ -196,7 +294,10 @@ ul {
     }
 }
 
-.link-button {
+// All button components should use this .button class moving forward.
+.link-button, // For backwards compatibility.
+.button,
+.rectangle-primitive {
     display: block;
 
     font-family: "Ubuntu Mono", serif;
@@ -209,18 +310,20 @@ ul {
     border-width: 4px 4px 4px 4px;
     border-style: solid;
     border-color: #17b9b6;
-    border-bottom-color: black;
-    border-right-color: black;
 
     text-align: center;
     text-underline-position: from-font;
     text-decoration: none;
     text-decoration-skip-ink: none;
 
-    margin: auto;
     padding: 0.25rem 0.45rem 0.25rem 0.45rem;
 
     width: fit-content;
+}
+
+.button {
+    border-bottom-color: black;
+    border-right-color: black;
 
     &:active {
         border-color: #17b9b6;
@@ -230,5 +333,68 @@ ul {
 
     &.left {
         margin: 0;
+    }
+}
+
+.link-button {
+    // For backwards compatibility.
+    margin: auto;
+}
+
+.monospace-area {
+    background-color: variables.$grey;
+
+    padding: 0.25rem;
+
+    p,
+    h1 {
+        font-family: 'Ubuntu Mono', sans-serif;
+        font-weight: 600;
+        font-size: 1.5rem;
+
+        color: variables.$dev8-white !important;
+
+        line-height: 1.5rem;
+        text-align: left;
+
+        white-space: pre-wrap;
+        word-break: break-all;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    p,
+    img {
+        margin: 0.25rem 0 0 !important;
+    }
+
+    p {
+        line-height: 2.25rem;
+
+        span {
+            &.highlighted {
+                color: variables.$dev8-light-green;
+            }
+        }
+
+        a {
+            color: variables.$dev8-light-green;
+
+            text-decoration: underline;
+        }
+
+        &.text-with-icons {
+            display: block;
+
+            text-align: left;
+
+            img {
+                display: inline-block;
+                height: 1rem;
+                margin: 0 !important;
+            }
+        }
     }
 }

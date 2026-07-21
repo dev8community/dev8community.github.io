@@ -1,0 +1,137 @@
+{% extends "pages/_base.html" %}
+
+{% set preregistration = true%}
+
+{% block title %}Dev8 COMPILE 2026{% endblock %}
+{% block relative_url %}events/compile/2026{% endblock %}
+{% block opengraph_desc %}
+Building Skills and the Eastern Visayan Tech Ecosystem
+{% endblock %}
+{% block opengraph_img_desc %}
+View the details on Dev8 COMPILE 2025 here!
+{% endblock %}
+{% block opengraph_og_img %}
+/assets/events/compile/2025/img/socials/og-fb-image.jpg
+{% endblock %}
+
+{% block css %}
+<link href="/assets/events/compile/2026/css/index.css"
+      rel="stylesheet"
+      type="text/css" />
+<link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      rel="stylesheet"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin="" />
+{% endblock %}
+
+{% block js %}
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin="">
+</script>
+<script src="/assets/events/compile/2026/js/index.js"></script>
+{% endblock %}
+
+{% block content %}
+<main>
+    <div id="desktop-space">
+        <div id="icons">
+            <div id="main-window-icon" class="desktop-icon">
+                <img class="desktop-icon__icon"
+                     src="/assets/img/logos/compile/logo-xs.webp" />
+                <p class="desktop-icon__label">Dev8 COMPILE 2026</p>
+            </div>
+            <div id="venue-window-icon" class="desktop-icon">
+                <img class="desktop-icon__icon"
+                     src="/assets/img/icons/pin.png" />
+                <p class="desktop-icon__label">Venue</p>
+            </div>
+        </div>
+        <div id="main-window" class="window">
+            <div class="window__body">
+                <div class="window__header">
+                    <h1 class="window__title">Terminal - Dev8 COMPILE 2026</h1>
+                    <button class="window__close">
+                        <img src="/assets/img/icons/close-button.svg">
+                    </button>
+                </div>
+                <div class="window__content">
+                    <div id="main-window__content" class="monospace-area">
+                        <p><span class="highlighted">dev8 ~</span> cat COMPILE-README.rtf</p>
+                        <img id="event-logo"
+                             src="/assets/img/logos/compile/logo.png"
+                             alt="Dev8 COMPILE Logo" />
+                        <p class="show-in-xs-screen-only">+-------------------+</p>
+                        <p class="show-in-xs-screen-only">| DEV8 COMPILE 2026 |</p>
+                        <p class="show-in-xs-screen-only">+-------------------+</p>
+                        <p class="show-in-tablets-or-larger">+---------------------+</p>
+                        <p class="show-in-tablets-or-larger">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</p>
+                        <p class="show-in-tablets-or-larger">|&nbsp;&nbsp;DEV8 COMPILE 2026&nbsp;&nbsp;|</p>
+                        <p class="show-in-tablets-or-larger">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</p>
+                        <p class="show-in-tablets-or-larger">+---------------------+</p>
+                        <p>:: Building Skills and the Eastern Visayan Tech Ecosystem ::</p>
+                        <p class="text-with-icons"><img src="/assets/img/icons/calendar.png" alt="Date Icon" /> October 3, 2026</p>
+                        <p class="text-with-icons"><img src="/assets/img/icons/clock.png" alt="Clock Icon" /> 09:00 AM - 06:00 PM PHT</p>
+                        <p class="text-with-icons"><img src="/assets/img/icons/pin.png" alt="Pin Location Icon" /> ACLC Tacloban Fatima Campus, Tacloban</p>
+                        <p>&nbsp;</p>
+                        <p>&gt; Registration opens soon. Watch out for new details!</p>
+                        <p>&nbsp;</p>
+                        <p>Eastern Visayas's homegrown in-person tech conference is back this 2026 with awesome talks and lectures, insightful discussions, a fun workshop, and more!</p>
+                        <p>&nbsp;</p>
+                        <p>Co-Compiled with:</p>
+                        <div class="partner-logo-wrapper co-compilers">
+                            <img src="/assets/img/logos/partners/aclc-sm.webp"
+                                 alt="ACLC Tacloban Logo" />
+                            <img src="/assets/img/logos/partners/qcsp-light-sm.webp"
+                                 alt="Quantum Computing Society of the Philippines Logo" />
+                        </div>
+                        <p>&nbsp;</p>
+                        <p class="text-with-icons"><img src="/assets/img/icons/lightning.png" alt="Lightning Icon" /> BACK BETTER, AWESOMER, NERDIER</p>
+                        <img class="event-image"
+                             src="/assets/events/compile/2026/img/image-1.webp"
+                             alt="Cyril Cabo speaking at Dev8 COMPILE 2025." />
+                        <p>Our annual in-person tech conference, Dev8 COMPILE, brings developers, students, and tech enthusiasts from Eastern Visayas together for a day filled with opportunities to know more about software engineering, computer science, and IT, and connect with like-minded people.</p>
+                        <p>&nbsp;</p>
+                        <p>This 2026, we are shaking up our conference formula to help further build the skills of our local developers and improve our local Eastern Visayan tech ecosystem. We'll not only bring the awesome talks and discussions, but as well as lectures to help solidify pre-existing knowledge and a workshop on cybersecurity that will be conducted on a separate track. Join Dev8 COMPILE 2026 to never miss the fun!</p>
+                        <p>&nbsp;</p>
+                        <p class="text-with-icons"><img src="/assets/img/icons/coc.png" alt="Code of Conduct Icon"/> CODE OF CONDUCT</p>
+                        <img class="event-image"
+                             src="/assets/events/compile/2026/img/image-2.webp"
+                             alt="Three people having fun at Dev8 COMPILE 2025." />
+                        <p>Dev8 COMPILE 2026 is being organized to provide a safe space for knowledge sharing, and forming new connections. We want all participants to have an enjoyable experience in our events. As such, all attendees, speakers, sponsors, organizers, volunteers, and staff of any Dev8 events are required to comply with the Dev8 Event Code of Conduct, which requires everyone to be respectful to each other, observant of venue rules, and welcoming to everyone. We will enforce this code throughout the event.</p>
+                        <p>&nbsp;</p>
+                        <p>If you believe someone violated the Dev8 Event Code of Conduct during the event, or have any other concerns, please do not hesitate to inform us via <a href="mailto:dev8community@gmail.com">dev8community@gmail.com</a>.</p>
+                        <p>&nbsp;</p>
+                        <p><a href="/events/code-of-conduct">:: Read the Dev8 Code of Conduct</a></p>
+                        <p>&nbsp;</p>
+                        <p class="text-with-icons"><img src="/assets/img/icons/ticket.png" alt="Ticket Icon"/> LET'S BUILD YOUR SKILLS AND THE EASTERN VISAYAN TECH ECOSYSTEM!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="venue-window" class="window no-display">
+            <div class="window__body">
+                <div class="window__header">
+                    <h1 class="window__title">Venue - ACLC Tacloban Fatima Campus, Tacloban City</h1>
+                    <button class="window__close">
+                        <img src="/assets/img/icons/close-button.svg">
+                    </button>
+                </div>
+                <div class="window__content">
+                    <div id="venue-window__content">
+                        <div id="venue-map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="taskbar">
+        <button class="button">Start</button>
+        <div id="taskbar-active-window-tab"
+             class="rectangle-primitive active-window-tab">
+            Terminal - Dev8 COMPILE 2026
+        </div>
+        <div class="rectangle-primitive datetime-area">Oct. 3, 2026 09:00 AM</div>
+    </div>
+</main>
+{% endblock %}

@@ -20,6 +20,7 @@ folder = 'assets/'
 'events/boot/2026/css/index.css' = 'src/scss/events/boot/2026/index.scss'
 'events/patch2025/css/index.css' = 'src/scss/events/patch2025/index.scss'
 'events/compile/2025/css/index.css' = 'src/scss/events/compile/2025/index.scss'
+'events/compile/2026/css/index.css' = 'src/scss/events/compile/2026/index.scss'
 
 # Routes that we can access in the URL. Paths are
 # relative to Knitter.
@@ -63,6 +64,9 @@ folder = 'assets/'
 ## Compile Articles
 '/events/compile/2025/article/pshs-evcl' = 'pages/events/compile/2025/articles/pshs-evcl.html'
 '/events/compile/2025/article/cerena-solutions-areglaw-ai' = 'pages/events/compile/2025/articles/cerena-solutions-areglaw-ai.html'
+
+# COMPILE 2026
+'/events/compile/2026/' = 'pages/events/compile/2026/index.html'
 
 # BOOT 2026
 '/events/boot/2026/' = 'pages/events/boot/2026/index.html'

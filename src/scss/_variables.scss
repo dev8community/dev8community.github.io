@@ -1,5 +1,6 @@
 @use 'sass:color';
 
+$black: hsl(0 0% 0%);
 $white: hsl(0, 0%, 100%);
 $grey: hsl(0, 0%, 20%);
 
@@ -9,6 +10,8 @@ $dev8-white: hsl(0, 0%, 94%);
 $dev8-light-green: hsl(137, 100%, 76%);
 $dev8-dark-green: hsl(185, 87%, 24%);
 $dev8-subtle-white: hsl(0, 0%, 30%);
+$dev8-console-blue: hsl(228, 72%, 56%);
+$dev8-dark-grey: hsl(0, 0%, 25%);
 
 $text-dark-colour: hsl(0, 0%, 20%);
 

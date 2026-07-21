@@ -1,0 +1,129 @@
+﻿@use '../../../_mixins.scss';
+@use '../../../_variables.scss';
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+
+    div {
+        &#desktop-space {
+            flex-grow: 1;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 1rem;
+
+            background-color: variables.$dev8-dark-grey;
+
+            padding: 1rem;
+
+            min-height: 0;
+
+            div {
+                &#icons {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 16px;
+                    align-items: start;
+
+                    width: 100%;
+
+                    @include mixins.xlarge-screens {
+                        flex-direction: column;
+                        align-items: center;
+
+                        width: auto;
+
+                        position: absolute;
+
+                        padding-left: inherit;
+                        left: 0;
+                    }
+                }
+
+                &.window {
+                    max-width: 1200px;
+                    width: 100%;
+                    min-height: 0;
+                }
+            }
+        }
+
+        &#main-window {
+            div {
+                &.window__content {
+                    align-items: normal;
+                    text-align: left;
+                    padding: 0;
+
+                    min-height: 0;
+                }
+
+                &#main-window__content {
+                    overflow: scroll;
+
+                    img {
+                        &#event-logo {
+                            width: 200px;
+                        }
+
+                        &.event-image {
+                            max-width: 600px;
+                            width: 100%;
+                        }
+                    }
+
+                    div {
+                        &.partner-logo-wrapper {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1rem;
+
+                            &.co-compilers {
+                                img {
+                                    align-self: center;
+
+                                    max-height: 180px;
+                                }
+                            }
+
+                            @include mixins.small-screens {
+                                flex-direction: row;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &#venue-window {
+            height: 100%;
+
+            div {
+                &.window__content {
+                    display: flex;
+
+                    padding: 0;
+                }
+
+                &#venue-window__content {
+                    flex-grow: 1;
+                    width: 100%;
+                }
+
+                &#venue-map {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+
+        &.taskbar {
+            margin-top: auto;
+        }
+    }
+}
