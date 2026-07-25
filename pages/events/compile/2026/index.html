@@ -36,12 +36,16 @@ View the details on Dev8 COMPILE 2025 here!
 <main>
     <div id="desktop-space">
         <div id="icons">
-            <div id="main-window-icon" class="desktop-icon">
+            <div id="main-window-icon"
+                 class="desktop-icon"
+                 data-window-id="main-window">
                 <img class="desktop-icon__icon"
                      src="/assets/img/logos/compile/logo-xs.webp" />
                 <p class="desktop-icon__label">Dev8 COMPILE 2026</p>
             </div>
-            <div id="venue-window-icon" class="desktop-icon">
+            <div id="venue-window-icon"
+                 class="desktop-icon"
+                 data-window-id="venue-window">
                 <img class="desktop-icon__icon"
                      src="/assets/img/icons/pin.png" />
                 <p class="desktop-icon__label">Venue</p>
@@ -114,7 +118,8 @@ View the details on Dev8 COMPILE 2025 here!
                 <div class="window__header">
                     <h1 class="window__title">Venue - ACLC Tacloban Fatima Campus, Tacloban City</h1>
                     <button class="window__close">
-                        <img src="/assets/img/icons/close-button.svg">
+                        <img src="/assets/img/icons/close-button.svg"
+                             alt="Close Button">
                     </button>
                 </div>
                 <div class="window__content">
@@ -124,9 +129,45 @@ View the details on Dev8 COMPILE 2025 here!
                 </div>
             </div>
         </div>
+        <div id="start-menu" class="start-menu no-display">
+            <ul>
+                <li class="start-menu__entry rectangle-primitive">
+                    <a href="/">
+                        <img src="/assets/img/icons/house.png"
+                             alt="Home Icon" />
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li class="start-menu__entry rectangle-primitive">
+                    <a href="/about">
+                        <img src="/assets/img/icons/info.png"
+                             alt="About Icon" />
+                        <p>About</p>
+                    </a>
+                </li>
+                <li class="start-menu__entry rectangle-primitive">
+                    <a href="/events">
+                        <img src="/assets/img/icons/star.png"
+                             alt="Events Icon" />
+                        <p>Events</p>
+                    </a>
+                </li>
+                <li class="start-menu__entry rectangle-primitive">
+                    <a href="/contact">
+                        <img src="/assets/img/icons/email-xs.webp"
+                             alt="Contact Icon" />
+                        <p>Contact</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
     <div class="taskbar">
-        <button class="button">Start</button>
+        <button id="start-button" class="button">
+            <img src="/assets/img/dev8-logo-white-sm.webp"
+                 alt="Dev8 logo that is completely black" />
+            <p>Start</p>
+        </button>
         <div id="taskbar-active-window-tab"
              class="rectangle-primitive active-window-tab">
             Terminal - Dev8 COMPILE 2026

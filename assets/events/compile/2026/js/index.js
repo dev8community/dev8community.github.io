@@ -6,15 +6,25 @@ function onDocumentReady()
     const activeTBTab  = document.getElementById('taskbar-active-window-tab');
     const closeButtons = document.getElementsByClassName('window__close');
     const desktopIcons = document.getElementsByClassName('desktop-icon');
-    const desktopIconIDToWindowID = new Map([
-        ['main-window-icon', 'main-window'],
-        ['venue-window-icon', 'venue-window']
-    ]);
+    const startMenu    = document.getElementById('start-menu');
 
+    setUpStartButton();
     setUpWindowCloseButtons();
     setUpDesktopIconClicks()
     setUpDesktopSpace();
     setUpVenueMap();
+
+    function setUpStartButton()
+    {
+        const startButton = document.getElementById('start-button');
+        startButton.addEventListener('click', function () {
+            if (isStartMenuOpen()) {
+                startMenu.classList.add('no-display');
+            } else {
+                startMenu.classList.remove('no-display');
+            }
+        });
+    }
 
     function setUpWindowCloseButtons()
     {
@@ -32,7 +42,7 @@ function onDocumentReady()
     {
         for (let icon of desktopIcons) {
             const iconID   = icon.id;
-            const windowID = desktopIconIDToWindowID.get(iconID);
+            const windowID = icon.dataset.windowId;
             const window   = document.getElementById(windowID);
             const titleBar = window.getElementsByClassName('window__title')[0];
             const title    = titleBar.textContent;
@@ -42,6 +52,9 @@ function onDocumentReady()
 
                 deselectDesktopIcons();
                 icon.classList.add('selected');
+
+                // This is a hack. Lol.
+                closeStartMenu();
             });
 
             icon.addEventListener('dblclick', () => {
@@ -54,6 +67,7 @@ function onDocumentReady()
 
                     if (iconID === 'venue-window-icon') {
                         venueMap.invalidateSize();
+                        venueMap._popup.update();
                     }
                 }
             });
@@ -70,10 +84,21 @@ function onDocumentReady()
             const target = e.target;
             if (
                 !target.classList.contains('desktop-icon')
-                || !target.classList.contains('desktop-icon__icon')
-                || !target.classList.contains('desktop-icon__label')
+                && !target.classList.contains('desktop-icon__icon')
+                && !target.classList.contains('desktop-icon__label')
+                && !target.classList.contains('start-menu')
+                && !target.classList.contains('start-menu__entry')
             ) {
                 deselectDesktopIcons();
+                closeStartMenu();
+            }
+
+            if (
+                target.classList.contains('desktop-icon')
+                || target.classList.contains('desktop-icon__icon')
+                || target.classList.contains('desktop-icon__label')
+            ) {
+                closeStartMenu();
             }
         })
     }
@@ -107,7 +132,7 @@ function onDocumentReady()
 
         marker
             .addTo(venueMap)
-            .bindPopup('<p style="text-align: center">ACLC Tacloban Fatima Campus, Tacloban City</p>')
+            .bindPopup('<b>ACLC Tacloban Fatima Campus</b><br />Tacloban City')
             .openPopup();
     }
 
@@ -117,6 +142,13 @@ function onDocumentReady()
             if (icon.classList.contains('selected')) {
                 icon.classList.remove('selected');
             }
+        }
+    }
+
+    function closeStartMenu()
+    {
+        if (!startMenu.classList.contains('no-display')) {
+            startMenu.classList.add('no-display');
         }
     }
 
@@ -131,5 +163,10 @@ function onDocumentReady()
     function getActiveWindows()
     {
         return document.querySelectorAll('div.window:not(.no-display)');
+    }
+
+    function isStartMenuOpen()
+    {
+        return !startMenu.classList.contains('no-display');
     }
 }

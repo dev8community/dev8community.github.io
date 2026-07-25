@@ -207,7 +207,7 @@ div {
         align-items: center;
         gap: 0.25rem;
 
-        padding: 0.55rem;
+        padding: 0.25rem;
 
         background-color: variables.$dev8-dark-green;
 
@@ -219,39 +219,117 @@ div {
         border-top-width: 4px;
         border-top-style: solid;
 
-        div.active-window-tab {
-            background-color: variables.$dev8-green;
-            border-color: variables.$black;
-            border-right-color: variables.$dev8-white;
-            border-bottom-color: variables.$dev8-white;
+        button {
+            &.button {
+                display: flex;
+                flex-direction: row;
+                gap: 0.25rem;
+                align-items: center;
 
-            color: variables.$dev8-black;
+                img {
+                    height: 1.25rem;
+                }
 
-            max-width: 350px;
-            width: 350px;
-
-            text-align: left;
-            text-wrap: nowrap;
-
-            overflow: hidden;
-            text-overflow: ellipsis;
-
-            user-select: none;
+                p {
+                    margin: 0;
+                }
+            }
         }
 
-        div.datetime-area {
-            border-color: variables.$black;
-            border-right-color: variables.$dev8-white;
-            border-bottom-color: variables.$dev8-white;
+        div {
+            &.active-window-tab {
+                background-color: variables.$dev8-green;
+                border-color: variables.$black;
+                border-right-color: variables.$dev8-white;
+                border-bottom-color: variables.$dev8-white;
 
-            margin-left: auto;
+                color: variables.$dev8-black;
 
-            display: none;
+                max-width: 350px;
+                width: 350px;
 
-            user-select: none;
+                text-align: left;
+                text-wrap: nowrap;
 
-            @include mixins.small-screens {
-                display: block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                user-select: none;
+            }
+
+            &.datetime-area {
+                border-color: variables.$black;
+                border-right-color: variables.$dev8-white;
+                border-bottom-color: variables.$dev8-white;
+
+                margin-left: auto;
+
+                display: none;
+
+                user-select: none;
+
+                @include mixins.small-screens {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &.start-menu {
+        border-style: solid;
+        border-width: 4px;
+        border-top-color: variables.$dev8-green;
+        border-right-color: variables.$black;
+        border-bottom-color: variables.$black;
+        border-left: none;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+
+            margin: 0;
+            padding: 0;
+
+            li {
+                flex: 1;
+
+                border: none;
+
+                padding: none;
+
+                width: auto;
+
+                user-select: none;
+
+                &:hover {
+                    background-color: variables.$dev8-green;
+                    color: variables.$dev8-black;
+
+                    cursor: pointer;
+                }
+
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 0.5rem;
+
+                    color: variables.$dev8-white;
+
+                    text-align: left;
+                    text-decoration: none;
+
+                    padding: 0.75rem;
+
+                    img {
+                        width: 36px;
+                    }
+
+                    p {
+                        margin: 0;
+                    }
+                }
             }
         }
     }
@@ -321,6 +399,7 @@ ul {
     width: fit-content;
 }
 
+.link-button, // For backwards compatibility.
 .button {
     border-bottom-color: black;
     border-right-color: black;

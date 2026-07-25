@@ -16,6 +16,8 @@ main {
             align-items: center;
             row-gap: 1rem;
 
+            position: relative;
+
             background-color: variables.$dev8-dark-grey;
 
             padding: 1rem;
@@ -119,6 +121,14 @@ main {
                     height: 100%;
                 }
             }
+        }
+
+        &.start-menu {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            background-color: variables.$dev8-white;
         }
 
 
