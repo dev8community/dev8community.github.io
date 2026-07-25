@@ -1,6 +1,10 @@
 ﻿@use '../../../_mixins.scss';
 @use '../../../_variables.scss';
 
+body {
+    cursor: url('/assets/img/mouse-cursor.png'), default;
+}
+
 main {
     display: flex;
     flex-direction: column;
