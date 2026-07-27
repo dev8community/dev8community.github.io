@@ -75,6 +75,7 @@ folder = 'assets/'
 # COMPILE 2026
 '/events/compile/2026' = 'pages/events/compile/2026/index.html'
 '/events/compile/2026/event-document' = 'pages/events/compile/2026/event-document.html'
+'/events/compile/2026/sponsorship' = 'pages/events/compile/2026/sponsorship.html'
 
 # Surveys
 '/surveys/evtss2023' = 'pages/surveys/evtss2023/index.html'

@@ -90,9 +90,24 @@ main {
 
                             &.co-compilers {
                                 img {
+                                    flex: 0;
                                     align-self: center;
 
-                                    max-height: 180px;
+                                    max-height: 150px;
+                                    height: auto;
+
+                                    margin: 0 !important;
+
+                                    &#jetbrains-logo {
+                                        height: 120px;
+                                    }
+                                }
+                            }
+
+                            div {
+                                &.logo-wrapper {
+                                    display: flex;
+                                    flex-basis: auto;
                                 }
                             }
 
