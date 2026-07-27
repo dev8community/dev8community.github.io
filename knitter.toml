@@ -65,15 +65,16 @@ folder = 'assets/'
 '/events/compile/2025/article/pshs-evcl' = 'pages/events/compile/2025/articles/pshs-evcl.html'
 '/events/compile/2025/article/cerena-solutions-areglaw-ai' = 'pages/events/compile/2025/articles/cerena-solutions-areglaw-ai.html'
 
-# COMPILE 2026
-'/events/compile/2026/' = 'pages/events/compile/2026/index.html'
-
 # BOOT 2026
 '/events/boot/2026/' = 'pages/events/boot/2026/index.html'
 '/events/boot/2026/register' = 'pages/events/boot/2026/register.html'
 '/events/boot/2026/feedback' = 'pages/events/boot/2026/feedback.html'
 '/events/boot/2026/videos' = 'pages/events/boot/2026/videos.html'
 '/events/boot/2026/report' = 'pages/events/boot/2026/report.html'
+
+# COMPILE 2026
+'/events/compile/2026' = 'pages/events/compile/2026/index.html'
+'/events/compile/2026/event-document' = 'pages/events/compile/2026/event-document.html'
 
 # Surveys
 '/surveys/evtss2023' = 'pages/surveys/evtss2023/index.html'
