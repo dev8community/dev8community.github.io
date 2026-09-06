@@ -41,12 +41,6 @@ function onDocumentReady()
     function setUpDesktopIconClicks()
     {
         for (let icon of desktopIcons) {
-            const iconID   = icon.id;
-            const windowID = icon.dataset.windowId;
-            const window   = document.getElementById(windowID);
-            const titleBar = window.getElementsByClassName('window__title')[0];
-            const title    = titleBar.textContent;
-
             icon.addEventListener('click', function (e) {
                 e.stopPropagation();
 
@@ -57,18 +51,35 @@ function onDocumentReady()
                 closeStartMenu();
             });
 
+            const iconID   = icon.id;
+            const windowID = icon.dataset.windowId;
+            const href     = icon.dataset.href;
             icon.addEventListener('dblclick', () => {
-                if (window.classList.contains('no-display')) {
-                    closeActiveWindows();
+                if (windowID) {
+                    const window   = document.getElementById(windowID);
+                    const titleCls = 'window__title';
+                    const titleBar = window.getElementsByClassName(titleCls)[0];
+                    const title    = titleBar.textContent;
 
-                    window.classList.remove('no-display');
-                    activeTBTab.textContent = title;
-                    activeTBTab.classList.remove('no-display');
+                    if (window.classList.contains('no-display')) {
+                        closeActiveWindows();
 
-                    if (iconID === 'venue-window-icon') {
-                        venueMap.invalidateSize();
-                        venueMap._popup.update();
+                        window.classList.remove('no-display');
+                        activeTBTab.textContent = title;
+                        activeTBTab.classList.remove('no-display');
+
+                        if (iconID === 'venue-window-icon') {
+                            venueMap.invalidateSize();
+                            venueMap._popup.update();
+                        }
                     }
+                } else if (href) {
+                    window.location.href = href;
+                } else {
+                    console.warn(
+                        `Page icon, ${iconID}, does not trigger a window or `
+                        + 'redirect to another page.'
+                    );
                 }
             });
         }
