@@ -80,6 +80,43 @@ main {
                             max-width: 600px;
                             width: 100%;
                         }
+
+                        &.speaker-image {
+                            max-width: 250px;
+                            width: 100%;
+                        }
+                    }
+
+                    p {
+                        &.talk-title {
+                            color: variables.$dev8-light-green !important;
+                        }
+
+                        &.speaker-name,
+                        &.speaker-title {
+                            color: variables.$dev8-purple !important;
+                        }
+
+                        &.speaker-url-title,
+                        &.speaker-url-item {
+                            color: variables.$dev8-green !important;
+                        }
+
+                        &.schedule-venue {
+                            color: variables.$dev8-light-green !important;
+                        }
+
+                        &.schedule-time {
+                            color: variables.$dev8-green !important;
+                        }
+
+                        &.schedule-title {
+                            color: variables.$dev8-purple !important;
+                        }
+
+                        &.schedule-subtitle {
+                            color: variables.$dev8-white !important;
+                        }
                     }
 
                     div {

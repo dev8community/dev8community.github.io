@@ -139,6 +139,7 @@ View details on Dev8 COMPILE 2026.
                         </div>
                         <p>- Ludwig Saldana and Calix Cent</p>
                         <p>- Pedro Funk</p>
+                        <p>- Yerocab</p>
                         <p>&nbsp;</p>
                         <p class="text-with-icons"><img src="/assets/img/icons/lightning.png" alt="Lightning Icon" /> BACK BETTER, AWESOMER, NERDIER</p>
                         <img class="event-image"
@@ -148,6 +149,49 @@ View details on Dev8 COMPILE 2026.
                         <p>&nbsp;</p>
                         <p>This 2026, we are shaking up our conference formula to help further build the skills of our local developers and improve our local Eastern Visayan tech ecosystem. We'll not only bring the awesome talks and discussions, but as well as lectures to help solidify pre-existing knowledge and a workshop on cybersecurity that will be conducted on a separate track. Join Dev8 COMPILE 2026 to never miss the fun!</p>
                         <p>&nbsp;</p>
+                        <p class="text-with-icons"><img src="/assets/img/icons/microphone.png" alt="Microphone Icon" /> SPEAKERS</p>
+                        {% for s in compile2026_speakers %}
+                        {% if "photo" in s["speaker"] %}
+                        <img class="speaker-image"
+                             src="{{ s['speaker']['photo'] }}"
+                             alt="{{ s['speaker']['name'] }}" />
+                        {% endif %}
+                        {% if "title" in s["talk"] %}
+                        <p class="talk-title">{{ s["talk"]["title"]| upper }} </p>
+                        {% endif %}
+                        {% if "name" in s["speaker"] %}
+                        <p class="speaker-name">&gt; {{ s["speaker"]["name"] }}</p>
+                        {% endif %}
+                        {% if "title" in s["speaker"] %}
+                        <p class="speaker-title">&gt; {{ s["speaker"]["title"] }}</p>
+                        {% endif %}
+                        {% if "description" in s["talk"] %}
+                        <p>{{ s["talk"]["description"] }}</p>
+                        {% endif %}
+                        {% if "urls" in s["speaker"] and s["speaker"]["urls"]|length > 0 %}
+                        <p class="speaker-url-title">:: Links</p>
+                        {% for u in s["speaker"]["urls"] %}
+                        <p class="speaker-url-item">- {{ u["name"] }}: <a href="{{ u['url'] }}">{{ u['url'] }}</a></p>
+                        {% endfor %}
+                        {% endif %}
+                        <p>&nbsp;</p>
+                        {% endfor %}
+                        <p class="text-with-icons"><img src="/assets/img/icons/calendar.png" alt="Calendar Icon"/> SCHEDULE</p>
+                        {% for s in compile2026_schedule %}
+                        <p class="schedule-venue">&gt; {{ s["venue"] }} &lt;</p>
+                        {% for a in s["activities"] %}
+                        {% if "time_start" in a %}
+                        <p class="schedule-time">:: {{ a["time_start"] }}</p>
+                        {% endif %}
+                        {% if "title" in a %}
+                        <p class="schedule-title">&gt; {{ a["title"] }}</p>
+                        {% endif %}
+                        {% if "subtitle" in a %}
+                        <p class="schedule-subtitle">- {{ a["subtitle"] }}</p>
+                        {% endif %}
+                        <p>&nbsp;</p>
+                        {% endfor %}
+                        {% endfor %}
                         <p class="text-with-icons"><img src="/assets/img/icons/coc.png" alt="Code of Conduct Icon"/> CODE OF CONDUCT</p>
                         <img class="event-image"
                              src="/assets/events/compile/2026/img/image-2.webp"

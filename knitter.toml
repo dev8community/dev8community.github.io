@@ -164,3 +164,7 @@ boot2026_schedule = 'data/events/boot/2026/schedule.json'
 boot2026_speakers = 'data/events/boot/2026/speakers.json'
 boot2026_panelists = 'data/events/boot/2026/panelists.json'
 boot2026_organizers = 'data/events/boot/2026/organizers.json'
+
+# COMPILE 2026 Data
+compile2026_speakers = 'data/events/compile/2026/speakers.json'
+compile2026_schedule = 'data/events/compile/2026/schedule.json'

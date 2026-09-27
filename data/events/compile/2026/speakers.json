@@ -1,0 +1,225 @@
+[
+  {
+    "talk": {
+      "title": "From Non-Tech Roots to Digital Growth: A Career Shift Story",
+      "description": "Shifting careers from non-tech to tech can be a challenging endeavour, even from the very first step of the transition. Navigating through the shift will always be filled with challenges, surprises, and difficulties. In this talk, Jhenda will showcase how she shifted to tech, highlight the challenges she encountered, and share the lessons she learned to empower and resonate with those who are contemplating a change in careers."
+    },
+    "speaker": {
+      "name": "Jhenda Cajeras",
+      "title": "GCP Data Engineer @ IBM",
+      "description": "Jhenda is a data engineer at IBM specializing in crafting robust data solutions with Python, SQL, and Google Cloud Platform. With a unique journey from a non-technical background, she brings a fresh perspective to problem solving and innovation in the digital realm.",
+      "photo": "/assets/events/compile/2026/img/speakers/jhenda-cajeras.webp",
+      "urls": [
+        {
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/in/jacajeras"
+        }
+      ]
+    }
+  },
+  {
+    "talk": {
+      "title": "Web Application Attacks and Defenses: A Hands-on Introduction to the OWASP Top 10 (Workshop)",
+      "description": "Whether they're big or small, web applications are always at risk of being targeted by cybersecurity threats. This gives web developers reasons to ensure that their application security is in tip-top shape. OWASP has provided a reference guide to the top ten critical security risks developers should pay attention to called the OWASP Top 10. In this workshop, you will be provided a hands-on introduction to the reference guide and learn how to improve the security of your applications."
+    },
+    "speaker": {
+      "name": "Joenne Amancio",
+      "title": "Network and Security Operations Center Analyst @ Astute Cybersecurity",
+      "description": "Joenne is a network and Security Operations Center Analyst at Astute Cybersecurity who likes exploring how systems can be attacked and defended. She enjoys analyzing data, finding patterns, and constantly challenging herself to better understand how systems, networks, and organizations can be protected in a field that is always evolving.",
+      "photo": "/assets/events/compile/2026/img/speakers/joenne-amancio.webp",
+      "urls": [
+        {
+          "name": "LinkedIn",
+          "url": "https://linkedin.com/in/joenne-mied-amancio/"
+        }
+      ]
+    }
+  },
+  {
+    "talk": {
+      "title": "Escape the CRUD Trap: How Building IoT Systems Supercharges Your Software Career",
+      "description": "Almost every tech student starts by making basic websites, simple forms, or to-do lists. While this is a great start, building the same kind of basic apps over and over can quickly feel repetitive. Connecting your code to physical gadgets — the Internet of Things (IoT) — changes everything. Instead of just showing text on a screen, your code can read room temperature from a sensor, control a fan, or send information through the air without wires. When you build projects that interact with the physical world, confusing lessons from your classes suddenly make sense. You understand how computers truly work, become a much stronger problem solver, and create projects that stand out. John will share how building simple connected devices helped me grow as a programmer, and how you can start making your own smart gadgets at home on a student budget."
+    },
+    "speaker": {
+      "name": "John Nichols Ranara",
+      "title": "Principal Software Engineer @ Erfinder Philippines",
+      "description": "John is a principal software engineer at Erfinder Phillippines, based in Tacloban City. He brings over 13 years of experience in systems and application designs, with specialization in low-level automation, high-performance desktop architectures, and robust backend ecosystems. His works is focused on bridging the physical-digital divide — connecting embedded hardware and IoT devices with resilient, scalable cloud infrastructure.",
+      "photo": "/assets/events/compile/2026/img/speakers/john-nichols-ranara.webp",
+      "urls": [
+        {
+          "name": "Website",
+          "url": "https://banikaz.online/"
+        }
+      ]
+    }
+  },
+  {
+    "talk": {
+      "title": "Quest for Clarity: What's a Game Designer and How Do You Work With Them?",
+      "description": "Many people think game design is about coding or creating art and graphics. This talk clears up those common misconceptions and shares what a game designer actually does, such as conceptualizing, documenting, and collaborating. The talk also explores the everyday responsibilities and challenges of the role, such as handling feedback and criticism, resolving conflicts, and working effectively with cross-departmental team members. Whether you're a developer, artist, aspiring game designer, or simply curious about the process, this talk offers a fresh perspective and experiences from a non-coding designer with 2+ years of experience, having shipped God of War Sons of Sparta while also working on multiple projects."
+    },
+    "speaker": {
+      "name": "Joshua Estorninos",
+      "title": "Independent Game Designer",
+      "description": "Joshua is an independent game designer and consultant based in Tacloban City. With over two years of industry experience, he has shipped God of War: Sons of Sparta, and actively developing Maximum Apocalypse and Dungeon King, and other unreleased titles. He loves gaming and is on a mission to design deeply immersive worlds that challenge, inspire, and bring joy to players around the world.",
+      "photo": "/assets/events/compile/2026/img/speakers/joshua-estorninos.webp",
+      "urls": [
+        {
+          "name": "Carrd",
+          "url": "https://joshuaestorninos.crd.co/"
+        },
+        {
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/in/joshua-e-68b500157/"
+        }
+      ]
+    }
+  },
+  {
+    "talk": {
+      "title": "From Writing to Deployment: A Beginner's Guide to nano and Docker",
+      "description": "Learn to develop and deploy web apps without ever leaving the terminal! Targeted towards beginners and aiming to give attendees a first-hand taste of Linux and the terminal, this lecture will introduce you to nano, an open source command line text editor that is included with most Linux distributions, and Docker, a containerization technology that makes deployments easier and safer for web apps. You will learn to treat the terminal as a friend and gain skills important in having as a software engineer."
+    },
+    "speaker": {
+      "name": "Kenneth Lanante",
+      "title": "Software Developer @ SciBiz Informatics",
+      "description": "Kenneth is a full-stack software developer proficient in Python, JavaScript, Java, and CashScript with experience across web, mobile, and research projects. He currently works at SciBiz Informatics building the Paytaca Bitcoin Cash wallet and Watchtower blockchain infrastructure. He mentors interns and contributes to local tech events.",
+      "photo": "/assets/events/compile/2026/img/speakers/kenneth-lanante.webp",
+      "urls": [
+        {
+          "name": "GitHub",
+          "url": "https://www.linkedin.com/in/kenneth-matthew-lanante-b2a9611a4/"
+        },
+        {
+          "name": "LinkedIn",
+          "url": "https://github.com/LukeHeimen"
+        }
+      ]
+    }
+  },
+  {
+    "talk": {
+      "title": "It Works On My Machine: The 7 Deadly Sins of Programming",
+      "description": "There are sins in programming that don't look like sins. They look like small tasks: \"It's just a string.\", \"It's just a date.\", \"How hard could names be?\". In fact, there are seven of them. One thing is for sure: they take down your weekend, your data, or your company's money. Ordered by severity, from \"lol your emoji broke\" to \"you lost actual money.\", this talk will give you a lesson worth taking home: if it looks easy, it's lying. Come for the schadenfreude, leave slightly more paranoid."
+    },
+    "speaker": {
+      "name": "Ned Palacios",
+      "title": "Co-Founder and CTO @ Dotside Studios",
+      "description": "Ned is a software engineer and community builder based in Davao City, Philippines. He is the co-founder and CTO of Dotside Studios and the community lead of WebDavao. Ned is passionate about building tools and apps that improve developer and human experiences, and working on side projects he might never finish.",
+      "photo": "/assets/events/compile/2026/img/speakers/ned-palacios.webp",
+      "urls": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/nedpals"
+        },
+        {
+          "name": "LinkedIn",
+          "url": "https://linkedin.com/in/nedp"
+        },
+        {
+          "name": "BlueSky",
+          "url": "https://bsky.app/profile/nedpals.xyz"
+        },
+        {
+          "name": "X (formerly Twitter)",
+          "url": "https://x.com/npned"
+        }
+      ]
+    }
+  },
+  {
+    "talk": {
+      "title": "Meet the Penguin: An Introduction to the Linux Ecosystem",
+      "description": "From web developers to scientists, Linux and its ecosystem has been a staple operating system for developers and tech enthusiasts for many years already. It has always been popular among developers due to the tools and power it has that empowers them to build amazing things. In this lecture, you will be introduced to the Linux ecosystem and discover the capabilities it has that makes it great."
+    },
+    "speaker": {
+      "name": "Shann Ripalda",
+      "title": "Project Technical Assistant I @ DOST Regional Office VIII",
+      "description": "Shann is a Project Technical Assistant I at DOST Regional Office VIII under the iHub project, helping startups in their pre-incubation stage at a regional level. Previously, he won the Best Theoretical Paper at NiDS 2025, and grabbed the first place in the 2024 QCSP Quantum Computing Hackathon at UP Tacloban. Aside from his education and achievements, he is active enthusiast of Linux and Plan 9, and co-leads Dev8's internal study sessions on Linux.",
+      "photo": "/assets/events/compile/2026/img/speakers/shann-ripalda.webp",
+      "urls": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/nedpals"
+        },
+        {
+          "name": "LinkedIn",
+          "url": "https://linkedin.com/in/nedp"
+        },
+        {
+          "name": "BlueSky",
+          "url": "https://bsky.app/profile/nedpals.xyz"
+        },
+        {
+          "name": "X (formerly Twitter)",
+          "url": "https://x.com/npned"
+        }
+      ]
+    }
+  },
+  {
+    "talk": {
+      "title": "Distributed Systems, the Elixir Way",
+      "description": "In this talk, we’ll explore the fundamentals of distributed systems, from how machines communicate to what happens when things fail and how systems recover. Along the way, we’ll see how Elixir's approach makes many of these ideas feel surprisingly natural. No prior experience with Elixir or distributed systems is required."
+    },
+    "speaker": {
+      "name": "Vince Urag",
+      "title": "Senior Software Engineer @ Mindvalley",
+      "description": "Vince is a software engineer at Mindvalley with over 9 years of experience building products across Europe and Asia. He specializes in Elixir and distributed systems, and is passionate about designing reliable and scalable applications. Beyond code, he shares his technical insights and explorations in his journal called \"Papers\", making complex topics accessible and engaging for the community.",
+      "photo": "/assets/events/compile/2026/img/speakers/vince-urag.webp",
+      "urls": [
+        {
+          "name": "Website",
+          "url": "https://vincy.dev/"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/vinceurag"
+        },
+        {
+          "name": "X (formerly Twitter)",
+          "url": "https://x.com/vinceurag"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://instagram.com/vinceurag"
+        }
+      ]
+    }
+  },
+  {
+    "talk": {
+      "title": "I Cut My Keyboard in Half, Then Built a Game to Get It Back",
+      "description": "When Aris switched to a 46-key keyboard, standard typing tutors couldn't help him learn the layers. So he built Corne-trol Tower, a browser game that trains you one layer at a time. Because browsers can't detect layer key presses, he had to get creative. He'll show how he turned his keyboard's keymap file into a dependency-free, HTML game. He'll share a live demo, his early struggles, and lessons on building educational software."
+    },
+    "speaker": {
+      "name": "Aris Artates Jr.",
+      "title": "Co-Founder @ Valarx",
+      "description": "Aris is a software developer based in the Philippines, passionate about building web applications using Next.js and React, automating business systems, working on side projects, and organizing community initiatives through Valarx. When he's not deep in web dev or tinkering with keyboards, he's usually working on a 2D pixel art game of his own.",
+      "photo": "/assets/events/compile/2026/img/speakers/aris-artates.webp",
+      "urls": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/Aris-Artates"
+        },
+        {
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/in/aris-artates/"
+        }
+      ]
+    }
+  },
+  {
+    "talk": {
+      "title": "From Code to Agri: A Deep Learning-Based Solution for Pollen Viability Analysis",
+      "description": "From research to a practical agricultural solution, this demo showcases PollenSCOPE, a web-based application that uses the YOLOv8 deep learning model to automatically detect and classify viable and non-viable rice pollen grains from microscopic images."
+    },
+    "speaker": {
+      "name": "Julius Macadine",
+      "title": "Alumni @ UP Tacloban",
+      "description": "Julius is a graduate of BS Computer Science from UP Tacloban with research interests centered on exploring computational and AI-driven approaches to agriculture and microbiology. He has also received awards in local and international innovation competitions.",
+      "photo": "/assets/events/compile/2026/img/speakers/julius-macadine.webp",
+      "urls": []
+    }
+  }
+]
